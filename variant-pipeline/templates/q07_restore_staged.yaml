@@ -1,0 +1,33 @@
+id: q07_restore_staged
+topic: undo-and-recovery
+difficulty: easy
+type: variant
+
+parameters:
+  - name: target_file
+    values: [config.json, client.json, schema.json, server.json, router.json]
+    type: file_name
+
+setup:
+  - "git init"
+  - "echo 'initial' > README.md && git add README.md && git commit -m 'initial'"
+  - "echo 'secret data' > {target_file} && git add {target_file}"
+
+stem: "You accidentally staged `{target_file}` with `git add`. You want to unstage it while keeping your working copy intact. Which command accomplishes this?"
+
+correct: "git restore --staged {target_file}"
+
+distractors:
+  - text: "git restore {target_file}"
+    reason: destroys_changes
+  - text: "git rm --cached {target_file}"
+    reason: wrong_operation
+  - text: "git reset --hard {target_file}"
+    reason: destroys_changes
+
+goal: "staged_files_count==0 AND file_exists({target_file})==true"
+
+explanation: "`git restore --staged <file>` removes the specified file from the staging index without modifying the copy in the working directory."
+
+variant_count: 3
+is_reserve: false

@@ -1,0 +1,77 @@
+[
+  {
+    "id": "rebase-squash",
+    "title": "Interactive Rebase Squash",
+    "description": "Squash the last 3 micro-commits into a single commit with message 'feat: consolidated authentication flow'.",
+    "difficulty": "medium",
+    "setup_steps": [
+      ["git", "init"],
+      ["git", "config", "user.name", "Judge Student"],
+      ["git", "config", "user.email", "student@smartlink.edu"],
+      ["git", "commit", "--allow-empty", "-m", "Initial commit"],
+      ["git", "commit", "--allow-empty", "-m", "wip: add login form"],
+      ["git", "commit", "--allow-empty", "-m", "wip: add jwt validation"],
+      ["git", "commit", "--allow-empty", "-m", "wip: add auth middleware"]
+    ],
+    "verification": {
+      "total_commits": 2,
+      "head_commit_message": "feat: consolidated authentication flow",
+      "working_tree_clean": true
+    }
+  },
+  {
+    "id": "merge-conflict",
+    "title": "Merge Conflict Resolution",
+    "description": "Resolve the conflict in api.py favoring the v2 endpoint and commit the merge cleanly.",
+    "difficulty": "medium",
+    "setup_steps": [
+      ["git", "init"],
+      ["git", "config", "user.name", "Judge Student"],
+      ["git", "config", "user.email", "student@smartlink.edu"],
+      ["write_file", "api.py", "def get_data():\n    return 'v1'\n"],
+      ["git", "add", "api.py"],
+      ["git", "commit", "-m", "Initial API"],
+      ["git", "checkout", "-b", "feature/v2"],
+      ["write_file", "api.py", "def get_data():\n    return 'v2-feature'\n"],
+      ["git", "commit", "-am", "Upgrade to v2 feature"],
+      ["git", "checkout", "master"],
+      ["write_file", "api.py", "def get_data():\n    return 'v1-hotfix'\n"],
+      ["git", "commit", "-am", "Apply hotfix to v1"],
+      ["git_merge_conflict", "feature/v2"]
+    ],
+    "verification": {
+      "file_contains": {
+        "api.py": "def get_data():\n    return 'v2-feature'\n"
+      },
+      "no_conflict_markers": ["api.py"],
+      "is_merged": true,
+      "working_tree_clean": true
+    }
+  },
+  {
+    "id": "detached-head-recovery",
+    "title": "Detached HEAD Commit Recovery",
+    "description": "Recover an unreferenced commit created in detached HEAD state onto a branch named 'fix/orphaned-auth'.",
+    "difficulty": "hard",
+    "setup_steps": [
+      ["git", "init"],
+      ["git", "config", "user.name", "Judge Student"],
+      ["git", "config", "user.email", "student@smartlink.edu"],
+      ["git", "commit", "--allow-empty", "-m", "Initial commit"],
+      ["git", "commit", "--allow-empty", "-m", "Second commit"],
+      ["git", "checkout", "HEAD~1"],
+      ["write_file", "auth_patch.py", "AUTHENTICATION_KEY = 'SECURE_RECOVERED'\n"],
+      ["git", "add", "auth_patch.py"],
+      ["git", "commit", "-m", "Critical detached bugfix"],
+      ["git", "checkout", "master"]
+    ],
+    "verification": {
+      "branch_exists": "fix/orphaned-auth",
+      "file_exists_on_branch": {
+        "branch": "fix/orphaned-auth",
+        "file": "auth_patch.py"
+      },
+      "working_tree_clean": true
+    }
+  }
+]

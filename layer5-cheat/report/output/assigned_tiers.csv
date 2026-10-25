@@ -1,0 +1,201 @@
+student_anon,tier,families_fired,family_count,evidence_summary,trust_score,is_podium,rank_in_tier
+67,Strong,"['person_fit_strong', 'timing_review']",2,"Person-fit extreme: p=0.0038 (unexpected score=3.5); Timing anomalous: 0 fast-correct hard, 0 slow-tab items, misfit z=2.3",30,False,1
+170,Strong,"['person_fit_strong', 'timing_review']",2,"Person-fit extreme: p=0.0048 (unexpected score=4.6); Timing anomalous: 0 fast-correct hard, 0 slow-tab items, misfit z=2.6",30,False,2
+49,Strong,['person_fit_strong'],1,Person-fit extreme: p=0.0054 (unexpected score=1.9),30,True,3
+147,Strong,['person_fit_strong'],1,Person-fit extreme: p=0.0000 (unexpected score=2.4),30,False,4
+150,Strong,['person_fit_strong'],1,Person-fit extreme: p=0.0000 (unexpected score=1.6),30,True,5
+152,Strong,['person_fit_strong'],1,Person-fit extreme: p=0.0050 (unexpected score=4.2),30,False,6
+169,Strong,['person_fit_strong'],1,Person-fit extreme: p=0.0022 (unexpected score=2.3),30,False,7
+188,Strong,['person_fit_strong'],1,Person-fit extreme: p=0.0050 (unexpected score=5.2),30,False,8
+195,Strong,['person_fit_strong'],1,Person-fit extreme: p=0.0000 (unexpected score=9.3),30,False,9
+1,Review,['person_fit_review'],1,Person-fit elevated: p=0.0140 (unexpected score=7.3),55,False,10
+3,Review,['person_fit_review'],1,Person-fit elevated: p=0.0312 (unexpected score=1.5),55,False,11
+15,Review,['timing_review'],1,"Timing anomalous: 0 fast-correct hard, 0 slow-tab items, misfit z=2.2",55,False,12
+31,Review,['person_fit_review'],1,Person-fit elevated: p=0.0480 (unexpected score=0.6),55,False,13
+40,Review,['person_fit_review'],1,Person-fit elevated: p=0.0478 (unexpected score=3.8),55,False,14
+60,Review,['person_fit_review'],1,Person-fit elevated: p=0.0342 (unexpected score=1.8),55,False,15
+75,Review,['person_fit_review'],1,Person-fit elevated: p=0.0336 (unexpected score=3.6),55,False,16
+80,Review,['person_fit_review'],1,Person-fit elevated: p=0.0446 (unexpected score=1.1),55,False,17
+82,Review,['person_fit_review'],1,Person-fit elevated: p=0.0128 (unexpected score=5.3),55,False,18
+94,Review,['person_fit_review'],1,Person-fit elevated: p=0.0224 (unexpected score=4.7),55,False,19
+108,Review,['person_fit_review'],1,Person-fit elevated: p=0.0216 (unexpected score=3.1),55,False,20
+121,Review,['person_fit_review'],1,Person-fit elevated: p=0.0486 (unexpected score=3.5),55,False,21
+122,Review,['person_fit_review'],1,Person-fit elevated: p=0.0356 (unexpected score=4.3),55,False,22
+126,Review,['person_fit_review'],1,Person-fit elevated: p=0.0104 (unexpected score=5.2),55,False,23
+138,Review,['person_fit_review'],1,Person-fit elevated: p=0.0172 (unexpected score=4.8),55,False,24
+143,Review,['person_fit_review'],1,Person-fit elevated: p=0.0284 (unexpected score=3.7),55,False,25
+149,Review,['person_fit_review'],1,Person-fit elevated: p=0.0452 (unexpected score=3.3),55,False,26
+156,Review,['person_fit_review'],1,Person-fit elevated: p=0.0316 (unexpected score=3.7),55,False,27
+158,Review,['person_fit_review'],1,Person-fit elevated: p=0.0246 (unexpected score=2.0),55,False,28
+159,Review,['person_fit_review'],1,Person-fit elevated: p=0.0384 (unexpected score=3.0),55,False,29
+173,Review,['person_fit_review'],1,Person-fit elevated: p=0.0446 (unexpected score=2.0),55,False,30
+176,Review,['person_fit_review'],1,Person-fit elevated: p=0.0156 (unexpected score=2.9),55,False,31
+48,Review,[],0,Mandatory podium audit: top 10 finisher,55,True,32
+50,Review,[],0,Mandatory podium audit: top 10 finisher,55,True,33
+63,Review,[],0,Mandatory podium audit: top 10 finisher,55,True,34
+65,Review,[],0,Mandatory podium audit: top 10 finisher,55,True,35
+72,Review,[],0,Mandatory podium audit: top 10 finisher,55,True,36
+73,Review,[],0,Mandatory podium audit: top 10 finisher,55,True,37
+96,Review,[],0,Mandatory podium audit: top 10 finisher,55,True,38
+124,Review,[],0,Mandatory podium audit: top 10 finisher,55,True,39
+2,Clear,[],0,No anomalies observed,85,False,40
+4,Clear,[],0,No anomalies observed,85,False,41
+5,Clear,[],0,No anomalies observed,85,False,42
+6,Clear,[],0,No anomalies observed,85,False,43
+7,Clear,[],0,No anomalies observed,85,False,44
+8,Clear,[],0,No anomalies observed,85,False,45
+9,Clear,[],0,No anomalies observed,85,False,46
+10,Clear,[],0,No anomalies observed,85,False,47
+11,Clear,[],0,No anomalies observed,85,False,48
+12,Clear,[],0,No anomalies observed,85,False,49
+13,Clear,[],0,No anomalies observed,85,False,50
+14,Clear,[],0,No anomalies observed,85,False,51
+16,Clear,[],0,No anomalies observed,85,False,52
+17,Clear,[],0,No anomalies observed,85,False,53
+18,Clear,[],0,No anomalies observed,85,False,54
+19,Clear,[],0,No anomalies observed,85,False,55
+20,Clear,[],0,No anomalies observed,85,False,56
+21,Clear,[],0,No anomalies observed,85,False,57
+22,Clear,[],0,No anomalies observed,85,False,58
+23,Clear,[],0,No anomalies observed,85,False,59
+24,Clear,[],0,No anomalies observed,85,False,60
+25,Clear,[],0,No anomalies observed,85,False,61
+26,Clear,[],0,No anomalies observed,85,False,62
+27,Clear,[],0,No anomalies observed,85,False,63
+28,Clear,[],0,No anomalies observed,85,False,64
+29,Clear,[],0,No anomalies observed,85,False,65
+30,Clear,[],0,No anomalies observed,85,False,66
+32,Clear,[],0,No anomalies observed,85,False,67
+33,Clear,[],0,No anomalies observed,85,False,68
+34,Clear,[],0,No anomalies observed,85,False,69
+35,Clear,[],0,No anomalies observed,85,False,70
+36,Clear,[],0,No anomalies observed,85,False,71
+37,Clear,[],0,No anomalies observed,85,False,72
+38,Clear,[],0,No anomalies observed,85,False,73
+39,Clear,[],0,No anomalies observed,85,False,74
+41,Clear,[],0,No anomalies observed,85,False,75
+42,Clear,[],0,No anomalies observed,85,False,76
+43,Clear,[],0,No anomalies observed,85,False,77
+44,Clear,[],0,No anomalies observed,85,False,78
+45,Clear,[],0,No anomalies observed,85,False,79
+46,Clear,[],0,No anomalies observed,85,False,80
+47,Clear,[],0,No anomalies observed,85,False,81
+51,Clear,[],0,No anomalies observed,85,False,82
+52,Clear,[],0,No anomalies observed,85,False,83
+53,Clear,[],0,No anomalies observed,85,False,84
+54,Clear,[],0,No anomalies observed,85,False,85
+55,Clear,[],0,No anomalies observed,85,False,86
+56,Clear,[],0,No anomalies observed,85,False,87
+57,Clear,[],0,No anomalies observed,85,False,88
+58,Clear,[],0,No anomalies observed,85,False,89
+59,Clear,[],0,No anomalies observed,85,False,90
+61,Clear,[],0,No anomalies observed,85,False,91
+62,Clear,[],0,No anomalies observed,85,False,92
+64,Clear,[],0,No anomalies observed,85,False,93
+66,Clear,[],0,No anomalies observed,85,False,94
+68,Clear,[],0,No anomalies observed,85,False,95
+69,Clear,[],0,No anomalies observed,85,False,96
+70,Clear,[],0,No anomalies observed,85,False,97
+71,Clear,[],0,No anomalies observed,85,False,98
+74,Clear,[],0,No anomalies observed,85,False,99
+76,Clear,[],0,No anomalies observed,85,False,100
+77,Clear,[],0,No anomalies observed,85,False,101
+78,Clear,[],0,No anomalies observed,85,False,102
+79,Clear,[],0,No anomalies observed,85,False,103
+81,Clear,[],0,No anomalies observed,85,False,104
+83,Clear,[],0,No anomalies observed,85,False,105
+84,Clear,[],0,No anomalies observed,85,False,106
+85,Clear,[],0,No anomalies observed,85,False,107
+86,Clear,[],0,No anomalies observed,85,False,108
+87,Clear,[],0,No anomalies observed,85,False,109
+88,Clear,[],0,No anomalies observed,85,False,110
+89,Clear,[],0,No anomalies observed,85,False,111
+90,Clear,[],0,No anomalies observed,85,False,112
+91,Clear,[],0,No anomalies observed,85,False,113
+92,Clear,[],0,No anomalies observed,85,False,114
+93,Clear,[],0,No anomalies observed,85,False,115
+95,Clear,[],0,No anomalies observed,85,False,116
+97,Clear,[],0,No anomalies observed,85,False,117
+98,Clear,[],0,No anomalies observed,85,False,118
+99,Clear,[],0,No anomalies observed,85,False,119
+100,Clear,[],0,No anomalies observed,85,False,120
+101,Clear,[],0,No anomalies observed,85,False,121
+102,Clear,[],0,No anomalies observed,85,False,122
+103,Clear,[],0,No anomalies observed,85,False,123
+104,Clear,[],0,No anomalies observed,85,False,124
+105,Clear,[],0,No anomalies observed,85,False,125
+106,Clear,[],0,No anomalies observed,85,False,126
+107,Clear,[],0,No anomalies observed,85,False,127
+109,Clear,[],0,No anomalies observed,85,False,128
+110,Clear,[],0,No anomalies observed,85,False,129
+111,Clear,[],0,No anomalies observed,85,False,130
+112,Clear,[],0,No anomalies observed,85,False,131
+113,Clear,[],0,No anomalies observed,85,False,132
+114,Clear,[],0,No anomalies observed,85,False,133
+115,Clear,[],0,No anomalies observed,85,False,134
+116,Clear,[],0,No anomalies observed,85,False,135
+117,Clear,[],0,No anomalies observed,85,False,136
+118,Clear,[],0,No anomalies observed,85,False,137
+119,Clear,[],0,No anomalies observed,85,False,138
+120,Clear,[],0,No anomalies observed,85,False,139
+123,Clear,[],0,No anomalies observed,85,False,140
+125,Clear,[],0,No anomalies observed,85,False,141
+127,Clear,[],0,No anomalies observed,85,False,142
+128,Clear,[],0,No anomalies observed,85,False,143
+129,Clear,[],0,No anomalies observed,85,False,144
+130,Clear,[],0,No anomalies observed,85,False,145
+131,Clear,[],0,No anomalies observed,85,False,146
+132,Clear,[],0,No anomalies observed,85,False,147
+133,Clear,[],0,No anomalies observed,85,False,148
+134,Clear,[],0,No anomalies observed,85,False,149
+135,Clear,[],0,No anomalies observed,85,False,150
+136,Clear,[],0,No anomalies observed,85,False,151
+137,Clear,[],0,No anomalies observed,85,False,152
+139,Clear,[],0,No anomalies observed,85,False,153
+140,Clear,[],0,No anomalies observed,85,False,154
+141,Clear,[],0,No anomalies observed,85,False,155
+142,Clear,[],0,No anomalies observed,85,False,156
+144,Clear,[],0,No anomalies observed,85,False,157
+145,Clear,[],0,No anomalies observed,85,False,158
+146,Clear,[],0,No anomalies observed,85,False,159
+148,Clear,[],0,No anomalies observed,85,False,160
+151,Clear,[],0,No anomalies observed,85,False,161
+153,Clear,[],0,No anomalies observed,85,False,162
+154,Clear,[],0,No anomalies observed,85,False,163
+155,Clear,[],0,No anomalies observed,85,False,164
+157,Clear,[],0,No anomalies observed,85,False,165
+160,Clear,[],0,No anomalies observed,85,False,166
+161,Clear,[],0,No anomalies observed,85,False,167
+162,Clear,[],0,No anomalies observed,85,False,168
+163,Clear,[],0,No anomalies observed,85,False,169
+164,Clear,[],0,No anomalies observed,85,False,170
+165,Clear,[],0,No anomalies observed,85,False,171
+166,Clear,[],0,No anomalies observed,85,False,172
+167,Clear,[],0,No anomalies observed,85,False,173
+168,Clear,[],0,No anomalies observed,85,False,174
+171,Clear,[],0,No anomalies observed,85,False,175
+172,Clear,[],0,No anomalies observed,85,False,176
+174,Clear,[],0,No anomalies observed,85,False,177
+175,Clear,[],0,No anomalies observed,85,False,178
+177,Clear,[],0,No anomalies observed,85,False,179
+178,Clear,[],0,No anomalies observed,85,False,180
+179,Clear,[],0,No anomalies observed,85,False,181
+180,Clear,[],0,No anomalies observed,85,False,182
+181,Clear,[],0,No anomalies observed,85,False,183
+182,Clear,[],0,No anomalies observed,85,False,184
+183,Clear,[],0,No anomalies observed,85,False,185
+184,Clear,[],0,No anomalies observed,85,False,186
+185,Clear,[],0,No anomalies observed,85,False,187
+186,Clear,[],0,No anomalies observed,85,False,188
+187,Clear,[],0,No anomalies observed,85,False,189
+189,Clear,[],0,No anomalies observed,85,False,190
+190,Clear,[],0,No anomalies observed,85,False,191
+191,Clear,[],0,No anomalies observed,85,False,192
+192,Clear,[],0,No anomalies observed,85,False,193
+193,Clear,[],0,No anomalies observed,85,False,194
+194,Clear,[],0,No anomalies observed,85,False,195
+196,Clear,[],0,No anomalies observed,85,False,196
+197,Clear,[],0,No anomalies observed,85,False,197
+198,Clear,[],0,No anomalies observed,85,False,198
+199,Clear,[],0,No anomalies observed,85,False,199
+200,Clear,[],0,No anomalies observed,85,False,200

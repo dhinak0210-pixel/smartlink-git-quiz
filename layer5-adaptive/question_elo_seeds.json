@@ -1,0 +1,902 @@
+[
+  {
+    "id": "10000000-0000-0000-0000-000000000001",
+    "text": "What command initializes a new Git repository in the current working directory?...",
+    "topic": "basics",
+    "difficulty_label": "easy",
+    "difficulty_logit": -0.0541,
+    "discrimination": 1.0,
+    "elo_rating": 1490.6,
+    "elo_games": 10
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000002",
+    "text": "Which command shows the chronological commit history of the current repository?...",
+    "topic": "basics",
+    "difficulty_label": "easy",
+    "difficulty_logit": -0.5306,
+    "discrimination": 1.0,
+    "elo_rating": 1407.8,
+    "elo_games": 10
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000003",
+    "text": "Which command stages all modified and newly created files in the repository?...",
+    "topic": "staging",
+    "difficulty_label": "easy",
+    "difficulty_logit": -0.4595,
+    "discrimination": 1.0,
+    "elo_rating": 1420.2,
+    "elo_games": 10
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000004",
+    "text": "Which command records staged snapshots with an inline descriptive message?...",
+    "topic": "commits",
+    "difficulty_label": "easy",
+    "difficulty_logit": -0.6931,
+    "discrimination": 1.0,
+    "elo_rating": 1379.6,
+    "elo_games": 10
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000005",
+    "text": "What command copies an existing remote repository onto your local machine?...",
+    "topic": "cloning",
+    "difficulty_label": "easy",
+    "difficulty_logit": -0.6506,
+    "discrimination": 1.0,
+    "elo_rating": 1387.0,
+    "elo_games": 10
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000006",
+    "text": "What command creates a new branch named feature-login and immediately switches t...",
+    "topic": "branching",
+    "difficulty_label": "easy",
+    "difficulty_logit": -1.2528,
+    "discrimination": 1.0,
+    "elo_rating": 1282.4,
+    "elo_games": 10
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000007",
+    "text": "Which command lists all existing local branches in your repository?...",
+    "topic": "branching",
+    "difficulty_label": "easy",
+    "difficulty_logit": -1.273,
+    "discrimination": 1.0,
+    "elo_rating": 1278.9,
+    "elo_games": 10
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000008",
+    "text": "You have uncommitted modifications that you want to set aside without committing...",
+    "topic": "stashing",
+    "difficulty_label": "easy",
+    "difficulty_logit": -1.0561,
+    "discrimination": 1.0,
+    "elo_rating": 1316.5,
+    "elo_games": 10
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000009",
+    "text": "What command restores the most recently stashed changes and removes them from th...",
+    "topic": "stashing",
+    "difficulty_label": "easy",
+    "difficulty_logit": -1.0498,
+    "discrimination": 1.0,
+    "elo_rating": 1317.6,
+    "elo_games": 10
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000010",
+    "text": "Which command lists all currently stashed change sets in your repository?...",
+    "topic": "stashing",
+    "difficulty_label": "easy",
+    "difficulty_logit": -0.6061,
+    "discrimination": 1.0,
+    "elo_rating": 1394.7,
+    "elo_games": 10
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000011",
+    "text": "Which command displays the state of the working directory and the staging area?...",
+    "topic": "status",
+    "difficulty_label": "easy",
+    "difficulty_logit": -0.8755,
+    "discrimination": 1.0,
+    "elo_rating": 1347.9,
+    "elo_games": 10
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000012",
+    "text": "Which command shows differences between your working directory modifications and...",
+    "topic": "diff",
+    "difficulty_label": "easy",
+    "difficulty_logit": -0.6931,
+    "discrimination": 1.0,
+    "elo_rating": 1379.6,
+    "elo_games": 10
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000013",
+    "text": "Which command shows differences between staged modifications and the last commit...",
+    "topic": "diff",
+    "difficulty_label": "easy",
+    "difficulty_logit": -0.4274,
+    "discrimination": 1.0,
+    "elo_rating": 1425.8,
+    "elo_games": 10
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000014",
+    "text": "What command shows all configured remote repository names along with their fetch...",
+    "topic": "remotes",
+    "difficulty_label": "easy",
+    "difficulty_logit": -1.1314,
+    "discrimination": 1.0,
+    "elo_rating": 1303.5,
+    "elo_games": 10
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000015",
+    "text": "What is the command to link a remote repository URL named origin to your local r...",
+    "topic": "remotes",
+    "difficulty_label": "easy",
+    "difficulty_logit": -1.0678,
+    "discrimination": 1.0,
+    "elo_rating": 1314.5,
+    "elo_games": 10
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000016",
+    "text": "What is the primary difference between git fetch and git pull?...",
+    "topic": "remotes",
+    "difficulty_label": "easy",
+    "difficulty_logit": -0.9933,
+    "discrimination": 1.0,
+    "elo_rating": 1327.4,
+    "elo_games": 10
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000017",
+    "text": "What does the -u flag do in git push -u origin main?...",
+    "topic": "remotes",
+    "difficulty_label": "easy",
+    "difficulty_logit": -1.7918,
+    "discrimination": 1.0,
+    "elo_rating": 1188.7,
+    "elo_games": 10
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000018",
+    "text": "What is the purpose of the .gitignore file in a project repository?...",
+    "topic": "ignore",
+    "difficulty_label": "easy",
+    "difficulty_logit": -0.5978,
+    "discrimination": 1.0,
+    "elo_rating": 1396.2,
+    "elo_games": 10
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000019",
+    "text": "Which command sets your global commit author name across all Git repositories on...",
+    "topic": "config",
+    "difficulty_label": "easy",
+    "difficulty_logit": -0.9555,
+    "discrimination": 1.0,
+    "elo_rating": 1334.0,
+    "elo_games": 10
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000020",
+    "text": "How can you view all resolved Git configuration settings in your terminal?...",
+    "topic": "config",
+    "difficulty_label": "easy",
+    "difficulty_logit": -0.47,
+    "discrimination": 1.0,
+    "elo_rating": 1418.4,
+    "elo_games": 10
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000021",
+    "text": "What command modifies the most recent commit by combining it with current staged...",
+    "topic": "commits",
+    "difficulty_label": "easy",
+    "difficulty_logit": -1.0296,
+    "discrimination": 1.0,
+    "elo_rating": 1321.1,
+    "elo_games": 10
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000022",
+    "text": "Which command creates a lightweight tag named v1.0 pointing to the current commi...",
+    "topic": "tags",
+    "difficulty_label": "easy",
+    "difficulty_logit": -0.0,
+    "discrimination": 1.0,
+    "elo_rating": 1500.0,
+    "elo_games": 10
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000023",
+    "text": "Which command shows metadata and content changes for a specific Git object or co...",
+    "topic": "inspect",
+    "difficulty_label": "easy",
+    "difficulty_logit": -1.0986,
+    "discrimination": 1.0,
+    "elo_rating": 1309.2,
+    "elo_games": 10
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000024",
+    "text": "In Git architecture, what does the special pointer HEAD refer to?...",
+    "topic": "internals",
+    "difficulty_label": "easy",
+    "difficulty_logit": -0.6466,
+    "discrimination": 1.0,
+    "elo_rating": 1387.7,
+    "elo_games": 10
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000025",
+    "text": "Which command removes a file from both the Git staging index and your local file...",
+    "topic": "removal",
+    "difficulty_label": "easy",
+    "difficulty_logit": -0.8329,
+    "discrimination": 1.0,
+    "elo_rating": 1355.3,
+    "elo_games": 10
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000026",
+    "text": "What characterizes a fast-forward merge in Git?...",
+    "topic": "merge",
+    "difficulty_label": "easy",
+    "difficulty_logit": -0.9985,
+    "discrimination": 1.0,
+    "elo_rating": 1326.5,
+    "elo_games": 10
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000027",
+    "text": "Which git log option condenses each commit to a single line showing short hash a...",
+    "topic": "log",
+    "difficulty_label": "easy",
+    "difficulty_logit": -0.3448,
+    "discrimination": 1.0,
+    "elo_rating": 1440.1,
+    "elo_games": 10
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000028",
+    "text": "In modern Git (2.23+), what command is recommended for switching branches instea...",
+    "topic": "checkout",
+    "difficulty_label": "easy",
+    "difficulty_logit": -2.1203,
+    "discrimination": 1.0,
+    "elo_rating": 1131.7,
+    "elo_games": 10
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000029",
+    "text": "In modern Git (2.23+), what command discards uncommitted changes in your working...",
+    "topic": "restore",
+    "difficulty_label": "easy",
+    "difficulty_logit": -0.8329,
+    "discrimination": 1.0,
+    "elo_rating": 1355.3,
+    "elo_games": 10
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000030",
+    "text": "What hidden folder created by git init houses all repository databases, referenc...",
+    "topic": "basics",
+    "difficulty_label": "easy",
+    "difficulty_logit": -1.4271,
+    "discrimination": 1.0,
+    "elo_rating": 1252.1,
+    "elo_games": 10
+  },
+  {
+    "id": "20000000-0000-0000-0000-000000000001",
+    "text": "What is the fundamental difference between git merge and git rebase?...",
+    "topic": "rebase",
+    "difficulty_label": "medium",
+    "difficulty_logit": -0.8109,
+    "discrimination": 1.0,
+    "elo_rating": 1359.1,
+    "elo_games": 10
+  },
+  {
+    "id": "20000000-0000-0000-0000-000000000002",
+    "text": "What happens when you run git reset --soft HEAD~1?...",
+    "topic": "reset",
+    "difficulty_label": "medium",
+    "difficulty_logit": 0.47,
+    "discrimination": 1.0,
+    "elo_rating": 1581.6,
+    "elo_games": 10
+  },
+  {
+    "id": "20000000-0000-0000-0000-000000000003",
+    "text": "What happens when you run git reset --mixed HEAD~1 (the default reset mode)?...",
+    "topic": "reset",
+    "difficulty_label": "medium",
+    "difficulty_logit": -1.1787,
+    "discrimination": 1.0,
+    "elo_rating": 1295.2,
+    "elo_games": 10
+  },
+  {
+    "id": "20000000-0000-0000-0000-000000000004",
+    "text": "What happens when you run git reset --hard HEAD~1?...",
+    "topic": "reset",
+    "difficulty_label": "medium",
+    "difficulty_logit": -0.0572,
+    "discrimination": 1.0,
+    "elo_rating": 1490.1,
+    "elo_games": 10
+  },
+  {
+    "id": "20000000-0000-0000-0000-000000000005",
+    "text": "Which command applies a single specific commit from another branch onto your act...",
+    "topic": "cherry-pick",
+    "difficulty_label": "medium",
+    "difficulty_logit": -0.1942,
+    "discrimination": 1.0,
+    "elo_rating": 1466.3,
+    "elo_games": 10
+  },
+  {
+    "id": "20000000-0000-0000-0000-000000000006",
+    "text": "Which command records every movement of HEAD and branch tips locally, allowing r...",
+    "topic": "reflog",
+    "difficulty_label": "medium",
+    "difficulty_logit": -0.1823,
+    "discrimination": 1.0,
+    "elo_rating": 1468.3,
+    "elo_games": 10
+  },
+  {
+    "id": "20000000-0000-0000-0000-000000000007",
+    "text": "What does git clean -fd do in your repository?...",
+    "topic": "clean",
+    "difficulty_label": "medium",
+    "difficulty_logit": -0.5465,
+    "discrimination": 1.0,
+    "elo_rating": 1405.1,
+    "elo_games": 10
+  },
+  {
+    "id": "20000000-0000-0000-0000-000000000008",
+    "text": "How does git revert <commit> differ from git reset <commit> regarding public bra...",
+    "topic": "revert",
+    "difficulty_label": "medium",
+    "difficulty_logit": 0.1112,
+    "discrimination": 1.0,
+    "elo_rating": 1519.3,
+    "elo_games": 10
+  },
+  {
+    "id": "20000000-0000-0000-0000-000000000009",
+    "text": "What does git rebase -i HEAD~3 open in your editor?...",
+    "topic": "rebase-interactive",
+    "difficulty_label": "medium",
+    "difficulty_logit": -0.0513,
+    "discrimination": 1.0,
+    "elo_rating": 1491.1,
+    "elo_games": 10
+  },
+  {
+    "id": "20000000-0000-0000-0000-000000000010",
+    "text": "In an interactive rebase todo list, what does the squash command do?...",
+    "topic": "rebase-interactive",
+    "difficulty_label": "medium",
+    "difficulty_logit": -0.3254,
+    "discrimination": 1.0,
+    "elo_rating": 1443.5,
+    "elo_games": 10
+  },
+  {
+    "id": "20000000-0000-0000-0000-000000000011",
+    "text": "In an interactive rebase todo list, how does fixup differ from squash?...",
+    "topic": "rebase-interactive",
+    "difficulty_label": "medium",
+    "difficulty_logit": 0.0645,
+    "discrimination": 1.0,
+    "elo_rating": 1511.2,
+    "elo_games": 10
+  },
+  {
+    "id": "20000000-0000-0000-0000-000000000012",
+    "text": "Why does git branch -d feature fail if feature contains unmerged commits, and ho...",
+    "topic": "branching",
+    "difficulty_label": "medium",
+    "difficulty_logit": -0.3054,
+    "discrimination": 1.0,
+    "elo_rating": 1446.9,
+    "elo_games": 10
+  },
+  {
+    "id": "20000000-0000-0000-0000-000000000013",
+    "text": "Which command deletes a remote branch named feature-auth on origin?...",
+    "topic": "remotes",
+    "difficulty_label": "medium",
+    "difficulty_logit": -0.2877,
+    "discrimination": 1.0,
+    "elo_rating": 1450.0,
+    "elo_games": 10
+  },
+  {
+    "id": "20000000-0000-0000-0000-000000000014",
+    "text": "What information does git blame provide for a file?...",
+    "topic": "blame",
+    "difficulty_label": "medium",
+    "difficulty_logit": 0.0541,
+    "discrimination": 1.0,
+    "elo_rating": 1509.4,
+    "elo_games": 10
+  },
+  {
+    "id": "20000000-0000-0000-0000-000000000015",
+    "text": "If you encounter unexpected merge conflicts, what command cleanly cancels the me...",
+    "topic": "merge",
+    "difficulty_label": "medium",
+    "difficulty_logit": -0.0572,
+    "discrimination": 1.0,
+    "elo_rating": 1490.1,
+    "elo_games": 10
+  },
+  {
+    "id": "20000000-0000-0000-0000-000000000016",
+    "text": "After manually resolving conflicts during a rebase, what command should you exec...",
+    "topic": "rebase",
+    "difficulty_label": "medium",
+    "difficulty_logit": -0.3254,
+    "discrimination": 1.0,
+    "elo_rating": 1443.5,
+    "elo_games": 10
+  },
+  {
+    "id": "20000000-0000-0000-0000-000000000017",
+    "text": "What Git feature allows you to checkout multiple branches simultaneously in sepa...",
+    "topic": "worktree",
+    "difficulty_label": "medium",
+    "difficulty_logit": -0.3795,
+    "discrimination": 1.0,
+    "elo_rating": 1434.1,
+    "elo_games": 10
+  },
+  {
+    "id": "20000000-0000-0000-0000-000000000018",
+    "text": "Which command initializes and fetches nested submodules after cloning a reposito...",
+    "topic": "submodules",
+    "difficulty_label": "medium",
+    "difficulty_logit": 0.0741,
+    "discrimination": 1.0,
+    "elo_rating": 1512.9,
+    "elo_games": 10
+  },
+  {
+    "id": "20000000-0000-0000-0000-000000000019",
+    "text": "What command creates a new branch named debug-fix directly from stash@{0} and dr...",
+    "topic": "stashing",
+    "difficulty_label": "medium",
+    "difficulty_logit": 0.3023,
+    "discrimination": 1.0,
+    "elo_rating": 1552.5,
+    "elo_games": 10
+  },
+  {
+    "id": "20000000-0000-0000-0000-000000000020",
+    "text": "What condition causes a detached HEAD state in Git?...",
+    "topic": "internals",
+    "difficulty_label": "medium",
+    "difficulty_logit": 0.3023,
+    "discrimination": 1.0,
+    "elo_rating": 1552.5,
+    "elo_games": 10
+  },
+  {
+    "id": "20000000-0000-0000-0000-000000000021",
+    "text": "In Git merge conflict markers, what content is enclosed between <<<<<<< HEAD and...",
+    "topic": "merge",
+    "difficulty_label": "medium",
+    "difficulty_logit": 0.2578,
+    "discrimination": 1.0,
+    "elo_rating": 1544.8,
+    "elo_games": 10
+  },
+  {
+    "id": "20000000-0000-0000-0000-000000000022",
+    "text": "What is a three-way merge in Git?...",
+    "topic": "merge",
+    "difficulty_label": "medium",
+    "difficulty_logit": 0.1431,
+    "discrimination": 1.0,
+    "elo_rating": 1524.9,
+    "elo_games": 10
+  },
+  {
+    "id": "20000000-0000-0000-0000-000000000023",
+    "text": "How does an annotated tag (git tag -a) differ fundamentally from a lightweight t...",
+    "topic": "tags",
+    "difficulty_label": "medium",
+    "difficulty_logit": 0.069,
+    "discrimination": 1.0,
+    "elo_rating": 1512.0,
+    "elo_games": 10
+  },
+  {
+    "id": "20000000-0000-0000-0000-000000000024",
+    "text": "Why do created tags not appear on origin after git push origin main, and how do ...",
+    "topic": "tags",
+    "difficulty_label": "medium",
+    "difficulty_logit": -0.1466,
+    "discrimination": 1.0,
+    "elo_rating": 1474.5,
+    "elo_games": 10
+  },
+  {
+    "id": "20000000-0000-0000-0000-000000000025",
+    "text": "Which git log command displays the commit topology as an ASCII text graph?...",
+    "topic": "log",
+    "difficulty_label": "medium",
+    "difficulty_logit": -0.3365,
+    "discrimination": 1.0,
+    "elo_rating": 1441.5,
+    "elo_games": 10
+  },
+  {
+    "id": "20000000-0000-0000-0000-000000000026",
+    "text": "Which command lists commit count summary per author in sorted descending order?...",
+    "topic": "log",
+    "difficulty_label": "medium",
+    "difficulty_logit": -0.5878,
+    "discrimination": 1.0,
+    "elo_rating": 1397.9,
+    "elo_games": 10
+  },
+  {
+    "id": "20000000-0000-0000-0000-000000000027",
+    "text": "Which command updates your local branch tracking refs and deletes stale referenc...",
+    "topic": "remotes",
+    "difficulty_label": "medium",
+    "difficulty_logit": 0.4463,
+    "discrimination": 1.0,
+    "elo_rating": 1577.5,
+    "elo_games": 10
+  },
+  {
+    "id": "20000000-0000-0000-0000-000000000028",
+    "text": "In Git config hierarchy, which configuration level takes highest precedence if a...",
+    "topic": "config",
+    "difficulty_label": "medium",
+    "difficulty_logit": 0.5261,
+    "discrimination": 1.0,
+    "elo_rating": 1591.4,
+    "elo_games": 10
+  },
+  {
+    "id": "20000000-0000-0000-0000-000000000029",
+    "text": "What does git diff branchA..branchB output?...",
+    "topic": "diff",
+    "difficulty_label": "medium",
+    "difficulty_logit": 0.08,
+    "discrimination": 1.0,
+    "elo_rating": 1513.9,
+    "elo_games": 10
+  },
+  {
+    "id": "20000000-0000-0000-0000-000000000030",
+    "text": "What does the reword command in an interactive rebase todo list accomplish?...",
+    "topic": "rebase-interactive",
+    "difficulty_label": "medium",
+    "difficulty_logit": -0.2336,
+    "discrimination": 1.0,
+    "elo_rating": 1459.4,
+    "elo_games": 10
+  },
+  {
+    "id": "30000000-0000-0000-0000-000000000001",
+    "text": "What binary search debugging command isolates the exact commit that introduced a...",
+    "topic": "debugging",
+    "difficulty_label": "hard",
+    "difficulty_logit": 0.6242,
+    "discrimination": 1.0,
+    "elo_rating": 1608.4,
+    "elo_games": 10
+  },
+  {
+    "id": "30000000-0000-0000-0000-000000000002",
+    "text": "How can you automate git bisect to test each commit non-interactively using an a...",
+    "topic": "debugging",
+    "difficulty_label": "hard",
+    "difficulty_logit": 0.452,
+    "discrimination": 1.0,
+    "elo_rating": 1578.5,
+    "elo_games": 10
+  },
+  {
+    "id": "30000000-0000-0000-0000-000000000003",
+    "text": "In Git object database (.git/objects), what are the four fundamental immutable o...",
+    "topic": "git-internals",
+    "difficulty_label": "hard",
+    "difficulty_logit": 0.5705,
+    "discrimination": 1.0,
+    "elo_rating": 1599.1,
+    "elo_games": 10
+  },
+  {
+    "id": "30000000-0000-0000-0000-000000000004",
+    "text": "In Git object database, what fundamental entity do Blob objects store?...",
+    "topic": "git-internals",
+    "difficulty_label": "hard",
+    "difficulty_logit": 1.1394,
+    "discrimination": 1.0,
+    "elo_rating": 1697.9,
+    "elo_games": 10
+  },
+  {
+    "id": "30000000-0000-0000-0000-000000000005",
+    "text": "What plumbing command inspects the type and human-readable content of any raw Gi...",
+    "topic": "git-internals",
+    "difficulty_label": "hard",
+    "difficulty_logit": 1.4214,
+    "discrimination": 1.0,
+    "elo_rating": 1746.9,
+    "elo_games": 10
+  },
+  {
+    "id": "30000000-0000-0000-0000-000000000006",
+    "text": "What does the Git reference notation HEAD^2 refer to?...",
+    "topic": "git-internals",
+    "difficulty_label": "hard",
+    "difficulty_logit": 0.8938,
+    "discrimination": 1.0,
+    "elo_rating": 1655.3,
+    "elo_games": 10
+  },
+  {
+    "id": "30000000-0000-0000-0000-000000000007",
+    "text": "How does HEAD~3 differ from HEAD^^^ in commit revision navigation?...",
+    "topic": "git-internals",
+    "difficulty_label": "hard",
+    "difficulty_logit": 1.4214,
+    "discrimination": 1.0,
+    "elo_rating": 1746.9,
+    "elo_games": 10
+  },
+  {
+    "id": "30000000-0000-0000-0000-000000000008",
+    "text": "What plumbing command prints the full 40-character SHA-1 object ID pointed to by...",
+    "topic": "git-internals",
+    "difficulty_label": "hard",
+    "difficulty_logit": 1.6487,
+    "discrimination": 1.0,
+    "elo_rating": 1786.4,
+    "elo_games": 10
+  },
+  {
+    "id": "30000000-0000-0000-0000-000000000009",
+    "text": "Which command checks repository database connectivity and identifies dangling/un...",
+    "topic": "git-internals",
+    "difficulty_label": "hard",
+    "difficulty_logit": 1.1632,
+    "discrimination": 1.0,
+    "elo_rating": 1702.1,
+    "elo_games": 10
+  },
+  {
+    "id": "30000000-0000-0000-0000-000000000010",
+    "text": "What does git gc (garbage collection) perform within a repository?...",
+    "topic": "git-internals",
+    "difficulty_label": "hard",
+    "difficulty_logit": 1.1896,
+    "discrimination": 1.0,
+    "elo_rating": 1706.7,
+    "elo_games": 10
+  },
+  {
+    "id": "30000000-0000-0000-0000-000000000011",
+    "text": "What is Git rerere (reuse recorded resolution) used for?...",
+    "topic": "rerere",
+    "difficulty_label": "hard",
+    "difficulty_logit": 0.8755,
+    "discrimination": 1.0,
+    "elo_rating": 1652.1,
+    "elo_games": 10
+  },
+  {
+    "id": "30000000-0000-0000-0000-000000000012",
+    "text": "What exit code must a Git hook script return to abort the current Git command (e...",
+    "topic": "hooks",
+    "difficulty_label": "hard",
+    "difficulty_logit": 0.6931,
+    "discrimination": 1.0,
+    "elo_rating": 1620.4,
+    "elo_games": 10
+  },
+  {
+    "id": "30000000-0000-0000-0000-000000000013",
+    "text": "Where are client-side Git hooks stored locally in a newly cloned or initialized ...",
+    "topic": "hooks",
+    "difficulty_label": "hard",
+    "difficulty_logit": 0.734,
+    "discrimination": 1.0,
+    "elo_rating": 1627.5,
+    "elo_games": 10
+  },
+  {
+    "id": "30000000-0000-0000-0000-000000000014",
+    "text": "You accidentally pushed private credentials to a public branch. What is the safe...",
+    "topic": "security",
+    "difficulty_label": "hard",
+    "difficulty_logit": 1.0561,
+    "discrimination": 1.0,
+    "elo_rating": 1683.5,
+    "elo_games": 10
+  },
+  {
+    "id": "30000000-0000-0000-0000-000000000015",
+    "text": "Which plumbing command writes current staging index state into a new Tree object...",
+    "topic": "plumbing",
+    "difficulty_label": "hard",
+    "difficulty_logit": 0.47,
+    "discrimination": 1.0,
+    "elo_rating": 1581.6,
+    "elo_games": 10
+  },
+  {
+    "id": "30000000-0000-0000-0000-000000000016",
+    "text": "Which plumbing command creates a new Commit object directly given a tree hash an...",
+    "topic": "plumbing",
+    "difficulty_label": "hard",
+    "difficulty_logit": 1.0561,
+    "discrimination": 1.0,
+    "elo_rating": 1683.5,
+    "elo_games": 10
+  },
+  {
+    "id": "30000000-0000-0000-0000-000000000017",
+    "text": "Which plumbing command calculates the SHA hash of a file and optionally writes i...",
+    "topic": "plumbing",
+    "difficulty_label": "hard",
+    "difficulty_logit": 1.0986,
+    "discrimination": 1.0,
+    "elo_rating": 1690.8,
+    "elo_games": 10
+  },
+  {
+    "id": "30000000-0000-0000-0000-000000000018",
+    "text": "What does git rebase --onto newbase upstream branch accomplish?...",
+    "topic": "rebase-onto",
+    "difficulty_label": "hard",
+    "difficulty_logit": 1.0986,
+    "discrimination": 1.0,
+    "elo_rating": 1690.8,
+    "elo_games": 10
+  },
+  {
+    "id": "30000000-0000-0000-0000-000000000019",
+    "text": "By default, what is the retention period before git gc prunes unreachable reflog...",
+    "topic": "internals",
+    "difficulty_label": "hard",
+    "difficulty_logit": 0.7802,
+    "discrimination": 1.0,
+    "elo_rating": 1635.5,
+    "elo_games": 10
+  },
+  {
+    "id": "30000000-0000-0000-0000-000000000020",
+    "text": "In monorepos, what Git feature allows checking out only a specific subset of dir...",
+    "topic": "sparse-checkout",
+    "difficulty_label": "hard",
+    "difficulty_logit": 1.4214,
+    "discrimination": 1.0,
+    "elo_rating": 1746.9,
+    "elo_games": 10
+  },
+  {
+    "id": "30000000-0000-0000-0000-000000000021",
+    "text": "What is a shallow clone created via git clone --depth 1?...",
+    "topic": "cloning",
+    "difficulty_label": "hard",
+    "difficulty_logit": 0.7472,
+    "discrimination": 1.0,
+    "elo_rating": 1629.8,
+    "elo_games": 10
+  },
+  {
+    "id": "30000000-0000-0000-0000-000000000022",
+    "text": "What command packages repository commits and refs into a single transferable off...",
+    "topic": "bundle",
+    "difficulty_label": "hard",
+    "difficulty_logit": 0.2719,
+    "discrimination": 1.0,
+    "elo_rating": 1547.2,
+    "elo_games": 10
+  },
+  {
+    "id": "30000000-0000-0000-0000-000000000023",
+    "text": "Which git commit flag signs a commit cryptographically using your configured GPG...",
+    "topic": "signatures",
+    "difficulty_label": "hard",
+    "difficulty_logit": 0.9445,
+    "discrimination": 1.0,
+    "elo_rating": 1664.1,
+    "elo_games": 10
+  },
+  {
+    "id": "30000000-0000-0000-0000-000000000024",
+    "text": "What merge strategy is automatically invoked by Git when merging more than two h...",
+    "topic": "merge-strategies",
+    "difficulty_label": "hard",
+    "difficulty_logit": 0.7221,
+    "discrimination": 1.0,
+    "elo_rating": 1625.4,
+    "elo_games": 10
+  },
+  {
+    "id": "30000000-0000-0000-0000-000000000025",
+    "text": "What is the crucial difference between git merge -s ours vs git merge -X ours?...",
+    "topic": "merge-strategies",
+    "difficulty_label": "hard",
+    "difficulty_logit": 0.5465,
+    "discrimination": 1.0,
+    "elo_rating": 1594.9,
+    "elo_games": 10
+  },
+  {
+    "id": "30000000-0000-0000-0000-000000000026",
+    "text": "What command debugs why a specific file path is being ignored and outputs the ma...",
+    "topic": "ignore",
+    "difficulty_label": "hard",
+    "difficulty_logit": 0.5596,
+    "discrimination": 1.0,
+    "elo_rating": 1597.2,
+    "elo_games": 10
+  },
+  {
+    "id": "30000000-0000-0000-0000-000000000027",
+    "text": "Which plumbing command updates a branch reference to point directly to a new com...",
+    "topic": "plumbing",
+    "difficulty_label": "hard",
+    "difficulty_logit": 1.6582,
+    "discrimination": 1.0,
+    "elo_rating": 1788.1,
+    "elo_games": 10
+  },
+  {
+    "id": "30000000-0000-0000-0000-000000000028",
+    "text": "What role does the packfile index (.idx file) serve in .git/objects/pack/?...",
+    "topic": "internals",
+    "difficulty_label": "hard",
+    "difficulty_logit": 0.8979,
+    "discrimination": 1.0,
+    "elo_rating": 1656.0,
+    "elo_games": 10
+  },
+  {
+    "id": "30000000-0000-0000-0000-000000000029",
+    "text": "In Git repository index (.git/index), what data is tracked for each staged file?...",
+    "topic": "internals",
+    "difficulty_label": "hard",
+    "difficulty_logit": 0.9651,
+    "discrimination": 1.0,
+    "elo_rating": 1667.7,
+    "elo_games": 10
+  },
+  {
+    "id": "30000000-0000-0000-0000-000000000030",
+    "text": "What command verifies the cryptographic integrity and packing of Git packfiles o...",
+    "topic": "git-internals",
+    "difficulty_label": "hard",
+    "difficulty_logit": 1.0986,
+    "discrimination": 1.0,
+    "elo_rating": 1690.8,
+    "elo_games": 10
+  }
+]

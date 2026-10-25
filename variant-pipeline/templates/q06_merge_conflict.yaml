@@ -1,0 +1,37 @@
+id: q06_merge_conflict
+topic: merging
+difficulty: medium
+type: variant
+
+parameters:
+  - name: target_file
+    values: [config.json, server.json, router.json, schema.json, client.json]
+    type: file_name
+
+setup:
+  - "git init"
+  - "echo 'base' > README.md && git add README.md && git commit -m 'initial'"
+  - "git checkout -b feature"
+  - "echo 'incoming' > {target_file} && git add {target_file} && git commit -m 'feature commit'"
+  - "git checkout main"
+  - "echo 'current' > {target_file} && git add {target_file} && git commit -m 'main commit'"
+  - "git merge feature || true"
+
+stem: "During a merge conflict on `{target_file}`, you decide to resolve it by keeping the incoming version from the branch being merged. Which command selects the incoming version for `{target_file}`?"
+
+correct: "git checkout --theirs {target_file}"
+
+distractors:
+  - text: "git checkout --ours {target_file}"
+    reason: wrong_direction
+  - text: "git restore --theirs {target_file}"
+    reason: wrong_operation
+  - text: "git merge --theirs {target_file}"
+    reason: wrong_flag
+
+goal: "file_content({target_file})==incoming"
+
+explanation: "`git checkout --theirs <file>` checks out the incoming version of a conflicting file during a merge conflict."
+
+variant_count: 3
+is_reserve: false

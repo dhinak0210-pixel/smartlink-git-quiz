@@ -1,0 +1,45 @@
+{
+  "total_students": 20,
+  "total_answers": 300,
+  "mean_score": 4128.85,
+  "median_score": 3893.5,
+  "max_score": 7426,
+  "min_score": 692,
+  "hardest_question": "You accidentally ran 'git reset --hard' and lost unpushed commits. Where can you",
+  "hardest_accuracy": 40.0,
+  "easiest_question": "Which command creates a new branch named 'feature-login' without switching to it",
+  "easiest_accuracy": 75.0,
+  "most_missed_topic": "advanced",
+  "topic_accuracy": [
+    {
+      "topic": "advanced",
+      "total": 20,
+      "correct": 9,
+      "accuracy_pct": 45.0
+    },
+    {
+      "topic": "basics",
+      "total": 60,
+      "correct": 37,
+      "accuracy_pct": 61.7
+    },
+    {
+      "topic": "branching",
+      "total": 80,
+      "correct": 50,
+      "accuracy_pct": 62.5
+    },
+    {
+      "topic": "remote",
+      "total": 60,
+      "correct": 37,
+      "accuracy_pct": 61.7
+    },
+    {
+      "topic": "undoing",
+      "total": 80,
+      "correct": 41,
+      "accuracy_pct": 51.2
+    }
+  ]
+}

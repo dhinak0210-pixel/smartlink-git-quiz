@@ -1,0 +1,55 @@
+# Node dependencies
+node_modules/
+.next/
+out/
+build/
+dist/
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+layer3-ai/.env
+
+# Python
+layer3-ai/.venv/
+**/__pycache__/
+*.pyc
+
+# Local confidential mappings
+*_LOCAL.json
+
+# Logs & temp
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.vercel
+
+# Layer 4 Automation
+automation/.env.local
+automation/output/
+automation/backups/
+service-account.json
+automation/service-account.json
+
+# Layer 5
+layer5-analysis/data/raw/
+layer5-analysis/data/anonymized/
+layer5-analysis/models/
+layer5-analysis/notebooks/.ipynb_checkpoints/
+*.pkl
+
+# Layer 5 Cheat Detection (Private)
+layer5-cheat/data/response_table*.csv
+layer5-cheat/data/irt_params.json
+layer5-cheat/data/variant_assignments.csv
+# Certificates and Backups
+certificates/output/
+smartlink_backup_*.json
+
+# TypeScript Build Info
+*.tsbuildinfo
+.agents/
+certificates/output/

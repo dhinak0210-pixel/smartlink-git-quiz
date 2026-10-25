@@ -1,0 +1,78 @@
+# .github/workflows/question-bank-ci.yml
+name: Question Bank Validator
+
+on:
+  pull_request:
+    paths:
+      - 'question-bank/**'
+      - 'layer3-ai/validate/**'
+      - 'layer3-ai/quality/**'
+      - 'layer3-ai/bank/**'
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install Pillow reportlab python-dotenv rich typer numpy
+
+      - name: Verify answer key integrity
+        run: |
+          # Ensure every question in the bank has exactly 1 correct option and 4 options
+          python -c "
+          import json, sys, glob
+          errors = []
+          files = glob.glob('question-bank/**/*.json', recursive=True) + glob.glob('layer3-ai/bank/final_questions.json')
+          if not files:
+              print('ℹ️ No question-bank JSON files to inspect.')
+              sys.exit(0)
+
+          for f in files:
+              with open(f) as fh:
+                  data = json.load(fh)
+                  questions = data['main'] if isinstance(data, dict) and 'main' in data else (data if isinstance(data, list) else [data])
+                  for q in questions:
+                      text = q.get('question_text', q.get('text', '?'))
+                      correct = q.get('correct_answer')
+                      if not correct or correct.lower() not in ('a', 'b', 'c', 'd'):
+                          errors.append(f\"{f}: '{text[:40]}' invalid correct_answer: {correct}\")
+                      for opt in ('a', 'b', 'c', 'd'):
+                          if f'option_{opt}' not in q and not any(o.get('label') == opt.upper() for o in q.get('options', [])):
+                              errors.append(f\"{f}: '{text[:40]}' missing option {opt}\")
+          if errors:
+              print('❌ Answer key errors:')
+              for e in errors:
+                  print(f'  {e}')
+              sys.exit(1)
+          print('✅ All questions valid with exactly 1 correct answer and 4 options')
+          "
+
+      - name: Blueprint Coverage Check
+        run: |
+          python -c "
+          import json, sys, os
+          path = 'layer3-ai/bank/final_questions.json'
+          if not os.path.exists(path):
+              print('ℹ️ final_questions.json not generated yet. Skipping.')
+              sys.exit(0)
+          with open(path) as f:
+              data = json.load(f)
+          main_q = data.get('main', [])
+          reserve_q = data.get('reserve', [])
+          print(f'Main questions: {len(main_q)} / 15')
+          print(f'Reserve questions: {len(reserve_q)} / 5')
+          assert len(main_q) == 15, f'Expected 15 main questions, found {len(main_q)}'
+          assert len(reserve_q) == 5, f'Expected 5 reserve questions, found {len(reserve_q)}'
+          print('✅ Coverage passes: 15 main + 5 reserve questions verified')
+          "

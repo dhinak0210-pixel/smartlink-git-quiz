@@ -1,0 +1,44 @@
+# layer5-cheat/data/cleaning_rules.yaml
+# WRITTEN BEFORE LOOKING AT RESULTS. Do not modify after analysis begins.
+
+version: "1.0"
+written_date: "2025-07-01"
+author: "Quiz Organizers"
+
+response_handling:
+  timed_out:
+    person_fit: "missing"
+    timing: "missing"
+    pair_similarity: "missing"
+    competition_score: "incorrect"
+    rationale: "No answer given; cannot assess fit or timing. Wrong for scoring per rules."
+  not_reached:
+    all_detectors: "missing"
+    rationale: "Student never saw the question."
+
+student_exclusion:
+  person_fit:
+    min_responses: 8
+    exclude_perfect: true
+    exclude_zero: true
+    rationale: "Perfect/zero scores carry no inconsistency information."
+  timing:
+    min_responses: 8
+    exclude_accommodations: true
+    rationale: "Accommodated students have different expected timing."
+  pair_similarity:
+    min_shared_items: 5
+    exclude_reserve: true
+    rationale: "Need enough shared-variant items for meaningful comparison."
+
+question_exclusion:
+  flagged_key: "exclude_until_verified"
+  reserve: "exclude"
+
+fairness:
+  check_groups:
+    - device_type
+    - network_quality
+    - section
+    - accommodation_status
+  action_if_biased: "adjust_thresholds_or_timing_floor"

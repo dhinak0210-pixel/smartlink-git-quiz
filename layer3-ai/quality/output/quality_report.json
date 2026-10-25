@@ -1,0 +1,460 @@
+{
+  "issues": [
+    {
+      "question": "ALL",
+      "gate": "balance",
+      "detail": "Position B used only 10% of the time (min 15%)"
+    },
+    {
+      "question": "ALL",
+      "gate": "balance",
+      "detail": "Position C used only 0% of the time (min 15%)"
+    },
+    {
+      "question": "ALL",
+      "gate": "balance",
+      "detail": "Position D used only 0% of the time (min 15%)"
+    },
+    {
+      "question": "Which command initializes a brand-new Git reposito",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command initializes a brand-new Git reposito' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command shows the working tree status, stage",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command shows the working tree status, stage' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command stages all modified and deleted file",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command stages all modified and deleted file' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command stages all modified and deleted file",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command stages all modified and deleted file' (similarity: 1.00)"
+    },
+    {
+      "question": "How do you view commit history formatted with each",
+      "gate": "duplicate",
+      "detail": "Similar to 'How do you view commit history formatted with each' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command stages all modified and deleted file",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command stages all modified and deleted file' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command creates a new branch named 'feature-",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command creates a new branch named 'feature-' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command creates a new branch named 'feature-",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command creates a new branch named 'feature-' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command creates a new branch named 'feature-",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command creates a new branch named 'feature-' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command creates a new branch named 'feature-",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command creates a new branch named 'feature-' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command creates a new branch named 'feature-",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command creates a new branch named 'feature-' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command creates a new branch named 'feature-",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command creates a new branch named 'feature-' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command creates a new branch named 'feature-",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command creates a new branch named 'feature-' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command creates a new branch named 'feature-",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command creates a new branch named 'feature-' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command creates a new branch named 'feature-",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command creates a new branch named 'feature-' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command creates a new branch named 'feature-",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command creates a new branch named 'feature-' (similarity: 1.00)"
+    },
+    {
+      "question": "Which modern command switches your working directo",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which modern command switches your working directo' (similarity: 1.00)"
+    },
+    {
+      "question": "You are on branch 'main'. Which command incorporat",
+      "gate": "duplicate",
+      "detail": "Similar to 'You are on branch 'main'. Which command incorporat' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command aborts an ongoing merge conflict and",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command aborts an ongoing merge conflict and' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command aborts an ongoing merge conflict and",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command aborts an ongoing merge conflict and' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command aborts an ongoing merge conflict and",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command aborts an ongoing merge conflict and' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command aborts an ongoing merge conflict and",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command aborts an ongoing merge conflict and' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command aborts an ongoing merge conflict and",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command aborts an ongoing merge conflict and' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command aborts an ongoing merge conflict and",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command aborts an ongoing merge conflict and' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command aborts an ongoing merge conflict and",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command aborts an ongoing merge conflict and' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command aborts an ongoing merge conflict and",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command aborts an ongoing merge conflict and' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command aborts an ongoing merge conflict and",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command aborts an ongoing merge conflict and' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command aborts an ongoing merge conflict and",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command aborts an ongoing merge conflict and' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command downloads a copy of an existing remo",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command downloads a copy of an existing remo' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command downloads a copy of an existing remo",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command downloads a copy of an existing remo' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command downloads a copy of an existing remo",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command downloads a copy of an existing remo' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command downloads a copy of an existing remo",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command downloads a copy of an existing remo' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command downloads a copy of an existing remo",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command downloads a copy of an existing remo' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command downloads a copy of an existing remo",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command downloads a copy of an existing remo' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command downloads a copy of an existing remo",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command downloads a copy of an existing remo' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command downloads a copy of an existing remo",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command downloads a copy of an existing remo' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command downloads a copy of an existing remo",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command downloads a copy of an existing remo' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command downloads a copy of an existing remo",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command downloads a copy of an existing remo' (similarity: 1.00)"
+    },
+    {
+      "question": "What is the difference between 'git fetch' and 'gi",
+      "gate": "duplicate",
+      "detail": "Similar to 'What is the difference between 'git fetch' and 'gi' (similarity: 1.00)"
+    },
+    {
+      "question": "What is the difference between 'git fetch' and 'gi",
+      "gate": "duplicate",
+      "detail": "Similar to 'What is the difference between 'git fetch' and 'gi' (similarity: 1.00)"
+    },
+    {
+      "question": "What is the difference between 'git fetch' and 'gi",
+      "gate": "duplicate",
+      "detail": "Similar to 'What is the difference between 'git fetch' and 'gi' (similarity: 1.00)"
+    },
+    {
+      "question": "What is the difference between 'git fetch' and 'gi",
+      "gate": "duplicate",
+      "detail": "Similar to 'What is the difference between 'git fetch' and 'gi' (similarity: 1.00)"
+    },
+    {
+      "question": "What is the difference between 'git fetch' and 'gi",
+      "gate": "duplicate",
+      "detail": "Similar to 'What is the difference between 'git fetch' and 'gi' (similarity: 1.00)"
+    },
+    {
+      "question": "What is the difference between 'git fetch' and 'gi",
+      "gate": "duplicate",
+      "detail": "Similar to 'What is the difference between 'git fetch' and 'gi' (similarity: 1.00)"
+    },
+    {
+      "question": "What is the difference between 'git fetch' and 'gi",
+      "gate": "duplicate",
+      "detail": "Similar to 'What is the difference between 'git fetch' and 'gi' (similarity: 1.00)"
+    },
+    {
+      "question": "What is the difference between 'git fetch' and 'gi",
+      "gate": "duplicate",
+      "detail": "Similar to 'What is the difference between 'git fetch' and 'gi' (similarity: 1.00)"
+    },
+    {
+      "question": "What is the difference between 'git fetch' and 'gi",
+      "gate": "duplicate",
+      "detail": "Similar to 'What is the difference between 'git fetch' and 'gi' (similarity: 1.00)"
+    },
+    {
+      "question": "What is the difference between 'git fetch' and 'gi",
+      "gate": "duplicate",
+      "detail": "Similar to 'What is the difference between 'git fetch' and 'gi' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command uploads a new local branch 'experime",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command uploads a new local branch 'experime' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command uploads a new local branch 'experime",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command uploads a new local branch 'experime' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command uploads a new local branch 'experime",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command uploads a new local branch 'experime' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command uploads a new local branch 'experime",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command uploads a new local branch 'experime' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command uploads a new local branch 'experime",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command uploads a new local branch 'experime' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command uploads a new local branch 'experime",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command uploads a new local branch 'experime' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command uploads a new local branch 'experime",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command uploads a new local branch 'experime' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command uploads a new local branch 'experime",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command uploads a new local branch 'experime' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command uploads a new local branch 'experime",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command uploads a new local branch 'experime' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command uploads a new local branch 'experime",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command uploads a new local branch 'experime' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command unstages a file 'app.js' from the st",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command unstages a file 'app.js' from the st' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command unstages a file 'app.js' from the st",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command unstages a file 'app.js' from the st' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command unstages a file 'app.js' from the st",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command unstages a file 'app.js' from the st' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command unstages a file 'app.js' from the st",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command unstages a file 'app.js' from the st' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command unstages a file 'app.js' from the st",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command unstages a file 'app.js' from the st' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command unstages a file 'app.js' from the st",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command unstages a file 'app.js' from the st' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command unstages a file 'app.js' from the st",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command unstages a file 'app.js' from the st' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command unstages a file 'app.js' from the st",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command unstages a file 'app.js' from the st' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command unstages a file 'app.js' from the st",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command unstages a file 'app.js' from the st' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command unstages a file 'app.js' from the st",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command unstages a file 'app.js' from the st' (similarity: 1.00)"
+    },
+    {
+      "question": "You want to create a new commit that exactly inver",
+      "gate": "duplicate",
+      "detail": "Similar to 'You want to create a new commit that exactly inver' (similarity: 1.00)"
+    },
+    {
+      "question": "You want to create a new commit that exactly inver",
+      "gate": "duplicate",
+      "detail": "Similar to 'You want to create a new commit that exactly inver' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command temporarily shelves uncommitted loca",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command temporarily shelves uncommitted loca' (similarity: 1.00)"
+    },
+    {
+      "question": "You want to create a new commit that exactly inver",
+      "gate": "duplicate",
+      "detail": "Similar to 'You want to create a new commit that exactly inver' (similarity: 1.00)"
+    },
+    {
+      "question": "You need to undo the last commit while keeping all",
+      "gate": "duplicate",
+      "detail": "Similar to 'You need to undo the last commit while keeping all' (similarity: 1.00)"
+    },
+    {
+      "question": "You need to undo the last commit while keeping all",
+      "gate": "duplicate",
+      "detail": "Similar to 'You need to undo the last commit while keeping all' (similarity: 1.00)"
+    },
+    {
+      "question": "You accidentally ran 'git reset --hard' and lost u",
+      "gate": "duplicate",
+      "detail": "Similar to 'You accidentally ran 'git reset --hard' and lost u' (similarity: 1.00)"
+    },
+    {
+      "question": "You need to undo the last commit while keeping all",
+      "gate": "duplicate",
+      "detail": "Similar to 'You need to undo the last commit while keeping all' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command applies the exact changes introduced",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command applies the exact changes introduced' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command applies the exact changes introduced",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command applies the exact changes introduced' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command applies the exact changes introduced",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command applies the exact changes introduced' (similarity: 1.00)"
+    },
+    {
+      "question": "What does a 'detached HEAD' state indicate in Git?",
+      "gate": "duplicate",
+      "detail": "Similar to 'What does a 'detached HEAD' state indicate in Git?' (similarity: 1.00)"
+    },
+    {
+      "question": "What does a 'detached HEAD' state indicate in Git?",
+      "gate": "duplicate",
+      "detail": "Similar to 'What does a 'detached HEAD' state indicate in Git?' (similarity: 1.00)"
+    },
+    {
+      "question": "What does a 'detached HEAD' state indicate in Git?",
+      "gate": "duplicate",
+      "detail": "Similar to 'What does a 'detached HEAD' state indicate in Git?' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command applies the exact changes introduced",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command applies the exact changes introduced' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command applies the exact changes introduced",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command applies the exact changes introduced' (similarity: 1.00)"
+    },
+    {
+      "question": "What does a 'detached HEAD' state indicate in Git?",
+      "gate": "duplicate",
+      "detail": "Similar to 'What does a 'detached HEAD' state indicate in Git?' (similarity: 1.00)"
+    },
+    {
+      "question": "What does a 'detached HEAD' state indicate in Git?",
+      "gate": "duplicate",
+      "detail": "Similar to 'What does a 'detached HEAD' state indicate in Git?' (similarity: 1.00)"
+    },
+    {
+      "question": "Which command applies the exact changes introduced",
+      "gate": "duplicate",
+      "detail": "Similar to 'Which command applies the exact changes introduced' (similarity: 1.00)"
+    },
+    {
+      "question": "What does a 'detached HEAD' state indicate in Git?",
+      "gate": "duplicate",
+      "detail": "Similar to 'What does a 'detached HEAD' state indicate in Git?' (similarity: 1.00)"
+    }
+  ],
+  "total_verified": 63
+}

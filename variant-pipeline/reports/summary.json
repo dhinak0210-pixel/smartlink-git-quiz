@@ -1,0 +1,1919 @@
+{
+  "timestamp": "2026-10-22T05:33:13.362763+00:00",
+  "git_version": "git version 2.43.0 (pure-python-sandbox)",
+  "total_templates": 10,
+  "total_variants": 30,
+  "verified_variants": 30,
+  "templates": {
+    "q01_reset_soft": {
+      "variants_verified": 3,
+      "total_variants": 3,
+      "quality_passed": true,
+      "has_leaks": false,
+      "variant_details": [
+        {
+          "template_id": "q01_reset_soft",
+          "params": {
+            "N": 3,
+            "total_commits": 6
+          },
+          "status": "verified",
+          "correct_passes": true,
+          "correct_goal_results": [
+            {
+              "message": "head_offset(main): HEAD has 3 commits",
+              "passed": true,
+              "details": "expected_offset=3"
+            },
+            {
+              "message": "worktree_clean == True",
+              "passed": true,
+              "details": "actual_clean=True"
+            },
+            {
+              "message": "staged_files_count == 3",
+              "passed": true,
+              "details": "actual=3"
+            }
+          ],
+          "distractor_results": [
+            {
+              "text": "git reset --hard HEAD~3",
+              "reason": "destroys_changes",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git reset --mixed HEAD~3",
+              "reason": "leaves_unstaged",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git reset --soft HEAD~2",
+              "reason": "wrong_count",
+              "passes_goal": false,
+              "expected_fail": true
+            }
+          ],
+          "errors": [],
+          "git_version": "git version 2.43.0 (pure-python-sandbox)",
+          "stats": {
+            "stem_words": 17,
+            "stem_chars": 88,
+            "option_count": 4,
+            "option_lengths": [
+              23,
+              23,
+              24,
+              23
+            ],
+            "avg_option_length": 23.25,
+            "distractor_reasons": [
+              "destroys_changes",
+              "leaves_unstaged",
+              "wrong_count"
+            ],
+            "setup_steps": 2
+          },
+          "duration_seconds": 0.01
+        },
+        {
+          "template_id": "q01_reset_soft",
+          "params": {
+            "N": 2,
+            "total_commits": 6
+          },
+          "status": "verified",
+          "correct_passes": true,
+          "correct_goal_results": [
+            {
+              "message": "head_offset(main): HEAD has 4 commits",
+              "passed": true,
+              "details": "expected_offset=2"
+            },
+            {
+              "message": "worktree_clean == True",
+              "passed": true,
+              "details": "actual_clean=True"
+            },
+            {
+              "message": "staged_files_count == 2",
+              "passed": true,
+              "details": "actual=2"
+            }
+          ],
+          "distractor_results": [
+            {
+              "text": "git reset --hard HEAD~2",
+              "reason": "destroys_changes",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git reset --mixed HEAD~2",
+              "reason": "leaves_unstaged",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git reset --soft HEAD~1",
+              "reason": "wrong_count",
+              "passes_goal": false,
+              "expected_fail": true
+            }
+          ],
+          "errors": [],
+          "git_version": "git version 2.43.0 (pure-python-sandbox)",
+          "stats": {
+            "stem_words": 17,
+            "stem_chars": 88,
+            "option_count": 4,
+            "option_lengths": [
+              23,
+              23,
+              24,
+              23
+            ],
+            "avg_option_length": 23.25,
+            "distractor_reasons": [
+              "destroys_changes",
+              "leaves_unstaged",
+              "wrong_count"
+            ],
+            "setup_steps": 2
+          },
+          "duration_seconds": 0.01
+        },
+        {
+          "template_id": "q01_reset_soft",
+          "params": {
+            "N": 4,
+            "total_commits": 6
+          },
+          "status": "verified",
+          "correct_passes": true,
+          "correct_goal_results": [
+            {
+              "message": "head_offset(main): HEAD has 2 commits",
+              "passed": true,
+              "details": "expected_offset=4"
+            },
+            {
+              "message": "worktree_clean == True",
+              "passed": true,
+              "details": "actual_clean=True"
+            },
+            {
+              "message": "staged_files_count == 4",
+              "passed": true,
+              "details": "actual=4"
+            }
+          ],
+          "distractor_results": [
+            {
+              "text": "git reset --hard HEAD~4",
+              "reason": "destroys_changes",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git reset --mixed HEAD~4",
+              "reason": "leaves_unstaged",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git reset --soft HEAD~3",
+              "reason": "wrong_count",
+              "passes_goal": false,
+              "expected_fail": true
+            }
+          ],
+          "errors": [],
+          "git_version": "git version 2.43.0 (pure-python-sandbox)",
+          "stats": {
+            "stem_words": 17,
+            "stem_chars": 88,
+            "option_count": 4,
+            "option_lengths": [
+              23,
+              23,
+              24,
+              23
+            ],
+            "avg_option_length": 23.25,
+            "distractor_reasons": [
+              "destroys_changes",
+              "leaves_unstaged",
+              "wrong_count"
+            ],
+            "setup_steps": 2
+          },
+          "duration_seconds": 0.01
+        }
+      ]
+    },
+    "q02_branch_rename": {
+      "variants_verified": 3,
+      "total_variants": 3,
+      "quality_passed": true,
+      "has_leaks": false,
+      "variant_details": [
+        {
+          "template_id": "q02_branch_rename",
+          "params": {
+            "old_name": "search",
+            "new_name": "search-v2"
+          },
+          "status": "verified",
+          "correct_passes": true,
+          "correct_goal_results": [
+            {
+              "message": "branch_exists(search-v2) == True",
+              "passed": true,
+              "details": "actual_exists=True"
+            },
+            {
+              "message": "branch_not_exists(search) == True",
+              "passed": true,
+              "details": "actual_exists=False"
+            },
+            {
+              "message": "current_branch == main",
+              "passed": true,
+              "details": "actual=main"
+            }
+          ],
+          "distractor_results": [
+            {
+              "text": "git branch -m search-v2 search",
+              "reason": "wrong_direction",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git rename-branch search search-v2",
+              "reason": "wrong_operation",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git branch --rename search search-v2",
+              "reason": "wrong_flag",
+              "passes_goal": false,
+              "expected_fail": true
+            }
+          ],
+          "errors": [],
+          "git_version": "git version 2.43.0 (pure-python-sandbox)",
+          "stats": {
+            "stem_words": 18,
+            "stem_chars": 109,
+            "option_count": 4,
+            "option_lengths": [
+              30,
+              30,
+              34,
+              36
+            ],
+            "avg_option_length": 32.5,
+            "distractor_reasons": [
+              "wrong_direction",
+              "wrong_flag",
+              "wrong_operation"
+            ],
+            "setup_steps": 4
+          },
+          "duration_seconds": 0.0
+        },
+        {
+          "template_id": "q02_branch_rename",
+          "params": {
+            "old_name": "auth01",
+            "new_name": "auth01-v2"
+          },
+          "status": "verified",
+          "correct_passes": true,
+          "correct_goal_results": [
+            {
+              "message": "branch_exists(auth01-v2) == True",
+              "passed": true,
+              "details": "actual_exists=True"
+            },
+            {
+              "message": "branch_not_exists(auth01) == True",
+              "passed": true,
+              "details": "actual_exists=False"
+            },
+            {
+              "message": "current_branch == main",
+              "passed": true,
+              "details": "actual=main"
+            }
+          ],
+          "distractor_results": [
+            {
+              "text": "git branch -m auth01-v2 auth01",
+              "reason": "wrong_direction",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git rename-branch auth01 auth01-v2",
+              "reason": "wrong_operation",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git branch --rename auth01 auth01-v2",
+              "reason": "wrong_flag",
+              "passes_goal": false,
+              "expected_fail": true
+            }
+          ],
+          "errors": [],
+          "git_version": "git version 2.43.0 (pure-python-sandbox)",
+          "stats": {
+            "stem_words": 18,
+            "stem_chars": 109,
+            "option_count": 4,
+            "option_lengths": [
+              30,
+              30,
+              34,
+              36
+            ],
+            "avg_option_length": 32.5,
+            "distractor_reasons": [
+              "wrong_direction",
+              "wrong_flag",
+              "wrong_operation"
+            ],
+            "setup_steps": 4
+          },
+          "duration_seconds": 0.0
+        },
+        {
+          "template_id": "q02_branch_rename",
+          "params": {
+            "old_name": "navbar",
+            "new_name": "navbar-v2"
+          },
+          "status": "verified",
+          "correct_passes": true,
+          "correct_goal_results": [
+            {
+              "message": "branch_exists(navbar-v2) == True",
+              "passed": true,
+              "details": "actual_exists=True"
+            },
+            {
+              "message": "branch_not_exists(navbar) == True",
+              "passed": true,
+              "details": "actual_exists=False"
+            },
+            {
+              "message": "current_branch == main",
+              "passed": true,
+              "details": "actual=main"
+            }
+          ],
+          "distractor_results": [
+            {
+              "text": "git branch -m navbar-v2 navbar",
+              "reason": "wrong_direction",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git rename-branch navbar navbar-v2",
+              "reason": "wrong_operation",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git branch --rename navbar navbar-v2",
+              "reason": "wrong_flag",
+              "passes_goal": false,
+              "expected_fail": true
+            }
+          ],
+          "errors": [],
+          "git_version": "git version 2.43.0 (pure-python-sandbox)",
+          "stats": {
+            "stem_words": 18,
+            "stem_chars": 109,
+            "option_count": 4,
+            "option_lengths": [
+              30,
+              30,
+              34,
+              36
+            ],
+            "avg_option_length": 32.5,
+            "distractor_reasons": [
+              "wrong_direction",
+              "wrong_flag",
+              "wrong_operation"
+            ],
+            "setup_steps": 4
+          },
+          "duration_seconds": 0.0
+        }
+      ]
+    },
+    "q03_rebase_count": {
+      "variants_verified": 3,
+      "total_variants": 3,
+      "quality_passed": true,
+      "has_leaks": false,
+      "variant_details": [
+        {
+          "template_id": "q03_rebase_count",
+          "params": {
+            "main_commits": 7,
+            "feature_commits": 6
+          },
+          "status": "verified",
+          "correct_passes": true,
+          "correct_goal_results": [
+            {
+              "message": "commit_count(feature) == 14",
+              "passed": true,
+              "details": "actual=14"
+            }
+          ],
+          "distractor_results": [
+            {
+              "text": "13",
+              "reason": "wrong_count",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "15",
+              "reason": "wrong_count",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "16",
+              "reason": "wrong_count",
+              "passes_goal": false,
+              "expected_fail": true
+            }
+          ],
+          "errors": [],
+          "git_version": "git version 2.43.0 (pure-python-sandbox)",
+          "stats": {
+            "stem_words": 18,
+            "stem_chars": 123,
+            "option_count": 4,
+            "option_lengths": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "avg_option_length": 2.0,
+            "distractor_reasons": [
+              "wrong_count",
+              "wrong_count",
+              "wrong_count"
+            ],
+            "setup_steps": 8
+          },
+          "duration_seconds": 0.01
+        },
+        {
+          "template_id": "q03_rebase_count",
+          "params": {
+            "main_commits": 5,
+            "feature_commits": 4
+          },
+          "status": "verified",
+          "correct_passes": true,
+          "correct_goal_results": [
+            {
+              "message": "commit_count(feature) == 10",
+              "passed": true,
+              "details": "actual=10"
+            }
+          ],
+          "distractor_results": [
+            {
+              "text": "9",
+              "reason": "wrong_count",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "11",
+              "reason": "wrong_count",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "12",
+              "reason": "wrong_count",
+              "passes_goal": false,
+              "expected_fail": true
+            }
+          ],
+          "errors": [],
+          "git_version": "git version 2.43.0 (pure-python-sandbox)",
+          "stats": {
+            "stem_words": 18,
+            "stem_chars": 123,
+            "option_count": 4,
+            "option_lengths": [
+              2,
+              1,
+              2,
+              2
+            ],
+            "avg_option_length": 1.75,
+            "distractor_reasons": [
+              "wrong_count",
+              "wrong_count",
+              "wrong_count"
+            ],
+            "setup_steps": 8
+          },
+          "duration_seconds": 0.01
+        },
+        {
+          "template_id": "q03_rebase_count",
+          "params": {
+            "main_commits": 6,
+            "feature_commits": 5
+          },
+          "status": "verified",
+          "correct_passes": true,
+          "correct_goal_results": [
+            {
+              "message": "commit_count(feature) == 12",
+              "passed": true,
+              "details": "actual=12"
+            }
+          ],
+          "distractor_results": [
+            {
+              "text": "11",
+              "reason": "wrong_count",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "13",
+              "reason": "wrong_count",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "14",
+              "reason": "wrong_count",
+              "passes_goal": false,
+              "expected_fail": true
+            }
+          ],
+          "errors": [],
+          "git_version": "git version 2.43.0 (pure-python-sandbox)",
+          "stats": {
+            "stem_words": 18,
+            "stem_chars": 123,
+            "option_count": 4,
+            "option_lengths": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "avg_option_length": 2.0,
+            "distractor_reasons": [
+              "wrong_count",
+              "wrong_count",
+              "wrong_count"
+            ],
+            "setup_steps": 8
+          },
+          "duration_seconds": 0.01
+        }
+      ]
+    },
+    "q04_stash_apply": {
+      "variants_verified": 3,
+      "total_variants": 3,
+      "quality_passed": true,
+      "has_leaks": false,
+      "variant_details": [
+        {
+          "template_id": "q04_stash_apply",
+          "params": {
+            "stash_idx": 0
+          },
+          "status": "verified",
+          "correct_passes": true,
+          "correct_goal_results": [
+            {
+              "message": "stash_count == 3",
+              "passed": true,
+              "details": "actual=3"
+            },
+            {
+              "message": "file_exists(f0.txt) == True",
+              "passed": true,
+              "details": "actual_exists=True"
+            }
+          ],
+          "distractor_results": [
+            {
+              "text": "git stash pop 0",
+              "reason": "wrong_operation",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git stash apply 1",
+              "reason": "wrong_count",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git stash drop 0",
+              "reason": "destroys_changes",
+              "passes_goal": false,
+              "expected_fail": true
+            }
+          ],
+          "errors": [],
+          "git_version": "git version 2.43.0 (pure-python-sandbox)",
+          "stats": {
+            "stem_words": 25,
+            "stem_chars": 132,
+            "option_count": 4,
+            "option_lengths": [
+              17,
+              15,
+              17,
+              16
+            ],
+            "avg_option_length": 16.25,
+            "distractor_reasons": [
+              "destroys_changes",
+              "wrong_count",
+              "wrong_operation"
+            ],
+            "setup_steps": 5
+          },
+          "duration_seconds": 0.01
+        },
+        {
+          "template_id": "q04_stash_apply",
+          "params": {
+            "stash_idx": 1
+          },
+          "status": "verified",
+          "correct_passes": true,
+          "correct_goal_results": [
+            {
+              "message": "stash_count == 3",
+              "passed": true,
+              "details": "actual=3"
+            },
+            {
+              "message": "file_exists(f1.txt) == True",
+              "passed": true,
+              "details": "actual_exists=True"
+            }
+          ],
+          "distractor_results": [
+            {
+              "text": "git stash pop 1",
+              "reason": "wrong_operation",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git stash apply 2",
+              "reason": "wrong_count",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git stash drop 1",
+              "reason": "destroys_changes",
+              "passes_goal": false,
+              "expected_fail": true
+            }
+          ],
+          "errors": [],
+          "git_version": "git version 2.43.0 (pure-python-sandbox)",
+          "stats": {
+            "stem_words": 25,
+            "stem_chars": 132,
+            "option_count": 4,
+            "option_lengths": [
+              17,
+              15,
+              17,
+              16
+            ],
+            "avg_option_length": 16.25,
+            "distractor_reasons": [
+              "destroys_changes",
+              "wrong_count",
+              "wrong_operation"
+            ],
+            "setup_steps": 5
+          },
+          "duration_seconds": 0.0
+        },
+        {
+          "template_id": "q04_stash_apply",
+          "params": {
+            "stash_idx": 2
+          },
+          "status": "verified",
+          "correct_passes": true,
+          "correct_goal_results": [
+            {
+              "message": "stash_count == 3",
+              "passed": true,
+              "details": "actual=3"
+            },
+            {
+              "message": "file_exists(f2.txt) == True",
+              "passed": true,
+              "details": "actual_exists=True"
+            }
+          ],
+          "distractor_results": [
+            {
+              "text": "git stash pop 2",
+              "reason": "wrong_operation",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git stash apply 3",
+              "reason": "wrong_count",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git stash drop 2",
+              "reason": "destroys_changes",
+              "passes_goal": false,
+              "expected_fail": true
+            }
+          ],
+          "errors": [],
+          "git_version": "git version 2.43.0 (pure-python-sandbox)",
+          "stats": {
+            "stem_words": 25,
+            "stem_chars": 132,
+            "option_count": 4,
+            "option_lengths": [
+              17,
+              15,
+              17,
+              16
+            ],
+            "avg_option_length": 16.25,
+            "distractor_reasons": [
+              "destroys_changes",
+              "wrong_count",
+              "wrong_operation"
+            ],
+            "setup_steps": 5
+          },
+          "duration_seconds": 0.0
+        }
+      ]
+    },
+    "q05_cherry_pick": {
+      "variants_verified": 3,
+      "total_variants": 3,
+      "quality_passed": true,
+      "has_leaks": false,
+      "variant_details": [
+        {
+          "template_id": "q05_cherry_pick",
+          "params": {
+            "feat_branch": "feat-nav",
+            "fix_file": "nav_patch.py"
+          },
+          "status": "verified",
+          "correct_passes": true,
+          "correct_goal_results": [
+            {
+              "message": "commit_count(main) == 2",
+              "passed": true,
+              "details": "actual=2"
+            },
+            {
+              "message": "file_exists(hotfix.py) == True",
+              "passed": true,
+              "details": "actual_exists=True"
+            },
+            {
+              "message": "current_branch == main",
+              "passed": true,
+              "details": "actual=main"
+            }
+          ],
+          "distractor_results": [
+            {
+              "text": "git merge feat-nav",
+              "reason": "wrong_operation",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git rebase feat-nav",
+              "reason": "wrong_operation",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git pull feat-nav",
+              "reason": "wrong_operation",
+              "passes_goal": false,
+              "expected_fail": true
+            }
+          ],
+          "errors": [],
+          "git_version": "git version 2.43.0 (pure-python-sandbox)",
+          "stats": {
+            "stem_words": 17,
+            "stem_chars": 101,
+            "option_count": 4,
+            "option_lengths": [
+              24,
+              18,
+              19,
+              17
+            ],
+            "avg_option_length": 19.5,
+            "distractor_reasons": [
+              "wrong_operation",
+              "wrong_operation",
+              "wrong_operation"
+            ],
+            "setup_steps": 6
+          },
+          "duration_seconds": 0.01
+        },
+        {
+          "template_id": "q05_cherry_pick",
+          "params": {
+            "feat_branch": "feat-cart",
+            "fix_file": "cart_patch.py"
+          },
+          "status": "verified",
+          "correct_passes": true,
+          "correct_goal_results": [
+            {
+              "message": "commit_count(main) == 2",
+              "passed": true,
+              "details": "actual=2"
+            },
+            {
+              "message": "file_exists(hotfix.py) == True",
+              "passed": true,
+              "details": "actual_exists=True"
+            },
+            {
+              "message": "current_branch == main",
+              "passed": true,
+              "details": "actual=main"
+            }
+          ],
+          "distractor_results": [
+            {
+              "text": "git merge feat-cart",
+              "reason": "wrong_operation",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git rebase feat-cart",
+              "reason": "wrong_operation",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git pull feat-cart",
+              "reason": "wrong_operation",
+              "passes_goal": false,
+              "expected_fail": true
+            }
+          ],
+          "errors": [],
+          "git_version": "git version 2.43.0 (pure-python-sandbox)",
+          "stats": {
+            "stem_words": 17,
+            "stem_chars": 102,
+            "option_count": 4,
+            "option_lengths": [
+              25,
+              19,
+              20,
+              18
+            ],
+            "avg_option_length": 20.5,
+            "distractor_reasons": [
+              "wrong_operation",
+              "wrong_operation",
+              "wrong_operation"
+            ],
+            "setup_steps": 6
+          },
+          "duration_seconds": 0.01
+        },
+        {
+          "template_id": "q05_cherry_pick",
+          "params": {
+            "feat_branch": "feat-auth",
+            "fix_file": "auth_patch.py"
+          },
+          "status": "verified",
+          "correct_passes": true,
+          "correct_goal_results": [
+            {
+              "message": "commit_count(main) == 2",
+              "passed": true,
+              "details": "actual=2"
+            },
+            {
+              "message": "file_exists(hotfix.py) == True",
+              "passed": true,
+              "details": "actual_exists=True"
+            },
+            {
+              "message": "current_branch == main",
+              "passed": true,
+              "details": "actual=main"
+            }
+          ],
+          "distractor_results": [
+            {
+              "text": "git merge feat-auth",
+              "reason": "wrong_operation",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git rebase feat-auth",
+              "reason": "wrong_operation",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git pull feat-auth",
+              "reason": "wrong_operation",
+              "passes_goal": false,
+              "expected_fail": true
+            }
+          ],
+          "errors": [],
+          "git_version": "git version 2.43.0 (pure-python-sandbox)",
+          "stats": {
+            "stem_words": 17,
+            "stem_chars": 102,
+            "option_count": 4,
+            "option_lengths": [
+              25,
+              19,
+              20,
+              18
+            ],
+            "avg_option_length": 20.5,
+            "distractor_reasons": [
+              "wrong_operation",
+              "wrong_operation",
+              "wrong_operation"
+            ],
+            "setup_steps": 6
+          },
+          "duration_seconds": 0.01
+        }
+      ]
+    },
+    "q06_merge_conflict": {
+      "variants_verified": 3,
+      "total_variants": 3,
+      "quality_passed": true,
+      "has_leaks": false,
+      "variant_details": [
+        {
+          "template_id": "q06_merge_conflict",
+          "params": {
+            "target_file": "router.json"
+          },
+          "status": "verified",
+          "correct_passes": true,
+          "correct_goal_results": [
+            {
+              "message": "file_content(router.json) == 'incoming'",
+              "passed": true,
+              "details": "actual='incoming'"
+            }
+          ],
+          "distractor_results": [
+            {
+              "text": "git checkout --ours router.json",
+              "reason": "wrong_direction",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git restore --theirs router.json",
+              "reason": "wrong_operation",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git merge --theirs router.json",
+              "reason": "wrong_flag",
+              "passes_goal": false,
+              "expected_fail": true
+            }
+          ],
+          "errors": [],
+          "git_version": "git version 2.43.0 (pure-python-sandbox)",
+          "stats": {
+            "stem_words": 29,
+            "stem_chars": 190,
+            "option_count": 4,
+            "option_lengths": [
+              33,
+              31,
+              32,
+              30
+            ],
+            "avg_option_length": 31.5,
+            "distractor_reasons": [
+              "wrong_direction",
+              "wrong_flag",
+              "wrong_operation"
+            ],
+            "setup_steps": 7
+          },
+          "duration_seconds": 0.01
+        },
+        {
+          "template_id": "q06_merge_conflict",
+          "params": {
+            "target_file": "client.json"
+          },
+          "status": "verified",
+          "correct_passes": true,
+          "correct_goal_results": [
+            {
+              "message": "file_content(client.json) == 'incoming'",
+              "passed": true,
+              "details": "actual='incoming'"
+            }
+          ],
+          "distractor_results": [
+            {
+              "text": "git checkout --ours client.json",
+              "reason": "wrong_direction",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git restore --theirs client.json",
+              "reason": "wrong_operation",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git merge --theirs client.json",
+              "reason": "wrong_flag",
+              "passes_goal": false,
+              "expected_fail": true
+            }
+          ],
+          "errors": [],
+          "git_version": "git version 2.43.0 (pure-python-sandbox)",
+          "stats": {
+            "stem_words": 29,
+            "stem_chars": 190,
+            "option_count": 4,
+            "option_lengths": [
+              33,
+              31,
+              32,
+              30
+            ],
+            "avg_option_length": 31.5,
+            "distractor_reasons": [
+              "wrong_direction",
+              "wrong_flag",
+              "wrong_operation"
+            ],
+            "setup_steps": 7
+          },
+          "duration_seconds": 0.01
+        },
+        {
+          "template_id": "q06_merge_conflict",
+          "params": {
+            "target_file": "config.json"
+          },
+          "status": "verified",
+          "correct_passes": true,
+          "correct_goal_results": [
+            {
+              "message": "file_content(config.json) == 'incoming'",
+              "passed": true,
+              "details": "actual='incoming'"
+            }
+          ],
+          "distractor_results": [
+            {
+              "text": "git checkout --ours config.json",
+              "reason": "wrong_direction",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git restore --theirs config.json",
+              "reason": "wrong_operation",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git merge --theirs config.json",
+              "reason": "wrong_flag",
+              "passes_goal": false,
+              "expected_fail": true
+            }
+          ],
+          "errors": [],
+          "git_version": "git version 2.43.0 (pure-python-sandbox)",
+          "stats": {
+            "stem_words": 29,
+            "stem_chars": 190,
+            "option_count": 4,
+            "option_lengths": [
+              33,
+              31,
+              32,
+              30
+            ],
+            "avg_option_length": 31.5,
+            "distractor_reasons": [
+              "wrong_direction",
+              "wrong_flag",
+              "wrong_operation"
+            ],
+            "setup_steps": 7
+          },
+          "duration_seconds": 0.01
+        }
+      ]
+    },
+    "q07_restore_staged": {
+      "variants_verified": 3,
+      "total_variants": 3,
+      "quality_passed": true,
+      "has_leaks": false,
+      "variant_details": [
+        {
+          "template_id": "q07_restore_staged",
+          "params": {
+            "target_file": "server.json"
+          },
+          "status": "verified",
+          "correct_passes": true,
+          "correct_goal_results": [
+            {
+              "message": "staged_files_count == 0",
+              "passed": true,
+              "details": "actual=0"
+            },
+            {
+              "message": "file_exists(server.json) == True",
+              "passed": true,
+              "details": "actual_exists=True"
+            }
+          ],
+          "distractor_results": [
+            {
+              "text": "git restore server.json",
+              "reason": "destroys_changes",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git rm --cached server.json",
+              "reason": "wrong_operation",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git reset --hard server.json",
+              "reason": "destroys_changes",
+              "passes_goal": false,
+              "expected_fail": true
+            }
+          ],
+          "errors": [],
+          "git_version": "git version 2.43.0 (pure-python-sandbox)",
+          "stats": {
+            "stem_words": 21,
+            "stem_chars": 149,
+            "option_count": 4,
+            "option_lengths": [
+              32,
+              23,
+              27,
+              28
+            ],
+            "avg_option_length": 27.5,
+            "distractor_reasons": [
+              "destroys_changes",
+              "destroys_changes",
+              "wrong_operation"
+            ],
+            "setup_steps": 3
+          },
+          "duration_seconds": 0.0
+        },
+        {
+          "template_id": "q07_restore_staged",
+          "params": {
+            "target_file": "schema.json"
+          },
+          "status": "verified",
+          "correct_passes": true,
+          "correct_goal_results": [
+            {
+              "message": "staged_files_count == 0",
+              "passed": true,
+              "details": "actual=0"
+            },
+            {
+              "message": "file_exists(schema.json) == True",
+              "passed": true,
+              "details": "actual_exists=True"
+            }
+          ],
+          "distractor_results": [
+            {
+              "text": "git restore schema.json",
+              "reason": "destroys_changes",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git rm --cached schema.json",
+              "reason": "wrong_operation",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git reset --hard schema.json",
+              "reason": "destroys_changes",
+              "passes_goal": false,
+              "expected_fail": true
+            }
+          ],
+          "errors": [],
+          "git_version": "git version 2.43.0 (pure-python-sandbox)",
+          "stats": {
+            "stem_words": 21,
+            "stem_chars": 149,
+            "option_count": 4,
+            "option_lengths": [
+              32,
+              23,
+              27,
+              28
+            ],
+            "avg_option_length": 27.5,
+            "distractor_reasons": [
+              "destroys_changes",
+              "destroys_changes",
+              "wrong_operation"
+            ],
+            "setup_steps": 3
+          },
+          "duration_seconds": 0.0
+        },
+        {
+          "template_id": "q07_restore_staged",
+          "params": {
+            "target_file": "config.json"
+          },
+          "status": "verified",
+          "correct_passes": true,
+          "correct_goal_results": [
+            {
+              "message": "staged_files_count == 0",
+              "passed": true,
+              "details": "actual=0"
+            },
+            {
+              "message": "file_exists(config.json) == True",
+              "passed": true,
+              "details": "actual_exists=True"
+            }
+          ],
+          "distractor_results": [
+            {
+              "text": "git restore config.json",
+              "reason": "destroys_changes",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git rm --cached config.json",
+              "reason": "wrong_operation",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git reset --hard config.json",
+              "reason": "destroys_changes",
+              "passes_goal": false,
+              "expected_fail": true
+            }
+          ],
+          "errors": [],
+          "git_version": "git version 2.43.0 (pure-python-sandbox)",
+          "stats": {
+            "stem_words": 21,
+            "stem_chars": 149,
+            "option_count": 4,
+            "option_lengths": [
+              32,
+              23,
+              27,
+              28
+            ],
+            "avg_option_length": 27.5,
+            "distractor_reasons": [
+              "destroys_changes",
+              "destroys_changes",
+              "wrong_operation"
+            ],
+            "setup_steps": 3
+          },
+          "duration_seconds": 0.0
+        }
+      ]
+    },
+    "q08_revert_count": {
+      "variants_verified": 3,
+      "total_variants": 3,
+      "quality_passed": true,
+      "has_leaks": false,
+      "variant_details": [
+        {
+          "template_id": "q08_revert_count",
+          "params": {
+            "N": 1
+          },
+          "status": "verified",
+          "correct_passes": true,
+          "correct_goal_results": [
+            {
+              "message": "reverted_commit(HEAD~1) == True",
+              "passed": true,
+              "details": "actual_msg='revert HEAD~1'"
+            },
+            {
+              "message": "worktree_clean == True",
+              "passed": true,
+              "details": "actual_clean=True"
+            }
+          ],
+          "distractor_results": [
+            {
+              "text": "git reset --hard HEAD~1",
+              "reason": "destroys_changes",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git checkout HEAD~1",
+              "reason": "wrong_operation",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git revert HEAD~2",
+              "reason": "wrong_count",
+              "passes_goal": false,
+              "expected_fail": true
+            }
+          ],
+          "errors": [],
+          "git_version": "git version 2.43.0 (pure-python-sandbox)",
+          "stats": {
+            "stem_words": 23,
+            "stem_chars": 126,
+            "option_count": 4,
+            "option_lengths": [
+              17,
+              23,
+              19,
+              17
+            ],
+            "avg_option_length": 19.0,
+            "distractor_reasons": [
+              "destroys_changes",
+              "wrong_count",
+              "wrong_operation"
+            ],
+            "setup_steps": 2
+          },
+          "duration_seconds": 0.01
+        },
+        {
+          "template_id": "q08_revert_count",
+          "params": {
+            "N": 3
+          },
+          "status": "verified",
+          "correct_passes": true,
+          "correct_goal_results": [
+            {
+              "message": "reverted_commit(HEAD~3) == True",
+              "passed": true,
+              "details": "actual_msg='revert HEAD~3'"
+            },
+            {
+              "message": "worktree_clean == True",
+              "passed": true,
+              "details": "actual_clean=True"
+            }
+          ],
+          "distractor_results": [
+            {
+              "text": "git reset --hard HEAD~3",
+              "reason": "destroys_changes",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git checkout HEAD~3",
+              "reason": "wrong_operation",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git revert HEAD~4",
+              "reason": "wrong_count",
+              "passes_goal": false,
+              "expected_fail": true
+            }
+          ],
+          "errors": [],
+          "git_version": "git version 2.43.0 (pure-python-sandbox)",
+          "stats": {
+            "stem_words": 23,
+            "stem_chars": 126,
+            "option_count": 4,
+            "option_lengths": [
+              17,
+              23,
+              19,
+              17
+            ],
+            "avg_option_length": 19.0,
+            "distractor_reasons": [
+              "destroys_changes",
+              "wrong_count",
+              "wrong_operation"
+            ],
+            "setup_steps": 2
+          },
+          "duration_seconds": 0.01
+        },
+        {
+          "template_id": "q08_revert_count",
+          "params": {
+            "N": 2
+          },
+          "status": "verified",
+          "correct_passes": true,
+          "correct_goal_results": [
+            {
+              "message": "reverted_commit(HEAD~2) == True",
+              "passed": true,
+              "details": "actual_msg='revert HEAD~2'"
+            },
+            {
+              "message": "worktree_clean == True",
+              "passed": true,
+              "details": "actual_clean=True"
+            }
+          ],
+          "distractor_results": [
+            {
+              "text": "git reset --hard HEAD~2",
+              "reason": "destroys_changes",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git checkout HEAD~2",
+              "reason": "wrong_operation",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git revert HEAD~3",
+              "reason": "wrong_count",
+              "passes_goal": false,
+              "expected_fail": true
+            }
+          ],
+          "errors": [],
+          "git_version": "git version 2.43.0 (pure-python-sandbox)",
+          "stats": {
+            "stem_words": 23,
+            "stem_chars": 126,
+            "option_count": 4,
+            "option_lengths": [
+              17,
+              23,
+              19,
+              17
+            ],
+            "avg_option_length": 19.0,
+            "distractor_reasons": [
+              "destroys_changes",
+              "wrong_count",
+              "wrong_operation"
+            ],
+            "setup_steps": 2
+          },
+          "duration_seconds": 0.01
+        }
+      ]
+    },
+    "q09_tag_annotate": {
+      "variants_verified": 3,
+      "total_variants": 3,
+      "quality_passed": true,
+      "has_leaks": false,
+      "variant_details": [
+        {
+          "template_id": "q09_tag_annotate",
+          "params": {
+            "tag_name": "v2.1.0",
+            "release_note": "stable-candidate"
+          },
+          "status": "verified",
+          "correct_passes": true,
+          "correct_goal_results": [
+            {
+              "message": "annotated_tag_exists(v2.1.0) == True",
+              "passed": true,
+              "details": "actual_annotated=True"
+            }
+          ],
+          "distractor_results": [
+            {
+              "text": "git tag v2.1.0",
+              "reason": "incomplete",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git tag -m \"stable-candidate\" v2.1.0",
+              "reason": "wrong_flag",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git create-tag v2.1.0 -m \"stable-candidate\"",
+              "reason": "wrong_operation",
+              "passes_goal": false,
+              "expected_fail": true
+            }
+          ],
+          "errors": [],
+          "git_version": "git version 2.43.0 (pure-python-sandbox)",
+          "stats": {
+            "stem_words": 19,
+            "stem_chars": 127,
+            "option_count": 4,
+            "option_lengths": [
+              39,
+              14,
+              36,
+              43
+            ],
+            "avg_option_length": 33.0,
+            "distractor_reasons": [
+              "incomplete",
+              "wrong_flag",
+              "wrong_operation"
+            ],
+            "setup_steps": 2
+          },
+          "duration_seconds": 0.0
+        },
+        {
+          "template_id": "q09_tag_annotate",
+          "params": {
+            "tag_name": "v1.1.0",
+            "release_note": "sprint-deliverable"
+          },
+          "status": "verified",
+          "correct_passes": true,
+          "correct_goal_results": [
+            {
+              "message": "annotated_tag_exists(v1.1.0) == True",
+              "passed": true,
+              "details": "actual_annotated=True"
+            }
+          ],
+          "distractor_results": [
+            {
+              "text": "git tag v1.1.0",
+              "reason": "incomplete",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git tag -m \"sprint-deliverable\" v1.1.0",
+              "reason": "wrong_flag",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git create-tag v1.1.0 -m \"sprint-deliverable\"",
+              "reason": "wrong_operation",
+              "passes_goal": false,
+              "expected_fail": true
+            }
+          ],
+          "errors": [],
+          "git_version": "git version 2.43.0 (pure-python-sandbox)",
+          "stats": {
+            "stem_words": 19,
+            "stem_chars": 129,
+            "option_count": 4,
+            "option_lengths": [
+              41,
+              14,
+              38,
+              45
+            ],
+            "avg_option_length": 34.5,
+            "distractor_reasons": [
+              "incomplete",
+              "wrong_flag",
+              "wrong_operation"
+            ],
+            "setup_steps": 2
+          },
+          "duration_seconds": 0.0
+        },
+        {
+          "template_id": "q09_tag_annotate",
+          "params": {
+            "tag_name": "v3.0.0",
+            "release_note": "beta-release"
+          },
+          "status": "verified",
+          "correct_passes": true,
+          "correct_goal_results": [
+            {
+              "message": "annotated_tag_exists(v3.0.0) == True",
+              "passed": true,
+              "details": "actual_annotated=True"
+            }
+          ],
+          "distractor_results": [
+            {
+              "text": "git tag v3.0.0",
+              "reason": "incomplete",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git tag -m \"beta-release\" v3.0.0",
+              "reason": "wrong_flag",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git create-tag v3.0.0 -m \"beta-release\"",
+              "reason": "wrong_operation",
+              "passes_goal": false,
+              "expected_fail": true
+            }
+          ],
+          "errors": [],
+          "git_version": "git version 2.43.0 (pure-python-sandbox)",
+          "stats": {
+            "stem_words": 19,
+            "stem_chars": 123,
+            "option_count": 4,
+            "option_lengths": [
+              35,
+              14,
+              32,
+              39
+            ],
+            "avg_option_length": 30.0,
+            "distractor_reasons": [
+              "incomplete",
+              "wrong_flag",
+              "wrong_operation"
+            ],
+            "setup_steps": 2
+          },
+          "duration_seconds": 0.0
+        }
+      ]
+    },
+    "q10_log_format": {
+      "variants_verified": 3,
+      "total_variants": 3,
+      "quality_passed": true,
+      "has_leaks": false,
+      "variant_details": [
+        {
+          "template_id": "q10_log_format",
+          "params": {
+            "max_count": 3
+          },
+          "status": "verified",
+          "correct_passes": true,
+          "correct_goal_results": [
+            {
+              "message": "stdout_lines == 3",
+              "passed": true,
+              "details": "actual_lines=3"
+            }
+          ],
+          "distractor_results": [
+            {
+              "text": "git status --short -n 3",
+              "reason": "wrong_operation",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git log --summary -n 3",
+              "reason": "wrong_flag",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git history --compact -n 3",
+              "reason": "wrong_operation",
+              "passes_goal": false,
+              "expected_fail": true
+            }
+          ],
+          "errors": [],
+          "git_version": "git version 2.43.0 (pure-python-sandbox)",
+          "stats": {
+            "stem_words": 23,
+            "stem_chars": 128,
+            "option_count": 4,
+            "option_lengths": [
+              22,
+              23,
+              22,
+              26
+            ],
+            "avg_option_length": 23.25,
+            "distractor_reasons": [
+              "wrong_flag",
+              "wrong_operation",
+              "wrong_operation"
+            ],
+            "setup_steps": 2
+          },
+          "duration_seconds": 0.01
+        },
+        {
+          "template_id": "q10_log_format",
+          "params": {
+            "max_count": 5
+          },
+          "status": "verified",
+          "correct_passes": true,
+          "correct_goal_results": [
+            {
+              "message": "stdout_lines == 5",
+              "passed": true,
+              "details": "actual_lines=5"
+            }
+          ],
+          "distractor_results": [
+            {
+              "text": "git status --short -n 5",
+              "reason": "wrong_operation",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git log --summary -n 5",
+              "reason": "wrong_flag",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git history --compact -n 5",
+              "reason": "wrong_operation",
+              "passes_goal": false,
+              "expected_fail": true
+            }
+          ],
+          "errors": [],
+          "git_version": "git version 2.43.0 (pure-python-sandbox)",
+          "stats": {
+            "stem_words": 23,
+            "stem_chars": 128,
+            "option_count": 4,
+            "option_lengths": [
+              22,
+              23,
+              22,
+              26
+            ],
+            "avg_option_length": 23.25,
+            "distractor_reasons": [
+              "wrong_flag",
+              "wrong_operation",
+              "wrong_operation"
+            ],
+            "setup_steps": 2
+          },
+          "duration_seconds": 0.01
+        },
+        {
+          "template_id": "q10_log_format",
+          "params": {
+            "max_count": 8
+          },
+          "status": "verified",
+          "correct_passes": true,
+          "correct_goal_results": [
+            {
+              "message": "stdout_lines == 8",
+              "passed": true,
+              "details": "actual_lines=8"
+            }
+          ],
+          "distractor_results": [
+            {
+              "text": "git status --short -n 8",
+              "reason": "wrong_operation",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git log --summary -n 8",
+              "reason": "wrong_flag",
+              "passes_goal": false,
+              "expected_fail": true
+            },
+            {
+              "text": "git history --compact -n 8",
+              "reason": "wrong_operation",
+              "passes_goal": false,
+              "expected_fail": true
+            }
+          ],
+          "errors": [],
+          "git_version": "git version 2.43.0 (pure-python-sandbox)",
+          "stats": {
+            "stem_words": 23,
+            "stem_chars": 128,
+            "option_count": 4,
+            "option_lengths": [
+              22,
+              23,
+              22,
+              26
+            ],
+            "avg_option_length": 23.25,
+            "distractor_reasons": [
+              "wrong_flag",
+              "wrong_operation",
+              "wrong_operation"
+            ],
+            "setup_steps": 2
+          },
+          "duration_seconds": 0.01
+        }
+      ]
+    }
+  }
+}

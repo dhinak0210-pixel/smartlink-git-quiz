@@ -1,0 +1,17 @@
+{
+  "total_students": 200,
+  "rule_flagged_count": 23,
+  "iso_forest_flagged_count": 20,
+  "dbscan_flagged_count": 24,
+  "admin_penalized_count": 5,
+  "admin_cleared_count": 18,
+  "jaccard_similarity": {
+    "rules_vs_iso_forest": 0.1944,
+    "rules_vs_dbscan": 0.2051,
+    "iso_forest_vs_dbscan": 0.6296
+  },
+  "false_positive_cleared_by_admin": {
+    "iso_forest": 5,
+    "dbscan": 6
+  }
+}

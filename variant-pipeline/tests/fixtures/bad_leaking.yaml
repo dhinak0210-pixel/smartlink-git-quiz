@@ -1,0 +1,35 @@
+id: bad_leaking
+topic: branching
+difficulty: medium
+type: variant
+
+parameters:
+  - name: target_branch
+    values: [alpha, beta]
+    type: branch_name
+
+setup:
+  - "git init"
+  - "echo 'init' > init.txt && git add init.txt && git commit -m 'init'"
+  - "git branch alpha"
+  - "git branch beta"
+
+stem: "Rename the branch `{target_branch}` to `final-release`."
+
+correct: "git branch -m {target_branch} final-release"
+
+distractors:
+  - text: "git branch -d {target_branch}"
+    reason: wrong_operation
+  - text: "git checkout {target_branch}"
+    reason: wrong_operation
+  - text: "git merge {target_branch}"
+    reason: wrong_operation
+
+# PLANT: Both variants target the same name 'final-release' and both alpha and beta exist in setup!
+goal: "branch_exists(final-release)==true"
+
+explanation: "This fixture has sibling variants that leak answers across each other."
+
+variant_count: 2
+is_reserve: false

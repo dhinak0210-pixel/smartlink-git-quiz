@@ -1,0 +1,46 @@
+id: q03_rebase_count
+topic: rebasing
+difficulty: hard
+type: variant
+
+parameters:
+  - name: main_commits
+    values: [5, 6, 7]
+    type: int
+  - name: feature_commits
+    values: [4, 5, 6]
+    type: int
+
+constraints:
+  - "main_commits >= 5"
+  - "feature_commits >= 4"
+  - "paired(main_commits, feature_commits)"
+
+setup:
+  - "git init"
+  - "echo 'base' > base.txt && git add base.txt && git commit -m 'base'"
+  - "git checkout -b feature"
+  - "for i in $(seq 1 {feature_commits}); do echo \"feat $i\" > feat$i.txt && git add feat$i.txt && git commit -m \"feature $i\"; done"
+  - "git checkout main"
+  - "for i in $(seq 1 {main_commits}); do echo \"main $i\" > main$i.txt && git add main$i.txt && git commit -m \"main $i\"; done"
+  - "git checkout feature"
+  - "git rebase main"
+
+stem: "After rebasing `feature` onto `main`, how many total commits are reachable from `feature`? (Count the initial base commit.)"
+
+correct: "{total_after_rebase}"
+
+distractors:
+  - text: "{wrong_count_1}"
+    reason: wrong_count
+  - text: "{wrong_count_2}"
+    reason: wrong_count
+  - text: "{wrong_count_3}"
+    reason: wrong_count
+
+goal: "commit_count(feature)=={total_after_rebase}"
+
+explanation: "After rebase, `feature` has 1 (base) + {main_commits} (main) + {feature_commits} (replayed) = {total_after_rebase} commits."
+
+variant_count: 3
+is_reserve: false

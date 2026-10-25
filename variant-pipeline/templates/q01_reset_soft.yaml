@@ -1,0 +1,39 @@
+id: q01_reset_soft
+topic: undo-and-recovery
+difficulty: medium
+type: variant
+
+parameters:
+  - name: N
+    values: [2, 3, 4]
+    type: int
+  - name: total_commits
+    values: [6]
+    type: int
+
+constraints:
+  - "N <= total_commits - 1"
+  - "N >= 2"
+
+setup:
+  - "git init"
+  - "for i in $(seq 1 {total_commits}); do echo \"content $i\" > file$i.txt && git add file$i.txt && git commit -m \"commit $i\"; done"
+
+stem: "You made the last {N} commits by mistake on `main`. Undo them but keep all changes staged."
+
+correct: "git reset --soft HEAD~{N}"
+
+distractors:
+  - text: "git reset --hard HEAD~{N}"
+    reason: destroys_changes
+  - text: "git reset --mixed HEAD~{N}"
+    reason: leaves_unstaged
+  - text: "git reset --soft HEAD~{N_minus_1}"
+    reason: wrong_count
+
+goal: "head_offset(main)=={N} AND worktree_clean==true AND staged_files_count=={N}"
+
+explanation: "`git reset --soft HEAD~{N}` moves HEAD back {N} commits without touching the index or working tree, so all changes from those commits remain staged. `--hard` would destroy the changes, and `--mixed` would unstage them."
+
+variant_count: 3
+is_reserve: false

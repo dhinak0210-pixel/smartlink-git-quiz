@@ -1,0 +1,35 @@
+id: q04_stash_apply
+topic: stashing
+difficulty: easy
+type: variant
+
+parameters:
+  - name: stash_idx
+    values: [0, 1, 2]
+    type: int
+
+setup:
+  - "git init"
+  - "echo 'base' > app.js && git add app.js && git commit -m 'initial'"
+  - "echo 'stash2' > f2.txt && git add f2.txt && git stash push -m 'stash2'"
+  - "echo 'stash1' > f1.txt && git add f1.txt && git stash push -m 'stash1'"
+  - "echo 'stash0' > f0.txt && git add f0.txt && git stash push -m 'stash0'"
+
+stem: "You have multiple stashes saved. You want to apply the stash at index {stash_idx} without dropping it from the list. Which command do you run?"
+
+correct: "git stash apply {stash_idx}"
+
+distractors:
+  - text: "git stash pop {stash_idx}"
+    reason: wrong_operation
+  - text: "git stash apply {stash_idx_plus_1}"
+    reason: wrong_count
+  - text: "git stash drop {stash_idx}"
+    reason: destroys_changes
+
+goal: "stash_count==3 AND file_exists(f{stash_idx}.txt)==true"
+
+explanation: "`git stash apply <index>` reapplies the changes recorded at stash index without removing the stash entry from the stash stack."
+
+variant_count: 3
+is_reserve: false

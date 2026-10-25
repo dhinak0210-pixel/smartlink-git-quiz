@@ -1,0 +1,12 @@
+# Python Virtual Environment
+.venv/
+__pycache__/
+*.pyc
+
+# Confidential credentials and local PII maps
+.env
+*_LOCAL.json
+
+# Temporary repositories
+validate/output/repo_snapshots/
+*.tmp

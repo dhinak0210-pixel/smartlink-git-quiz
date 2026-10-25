@@ -1,0 +1,84 @@
+# .github/workflows/health-check.yml
+name: Health Check
+
+on:
+  schedule:
+    # Hourly on event eve and morning — adjust cron to your event date
+    # Example: July 14 (eve) and July 15 (event day) — every hour from 6 AM to 6 PM IST
+    # IST = UTC+5:30, so 6 AM IST = 0:30 UTC
+    - cron: '30 0-12 14-15 7 *'
+  workflow_dispatch:  # Manual trigger
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Check quiz site
+        id: site_check
+        run: |
+          HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" --max-time 10 "${{ secrets.QUIZ_URL }}/api/state" || echo "000")
+          echo "site_status=$HTTP_CODE" >> $GITHUB_OUTPUT
+          if [ "$HTTP_CODE" != "200" ]; then
+            echo "❌ Site returned HTTP $HTTP_CODE"
+            echo "site_ok=false" >> $GITHUB_OUTPUT
+          else
+            echo "✅ Site OK"
+            echo "site_ok=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Check Supabase
+        id: db_check
+        run: |
+          # Simple query to keep Supabase awake and verify connectivity
+          RESPONSE=$(curl -s --max-time 10 \
+            -H "apikey: ${{ secrets.SUPABASE_SERVICE_KEY }}" \
+            -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_KEY }}" \
+            "${{ secrets.SUPABASE_URL }}/rest/v1/quiz_state?select=status&id=eq.1" || echo "ERROR")
+
+          if echo "$RESPONSE" | grep -q '"status"'; then
+            echo "✅ Database OK"
+            echo "db_ok=true" >> $GITHUB_OUTPUT
+            echo "quiz_status=$(echo $RESPONSE | grep -o '"status":"[^"]*"' || echo 'unknown')" >> $GITHUB_OUTPUT
+          else
+            echo "❌ Database check failed: $RESPONSE"
+            echo "db_ok=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Check student count
+        id: student_check
+        run: |
+          RESPONSE=$(curl -s --max-time 10 \
+            -H "apikey: ${{ secrets.SUPABASE_SERVICE_KEY }}" \
+            -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_KEY }}" \
+            -H "Prefer: count=exact" \
+            -H "Range: 0-0" \
+            "${{ secrets.SUPABASE_URL }}/rest/v1/students?is_active=eq.true" \
+            -D - -o /dev/null 2>/dev/null | grep -i content-range || echo "UNKNOWN")
+
+          echo "student_range=$RESPONSE" >> $GITHUB_OUTPUT
+
+      - name: Alert on failure
+        if: steps.site_check.outputs.site_ok == 'false' || steps.db_check.outputs.db_ok == 'false'
+        run: |
+          SITE_STATUS="${{ steps.site_check.outputs.site_status }}"
+          DB_OK="${{ steps.db_check.outputs.db_ok }}"
+
+          MESSAGE="🚨 <b>Health Check FAILED</b>%0A%0A"
+          MESSAGE="${MESSAGE}Site: HTTP ${SITE_STATUS}%0A"
+          MESSAGE="${MESSAGE}Database: ${DB_OK}%0A"
+          MESSAGE="${MESSAGE}Time: $(date -u +'%Y-%m-%d %H:%M UTC')%0A%0A"
+          MESSAGE="${MESSAGE}Check immediately!"
+
+          curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage" \
+            -d "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}" \
+            -d "text=${MESSAGE}" \
+            -d "parse_mode=HTML"
+
+      - name: All-clear log
+        if: steps.site_check.outputs.site_ok == 'true' && steps.db_check.outputs.db_ok == 'true'
+        run: |
+          echo "✅ All checks passed at $(date -u +'%Y-%m-%d %H:%M UTC')"
+          echo "Quiz status: ${{ steps.db_check.outputs.quiz_status }}"
+          echo "Students: ${{ steps.student_check.outputs.student_range }}"

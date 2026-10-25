@@ -1,0 +1,430 @@
+{
+  "metrics": {
+    "exact_match": 0.43333333333333335,
+    "risk_accuracy": 0.5,
+    "verb_match": 0.6333333333333333,
+    "total": 30
+  },
+  "predictions": [
+    {
+      "goal": "undo my last commit but keep the changes staged",
+      "predicted": {
+        "command": "git reset --soft HEAD~1",
+        "risk_level": "CAUTION",
+        "explanation": "Moves HEAD back one commit; changes remain staged.",
+        "source": "offline_fallback"
+      },
+      "expected": {
+        "command": "git reset --soft HEAD~1",
+        "risk_level": "CAUTION",
+        "explanation": "Moves HEAD back one commit; changes remain staged."
+      }
+    },
+    {
+      "goal": "I need to go back to the previous commit and lose everything I did",
+      "predicted": {
+        "command": "git status",
+        "risk_level": "SAFE",
+        "explanation": "Shows repository status and current branch information.",
+        "source": "offline_fallback"
+      },
+      "expected": {
+        "command": "git reset --hard HEAD~1",
+        "risk_level": "DANGEROUS",
+        "explanation": "Resets HEAD and working tree to the previous commit."
+      }
+    },
+    {
+      "goal": "save my current work so I can pull without conflicts",
+      "predicted": {
+        "command": "git pull origin main",
+        "risk_level": "SAFE",
+        "explanation": "Fetches and integrates remote changes.",
+        "source": "offline_fallback"
+      },
+      "expected": {
+        "command": "git stash",
+        "risk_level": "CAUTION",
+        "explanation": "Stashes uncommitted changes."
+      }
+    },
+    {
+      "goal": "what did I change in the last 5 minutes",
+      "predicted": {
+        "command": "git diff",
+        "risk_level": "SAFE",
+        "explanation": "Shows unstaged working tree changes.",
+        "source": "offline_fallback"
+      },
+      "expected": {
+        "command": "git diff",
+        "risk_level": "SAFE",
+        "explanation": "Shows unstaged changes."
+      }
+    },
+    {
+      "goal": "make a new branch called dev and switch to it right now",
+      "predicted": {
+        "command": "git checkout -b new-branch",
+        "risk_level": "SAFE",
+        "explanation": "Creates and switches to a new branch.",
+        "source": "offline_fallback"
+      },
+      "expected": {
+        "command": "git checkout -b dev",
+        "risk_level": "CAUTION",
+        "explanation": "Creates and checks out a new branch."
+      }
+    },
+    {
+      "goal": "I accidentally committed a password, remove it from history",
+      "predicted": {
+        "command": "git status",
+        "risk_level": "SAFE",
+        "explanation": "Shows repository status and current branch information.",
+        "source": "offline_fallback"
+      },
+      "expected": {
+        "command": "git filter-branch --force --tree-filter 'rm -f secrets.env' HEAD",
+        "risk_level": "DANGEROUS",
+        "explanation": "Rewrites history to remove a file."
+      }
+    },
+    {
+      "goal": "show me the last 10 commits in a compact format",
+      "predicted": {
+        "command": "git log --oneline -10",
+        "risk_level": "SAFE",
+        "explanation": "Shows concise commit log.",
+        "source": "offline_fallback"
+      },
+      "expected": {
+        "command": "git log --oneline -10",
+        "risk_level": "SAFE",
+        "explanation": "Shows compact log of last 10 commits."
+      }
+    },
+    {
+      "goal": "merge the feature branch into main",
+      "predicted": {
+        "command": "git status",
+        "risk_level": "SAFE",
+        "explanation": "Shows repository status and current branch information.",
+        "source": "offline_fallback"
+      },
+      "expected": {
+        "command": "git merge feature",
+        "risk_level": "CAUTION",
+        "explanation": "Merges feature into the current branch."
+      }
+    },
+    {
+      "goal": "delete all untracked files and folders, I don't need them",
+      "predicted": {
+        "command": "git clean -fd",
+        "risk_level": "CRITICAL",
+        "explanation": "Removes untracked files and directories.",
+        "source": "offline_fallback"
+      },
+      "expected": {
+        "command": "git clean -fd",
+        "risk_level": "CRITICAL",
+        "explanation": "Removes untracked files and directories."
+      }
+    },
+    {
+      "goal": "push my local commits to the remote repository",
+      "predicted": {
+        "command": "git push origin main",
+        "risk_level": "SAFE",
+        "explanation": "Pushes commits to the upstream repository.",
+        "source": "offline_fallback"
+      },
+      "expected": {
+        "command": "git push origin main",
+        "risk_level": "SAFE",
+        "explanation": "Pushes local commits to remote."
+      }
+    },
+    {
+      "goal": "I want to see which branches exist locally",
+      "predicted": {
+        "command": "git status",
+        "risk_level": "SAFE",
+        "explanation": "Shows repository status and current branch information.",
+        "source": "offline_fallback"
+      },
+      "expected": {
+        "command": "git branch",
+        "risk_level": "SAFE",
+        "explanation": "Lists local branches."
+      }
+    },
+    {
+      "goal": "pull the latest changes from the remote",
+      "predicted": {
+        "command": "git pull origin main",
+        "risk_level": "SAFE",
+        "explanation": "Fetches and integrates remote changes.",
+        "source": "offline_fallback"
+      },
+      "expected": {
+        "command": "git pull origin main",
+        "risk_level": "CAUTION",
+        "explanation": "Fetches and merges remote changes."
+      }
+    },
+    {
+      "goal": "stage all my changes including new files",
+      "predicted": {
+        "command": "git add -A",
+        "risk_level": "SAFE",
+        "explanation": "Stages all changes and untracked files.",
+        "source": "offline_fallback"
+      },
+      "expected": {
+        "command": "git add -A",
+        "risk_level": "CAUTION",
+        "explanation": "Stages all changes."
+      }
+    },
+    {
+      "goal": "create a tag called v1.0 on the current commit",
+      "predicted": {
+        "command": "git tag v1.0",
+        "risk_level": "SAFE",
+        "explanation": "Creates a lightweight tag at HEAD.",
+        "source": "offline_fallback"
+      },
+      "expected": {
+        "command": "git tag v1.0",
+        "risk_level": "SAFE",
+        "explanation": "Creates a lightweight tag."
+      }
+    },
+    {
+      "goal": "show me who changed each line of main.py",
+      "predicted": {
+        "command": "git blame file.txt",
+        "risk_level": "SAFE",
+        "explanation": "Shows line-by-line authorship of a file.",
+        "source": "offline_fallback"
+      },
+      "expected": {
+        "command": "git blame main.py",
+        "risk_level": "SAFE",
+        "explanation": "Shows line-by-line authorship."
+      }
+    },
+    {
+      "goal": "revert the changes introduced by commit abc123",
+      "predicted": {
+        "command": "git revert abc1234",
+        "risk_level": "SAFE",
+        "explanation": "Creates a new commit undoing the specified commit.",
+        "source": "offline_fallback"
+      },
+      "expected": {
+        "command": "git revert abc123",
+        "risk_level": "CAUTION",
+        "explanation": "Creates a new commit that undoes abc123."
+      }
+    },
+    {
+      "goal": "I want to interactively pick which changes to stage",
+      "predicted": {
+        "command": "git status",
+        "risk_level": "SAFE",
+        "explanation": "Shows repository status and current branch information.",
+        "source": "offline_fallback"
+      },
+      "expected": {
+        "command": "git add -p",
+        "risk_level": "CAUTION",
+        "explanation": "Interactively stages hunks."
+      }
+    },
+    {
+      "goal": "compare my branch with the main branch",
+      "predicted": {
+        "command": "git diff main...HEAD",
+        "risk_level": "SAFE",
+        "explanation": "Shows difference between main and current branch.",
+        "source": "offline_fallback"
+      },
+      "expected": {
+        "command": "git diff main...HEAD",
+        "risk_level": "SAFE",
+        "explanation": "Shows diff between main and current branch."
+      }
+    },
+    {
+      "goal": "set my global git username to John",
+      "predicted": {
+        "command": "git config --global user.name 'Developer'",
+        "risk_level": "SAFE",
+        "explanation": "Sets global Git username.",
+        "source": "offline_fallback"
+      },
+      "expected": {
+        "command": "git config --global user.name 'John'",
+        "risk_level": "SAFE",
+        "explanation": "Sets global Git config."
+      }
+    },
+    {
+      "goal": "clone a repository from GitHub",
+      "predicted": {
+        "command": "git clone https://github.com/user/repo.git",
+        "risk_level": "SAFE",
+        "explanation": "Clones a remote repository.",
+        "source": "offline_fallback"
+      },
+      "expected": {
+        "command": "git clone https://github.com/user/repo.git",
+        "risk_level": "SAFE",
+        "explanation": "Clones a remote repository."
+      }
+    },
+    {
+      "goal": "squash the last 4 commits into a single clean commit",
+      "predicted": {
+        "command": "git log --oneline -10",
+        "risk_level": "SAFE",
+        "explanation": "Shows concise commit log.",
+        "source": "offline_fallback"
+      },
+      "expected": {
+        "command": "git rebase -i HEAD~4",
+        "risk_level": "DANGEROUS",
+        "explanation": "Interactive rebase to squash commits."
+      }
+    },
+    {
+      "goal": "force push because I rebased my feature branch",
+      "predicted": {
+        "command": "git push --force origin main",
+        "risk_level": "DANGEROUS",
+        "explanation": "Overwrites remote branch with local changes.",
+        "source": "offline_fallback"
+      },
+      "expected": {
+        "command": "git push --force origin feature",
+        "risk_level": "DANGEROUS",
+        "explanation": "Force pushes rebased branch."
+      }
+    },
+    {
+      "goal": "check out a specific commit to look around",
+      "predicted": {
+        "command": "git status",
+        "risk_level": "SAFE",
+        "explanation": "Shows repository status and current branch information.",
+        "source": "offline_fallback"
+      },
+      "expected": {
+        "command": "git checkout abc1234",
+        "risk_level": "CAUTION",
+        "explanation": "Detaches HEAD at the given commit."
+      }
+    },
+    {
+      "goal": "apply the changes from a patch file",
+      "predicted": {
+        "command": "git status",
+        "risk_level": "SAFE",
+        "explanation": "Shows repository status and current branch information.",
+        "source": "offline_fallback"
+      },
+      "expected": {
+        "command": "git apply patch.diff",
+        "risk_level": "CAUTION",
+        "explanation": "Applies a patch to the working tree."
+      }
+    },
+    {
+      "goal": "list all the tags in the repository",
+      "predicted": {
+        "command": "git tag -l",
+        "risk_level": "SAFE",
+        "explanation": "Lists all repository tags.",
+        "source": "offline_fallback"
+      },
+      "expected": {
+        "command": "git tag -l",
+        "risk_level": "SAFE",
+        "explanation": "Lists all tags."
+      }
+    },
+    {
+      "goal": "rename the current branch to new-name",
+      "predicted": {
+        "command": "git status",
+        "risk_level": "SAFE",
+        "explanation": "Shows repository status and current branch information.",
+        "source": "offline_fallback"
+      },
+      "expected": {
+        "command": "git branch -m new-name",
+        "risk_level": "CAUTION",
+        "explanation": "Renames the current branch."
+      }
+    },
+    {
+      "goal": "show the commit that introduced a specific bug",
+      "predicted": {
+        "command": "git show --stat HEAD",
+        "risk_level": "SAFE",
+        "explanation": "Inspects metadata and diff for a commit.",
+        "source": "offline_fallback"
+      },
+      "expected": {
+        "command": "git bisect start",
+        "risk_level": "CAUTION",
+        "explanation": "Starts a binary search for the bug-introducing commit."
+      }
+    },
+    {
+      "goal": "fetch all remotes without merging",
+      "predicted": {
+        "command": "git fetch --all",
+        "risk_level": "SAFE",
+        "explanation": "Fetches branches and tags from all remotes.",
+        "source": "offline_fallback"
+      },
+      "expected": {
+        "command": "git fetch --all",
+        "risk_level": "SAFE",
+        "explanation": "Fetches from all remotes."
+      }
+    },
+    {
+      "goal": "remove a file from git tracking but keep it on disk",
+      "predicted": {
+        "command": "git rm --cached file.txt",
+        "risk_level": "SAFE",
+        "explanation": "Untracks a file while preserving disk copy.",
+        "source": "offline_fallback"
+      },
+      "expected": {
+        "command": "git rm --cached secret.txt",
+        "risk_level": "CAUTION",
+        "explanation": "Removes file from index only."
+      }
+    },
+    {
+      "goal": "show a summary of the last commit",
+      "predicted": {
+        "command": "git show --stat HEAD",
+        "risk_level": "SAFE",
+        "explanation": "Inspects metadata and diff for a commit.",
+        "source": "offline_fallback"
+      },
+      "expected": {
+        "command": "git show --stat HEAD",
+        "risk_level": "SAFE",
+        "explanation": "Shows summary of HEAD commit."
+      }
+    }
+  ]
+}

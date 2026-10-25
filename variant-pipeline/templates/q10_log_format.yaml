@@ -1,0 +1,33 @@
+id: q10_log_format
+topic: inspection
+difficulty: easy
+type: variant
+
+parameters:
+  - name: max_count
+    values: [3, 5, 8]
+    type: int
+
+setup:
+  - "git init"
+  - "for i in $(seq 1 10); do echo \"c$i\" > f$i.txt && git add f$i.txt && git commit -m \"commit $i\"; done"
+
+stem: "You want to inspect the commit history compactly on one line per commit, limited to the last {max_count} commits. Which command does this?"
+
+correct: "git log --oneline -n {max_count}"
+
+distractors:
+  - text: "git status --short -n {max_count}"
+    reason: wrong_operation
+  - text: "git log --summary -n {max_count}"
+    reason: wrong_flag
+  - text: "git history --compact -n {max_count}"
+    reason: wrong_operation
+
+goal: "last_command_stdout_lines=={max_count}"
+
+
+explanation: "`git log --oneline -n {max_count}` formats the commit log into one condensed line per commit and limits output to {max_count} entries."
+
+variant_count: 3
+is_reserve: false

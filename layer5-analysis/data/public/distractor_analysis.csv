@@ -1,0 +1,358 @@
+question_id,option_label,option_text,is_correct,total_chosen,high_scorers_chosen,low_scorers_chosen
+10000000-0000-0000-0000-000000000001,A,git start,False,11,3,2
+10000000-0000-0000-0000-000000000001,B,git init,True,19,8,3
+10000000-0000-0000-0000-000000000001,C,git create,False,2,0,2
+10000000-0000-0000-0000-000000000001,D,git new,False,5,0,4
+10000000-0000-0000-0000-000000000002,A,git history,False,2,0,0
+10000000-0000-0000-0000-000000000002,B,git commits,False,6,2,2
+10000000-0000-0000-0000-000000000002,C,git log,True,17,3,3
+10000000-0000-0000-0000-000000000002,D,git show-all,False,2,0,1
+10000000-0000-0000-0000-000000000003,A,git stage --everything,False,3,0,0
+10000000-0000-0000-0000-000000000003,B,git add .,True,19,5,4
+10000000-0000-0000-0000-000000000003,C,git track --all,False,5,1,1
+10000000-0000-0000-0000-000000000003,D,git push --stage,False,4,1,1
+10000000-0000-0000-0000-000000000004,A,"git save ""message""",False,3,0,2
+10000000-0000-0000-0000-000000000004,B,"git commit -m ""message""",True,18,7,2
+10000000-0000-0000-0000-000000000004,C,"git push -m ""message""",False,2,0,1
+10000000-0000-0000-0000-000000000004,D,"git record ""message""",False,4,0,2
+10000000-0000-0000-0000-000000000005,A,git download <url>,False,2,1,0
+10000000-0000-0000-0000-000000000005,B,git clone <url>,True,23,8,5
+10000000-0000-0000-0000-000000000005,C,git copy <url>,False,3,0,2
+10000000-0000-0000-0000-000000000005,D,git fetch-all <url>,False,7,0,6
+10000000-0000-0000-0000-000000000006,A,git branch --move feature-login,False,4,0,3
+10000000-0000-0000-0000-000000000006,B,git checkout -b feature-login,True,28,11,4
+10000000-0000-0000-0000-000000000006,C,git create-branch feature-login,False,2,0,1
+10000000-0000-0000-0000-000000000006,D,git switch --force feature-login,False,2,0,2
+10000000-0000-0000-0000-000000000007,A,git branch,True,25,6,4
+10000000-0000-0000-0000-000000000007,B,git list-branches,False,2,0,0
+10000000-0000-0000-0000-000000000007,C,git show --branches,False,2,0,1
+10000000-0000-0000-0000-000000000007,D,git branches --all,False,3,0,1
+10000000-0000-0000-0000-000000000008,A,git clean -f,False,3,0,2
+10000000-0000-0000-0000-000000000008,B,git stash,True,23,8,7
+10000000-0000-0000-0000-000000000008,C,git discard,False,5,0,2
+10000000-0000-0000-0000-000000000009,A,git stash apply,False,3,0,1
+10000000-0000-0000-0000-000000000009,B,git stash pop,True,20,9,4
+10000000-0000-0000-0000-000000000009,C,git stash restore,False,2,0,1
+10000000-0000-0000-0000-000000000009,D,git stash drop,False,2,0,1
+10000000-0000-0000-0000-000000000010,A,git stash show-all,False,4,1,1
+10000000-0000-0000-0000-000000000010,B,git stash list,True,22,8,4
+10000000-0000-0000-0000-000000000010,C,git stash --status,False,4,0,2
+10000000-0000-0000-0000-000000000010,D,git list-stash,False,4,1,1
+10000000-0000-0000-0000-000000000011,A,git status,True,24,10,2
+10000000-0000-0000-0000-000000000011,B,git inspect,False,5,0,3
+10000000-0000-0000-0000-000000000011,C,git check,False,2,0,0
+10000000-0000-0000-0000-000000000011,D,git state,False,3,0,3
+10000000-0000-0000-0000-000000000012,A,git diff,True,24,7,5
+10000000-0000-0000-0000-000000000012,B,git compare,False,5,0,2
+10000000-0000-0000-0000-000000000012,C,git changes,False,3,0,0
+10000000-0000-0000-0000-000000000012,D,git diff --history,False,4,0,2
+10000000-0000-0000-0000-000000000013,A,git diff --staged,True,23,6,4
+10000000-0000-0000-0000-000000000013,B,git diff --commit,False,2,0,1
+10000000-0000-0000-0000-000000000013,C,git diff --all,False,6,0,2
+10000000-0000-0000-0000-000000000013,D,git show --diff,False,7,3,3
+10000000-0000-0000-0000-000000000014,A,git remote --urls,False,3,0,1
+10000000-0000-0000-0000-000000000014,B,git remote -v,True,31,11,4
+10000000-0000-0000-0000-000000000014,C,git show remotes,False,3,0,3
+10000000-0000-0000-0000-000000000014,D,git origin --list,False,4,1,1
+10000000-0000-0000-0000-000000000015,A,git link origin <url>,False,2,0,1
+10000000-0000-0000-0000-000000000015,B,git remote add origin <url>,True,32,13,6
+10000000-0000-0000-0000-000000000015,C,git remote set <url>,False,5,0,3
+10000000-0000-0000-0000-000000000015,D,git attach origin <url>,False,4,0,1
+10000000-0000-0000-0000-000000000016,A,git fetch downloads commits without merging into your working tree,True,27,9,7
+10000000-0000-0000-0000-000000000016,B,git fetch automatically merges changes into current branch,False,3,0,2
+10000000-0000-0000-0000-000000000016,C,git fetch uploads commits to origin,False,4,0,2
+10000000-0000-0000-0000-000000000016,D,git fetch deletes remote tracking branches,False,3,0,0
+10000000-0000-0000-0000-000000000017,A,Forces an unconditional overwrite of remote history,False,1,0,1
+10000000-0000-0000-0000-000000000017,B,Sets origin/main as the upstream tracking reference,True,30,9,7
+10000000-0000-0000-0000-000000000017,C,Unzips packfiles on remote server,False,2,0,2
+10000000-0000-0000-0000-000000000017,D,Updates Git software on the host,False,2,0,1
+10000000-0000-0000-0000-000000000018,A,Locks files against read operations,False,2,0,1
+10000000-0000-0000-0000-000000000018,B,Specifies intentionally untracked file patterns Git should ignore,True,20,5,7
+10000000-0000-0000-0000-000000000018,C,Deletes binary files from repository history,False,3,0,2
+10000000-0000-0000-0000-000000000018,D,Encrypts private keys before pushing,False,6,1,1
+10000000-0000-0000-0000-000000000019,A,"git author ""Name""",False,1,0,0
+10000000-0000-0000-0000-000000000019,B,"git config --global user.name ""Name""",True,26,13,3
+10000000-0000-0000-0000-000000000019,C,"git set user ""Name""",False,4,0,3
+10000000-0000-0000-0000-000000000019,D,"git profile --name ""Name""",False,5,0,3
+10000000-0000-0000-0000-000000000020,A,git config --show,False,3,0,2
+10000000-0000-0000-0000-000000000020,B,git config --list,True,16,5,1
+10000000-0000-0000-0000-000000000020,C,git env,False,4,1,2
+10000000-0000-0000-0000-000000000020,D,git settings,False,3,1,2
+10000000-0000-0000-0000-000000000021,A,git commit --amend,True,28,13,4
+10000000-0000-0000-0000-000000000021,B,git commit --update,False,2,1,1
+10000000-0000-0000-0000-000000000021,C,git commit --fix,False,3,1,1
+10000000-0000-0000-0000-000000000021,D,git commit --replace,False,5,1,3
+10000000-0000-0000-0000-000000000022,A,git tag v1.0,True,12,4,4
+10000000-0000-0000-0000-000000000022,B,git label v1.0,False,4,0,2
+10000000-0000-0000-0000-000000000022,C,git release v1.0,False,6,0,4
+10000000-0000-0000-0000-000000000022,D,git bookmark v1.0,False,2,0,1
+10000000-0000-0000-0000-000000000023,A,git show <hash>,True,30,9,7
+10000000-0000-0000-0000-000000000023,B,git display <hash>,False,1,0,1
+10000000-0000-0000-0000-000000000023,C,git print <hash>,False,4,0,3
+10000000-0000-0000-0000-000000000023,D,git view <hash>,False,5,0,2
+10000000-0000-0000-0000-000000000024,A,The root commit created when repository was initialized,False,2,1,0
+10000000-0000-0000-0000-000000000024,B,A pointer to the current branch or commit checked out in working tree,True,21,5,1
+10000000-0000-0000-0000-000000000024,C,The primary remote repository branch on GitHub,False,5,2,1
+10000000-0000-0000-0000-000000000024,D,The most recent tag in repository history,False,4,0,2
+10000000-0000-0000-0000-000000000025,A,git rm <file>,True,23,12,3
+10000000-0000-0000-0000-000000000025,B,git delete <file>,False,4,1,1
+10000000-0000-0000-0000-000000000025,C,git drop <file>,False,4,0,3
+10000000-0000-0000-0000-000000000025,D,git erase <file>,False,2,1,0
+10000000-0000-0000-0000-000000000026,A,A merge where branch pointer simply advances forward without a merge commit,True,19,6,4
+10000000-0000-0000-0000-000000000026,B,A merge executed with git rebase --force,False,2,0,2
+10000000-0000-0000-0000-000000000026,C,A squash merge performed on GitHub PRs,False,3,1,1
+10000000-0000-0000-0000-000000000026,D,An automated resolution of merge conflicts,False,2,0,2
+10000000-0000-0000-0000-000000000027,A,git log --compact,False,8,0,6
+10000000-0000-0000-0000-000000000027,B,git log --oneline,True,24,6,3
+10000000-0000-0000-0000-000000000027,C,git log --summary,False,5,0,2
+10000000-0000-0000-0000-000000000027,D,git log --brief,False,4,0,2
+10000000-0000-0000-0000-000000000028,A,git hop,False,1,1,0
+10000000-0000-0000-0000-000000000028,B,git switch,True,25,8,6
+10000000-0000-0000-0000-000000000028,C,git move,False,2,0,0
+10000000-0000-0000-0000-000000000029,A,git restore <file>,True,23,9,3
+10000000-0000-0000-0000-000000000029,B,git reset --clean,False,5,1,2
+10000000-0000-0000-0000-000000000029,C,git revert-file <file>,False,3,0,1
+10000000-0000-0000-0000-000000000029,D,git undo <file>,False,2,0,2
+10000000-0000-0000-0000-000000000030,A,.git,True,25,9,5
+10000000-0000-0000-0000-000000000030,B,.github,False,2,0,2
+10000000-0000-0000-0000-000000000030,C,.vcs,False,4,0,2
+20000000-0000-0000-0000-000000000001,A,Merge deletes branches; rebase keeps them,False,2,0,1
+20000000-0000-0000-0000-000000000001,B,Merge preserves exact topology with a merge commit; rebase reapplies commits on ,True,18,6,4
+20000000-0000-0000-0000-000000000001,C,Rebase preserves commit hashes; merge rewrites them,False,3,1,1
+20000000-0000-0000-0000-000000000001,D,Rebase can only run on remote repositories,False,3,1,0
+20000000-0000-0000-0000-000000000002,A,Undoes last commit and discards working tree changes,False,10,1,4
+20000000-0000-0000-0000-000000000002,B,Undoes last commit while keeping modifications staged in index,True,10,3,1
+20000000-0000-0000-0000-000000000002,C,Leaves changes unstaged in working tree,False,4,0,3
+20000000-0000-0000-0000-000000000002,D,Creates an inverse revert commit,False,2,1,0
+20000000-0000-0000-0000-000000000003,A,Discards all working tree files permanently,False,1,0,0
+20000000-0000-0000-0000-000000000003,B,"Undoes commit and un-stages files, preserving modifications in working directory",True,26,13,2
+20000000-0000-0000-0000-000000000003,C,Keeps files staged in the index,False,3,1,1
+20000000-0000-0000-0000-000000000003,D,Deletes orphaned commits immediately,False,4,0,1
+20000000-0000-0000-0000-000000000004,A,Undoes commit while keeping changes staged,False,4,0,0
+20000000-0000-0000-0000-000000000004,B,Rewinds HEAD and discards all uncommitted modifications from working tree and in,True,18,8,4
+20000000-0000-0000-0000-000000000004,C,Stashes uncommitted changes automatically,False,9,0,3
+20000000-0000-0000-0000-000000000004,D,Creates a backup tag before resetting,False,4,0,2
+20000000-0000-0000-0000-000000000005,A,git graft <commit>,False,5,0,2
+20000000-0000-0000-0000-000000000005,B,git cherry-pick <commit>,True,17,12,1
+20000000-0000-0000-0000-000000000005,C,git apply-commit <commit>,False,5,1,2
+20000000-0000-0000-0000-000000000005,D,git extract <commit>,False,4,0,3
+20000000-0000-0000-0000-000000000006,A,git history --all,False,5,0,2
+20000000-0000-0000-0000-000000000006,B,git reflog,True,18,6,2
+20000000-0000-0000-0000-000000000006,C,git audit,False,4,0,1
+20000000-0000-0000-0000-000000000006,D,git fsck --dangling,False,6,0,4
+20000000-0000-0000-0000-000000000007,A,Reverts tracked files to HEAD state,False,3,1,2
+20000000-0000-0000-0000-000000000007,B,Forcefully removes untracked files and directories from working tree,True,19,7,2
+20000000-0000-0000-0000-000000000007,C,Removes unused Git packfiles,False,2,0,1
+20000000-0000-0000-0000-000000000007,D,Cleans remote tracking branches,False,6,0,3
+20000000-0000-0000-0000-000000000008,A,Revert destroys history; reset preserves it,False,5,1,2
+20000000-0000-0000-0000-000000000008,B,Revert creates a new forward commit recording the inverse changes; reset alters ,True,17,5,2
+20000000-0000-0000-0000-000000000008,C,Revert only works on uncommitted changes,False,9,2,5
+20000000-0000-0000-0000-000000000008,D,Reset requires administrative sudo privileges,False,5,0,1
+20000000-0000-0000-0000-000000000009,A,A visual git log tree,False,3,0,0
+20000000-0000-0000-0000-000000000009,B,"An interactive command list to reorder, squash, edit, or drop the last 3 commits",True,20,6,5
+20000000-0000-0000-0000-000000000009,C,A diff file of merge conflicts,False,7,1,5
+20000000-0000-0000-0000-000000000009,D,A commit message editor for commit 3,False,9,1,3
+20000000-0000-0000-0000-000000000010,A,Melds commit into previous commit and combines messages,True,18,6,4
+20000000-0000-0000-0000-000000000010,B,Discards commit changes completely,False,5,1,2
+20000000-0000-0000-0000-000000000010,C,Splits commit into multiple micro-commits,False,4,0,2
+20000000-0000-0000-0000-000000000010,D,Applies commit as a stash,False,4,0,2
+20000000-0000-0000-0000-000000000011,A,Fixup automatically runs tests before committing,False,6,2,3
+20000000-0000-0000-0000-000000000011,B,Fixup melds into previous commit while discarding its own commit message,True,15,5,4
+20000000-0000-0000-0000-000000000011,C,Fixup applies only to staged files,False,5,1,2
+20000000-0000-0000-0000-000000000011,D,Fixup cannot be aborted once started,False,5,0,2
+20000000-0000-0000-0000-000000000012,A,git branch -d is deprecated; use git remove,False,7,2,4
+20000000-0000-0000-0000-000000000012,B,It prevents accidental data loss; use git branch -D to force deletion,True,19,8,3
+20000000-0000-0000-0000-000000000012,C,You must prune remote branches first,False,3,1,1
+20000000-0000-0000-0000-000000000012,D,You must squash before deleting any branch,False,4,0,3
+20000000-0000-0000-0000-000000000013,A,git remote rm origin/feature-auth,False,8,1,4
+20000000-0000-0000-0000-000000000013,B,git push origin --delete feature-auth,True,16,3,3
+20000000-0000-0000-0000-000000000013,C,git delete-remote origin feature-auth,False,1,0,1
+20000000-0000-0000-0000-000000000013,D,git origin branch -d feature-auth,False,3,0,1
+20000000-0000-0000-0000-000000000014,A,Calculates code quality defect score,False,6,0,3
+20000000-0000-0000-0000-000000000014,B,"Shows line-by-line commit hash, author, and timestamp of last modification",True,18,8,1
+20000000-0000-0000-0000-000000000014,C,Lists developers with write access,False,6,1,5
+20000000-0000-0000-0000-000000000014,D,Detects compiler warnings,False,7,0,4
+20000000-0000-0000-0000-000000000015,A,git merge --cancel,False,5,0,1
+20000000-0000-0000-0000-000000000015,B,git merge --abort,True,18,9,2
+20000000-0000-0000-0000-000000000015,C,git reset --merge-undo,False,7,0,2
+20000000-0000-0000-0000-000000000015,D,git revert merge,False,5,1,2
+20000000-0000-0000-0000-000000000016,A,"git commit -m ""resolved""",False,3,1,1
+20000000-0000-0000-0000-000000000016,B,git rebase --continue,True,18,7,0
+20000000-0000-0000-0000-000000000016,C,git rebase --finish,False,3,3,0
+20000000-0000-0000-0000-000000000016,D,git merge --rebase,False,7,1,2
+20000000-0000-0000-0000-000000000017,A,git clone --local,False,3,0,3
+20000000-0000-0000-0000-000000000017,B,git worktree,True,19,8,1
+20000000-0000-0000-0000-000000000017,C,git multi-branch,False,9,1,4
+20000000-0000-0000-0000-000000000017,D,git subrepo,False,1,0,1
+20000000-0000-0000-0000-000000000018,A,git submodules --download,False,6,0,4
+20000000-0000-0000-0000-000000000018,B,git submodule update --init --recursive,True,13,4,1
+20000000-0000-0000-0000-000000000018,C,git fetch --submodules-all,False,4,0,2
+20000000-0000-0000-0000-000000000018,D,git clone-deps,False,4,0,1
+20000000-0000-0000-0000-000000000019,A,git branch --from-stash debug-fix,False,6,1,0
+20000000-0000-0000-0000-000000000019,B,git stash branch debug-fix,True,17,8,1
+20000000-0000-0000-0000-000000000019,C,git apply-stash --new-branch debug-fix,False,6,1,3
+20000000-0000-0000-0000-000000000019,D,git pop --branch debug-fix,False,11,1,5
+20000000-0000-0000-0000-000000000020,A,Repository corruption in packfiles,False,5,0,2
+20000000-0000-0000-0000-000000000020,B,Checking out a specific commit hash or tag directly instead of a local branch,True,17,10,2
+20000000-0000-0000-0000-000000000020,C,Network connection failure during git push,False,15,0,9
+20000000-0000-0000-0000-000000000020,D,Deleting all unstaged files with git clean,False,3,1,2
+20000000-0000-0000-0000-000000000021,A,Changes from incoming remote branch being merged,False,7,2,3
+20000000-0000-0000-0000-000000000021,B,Changes in your current branch (HEAD) before the merge,True,17,8,2
+20000000-0000-0000-0000-000000000021,C,Common ancestor base version,False,7,0,4
+20000000-0000-0000-0000-000000000021,D,Deprecated changes discarded automatically,False,8,1,3
+20000000-0000-0000-0000-000000000022,A,A merge between three remote repositories simultaneously,False,5,1,2
+20000000-0000-0000-0000-000000000022,B,A merge using two branch tips and their common ancestor commit base,True,13,8,0
+20000000-0000-0000-0000-000000000022,C,A squash merge spanning three commits,False,5,1,3
+20000000-0000-0000-0000-000000000022,D,A merge requiring three approvals on GitHub,False,5,0,3
+20000000-0000-0000-0000-000000000023,A,Lightweight tags cannot be deleted,False,4,0,3
+20000000-0000-0000-0000-000000000023,B,"Annotated tags are stored as full Git objects with tagger name, date, and messag",True,14,6,1
+20000000-0000-0000-0000-000000000023,C,Annotated tags only exist on remote servers,False,4,0,3
+20000000-0000-0000-0000-000000000023,D,Lightweight tags require GPG key signatures,False,7,2,1
+20000000-0000-0000-0000-000000000024,A,Tags are local-only by design and cannot be pushed,False,5,0,2
+20000000-0000-0000-0000-000000000024,B,Tags must be pushed explicitly with git push origin --tags or git push origin <t,True,22,7,4
+20000000-0000-0000-0000-000000000024,C,Tags require enterprise licenses to sync,False,9,0,5
+20000000-0000-0000-0000-000000000024,D,You must commit tags to .gitignore,False,5,0,3
+20000000-0000-0000-0000-000000000025,A,git log --graph,True,21,8,0
+20000000-0000-0000-0000-000000000025,B,git log --tree,False,8,1,2
+20000000-0000-0000-0000-000000000025,C,git log --visual,False,6,2,1
+20000000-0000-0000-0000-000000000025,D,git log --ascii,False,1,0,0
+20000000-0000-0000-0000-000000000026,A,git author-stats,False,2,0,0
+20000000-0000-0000-0000-000000000026,B,git shortlog -sn,True,18,9,2
+20000000-0000-0000-0000-000000000026,C,git committers --ranked,False,5,0,2
+20000000-0000-0000-0000-000000000026,D,git log --authors-only,False,3,0,2
+20000000-0000-0000-0000-000000000027,A,git remote clean,False,9,1,3
+20000000-0000-0000-0000-000000000027,B,git fetch --prune,True,16,6,2
+20000000-0000-0000-0000-000000000027,C,git branch -clean,False,5,0,2
+20000000-0000-0000-0000-000000000027,D,git pull --purge,False,11,1,5
+20000000-0000-0000-0000-000000000028,A,System configuration (/etc/gitconfig),False,7,0,5
+20000000-0000-0000-0000-000000000028,B,Local repository configuration (.git/config),True,13,7,1
+20000000-0000-0000-0000-000000000028,C,Global user configuration (~/.gitconfig),False,9,3,0
+20000000-0000-0000-0000-000000000028,D,Environment default variables,False,6,0,4
+20000000-0000-0000-0000-000000000029,A,Shows differences between the tips of branchA and branchB,True,12,7,3
+20000000-0000-0000-0000-000000000029,B,Merges branchA into branchB dry-run,False,4,0,2
+20000000-0000-0000-0000-000000000029,C,Deletes identical commits on both branches,False,3,0,2
+20000000-0000-0000-0000-000000000029,D,Lists conflicting file names only,False,6,0,2
+20000000-0000-0000-0000-000000000030,A,Renames all modified files in the commit,False,5,1,3
+20000000-0000-0000-0000-000000000030,B,Applies commit changes and opens an editor to change the commit message,True,24,13,1
+20000000-0000-0000-0000-000000000030,C,Rewrites branch name,False,7,0,3
+20000000-0000-0000-0000-000000000030,D,Changes commit timestamp,False,7,1,1
+30000000-0000-0000-0000-000000000001,A,git search --binary,False,4,1,0
+30000000-0000-0000-0000-000000000001,B,git bisect,True,15,8,2
+30000000-0000-0000-0000-000000000001,C,git isolate,False,13,0,7
+30000000-0000-0000-0000-000000000001,D,git find-bug,False,11,0,3
+30000000-0000-0000-0000-000000000002,A,git bisect --auto <script>,False,10,2,4
+30000000-0000-0000-0000-000000000002,B,git bisect run <script>,True,14,8,0
+30000000-0000-0000-0000-000000000002,C,git test --bisect <script>,False,9,2,2
+30000000-0000-0000-0000-000000000002,D,git bisect eval <script>,False,3,0,1
+30000000-0000-0000-0000-000000000003,A,"Files, Folders, Symlinks, Hardlinks",False,7,2,1
+30000000-0000-0000-0000-000000000003,B,"Blobs, Trees, Commits, Tags",True,13,4,1
+30000000-0000-0000-0000-000000000003,C,"Branches, Remotes, Stashes, Indexes",False,3,2,1
+30000000-0000-0000-0000-000000000003,D,"Diffs, Patches, Headers, Footers",False,13,0,7
+30000000-0000-0000-0000-000000000004,A,Directory structures and timestamps,False,4,0,3
+30000000-0000-0000-0000-000000000004,B,File data content only (no filename or mode metadata),True,8,5,1
+30000000-0000-0000-0000-000000000004,C,Author signatures and PGP keys,False,14,1,4
+30000000-0000-0000-0000-000000000004,D,Delta compression tables,False,7,0,4
+30000000-0000-0000-0000-000000000005,A,git read-object <hash>,False,8,0,2
+30000000-0000-0000-0000-000000000005,B,git cat-file -p <hash>,True,7,5,0
+30000000-0000-0000-0000-000000000005,C,git dump <hash>,False,8,1,2
+30000000-0000-0000-0000-000000000005,D,git inspect-raw <hash>,False,13,0,6
+30000000-0000-0000-0000-000000000006,A,Two generations prior along first parent history,False,9,2,3
+30000000-0000-0000-0000-000000000006,B,The second parent commit of a merge commit,True,9,4,1
+30000000-0000-0000-0000-000000000006,C,The second line of the commit message,False,7,2,4
+30000000-0000-0000-0000-000000000006,D,The second stash on the stack,False,6,4,1
+30000000-0000-0000-0000-000000000007,A,HEAD~3 is invalid syntax in modern Git,False,16,2,7
+30000000-0000-0000-0000-000000000007,B,Both traverse 3 generations prior along the primary first-parent ancestry line,True,7,5,0
+30000000-0000-0000-0000-000000000007,C,HEAD^^^ looks for octopus merge third parent,False,7,1,6
+30000000-0000-0000-0000-000000000007,D,HEAD~3 resets staged files,False,6,1,2
+30000000-0000-0000-0000-000000000008,A,git hash-name HEAD,False,5,1,0
+30000000-0000-0000-0000-000000000008,B,git rev-parse HEAD,True,5,3,0
+30000000-0000-0000-0000-000000000008,C,git id HEAD,False,11,2,2
+30000000-0000-0000-0000-000000000008,D,git get-hash HEAD,False,10,2,0
+30000000-0000-0000-0000-000000000009,A,git doctor,False,5,1,2
+30000000-0000-0000-0000-000000000009,B,git fsck --lost-found,True,5,2,0
+30000000-0000-0000-0000-000000000009,C,git recover --all,False,6,0,2
+30000000-0000-0000-0000-000000000009,D,git audit --dangling,False,5,3,1
+30000000-0000-0000-0000-000000000010,A,Deletes branches with no commits in 30 days,False,4,0,1
+30000000-0000-0000-0000-000000000010,B,"Packs loose objects into efficient packfiles, updates commit graphs, and prunes ",True,7,4,1
+30000000-0000-0000-0000-000000000010,C,Cleans remote origin servers,False,10,5,2
+30000000-0000-0000-0000-000000000010,D,Empties .gitignore files,False,9,4,1
+30000000-0000-0000-0000-000000000011,A,Reverts repetitive commits,False,13,4,3
+30000000-0000-0000-0000-000000000011,B,Records merge conflict resolutions and automatically re-applies them when identi,True,10,5,0
+30000000-0000-0000-0000-000000000011,C,Rewrites remote commit authors,False,4,1,0
+30000000-0000-0000-0000-000000000011,D,Reruns failing continuous integration pipelines,False,7,0,4
+30000000-0000-0000-0000-000000000012,A,Exit code 0,False,10,1,4
+30000000-0000-0000-0000-000000000012,B,"Any non-zero exit code (e.g., 1)",True,11,6,3
+30000000-0000-0000-0000-000000000012,C,Exit code -1 only,False,5,2,0
+30000000-0000-0000-0000-000000000012,D,Exit code 255 only,False,7,2,2
+30000000-0000-0000-0000-000000000013,A,.github/workflows,False,7,1,2
+30000000-0000-0000-0000-000000000013,B,.git/hooks,True,12,7,1
+30000000-0000-0000-0000-000000000013,C,.githooks.json,False,8,1,2
+30000000-0000-0000-0000-000000000013,D,src/scripts/hooks,False,10,4,1
+30000000-0000-0000-0000-000000000014,A,Add the file to .gitignore and commit a deletion,False,12,0,6
+30000000-0000-0000-0000-000000000014,B,"Purge secret from history using git-filter-repo, force push, and immediately rev",True,8,6,0
+30000000-0000-0000-0000-000000000014,C,Run git revert on the commit,False,3,0,1
+30000000-0000-0000-0000-000000000014,D,Delete the branch and recreate it,False,8,4,0
+30000000-0000-0000-0000-000000000015,A,git create-tree,False,6,2,2
+30000000-0000-0000-0000-000000000015,B,git write-tree,True,10,7,0
+30000000-0000-0000-0000-000000000015,C,git make-tree,False,6,1,1
+30000000-0000-0000-0000-000000000015,D,git save-index,False,4,0,2
+30000000-0000-0000-0000-000000000016,A,git commit-tree,True,8,3,0
+30000000-0000-0000-0000-000000000016,B,git build-commit,False,7,0,3
+30000000-0000-0000-0000-000000000016,C,git raw-commit,False,7,2,0
+30000000-0000-0000-0000-000000000016,D,git make-commit,False,9,4,2
+30000000-0000-0000-0000-000000000017,A,git sha256,False,8,0,4
+30000000-0000-0000-0000-000000000017,B,git hash-object -w <file>,True,8,2,2
+30000000-0000-0000-0000-000000000017,C,git write-blob <file>,False,8,2,3
+30000000-0000-0000-0000-000000000017,D,git store-object <file>,False,8,0,3
+30000000-0000-0000-0000-000000000018,A,Renames newbase to upstream,False,4,0,2
+30000000-0000-0000-0000-000000000018,B,Transplants commits on branch from upstream base onto a completely different new,True,7,2,1
+30000000-0000-0000-0000-000000000018,C,Copies submodules onto branch,False,8,1,3
+30000000-0000-0000-0000-000000000018,D,Performs a three-way squash merge,False,9,0,3
+30000000-0000-0000-0000-000000000019,A,24 hours,False,9,1,7
+30000000-0000-0000-0000-000000000019,B,30 days for unreachable entries (90 days for reachable),True,11,4,0
+30000000-0000-0000-0000-000000000019,C,7 days,False,6,2,0
+30000000-0000-0000-0000-000000000019,D,Indefinitely until manual deletion,False,9,0,5
+30000000-0000-0000-0000-000000000020,A,git partial-clone,False,8,1,2
+30000000-0000-0000-0000-000000000020,B,git sparse-checkout,True,7,5,0
+30000000-0000-0000-0000-000000000020,C,git split-view,False,12,2,5
+30000000-0000-0000-0000-000000000020,D,git filter-dir,False,9,3,4
+30000000-0000-0000-0000-000000000021,A,A clone with only text files,False,7,0,2
+30000000-0000-0000-0000-000000000021,B,A clone containing only the most recent commit without complete historical commi,True,9,5,1
+30000000-0000-0000-0000-000000000021,C,A read-only repository clone,False,3,1,1
+30000000-0000-0000-0000-000000000021,D,A fork hosted on GitHub,False,9,1,2
+30000000-0000-0000-0000-000000000022,A,git zip-repo,False,5,0,4
+30000000-0000-0000-0000-000000000022,B,git bundle create <file.bundle> --all,True,16,6,3
+30000000-0000-0000-0000-000000000022,C,git tar HEAD,False,6,1,3
+30000000-0000-0000-0000-000000000022,D,git archive-all,False,10,2,2
+30000000-0000-0000-0000-000000000023,A,git commit -s,False,7,1,2
+30000000-0000-0000-0000-000000000023,B,git commit -S,True,7,2,1
+30000000-0000-0000-0000-000000000023,C,git commit --gpg,False,5,1,3
+30000000-0000-0000-0000-000000000023,D,git commit --signoff,False,6,0,3
+30000000-0000-0000-0000-000000000024,A,recursive strategy,False,14,5,2
+30000000-0000-0000-0000-000000000024,B,octopus strategy,True,17,11,0
+30000000-0000-0000-0000-000000000024,C,resolve strategy,False,9,0,5
+30000000-0000-0000-0000-000000000024,D,ort strategy,False,12,1,5
+30000000-0000-0000-0000-000000000025,A,-s ours is deprecated; -X ours is preferred,False,5,0,2
+30000000-0000-0000-0000-000000000025,B,-s ours discards all incoming tree changes; -X ours uses three-way merge auto-re,True,11,7,1
+30000000-0000-0000-0000-000000000025,C,-X ours operates only on remote branches,False,8,2,3
+30000000-0000-0000-0000-000000000025,D,Both commands have identical behavior,False,6,2,3
+30000000-0000-0000-0000-000000000026,A,git why-ignored <path>,False,12,3,4
+30000000-0000-0000-0000-000000000026,B,git check-ignore -v <path>,True,16,7,1
+30000000-0000-0000-0000-000000000026,C,git debug-ignore <path>,False,7,0,4
+30000000-0000-0000-0000-000000000026,D,git inspect-gitignore <path>,False,9,3,2
+30000000-0000-0000-0000-000000000027,A,git set-branch,False,5,0,3
+30000000-0000-0000-0000-000000000027,B,git update-ref refs/heads/<branch> <hash>,True,4,3,0
+30000000-0000-0000-0000-000000000027,C,git edit-head,False,13,1,4
+30000000-0000-0000-0000-000000000027,D,git link-branch,False,3,0,3
+30000000-0000-0000-0000-000000000028,A,Stores plain-text commit messages,False,9,1,5
+30000000-0000-0000-0000-000000000028,B,Provides fan-out binary search index mapping object SHA hashes to exact byte off,True,11,6,1
+30000000-0000-0000-0000-000000000028,C,Holds remote credentials securely,False,9,1,4
+30000000-0000-0000-0000-000000000028,D,Tracks working tree modifications,False,9,1,3
+30000000-0000-0000-0000-000000000029,A,Only file name and author email,False,9,1,2
+30000000-0000-0000-0000-000000000029,B,"File path, blob SHA hash, file mode, and cached filesystem stat metadata (mtime,",True,8,5,0
+30000000-0000-0000-0000-000000000029,C,Historical commit ancestry tree,False,7,0,3
+30000000-0000-0000-0000-000000000029,D,Continuous integration results,False,5,1,1
+30000000-0000-0000-0000-000000000030,A,git test-pack,False,9,3,4
+30000000-0000-0000-0000-000000000030,B,git verify-pack -v <packfile.idx>,True,9,5,3
+30000000-0000-0000-0000-000000000030,C,git check-objects,False,7,2,0
+30000000-0000-0000-0000-000000000030,D,git inspect-pack,False,11,2,5

@@ -1,0 +1,4592 @@
+[
+  {
+    "id": "10000000-0000-0000-0000-000000000001",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 1,
+    "difficulty": "easy",
+    "question_text": "Which command turns the current folder into a new Git repository?",
+    "text": "Which command turns the current folder into a new Git repository?",
+    "correct_answer_index": 1,
+    "is_active": true,
+    "topic": "basics",
+    "explanation": "git init creates the hidden .git folder that stores the repository. The other three are not Git commands.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0001-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000001",
+        "option_text": "git start",
+        "text": "git start",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0001-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000001",
+        "option_text": "git init",
+        "text": "git init",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0001-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000001",
+        "option_text": "git new",
+        "text": "git new",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0001-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000001",
+        "option_text": "git create",
+        "text": "git create",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000002",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 2,
+    "difficulty": "easy",
+    "question_text": "Which command shows which files are modified, staged, or untracked?",
+    "text": "Which command shows which files are modified, staged, or untracked?",
+    "correct_answer_index": 2,
+    "is_active": true,
+    "topic": "basics",
+    "explanation": "git status lists staged, modified and untracked files. git diff --stat ignores untracked files, git log shows history, and git show displays a single commit.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0002-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000002",
+        "option_text": "git log",
+        "text": "git log",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0002-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000002",
+        "option_text": "git diff --stat",
+        "text": "git diff --stat",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0002-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000002",
+        "option_text": "git status",
+        "text": "git status",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0002-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000002",
+        "option_text": "git show",
+        "text": "git show",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000003",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 3,
+    "difficulty": "easy",
+    "question_text": "You want to create a new branch called feature and switch to it in one command. Which one?",
+    "text": "You want to create a new branch called feature and switch to it in one command. Which one?",
+    "correct_answer_index": 3,
+    "is_active": true,
+    "topic": "branching",
+    "explanation": "The -c flag creates the branch and switches to it. git branch only creates it, and git checkout or git switch without -c fail when the branch does not exist yet.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0003-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000003",
+        "option_text": "git branch feature",
+        "text": "git branch feature",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0003-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000003",
+        "option_text": "git checkout feature",
+        "text": "git checkout feature",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0003-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000003",
+        "option_text": "git switch feature",
+        "text": "git switch feature",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0003-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000003",
+        "option_text": "git switch -c feature",
+        "text": "git switch -c feature",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000004",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 4,
+    "difficulty": "easy",
+    "question_text": "Which command copies an existing remote repository, with its full history, to your computer?",
+    "text": "Which command copies an existing remote repository, with its full history, to your computer?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "remote",
+    "explanation": "git clone downloads the whole repository and sets up the origin remote. git pull only works inside an existing repository, and \"fork\" is a GitHub feature, not a Git command.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0004-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000004",
+        "option_text": "git clone",
+        "text": "git clone",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0004-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000004",
+        "option_text": "git copy",
+        "text": "git copy",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0004-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000004",
+        "option_text": "git fork",
+        "text": "git fork",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0004-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000004",
+        "option_text": "git pull",
+        "text": "git pull",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000005",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 5,
+    "difficulty": "easy",
+    "question_text": "You staged notes.txt by mistake. You want to unstage it but keep your edits in the file. Which command?",
+    "text": "You staged notes.txt by mistake. You want to unstage it but keep your edits in the file. Which command?",
+    "correct_answer_index": 2,
+    "is_active": true,
+    "topic": "undo",
+    "explanation": "git restore --staged moves the file out of the staging area and leaves your edits in place. git restore without --staged and git reset --hard throw the edits away, and git stash removes them from the file.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0005-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000005",
+        "option_text": "git reset --hard",
+        "text": "git reset --hard",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0005-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000005",
+        "option_text": "git stash",
+        "text": "git stash",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0005-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000005",
+        "option_text": "git restore --staged notes.txt",
+        "text": "git restore --staged notes.txt",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0005-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000005",
+        "option_text": "git restore notes.txt",
+        "text": "git restore notes.txt",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000006",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 6,
+    "difficulty": "medium",
+    "question_text": "debug.log is already tracked by Git. You now add *.log to .gitignore. What happens to debug.log?",
+    "text": "debug.log is already tracked by Git. You now add *.log to .gitignore. What happens to debug.log?",
+    "correct_answer_index": 1,
+    "is_active": true,
+    "topic": "basics",
+    "explanation": ".gitignore only affects untracked files. A tracked file stays tracked until you run git rm --cached on it.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0006-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000006",
+        "option_text": "Git deletes it from the repository",
+        "text": "Git deletes it from the repository",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0006-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000006",
+        "option_text": "Git keeps tracking it and still reports its changes",
+        "text": "Git keeps tracking it and still reports its changes",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0006-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000006",
+        "option_text": "Git automatically stops tracking it",
+        "text": "Git automatically stops tracking it",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0006-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000006",
+        "option_text": "Git refuses to commit any further changes to it",
+        "text": "Git refuses to commit any further changes to it",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000007",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 7,
+    "difficulty": "medium",
+    "question_text": "main has no new commits since you created feature from it. On main you run git merge feature. What happens?",
+    "text": "main has no new commits since you created feature from it. On main you run git merge feature. What happens?",
+    "correct_answer_index": 2,
+    "is_active": true,
+    "topic": "branching",
+    "explanation": "When main has not diverged, Git simply moves the main pointer forward. No merge commit is needed unless you pass --no-ff.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0007-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000007",
+        "option_text": "A merge commit is always created",
+        "text": "A merge commit is always created",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0007-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000007",
+        "option_text": "Git reports a merge conflict",
+        "text": "Git reports a merge conflict",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0007-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000007",
+        "option_text": "main moves forward to feature with no merge commit (fast-forward)",
+        "text": "main moves forward to feature with no merge commit (fast-forward)",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0007-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000007",
+        "option_text": "Nothing happens unless you add --force",
+        "text": "Nothing happens unless you add --force",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000008",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 8,
+    "difficulty": "medium",
+    "question_text": "Branch old-login has commits that were never merged anywhere, and you want it gone. Which command deletes it?",
+    "text": "Branch old-login has commits that were never merged anywhere, and you want it gone. Which command deletes it?",
+    "correct_answer_index": 3,
+    "is_active": true,
+    "topic": "branching",
+    "explanation": "-d is the safe delete and refuses when commits are unmerged. -D forces the deletion. git switch -d only detaches HEAD, and --remove is not a valid option.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0008-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000008",
+        "option_text": "git branch -d old-login",
+        "text": "git branch -d old-login",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0008-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000008",
+        "option_text": "git branch --remove old-login",
+        "text": "git branch --remove old-login",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0008-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000008",
+        "option_text": "git switch -d old-login",
+        "text": "git switch -d old-login",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0008-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000008",
+        "option_text": "git branch -D old-login",
+        "text": "git branch -D old-login",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000009",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 9,
+    "difficulty": "medium",
+    "question_text": "What is the difference between git fetch and git pull?",
+    "text": "What is the difference between git fetch and git pull?",
+    "correct_answer_index": 1,
+    "is_active": true,
+    "topic": "remote",
+    "explanation": "git fetch only updates your remote-tracking branches. git pull is a fetch followed by a merge (or a rebase if configured).",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0009-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000009",
+        "option_text": "fetch merges new commits into your branch; pull only downloads them",
+        "text": "fetch merges new commits into your branch; pull only downloads them",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0009-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000009",
+        "option_text": "fetch downloads new commits without changing your current branch; pull downloads and then merges them",
+        "text": "fetch downloads new commits without changing your current branch; pull downloads and then merges them",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0009-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000009",
+        "option_text": "They do exactly the same thing",
+        "text": "They do exactly the same thing",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0009-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000009",
+        "option_text": "fetch uploads your commits; pull downloads them",
+        "text": "fetch uploads your commits; pull downloads them",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000010",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 10,
+    "difficulty": "medium",
+    "question_text": "A bad commit was already pushed to the shared main branch. What is the safest way to undo it without rewriting history?",
+    "text": "A bad commit was already pushed to the shared main branch. What is the safest way to undo it without rewriting history?",
+    "correct_answer_index": 2,
+    "is_active": true,
+    "topic": "undo",
+    "explanation": "git revert adds a new commit that cancels the bad one and keeps history intact. The other options rewrite history, which causes problems for teammates who already pulled.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0010-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000010",
+        "option_text": "git reset --hard HEAD~1 , then git push --force",
+        "text": "git reset --hard HEAD~1 , then git push --force",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0010-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000010",
+        "option_text": "git commit --amend",
+        "text": "git commit --amend",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0010-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000010",
+        "option_text": "git revert HEAD",
+        "text": "git revert HEAD",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0010-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000010",
+        "option_text": "git rebase -i and drop the commit",
+        "text": "git rebase -i and drop the commit",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000011",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 11,
+    "difficulty": "hard",
+    "question_text": "You made your last 3 commits by mistake. Undo them, but keep all their changes staged and ready to recommit. Which command?",
+    "text": "You made your last 3 commits by mistake. Undo them, but keep all their changes staged and ready to recommit. Which command?",
+    "correct_answer_index": 3,
+    "is_active": true,
+    "topic": "undo",
+    "explanation": "--soft moves the branch back and keeps the changes staged. --mixed leaves them unstaged, --hard discards them, and HEAD~2 only undoes two commits.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0011-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000011",
+        "option_text": "git reset --hard HEAD~3",
+        "text": "git reset --hard HEAD~3",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0011-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000011",
+        "option_text": "git reset --mixed HEAD~3",
+        "text": "git reset --mixed HEAD~3",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0011-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000011",
+        "option_text": "git reset --soft HEAD~2",
+        "text": "git reset --soft HEAD~2",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0011-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000011",
+        "option_text": "git reset --soft HEAD~3",
+        "text": "git reset --soft HEAD~3",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000012",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 12,
+    "difficulty": "hard",
+    "question_text": "You ran git reset --hard HEAD~2 by mistake and lost two commits. Nothing was pushed or stashed. Which command helps you find them?",
+    "text": "You ran git reset --hard HEAD~2 by mistake and lost two commits. Nothing was pushed or stashed. Which command helps you find them?",
+    "correct_answer_index": 3,
+    "is_active": true,
+    "topic": "undo",
+    "explanation": "git reflog records where HEAD has been, so the lost commits appear there. You can recover with git reset --hard <hash> . git log --all does not list commits no branch points to.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0012-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000012",
+        "option_text": "git log --all",
+        "text": "git log --all",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0012-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000012",
+        "option_text": "git stash list",
+        "text": "git stash list",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0012-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000012",
+        "option_text": "git status",
+        "text": "git status",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0012-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000012",
+        "option_text": "git reflog",
+        "text": "git reflog",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000013",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 13,
+    "difficulty": "hard",
+    "question_text": "git merge feature stops with a conflict in app.py. Which sequence correctly finishes the merge?",
+    "text": "git merge feature stops with a conflict in app.py. Which sequence correctly finishes the merge?",
+    "correct_answer_index": 2,
+    "is_active": true,
+    "topic": "merging",
+    "explanation": "Resolve the file, stage it to mark it resolved, then commit to complete the merge. Committing right away fails, git reset --hard abandons the merge, and there is no rebase to continue.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0013-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000013",
+        "option_text": "git commit immediately",
+        "text": "git commit immediately",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0013-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000013",
+        "option_text": "git reset --hard",
+        "text": "git reset --hard",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0013-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000013",
+        "option_text": "Edit app.py to remove the conflict markers, git add app.py , then git commit",
+        "text": "Edit app.py to remove the conflict markers, git add app.py , then git commit",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0013-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000013",
+        "option_text": "git rebase --continue",
+        "text": "git rebase --continue",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000014",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 14,
+    "difficulty": "hard",
+    "question_text": "Your push is rejected because a teammate pushed first. You want to keep history linear (no merge commit) without overwriting their work. What do you run?",
+    "text": "Your push is rejected because a teammate pushed first. You want to keep history linear (no merge commit) without overwriting their work. What do you run?",
+    "correct_answer_index": 3,
+    "is_active": true,
+    "topic": "remote",
+    "explanation": "git pull --rebase replays your commits on top of the teammate's work, so history stays linear and the next push is accepted. A plain pull creates a merge commit, fetch alone does not integrate anything, and --force would erase their commit.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0014-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000014",
+        "option_text": "git push --force",
+        "text": "git push --force",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0014-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000014",
+        "option_text": "git pull , then git push",
+        "text": "git pull , then git push",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0014-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000014",
+        "option_text": "git fetch , then git push",
+        "text": "git fetch , then git push",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0014-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000014",
+        "option_text": "git pull --rebase , then git push",
+        "text": "git pull --rebase , then git push",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000015",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 15,
+    "difficulty": "hard",
+    "question_text": "You rebased feature onto main after pushing it, and git push is now rejected. What is the safest way to update the remote branch?",
+    "text": "You rebased feature onto main after pushing it, and git push is now rejected. What is the safest way to update the remote branch?",
+    "correct_answer_index": 3,
+    "is_active": true,
+    "topic": "remote",
+    "explanation": "Rebasing rewrites commit hashes, so a force push is needed. --force-with-lease refuses if someone else pushed in the meantime, while --force overwrites blindly. Pulling merges the old and new copies and duplicates commits, and --no-verify only skips hooks.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0015-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000015",
+        "option_text": "git push --force",
+        "text": "git push --force",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0015-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000015",
+        "option_text": "git pull , then git push",
+        "text": "git pull , then git push",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0015-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000015",
+        "option_text": "git push --no-verify",
+        "text": "git push --no-verify",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0015-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000015",
+        "option_text": "git push --force-with-lease",
+        "text": "git push --force-with-lease",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000016",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 16,
+    "difficulty": "medium",
+    "question_text": "You have a modified tracked file and a brand-new untracked file. Which command shelves both so you can switch tasks?",
+    "text": "You have a modified tracked file and a brand-new untracked file. Which command shelves both so you can switch tasks?",
+    "correct_answer_index": 1,
+    "is_active": true,
+    "topic": "undo",
+    "explanation": "-u (include untracked) stashes new files too. Plain git stash leaves untracked files behind, and pop and apply bring a stash back rather than creating one.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0016-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000016",
+        "option_text": "git stash",
+        "text": "git stash",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0016-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000016",
+        "option_text": "git stash -u",
+        "text": "git stash -u",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0016-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000016",
+        "option_text": "git stash pop",
+        "text": "git stash pop",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0016-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000016",
+        "option_text": "git stash apply",
+        "text": "git stash apply",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000017",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 17,
+    "difficulty": "medium",
+    "question_text": "You just committed but forgot to include a new file, forgotten.txt. How do you add it to that same commit without changing the message?",
+    "text": "You just committed but forgot to include a new file, forgotten.txt. How do you add it to that same commit without changing the message?",
+    "correct_answer_index": 1,
+    "is_active": true,
+    "topic": "undo",
+    "explanation": "Stage the file first, then amend. Amending without staging does not include the new file, and a second commit would not be the same commit.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0017-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000017",
+        "option_text": "git commit --amend --no-edit",
+        "text": "git commit --amend --no-edit",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0017-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000017",
+        "option_text": "git add forgotten.txt , then git commit --amend --no-edit",
+        "text": "git add forgotten.txt , then git commit --amend --no-edit",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0017-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000017",
+        "option_text": "git commit -m \"oops\"",
+        "text": "git commit -m \"oops\"",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0017-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000017",
+        "option_text": "git revert HEAD",
+        "text": "git revert HEAD",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000018",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 18,
+    "difficulty": "medium",
+    "question_text": "Which command starts a binary search through your history to find the commit that introduced a bug?",
+    "text": "Which command starts a binary search through your history to find the commit that introduced a bug?",
+    "correct_answer_index": 1,
+    "is_active": true,
+    "topic": "debugging",
+    "explanation": "git bisect marks a known good and a known bad commit, then checks out commits in between so you find the culprit in a few steps.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0018-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000018",
+        "option_text": "git blame",
+        "text": "git blame",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0018-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000018",
+        "option_text": "git bisect start",
+        "text": "git bisect start",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0018-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000018",
+        "option_text": "git grep",
+        "text": "git grep",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0018-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000018",
+        "option_text": "git log --oneline",
+        "text": "git log --oneline",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000019",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 19,
+    "difficulty": "hard",
+    "question_text": "You want to bring the changes of a 2-commit feature branch into main as staged changes, with no commit made yet, so you can commit them as one. Which command?",
+    "text": "You want to bring the changes of a 2-commit feature branch into main as staged changes, with no commit made yet, so you can commit them as one. Which command?",
+    "correct_answer_index": 2,
+    "is_active": true,
+    "topic": "merging",
+    "explanation": "--squash stages the combined changes and leaves the commit to you. --no-ff creates a merge commit, cherry-pick applies only the tip commit, and a plain merge may fast-forward and keep both commits.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0019-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000019",
+        "option_text": "git merge --no-ff feature",
+        "text": "git merge --no-ff feature",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0019-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000019",
+        "option_text": "git cherry-pick feature",
+        "text": "git cherry-pick feature",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0019-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000019",
+        "option_text": "git merge --squash feature",
+        "text": "git merge --squash feature",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0019-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000019",
+        "option_text": "git merge feature",
+        "text": "git merge feature",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000020",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 20,
+    "difficulty": "medium",
+    "question_text": "You created a tag v1.0 locally. Which command shares just that tag with the remote?",
+    "text": "You created a tag v1.0 locally. Which command shares just that tag with the remote?",
+    "correct_answer_index": 2,
+    "is_active": true,
+    "topic": "remote",
+    "explanation": "Tags are not sent by a normal push. Name the tag explicitly: git push origin v1.0 .",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0020-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000020",
+        "option_text": "git push",
+        "text": "git push",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0020-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000020",
+        "option_text": "git tag --push v1.0",
+        "text": "git tag --push v1.0",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0020-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000020",
+        "option_text": "git push origin v1.0",
+        "text": "git push origin v1.0",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0020-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000020",
+        "option_text": "git commit --tag v1.0",
+        "text": "git commit --tag v1.0",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000021",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 21,
+    "difficulty": "easy",
+    "question_text": "What command modifies the most recent commit by combining it with current staged changes?",
+    "text": "What command modifies the most recent commit by combining it with current staged changes?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "commits",
+    "explanation": "git commit --amend combines staged modifications with the tip commit and allows updating message.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0021-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000021",
+        "option_text": "git commit --amend",
+        "text": "git commit --amend",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0021-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000021",
+        "option_text": "git commit --update",
+        "text": "git commit --update",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0021-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000021",
+        "option_text": "git commit --fix",
+        "text": "git commit --fix",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0021-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000021",
+        "option_text": "git commit --replace",
+        "text": "git commit --replace",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000022",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 22,
+    "difficulty": "easy",
+    "question_text": "Which command creates a lightweight tag named v1.0 pointing to the current commit?",
+    "text": "Which command creates a lightweight tag named v1.0 pointing to the current commit?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "tags",
+    "explanation": "git tag v1.0 creates a lightweight reference tag pointing directly to HEAD.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0022-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000022",
+        "option_text": "git tag v1.0",
+        "text": "git tag v1.0",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0022-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000022",
+        "option_text": "git label v1.0",
+        "text": "git label v1.0",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0022-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000022",
+        "option_text": "git release v1.0",
+        "text": "git release v1.0",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0022-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000022",
+        "option_text": "git bookmark v1.0",
+        "text": "git bookmark v1.0",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000023",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 23,
+    "difficulty": "easy",
+    "question_text": "Which command shows metadata and content changes for a specific Git object or commit?",
+    "text": "Which command shows metadata and content changes for a specific Git object or commit?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "inspect",
+    "explanation": "git show displays commit metadata, author, and diff changes for a specified revision.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0023-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000023",
+        "option_text": "git show <hash>",
+        "text": "git show <hash>",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0023-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000023",
+        "option_text": "git display <hash>",
+        "text": "git display <hash>",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0023-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000023",
+        "option_text": "git print <hash>",
+        "text": "git print <hash>",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0023-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000023",
+        "option_text": "git view <hash>",
+        "text": "git view <hash>",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000024",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 24,
+    "difficulty": "easy",
+    "question_text": "In Git architecture, what does the special pointer HEAD refer to?",
+    "text": "In Git architecture, what does the special pointer HEAD refer to?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "internals",
+    "explanation": "HEAD points to the currently checked out branch or commit in your working directory.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0024-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000024",
+        "option_text": "The root commit created when repository was initialized",
+        "text": "The root commit created when repository was initialized",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0024-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000024",
+        "option_text": "A pointer to the current branch or commit checked out in working tree",
+        "text": "A pointer to the current branch or commit checked out in working tree",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0024-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000024",
+        "option_text": "The primary remote repository branch on GitHub",
+        "text": "The primary remote repository branch on GitHub",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0024-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000024",
+        "option_text": "The most recent tag in repository history",
+        "text": "The most recent tag in repository history",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000025",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 25,
+    "difficulty": "easy",
+    "question_text": "Which command removes a file from both the Git staging index and your local filesystem?",
+    "text": "Which command removes a file from both the Git staging index and your local filesystem?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "removal",
+    "explanation": "git rm <file> stages the deletion and deletes the file from the working tree.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0025-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000025",
+        "option_text": "git rm <file>",
+        "text": "git rm <file>",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0025-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000025",
+        "option_text": "git delete <file>",
+        "text": "git delete <file>",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0025-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000025",
+        "option_text": "git drop <file>",
+        "text": "git drop <file>",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0025-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000025",
+        "option_text": "git erase <file>",
+        "text": "git erase <file>",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000026",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 26,
+    "difficulty": "easy",
+    "question_text": "What characterizes a fast-forward merge in Git?",
+    "text": "What characterizes a fast-forward merge in Git?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "merge",
+    "explanation": "In a fast-forward merge, the target branch tip directly advances to source commit without a merge commit.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0026-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000026",
+        "option_text": "A merge where branch pointer simply advances forward without a merge commit",
+        "text": "A merge where branch pointer simply advances forward without a merge commit",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0026-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000026",
+        "option_text": "A merge executed with git rebase --force",
+        "text": "A merge executed with git rebase --force",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0026-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000026",
+        "option_text": "A squash merge performed on GitHub PRs",
+        "text": "A squash merge performed on GitHub PRs",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0026-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000026",
+        "option_text": "An automated resolution of merge conflicts",
+        "text": "An automated resolution of merge conflicts",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000027",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 27,
+    "difficulty": "easy",
+    "question_text": "Which git log option condenses each commit to a single line showing short hash and subject?",
+    "text": "Which git log option condenses each commit to a single line showing short hash and subject?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "log",
+    "explanation": "git log --oneline outputs compact single-line commit summaries.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0027-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000027",
+        "option_text": "git log --compact",
+        "text": "git log --compact",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0027-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000027",
+        "option_text": "git log --oneline",
+        "text": "git log --oneline",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0027-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000027",
+        "option_text": "git log --summary",
+        "text": "git log --summary",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0027-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000027",
+        "option_text": "git log --brief",
+        "text": "git log --brief",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000028",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 28,
+    "difficulty": "easy",
+    "question_text": "In modern Git (2.23+), what command is recommended for switching branches instead of git checkout?",
+    "text": "In modern Git (2.23+), what command is recommended for switching branches instead of git checkout?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "checkout",
+    "explanation": "git switch was introduced in Git 2.23 specifically for switching and creating branches.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0028-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000028",
+        "option_text": "git hop",
+        "text": "git hop",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0028-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000028",
+        "option_text": "git switch",
+        "text": "git switch",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0028-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000028",
+        "option_text": "git move",
+        "text": "git move",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0028-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000028",
+        "option_text": "git activate",
+        "text": "git activate",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000029",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 29,
+    "difficulty": "easy",
+    "question_text": "In modern Git (2.23+), what command discards uncommitted changes in your working tree?",
+    "text": "In modern Git (2.23+), what command discards uncommitted changes in your working tree?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "restore",
+    "explanation": "git restore <file> restores working tree files to their staged or committed state.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0029-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000029",
+        "option_text": "git restore <file>",
+        "text": "git restore <file>",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0029-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000029",
+        "option_text": "git reset --clean",
+        "text": "git reset --clean",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0029-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000029",
+        "option_text": "git revert-file <file>",
+        "text": "git revert-file <file>",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0029-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000029",
+        "option_text": "git undo <file>",
+        "text": "git undo <file>",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000030",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 30,
+    "difficulty": "easy",
+    "question_text": "What hidden folder created by git init houses all repository databases, references, and configs?",
+    "text": "What hidden folder created by git init houses all repository databases, references, and configs?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "basics",
+    "explanation": "The .git folder at the root of a repository contains all history, objects, and configurations.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0030-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000030",
+        "option_text": ".git",
+        "text": ".git",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0030-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000030",
+        "option_text": ".github",
+        "text": ".github",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0030-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000030",
+        "option_text": ".vcs",
+        "text": ".vcs",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0030-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000030",
+        "option_text": ".gitdata",
+        "text": ".gitdata",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000031",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 31,
+    "difficulty": "medium",
+    "question_text": "What is the fundamental difference between git merge and git rebase?",
+    "text": "What is the fundamental difference between git merge and git rebase?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "rebase",
+    "explanation": "git merge creates a dedicated merge commit preserving topology; rebase reapplies commits for linear history.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0031-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000031",
+        "option_text": "Merge deletes branches; rebase keeps them",
+        "text": "Merge deletes branches; rebase keeps them",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0031-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000031",
+        "option_text": "Merge preserves exact topology with a merge commit; rebase reapplies commits on target base for linear history",
+        "text": "Merge preserves exact topology with a merge commit; rebase reapplies commits on target base for linear history",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0031-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000031",
+        "option_text": "Rebase preserves commit hashes; merge rewrites them",
+        "text": "Rebase preserves commit hashes; merge rewrites them",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0031-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000031",
+        "option_text": "Rebase can only run on remote repositories",
+        "text": "Rebase can only run on remote repositories",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000032",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 32,
+    "difficulty": "medium",
+    "question_text": "What happens when you run git reset --soft HEAD~1?",
+    "text": "What happens when you run git reset --soft HEAD~1?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "reset",
+    "explanation": "--soft moves the HEAD reference back by one commit while keeping modifications staged in the index.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0032-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000032",
+        "option_text": "Undoes last commit and discards working tree changes",
+        "text": "Undoes last commit and discards working tree changes",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0032-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000032",
+        "option_text": "Undoes last commit while keeping modifications staged in index",
+        "text": "Undoes last commit while keeping modifications staged in index",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0032-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000032",
+        "option_text": "Leaves changes unstaged in working tree",
+        "text": "Leaves changes unstaged in working tree",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0032-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000032",
+        "option_text": "Creates an inverse revert commit",
+        "text": "Creates an inverse revert commit",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000033",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 33,
+    "difficulty": "medium",
+    "question_text": "What happens when you run git reset --mixed HEAD~1 (the default reset mode)?",
+    "text": "What happens when you run git reset --mixed HEAD~1 (the default reset mode)?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "reset",
+    "explanation": "--mixed moves HEAD and resets the index, leaving modified files intact in working tree unstaged.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0033-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000033",
+        "option_text": "Discards all working tree files permanently",
+        "text": "Discards all working tree files permanently",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0033-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000033",
+        "option_text": "Undoes commit and un-stages files, preserving modifications in working directory",
+        "text": "Undoes commit and un-stages files, preserving modifications in working directory",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0033-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000033",
+        "option_text": "Keeps files staged in the index",
+        "text": "Keeps files staged in the index",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0033-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000033",
+        "option_text": "Deletes orphaned commits immediately",
+        "text": "Deletes orphaned commits immediately",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000034",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 34,
+    "difficulty": "medium",
+    "question_text": "What happens when you run git reset --hard HEAD~1?",
+    "text": "What happens when you run git reset --hard HEAD~1?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "reset",
+    "explanation": "--hard rewinds HEAD and completely overwrites both the index and working directory to target commit.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0034-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000034",
+        "option_text": "Undoes commit while keeping changes staged",
+        "text": "Undoes commit while keeping changes staged",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0034-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000034",
+        "option_text": "Rewinds HEAD and discards all uncommitted modifications from working tree and index",
+        "text": "Rewinds HEAD and discards all uncommitted modifications from working tree and index",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0034-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000034",
+        "option_text": "Stashes uncommitted changes automatically",
+        "text": "Stashes uncommitted changes automatically",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0034-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000034",
+        "option_text": "Creates a backup tag before resetting",
+        "text": "Creates a backup tag before resetting",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000035",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 35,
+    "difficulty": "medium",
+    "question_text": "Which command applies a single specific commit from another branch onto your active branch as a new commit?",
+    "text": "Which command applies a single specific commit from another branch onto your active branch as a new commit?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "cherry-pick",
+    "explanation": "git cherry-pick <commit> copies the changes introduced by an existing commit as a new commit on current branch.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0035-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000035",
+        "option_text": "git graft <commit>",
+        "text": "git graft <commit>",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0035-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000035",
+        "option_text": "git cherry-pick <commit>",
+        "text": "git cherry-pick <commit>",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0035-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000035",
+        "option_text": "git apply-commit <commit>",
+        "text": "git apply-commit <commit>",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0035-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000035",
+        "option_text": "git extract <commit>",
+        "text": "git extract <commit>",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000036",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 36,
+    "difficulty": "medium",
+    "question_text": "Which command records every movement of HEAD and branch tips locally, allowing recovery of deleted commits?",
+    "text": "Which command records every movement of HEAD and branch tips locally, allowing recovery of deleted commits?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "reflog",
+    "explanation": "git reflog tracks every update to local references, providing a recovery safety net.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0036-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000036",
+        "option_text": "git history --all",
+        "text": "git history --all",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0036-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000036",
+        "option_text": "git reflog",
+        "text": "git reflog",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0036-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000036",
+        "option_text": "git audit",
+        "text": "git audit",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0036-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000036",
+        "option_text": "git fsck --dangling",
+        "text": "git fsck --dangling",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000037",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 37,
+    "difficulty": "medium",
+    "question_text": "What does git clean -fd do in your repository?",
+    "text": "What does git clean -fd do in your repository?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "clean",
+    "explanation": "git clean forcefully (-f) removes untracked files and untracked directories (-d).",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0037-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000037",
+        "option_text": "Reverts tracked files to HEAD state",
+        "text": "Reverts tracked files to HEAD state",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0037-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000037",
+        "option_text": "Forcefully removes untracked files and directories from working tree",
+        "text": "Forcefully removes untracked files and directories from working tree",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0037-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000037",
+        "option_text": "Removes unused Git packfiles",
+        "text": "Removes unused Git packfiles",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0037-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000037",
+        "option_text": "Cleans remote tracking branches",
+        "text": "Cleans remote tracking branches",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000038",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 38,
+    "difficulty": "medium",
+    "question_text": "How does git revert <commit> differ from git reset <commit> regarding public branch safety?",
+    "text": "How does git revert <commit> differ from git reset <commit> regarding public branch safety?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "revert",
+    "explanation": "git revert creates a new inverse commit preserving history, making it safe for published shared branches.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0038-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000038",
+        "option_text": "Revert destroys history; reset preserves it",
+        "text": "Revert destroys history; reset preserves it",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0038-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000038",
+        "option_text": "Revert creates a new forward commit recording the inverse changes; reset alters history",
+        "text": "Revert creates a new forward commit recording the inverse changes; reset alters history",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0038-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000038",
+        "option_text": "Revert only works on uncommitted changes",
+        "text": "Revert only works on uncommitted changes",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0038-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000038",
+        "option_text": "Reset requires administrative sudo privileges",
+        "text": "Reset requires administrative sudo privileges",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000039",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 39,
+    "difficulty": "medium",
+    "question_text": "What does git rebase -i HEAD~3 open in your editor?",
+    "text": "What does git rebase -i HEAD~3 open in your editor?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "rebase-interactive",
+    "explanation": "git rebase -i HEAD~3 opens an interactive todo list script allowing squash, reword, drop, or edit of last 3 commits.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0039-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000039",
+        "option_text": "A visual git log tree",
+        "text": "A visual git log tree",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0039-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000039",
+        "option_text": "An interactive command list to reorder, squash, edit, or drop the last 3 commits",
+        "text": "An interactive command list to reorder, squash, edit, or drop the last 3 commits",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0039-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000039",
+        "option_text": "A diff file of merge conflicts",
+        "text": "A diff file of merge conflicts",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0039-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000039",
+        "option_text": "A commit message editor for commit 3",
+        "text": "A commit message editor for commit 3",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000040",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 40,
+    "difficulty": "medium",
+    "question_text": "In an interactive rebase todo list, what does the squash command do?",
+    "text": "In an interactive rebase todo list, what does the squash command do?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "rebase-interactive",
+    "explanation": "squash melds the commit into the previous commit and prompts you to combine the commit messages.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0040-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000040",
+        "option_text": "Melds commit into previous commit and combines messages",
+        "text": "Melds commit into previous commit and combines messages",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0040-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000040",
+        "option_text": "Discards commit changes completely",
+        "text": "Discards commit changes completely",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0040-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000040",
+        "option_text": "Splits commit into multiple micro-commits",
+        "text": "Splits commit into multiple micro-commits",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0040-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000040",
+        "option_text": "Applies commit as a stash",
+        "text": "Applies commit as a stash",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000041",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 41,
+    "difficulty": "medium",
+    "question_text": "In an interactive rebase todo list, how does fixup differ from squash?",
+    "text": "In an interactive rebase todo list, how does fixup differ from squash?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "rebase-interactive",
+    "explanation": "fixup melds the changes into previous commit like squash, but discards the fixup commit message.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0041-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000041",
+        "option_text": "Fixup automatically runs tests before committing",
+        "text": "Fixup automatically runs tests before committing",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0041-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000041",
+        "option_text": "Fixup melds into previous commit while discarding its own commit message",
+        "text": "Fixup melds into previous commit while discarding its own commit message",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0041-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000041",
+        "option_text": "Fixup applies only to staged files",
+        "text": "Fixup applies only to staged files",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0041-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000041",
+        "option_text": "Fixup cannot be aborted once started",
+        "text": "Fixup cannot be aborted once started",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000042",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 42,
+    "difficulty": "medium",
+    "question_text": "Why does git branch -d feature fail if feature contains unmerged commits, and how do you force delete it?",
+    "text": "Why does git branch -d feature fail if feature contains unmerged commits, and how do you force delete it?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "branching",
+    "explanation": "git branch -d protects against unmerged work loss; -D (or -d --force) overrides this safeguard.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0042-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000042",
+        "option_text": "git branch -d is deprecated; use git remove",
+        "text": "git branch -d is deprecated; use git remove",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0042-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000042",
+        "option_text": "It prevents accidental data loss; use git branch -D to force deletion",
+        "text": "It prevents accidental data loss; use git branch -D to force deletion",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0042-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000042",
+        "option_text": "You must prune remote branches first",
+        "text": "You must prune remote branches first",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0042-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000042",
+        "option_text": "You must squash before deleting any branch",
+        "text": "You must squash before deleting any branch",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000043",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 43,
+    "difficulty": "medium",
+    "question_text": "Which command deletes a remote branch named feature-auth on origin?",
+    "text": "Which command deletes a remote branch named feature-auth on origin?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "remotes",
+    "explanation": "git push origin --delete feature-auth requests the remote server to remove the branch ref.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0043-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000043",
+        "option_text": "git remote rm origin/feature-auth",
+        "text": "git remote rm origin/feature-auth",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0043-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000043",
+        "option_text": "git push origin --delete feature-auth",
+        "text": "git push origin --delete feature-auth",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0043-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000043",
+        "option_text": "git delete-remote origin feature-auth",
+        "text": "git delete-remote origin feature-auth",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0043-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000043",
+        "option_text": "git origin branch -d feature-auth",
+        "text": "git origin branch -d feature-auth",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000044",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 44,
+    "difficulty": "medium",
+    "question_text": "What information does git blame provide for a file?",
+    "text": "What information does git blame provide for a file?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "blame",
+    "explanation": "git blame annotates each line with commit hash, author name, and timestamp of last modification.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0044-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000044",
+        "option_text": "Calculates code quality defect score",
+        "text": "Calculates code quality defect score",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0044-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000044",
+        "option_text": "Shows line-by-line commit hash, author, and timestamp of last modification",
+        "text": "Shows line-by-line commit hash, author, and timestamp of last modification",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0044-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000044",
+        "option_text": "Lists developers with write access",
+        "text": "Lists developers with write access",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0044-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000044",
+        "option_text": "Detects compiler warnings",
+        "text": "Detects compiler warnings",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000045",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 45,
+    "difficulty": "medium",
+    "question_text": "If you encounter unexpected merge conflicts, what command cleanly cancels the merge and restores pre-merge state?",
+    "text": "If you encounter unexpected merge conflicts, what command cleanly cancels the merge and restores pre-merge state?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "merge",
+    "explanation": "git merge --abort resets index and working directory to state prior to starting the merge.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0045-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000045",
+        "option_text": "git merge --cancel",
+        "text": "git merge --cancel",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0045-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000045",
+        "option_text": "git merge --abort",
+        "text": "git merge --abort",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0045-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000045",
+        "option_text": "git reset --merge-undo",
+        "text": "git reset --merge-undo",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0045-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000045",
+        "option_text": "git revert merge",
+        "text": "git revert merge",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000046",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 46,
+    "difficulty": "medium",
+    "question_text": "After manually resolving conflicts during a rebase, what command should you execute?",
+    "text": "After manually resolving conflicts during a rebase, what command should you execute?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "rebase",
+    "explanation": "Stage resolved files with git add and run git rebase --continue (do not run git commit).",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0046-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000046",
+        "option_text": "git commit -m \"resolved\"",
+        "text": "git commit -m \"resolved\"",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0046-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000046",
+        "option_text": "git rebase --continue",
+        "text": "git rebase --continue",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0046-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000046",
+        "option_text": "git rebase --finish",
+        "text": "git rebase --finish",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0046-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000046",
+        "option_text": "git merge --rebase",
+        "text": "git merge --rebase",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000047",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 47,
+    "difficulty": "medium",
+    "question_text": "What Git feature allows you to checkout multiple branches simultaneously in separate linked directories?",
+    "text": "What Git feature allows you to checkout multiple branches simultaneously in separate linked directories?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "worktree",
+    "explanation": "git worktree allows multiple working trees linked to the same repository database.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0047-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000047",
+        "option_text": "git clone --local",
+        "text": "git clone --local",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0047-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000047",
+        "option_text": "git worktree",
+        "text": "git worktree",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0047-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000047",
+        "option_text": "git multi-branch",
+        "text": "git multi-branch",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0047-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000047",
+        "option_text": "git subrepo",
+        "text": "git subrepo",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000048",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 48,
+    "difficulty": "medium",
+    "question_text": "Which command initializes and fetches nested submodules after cloning a repository containing submodules?",
+    "text": "Which command initializes and fetches nested submodules after cloning a repository containing submodules?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "submodules",
+    "explanation": "git submodule update --init --recursive clones and checks out nested submodules.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0048-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000048",
+        "option_text": "git submodules --download",
+        "text": "git submodules --download",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0048-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000048",
+        "option_text": "git submodule update --init --recursive",
+        "text": "git submodule update --init --recursive",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0048-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000048",
+        "option_text": "git fetch --submodules-all",
+        "text": "git fetch --submodules-all",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0048-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000048",
+        "option_text": "git clone-deps",
+        "text": "git clone-deps",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000049",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 49,
+    "difficulty": "medium",
+    "question_text": "What command creates a new branch named debug-fix directly from stash@{0} and drops the stash entry?",
+    "text": "What command creates a new branch named debug-fix directly from stash@{0} and drops the stash entry?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "stashing",
+    "explanation": "git stash branch <branch> checks out the stash commit parent, applies stash, and drops it if clean.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0049-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000049",
+        "option_text": "git branch --from-stash debug-fix",
+        "text": "git branch --from-stash debug-fix",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0049-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000049",
+        "option_text": "git stash branch debug-fix",
+        "text": "git stash branch debug-fix",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0049-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000049",
+        "option_text": "git apply-stash --new-branch debug-fix",
+        "text": "git apply-stash --new-branch debug-fix",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0049-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000049",
+        "option_text": "git pop --branch debug-fix",
+        "text": "git pop --branch debug-fix",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000050",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 50,
+    "difficulty": "medium",
+    "question_text": "What condition causes a detached HEAD state in Git?",
+    "text": "What condition causes a detached HEAD state in Git?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "internals",
+    "explanation": "Checking out a specific commit hash, tag, or remote branch directly rather than a local named branch.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0050-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000050",
+        "option_text": "Repository corruption in packfiles",
+        "text": "Repository corruption in packfiles",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0050-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000050",
+        "option_text": "Checking out a specific commit hash or tag directly instead of a local branch",
+        "text": "Checking out a specific commit hash or tag directly instead of a local branch",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0050-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000050",
+        "option_text": "Network connection failure during git push",
+        "text": "Network connection failure during git push",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0050-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000050",
+        "option_text": "Deleting all unstaged files with git clean",
+        "text": "Deleting all unstaged files with git clean",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000051",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 51,
+    "difficulty": "medium",
+    "question_text": "In Git merge conflict markers, what content is enclosed between <<<<<<< HEAD and =======?",
+    "text": "In Git merge conflict markers, what content is enclosed between <<<<<<< HEAD and =======?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "merge",
+    "explanation": "The changes present in your currently checked-out branch (HEAD) before the merge.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0051-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000051",
+        "option_text": "Changes from incoming remote branch being merged",
+        "text": "Changes from incoming remote branch being merged",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0051-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000051",
+        "option_text": "Changes in your current branch (HEAD) before the merge",
+        "text": "Changes in your current branch (HEAD) before the merge",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0051-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000051",
+        "option_text": "Common ancestor base version",
+        "text": "Common ancestor base version",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0051-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000051",
+        "option_text": "Deprecated changes discarded automatically",
+        "text": "Deprecated changes discarded automatically",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000052",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 52,
+    "difficulty": "medium",
+    "question_text": "What is a three-way merge in Git?",
+    "text": "What is a three-way merge in Git?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "merge",
+    "explanation": "A merge algorithm comparing base commit, current branch commit, and incoming branch commit.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0052-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000052",
+        "option_text": "A merge between three remote repositories simultaneously",
+        "text": "A merge between three remote repositories simultaneously",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0052-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000052",
+        "option_text": "A merge using two branch tips and their common ancestor commit base",
+        "text": "A merge using two branch tips and their common ancestor commit base",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0052-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000052",
+        "option_text": "A squash merge spanning three commits",
+        "text": "A squash merge spanning three commits",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0052-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000052",
+        "option_text": "A merge requiring three approvals on GitHub",
+        "text": "A merge requiring three approvals on GitHub",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000053",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 53,
+    "difficulty": "medium",
+    "question_text": "How does an annotated tag (git tag -a) differ fundamentally from a lightweight tag?",
+    "text": "How does an annotated tag (git tag -a) differ fundamentally from a lightweight tag?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "tags",
+    "explanation": "Annotated tags create full Git tag objects containing tagger info, date, signature, and message.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0053-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000053",
+        "option_text": "Lightweight tags cannot be deleted",
+        "text": "Lightweight tags cannot be deleted",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0053-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000053",
+        "option_text": "Annotated tags are stored as full Git objects with tagger name, date, and message",
+        "text": "Annotated tags are stored as full Git objects with tagger name, date, and message",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0053-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000053",
+        "option_text": "Annotated tags only exist on remote servers",
+        "text": "Annotated tags only exist on remote servers",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0053-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000053",
+        "option_text": "Lightweight tags require GPG key signatures",
+        "text": "Lightweight tags require GPG key signatures",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000054",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 54,
+    "difficulty": "medium",
+    "question_text": "Why do created tags not appear on origin after git push origin main, and how do you push them?",
+    "text": "Why do created tags not appear on origin after git push origin main, and how do you push them?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "tags",
+    "explanation": "Git does not automatically push tags; you must run git push origin --tags or push tag ref explicitly.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0054-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000054",
+        "option_text": "Tags are local-only by design and cannot be pushed",
+        "text": "Tags are local-only by design and cannot be pushed",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0054-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000054",
+        "option_text": "Tags must be pushed explicitly with git push origin --tags or git push origin <tag>",
+        "text": "Tags must be pushed explicitly with git push origin --tags or git push origin <tag>",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0054-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000054",
+        "option_text": "Tags require enterprise licenses to sync",
+        "text": "Tags require enterprise licenses to sync",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0054-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000054",
+        "option_text": "You must commit tags to .gitignore",
+        "text": "You must commit tags to .gitignore",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000055",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 55,
+    "difficulty": "medium",
+    "question_text": "Which git log command displays the commit topology as an ASCII text graph?",
+    "text": "Which git log command displays the commit topology as an ASCII text graph?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "log",
+    "explanation": "git log --graph draws an ASCII graph showing branch and merge topology.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0055-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000055",
+        "option_text": "git log --graph",
+        "text": "git log --graph",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0055-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000055",
+        "option_text": "git log --tree",
+        "text": "git log --tree",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0055-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000055",
+        "option_text": "git log --visual",
+        "text": "git log --visual",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0055-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000055",
+        "option_text": "git log --ascii",
+        "text": "git log --ascii",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000056",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 56,
+    "difficulty": "medium",
+    "question_text": "Which command lists commit count summary per author in sorted descending order?",
+    "text": "Which command lists commit count summary per author in sorted descending order?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "log",
+    "explanation": "git shortlog -sn groups commits by author, displays count (-n for numeric sort, -s for summary).",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0056-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000056",
+        "option_text": "git author-stats",
+        "text": "git author-stats",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0056-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000056",
+        "option_text": "git shortlog -sn",
+        "text": "git shortlog -sn",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0056-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000056",
+        "option_text": "git committers --ranked",
+        "text": "git committers --ranked",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0056-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000056",
+        "option_text": "git log --authors-only",
+        "text": "git log --authors-only",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000057",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 57,
+    "difficulty": "medium",
+    "question_text": "Which command updates your local branch tracking refs and deletes stale references removed on origin?",
+    "text": "Which command updates your local branch tracking refs and deletes stale references removed on origin?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "remotes",
+    "explanation": "git fetch --prune removes local references to branches deleted on the remote repository.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0057-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000057",
+        "option_text": "git remote clean",
+        "text": "git remote clean",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0057-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000057",
+        "option_text": "git fetch --prune",
+        "text": "git fetch --prune",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0057-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000057",
+        "option_text": "git branch -clean",
+        "text": "git branch -clean",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0057-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000057",
+        "option_text": "git pull --purge",
+        "text": "git pull --purge",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000058",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 58,
+    "difficulty": "medium",
+    "question_text": "In Git config hierarchy, which configuration level takes highest precedence if a key is defined at all levels?",
+    "text": "In Git config hierarchy, which configuration level takes highest precedence if a key is defined at all levels?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "config",
+    "explanation": "Local config (.git/config) overrides global (~/.gitconfig), which overrides system (/etc/gitconfig).",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0058-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000058",
+        "option_text": "System configuration (/etc/gitconfig)",
+        "text": "System configuration (/etc/gitconfig)",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0058-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000058",
+        "option_text": "Local repository configuration (.git/config)",
+        "text": "Local repository configuration (.git/config)",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0058-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000058",
+        "option_text": "Global user configuration (~/.gitconfig)",
+        "text": "Global user configuration (~/.gitconfig)",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0058-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000058",
+        "option_text": "Environment default variables",
+        "text": "Environment default variables",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000059",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 59,
+    "difficulty": "medium",
+    "question_text": "What does git diff branchA..branchB output?",
+    "text": "What does git diff branchA..branchB output?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "diff",
+    "explanation": "Changes on branchB since it diverged from branchA or differences between both tips.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0059-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000059",
+        "option_text": "Shows differences between the tips of branchA and branchB",
+        "text": "Shows differences between the tips of branchA and branchB",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0059-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000059",
+        "option_text": "Merges branchA into branchB dry-run",
+        "text": "Merges branchA into branchB dry-run",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0059-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000059",
+        "option_text": "Deletes identical commits on both branches",
+        "text": "Deletes identical commits on both branches",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0059-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000059",
+        "option_text": "Lists conflicting file names only",
+        "text": "Lists conflicting file names only",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000060",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 60,
+    "difficulty": "medium",
+    "question_text": "What does the reword command in an interactive rebase todo list accomplish?",
+    "text": "What does the reword command in an interactive rebase todo list accomplish?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "rebase-interactive",
+    "explanation": "reword uses the commit as-is but stops the rebase to let you edit the commit message.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0060-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000060",
+        "option_text": "Renames all modified files in the commit",
+        "text": "Renames all modified files in the commit",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0060-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000060",
+        "option_text": "Applies commit changes and opens an editor to change the commit message",
+        "text": "Applies commit changes and opens an editor to change the commit message",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0060-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000060",
+        "option_text": "Rewrites branch name",
+        "text": "Rewrites branch name",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0060-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000060",
+        "option_text": "Changes commit timestamp",
+        "text": "Changes commit timestamp",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000061",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 61,
+    "difficulty": "hard",
+    "question_text": "What binary search debugging command isolates the exact commit that introduced a regression?",
+    "text": "What binary search debugging command isolates the exact commit that introduced a regression?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "debugging",
+    "explanation": "git bisect uses binary search through history between known good and bad revisions.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0061-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000061",
+        "option_text": "git search --binary",
+        "text": "git search --binary",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0061-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000061",
+        "option_text": "git bisect",
+        "text": "git bisect",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0061-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000061",
+        "option_text": "git isolate",
+        "text": "git isolate",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0061-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000061",
+        "option_text": "git find-bug",
+        "text": "git find-bug",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000062",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 62,
+    "difficulty": "hard",
+    "question_text": "How can you automate git bisect to test each commit non-interactively using an automated test script?",
+    "text": "How can you automate git bisect to test each commit non-interactively using an automated test script?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "debugging",
+    "explanation": "git bisect run <script> runs automated binary search tests until bug commit is pinpointed.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0062-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000062",
+        "option_text": "git bisect --auto <script>",
+        "text": "git bisect --auto <script>",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0062-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000062",
+        "option_text": "git bisect run <script>",
+        "text": "git bisect run <script>",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0062-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000062",
+        "option_text": "git test --bisect <script>",
+        "text": "git test --bisect <script>",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0062-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000062",
+        "option_text": "git bisect eval <script>",
+        "text": "git bisect eval <script>",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000063",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 63,
+    "difficulty": "hard",
+    "question_text": "In Git object database (.git/objects), what are the four fundamental immutable object types?",
+    "text": "In Git object database (.git/objects), what are the four fundamental immutable object types?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "git-internals",
+    "explanation": "Git stores all history in four content-addressed object types: Blobs, Trees, Commits, and Annotated Tags.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0063-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000063",
+        "option_text": "Files, Folders, Symlinks, Hardlinks",
+        "text": "Files, Folders, Symlinks, Hardlinks",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0063-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000063",
+        "option_text": "Blobs, Trees, Commits, Tags",
+        "text": "Blobs, Trees, Commits, Tags",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0063-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000063",
+        "option_text": "Branches, Remotes, Stashes, Indexes",
+        "text": "Branches, Remotes, Stashes, Indexes",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0063-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000063",
+        "option_text": "Diffs, Patches, Headers, Footers",
+        "text": "Diffs, Patches, Headers, Footers",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000064",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 64,
+    "difficulty": "hard",
+    "question_text": "In Git object database, what fundamental entity do Blob objects store?",
+    "text": "In Git object database, what fundamental entity do Blob objects store?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "git-internals",
+    "explanation": "Blobs store file data/content only; they do not store file names, directories, or permissions.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0064-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000064",
+        "option_text": "Directory structures and timestamps",
+        "text": "Directory structures and timestamps",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0064-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000064",
+        "option_text": "File data content only (no filename or mode metadata)",
+        "text": "File data content only (no filename or mode metadata)",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0064-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000064",
+        "option_text": "Author signatures and PGP keys",
+        "text": "Author signatures and PGP keys",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0064-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000064",
+        "option_text": "Delta compression tables",
+        "text": "Delta compression tables",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000065",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 65,
+    "difficulty": "hard",
+    "question_text": "What plumbing command inspects the type and human-readable content of any raw Git object hash?",
+    "text": "What plumbing command inspects the type and human-readable content of any raw Git object hash?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "git-internals",
+    "explanation": "git cat-file -p <hash> pretty-prints content of blob, tree, commit, or tag.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0065-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000065",
+        "option_text": "git read-object <hash>",
+        "text": "git read-object <hash>",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0065-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000065",
+        "option_text": "git cat-file -p <hash>",
+        "text": "git cat-file -p <hash>",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0065-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000065",
+        "option_text": "git dump <hash>",
+        "text": "git dump <hash>",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0065-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000065",
+        "option_text": "git inspect-raw <hash>",
+        "text": "git inspect-raw <hash>",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000066",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 66,
+    "difficulty": "hard",
+    "question_text": "What does the Git reference notation HEAD^2 refer to?",
+    "text": "What does the Git reference notation HEAD^2 refer to?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "git-internals",
+    "explanation": "HEAD^2 refers to the second parent commit of a merge commit, whereas HEAD~2 refers to two generations prior.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0066-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000066",
+        "option_text": "Two generations prior along first parent history",
+        "text": "Two generations prior along first parent history",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0066-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000066",
+        "option_text": "The second parent commit of a merge commit",
+        "text": "The second parent commit of a merge commit",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0066-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000066",
+        "option_text": "The second line of the commit message",
+        "text": "The second line of the commit message",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0066-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000066",
+        "option_text": "The second stash on the stack",
+        "text": "The second stash on the stack",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000067",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 67,
+    "difficulty": "hard",
+    "question_text": "How does HEAD~3 differ from HEAD^^^ in commit revision navigation?",
+    "text": "How does HEAD~3 differ from HEAD^^^ in commit revision navigation?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "git-internals",
+    "explanation": "HEAD~3 and HEAD^^^ both refer to 3 generations prior along first parent lineage.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0067-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000067",
+        "option_text": "HEAD~3 is invalid syntax in modern Git",
+        "text": "HEAD~3 is invalid syntax in modern Git",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0067-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000067",
+        "option_text": "Both traverse 3 generations prior along the primary first-parent ancestry line",
+        "text": "Both traverse 3 generations prior along the primary first-parent ancestry line",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0067-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000067",
+        "option_text": "HEAD^^^ looks for octopus merge third parent",
+        "text": "HEAD^^^ looks for octopus merge third parent",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0067-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000067",
+        "option_text": "HEAD~3 resets staged files",
+        "text": "HEAD~3 resets staged files",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000068",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 68,
+    "difficulty": "hard",
+    "question_text": "What plumbing command prints the full 40-character SHA-1 object ID pointed to by HEAD?",
+    "text": "What plumbing command prints the full 40-character SHA-1 object ID pointed to by HEAD?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "git-internals",
+    "explanation": "git rev-parse HEAD parses the revision reference and outputs raw object hash.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0068-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000068",
+        "option_text": "git hash-name HEAD",
+        "text": "git hash-name HEAD",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0068-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000068",
+        "option_text": "git rev-parse HEAD",
+        "text": "git rev-parse HEAD",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0068-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000068",
+        "option_text": "git id HEAD",
+        "text": "git id HEAD",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0068-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000068",
+        "option_text": "git get-hash HEAD",
+        "text": "git get-hash HEAD",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000069",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 69,
+    "difficulty": "hard",
+    "question_text": "Which command checks repository database connectivity and identifies dangling/unreachable objects?",
+    "text": "Which command checks repository database connectivity and identifies dangling/unreachable objects?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "git-internals",
+    "explanation": "git fsck --lost-found verifies connectivity and writes dangling objects to .git/lost-found.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0069-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000069",
+        "option_text": "git doctor",
+        "text": "git doctor",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0069-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000069",
+        "option_text": "git fsck --lost-found",
+        "text": "git fsck --lost-found",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0069-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000069",
+        "option_text": "git recover --all",
+        "text": "git recover --all",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0069-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000069",
+        "option_text": "git audit --dangling",
+        "text": "git audit --dangling",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000070",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 70,
+    "difficulty": "hard",
+    "question_text": "What does git gc (garbage collection) perform within a repository?",
+    "text": "What does git gc (garbage collection) perform within a repository?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "git-internals",
+    "explanation": "Compresses loose objects into packfiles, consolidates packfile indexes, and prunes expired refs.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0070-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000070",
+        "option_text": "Deletes branches with no commits in 30 days",
+        "text": "Deletes branches with no commits in 30 days",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0070-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000070",
+        "option_text": "Packs loose objects into efficient packfiles, updates commit graphs, and prunes expired objects",
+        "text": "Packs loose objects into efficient packfiles, updates commit graphs, and prunes expired objects",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0070-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000070",
+        "option_text": "Cleans remote origin servers",
+        "text": "Cleans remote origin servers",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0070-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000070",
+        "option_text": "Empties .gitignore files",
+        "text": "Empties .gitignore files",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000071",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 71,
+    "difficulty": "hard",
+    "question_text": "What is Git rerere (reuse recorded resolution) used for?",
+    "text": "What is Git rerere (reuse recorded resolution) used for?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "rerere",
+    "explanation": "Records how you resolved a conflicted chunk and automatically resolves identical conflicts in future.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0071-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000071",
+        "option_text": "Reverts repetitive commits",
+        "text": "Reverts repetitive commits",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0071-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000071",
+        "option_text": "Records merge conflict resolutions and automatically re-applies them when identical conflicts recur",
+        "text": "Records merge conflict resolutions and automatically re-applies them when identical conflicts recur",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0071-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000071",
+        "option_text": "Rewrites remote commit authors",
+        "text": "Rewrites remote commit authors",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0071-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000071",
+        "option_text": "Reruns failing continuous integration pipelines",
+        "text": "Reruns failing continuous integration pipelines",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000072",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 72,
+    "difficulty": "hard",
+    "question_text": "What exit code must a Git hook script return to abort the current Git command (e.g. pre-commit)?",
+    "text": "What exit code must a Git hook script return to abort the current Git command (e.g. pre-commit)?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "hooks",
+    "explanation": "Any non-zero exit code (e.g. 1) aborts the Git execution and prevents commit creation.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0072-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000072",
+        "option_text": "Exit code 0",
+        "text": "Exit code 0",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0072-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000072",
+        "option_text": "Any non-zero exit code (e.g., 1)",
+        "text": "Any non-zero exit code (e.g., 1)",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0072-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000072",
+        "option_text": "Exit code -1 only",
+        "text": "Exit code -1 only",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0072-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000072",
+        "option_text": "Exit code 255 only",
+        "text": "Exit code 255 only",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000073",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 73,
+    "difficulty": "hard",
+    "question_text": "Where are client-side Git hooks stored locally in a newly cloned or initialized repository?",
+    "text": "Where are client-side Git hooks stored locally in a newly cloned or initialized repository?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "hooks",
+    "explanation": "In the .git/hooks directory inside repository root.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0073-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000073",
+        "option_text": ".github/workflows",
+        "text": ".github/workflows",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0073-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000073",
+        "option_text": ".git/hooks",
+        "text": ".git/hooks",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0073-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000073",
+        "option_text": ".githooks.json",
+        "text": ".githooks.json",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0073-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000073",
+        "option_text": "src/scripts/hooks",
+        "text": "src/scripts/hooks",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000074",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 74,
+    "difficulty": "hard",
+    "question_text": "You accidentally pushed private credentials to a public branch. What is the safest and most permanent remediation?",
+    "text": "You accidentally pushed private credentials to a public branch. What is the safest and most permanent remediation?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "security",
+    "explanation": "Purge the secret from all history with git-filter-repo/BFG, force push, and immediately revoke the secret.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0074-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000074",
+        "option_text": "Add the file to .gitignore and commit a deletion",
+        "text": "Add the file to .gitignore and commit a deletion",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0074-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000074",
+        "option_text": "Purge secret from history using git-filter-repo, force push, and immediately revoke credentials",
+        "text": "Purge secret from history using git-filter-repo, force push, and immediately revoke credentials",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0074-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000074",
+        "option_text": "Run git revert on the commit",
+        "text": "Run git revert on the commit",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0074-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000074",
+        "option_text": "Delete the branch and recreate it",
+        "text": "Delete the branch and recreate it",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000075",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 75,
+    "difficulty": "hard",
+    "question_text": "Which plumbing command writes current staging index state into a new Tree object in object database?",
+    "text": "Which plumbing command writes current staging index state into a new Tree object in object database?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "plumbing",
+    "explanation": "git write-tree writes staging index files into a tree object and prints its SHA-1 hash.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0075-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000075",
+        "option_text": "git create-tree",
+        "text": "git create-tree",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0075-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000075",
+        "option_text": "git write-tree",
+        "text": "git write-tree",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0075-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000075",
+        "option_text": "git make-tree",
+        "text": "git make-tree",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0075-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000075",
+        "option_text": "git save-index",
+        "text": "git save-index",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000076",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 76,
+    "difficulty": "hard",
+    "question_text": "Which plumbing command creates a new Commit object directly given a tree hash and parent commit hash?",
+    "text": "Which plumbing command creates a new Commit object directly given a tree hash and parent commit hash?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "plumbing",
+    "explanation": "git commit-tree <tree-hash> -p <parent-hash> -m \"msg\" creates a raw commit object.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0076-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000076",
+        "option_text": "git commit-tree",
+        "text": "git commit-tree",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0076-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000076",
+        "option_text": "git build-commit",
+        "text": "git build-commit",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0076-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000076",
+        "option_text": "git raw-commit",
+        "text": "git raw-commit",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0076-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000076",
+        "option_text": "git make-commit",
+        "text": "git make-commit",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000077",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 77,
+    "difficulty": "hard",
+    "question_text": "Which plumbing command calculates the SHA hash of a file and optionally writes it into .git/objects (-w)?",
+    "text": "Which plumbing command calculates the SHA hash of a file and optionally writes it into .git/objects (-w)?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "plumbing",
+    "explanation": "git hash-object computes object ID and with -w writes it into object database as a blob.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0077-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000077",
+        "option_text": "git sha256",
+        "text": "git sha256",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0077-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000077",
+        "option_text": "git hash-object -w <file>",
+        "text": "git hash-object -w <file>",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0077-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000077",
+        "option_text": "git write-blob <file>",
+        "text": "git write-blob <file>",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0077-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000077",
+        "option_text": "git store-object <file>",
+        "text": "git store-object <file>",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000078",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 78,
+    "difficulty": "hard",
+    "question_text": "What does git rebase --onto newbase upstream branch accomplish?",
+    "text": "What does git rebase --onto newbase upstream branch accomplish?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "rebase-onto",
+    "explanation": "Takes commits on branch that diverged from upstream and replays them on top of newbase.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0078-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000078",
+        "option_text": "Renames newbase to upstream",
+        "text": "Renames newbase to upstream",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0078-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000078",
+        "option_text": "Transplants commits on branch from upstream base onto a completely different newbase branch",
+        "text": "Transplants commits on branch from upstream base onto a completely different newbase branch",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0078-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000078",
+        "option_text": "Copies submodules onto branch",
+        "text": "Copies submodules onto branch",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0078-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000078",
+        "option_text": "Performs a three-way squash merge",
+        "text": "Performs a three-way squash merge",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000079",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 79,
+    "difficulty": "hard",
+    "question_text": "By default, what is the retention period before git gc prunes unreachable reflog entries?",
+    "text": "By default, what is the retention period before git gc prunes unreachable reflog entries?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "internals",
+    "explanation": "Default gc.reflogExpireUnreachable is 30 days (while reachable entries expire in 90 days).",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0079-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000079",
+        "option_text": "24 hours",
+        "text": "24 hours",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0079-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000079",
+        "option_text": "30 days for unreachable entries (90 days for reachable)",
+        "text": "30 days for unreachable entries (90 days for reachable)",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0079-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000079",
+        "option_text": "7 days",
+        "text": "7 days",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0079-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000079",
+        "option_text": "Indefinitely until manual deletion",
+        "text": "Indefinitely until manual deletion",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000080",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 80,
+    "difficulty": "hard",
+    "question_text": "In monorepos, what Git feature allows checking out only a specific subset of directories or files?",
+    "text": "In monorepos, what Git feature allows checking out only a specific subset of directories or files?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "sparse-checkout",
+    "explanation": "git sparse-checkout restricts working tree to specified directory patterns while keeping full history.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0080-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000080",
+        "option_text": "git partial-clone",
+        "text": "git partial-clone",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0080-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000080",
+        "option_text": "git sparse-checkout",
+        "text": "git sparse-checkout",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0080-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000080",
+        "option_text": "git split-view",
+        "text": "git split-view",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0080-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000080",
+        "option_text": "git filter-dir",
+        "text": "git filter-dir",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000081",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 81,
+    "difficulty": "hard",
+    "question_text": "What is a shallow clone created via git clone --depth 1?",
+    "text": "What is a shallow clone created via git clone --depth 1?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "cloning",
+    "explanation": "A clone truncated to only the latest commit snapshot without historical ancestry commits.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0081-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000081",
+        "option_text": "A clone with only text files",
+        "text": "A clone with only text files",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0081-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000081",
+        "option_text": "A clone containing only the most recent commit without complete historical commit ancestry",
+        "text": "A clone containing only the most recent commit without complete historical commit ancestry",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0081-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000081",
+        "option_text": "A read-only repository clone",
+        "text": "A read-only repository clone",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0081-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000081",
+        "option_text": "A fork hosted on GitHub",
+        "text": "A fork hosted on GitHub",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000082",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 82,
+    "difficulty": "hard",
+    "question_text": "What command packages repository commits and refs into a single transferable offline binary archive?",
+    "text": "What command packages repository commits and refs into a single transferable offline binary archive?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "bundle",
+    "explanation": "git bundle create <file.bundle> packages refs and commits for offline sneaker-net git fetch.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0082-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000082",
+        "option_text": "git zip-repo",
+        "text": "git zip-repo",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0082-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000082",
+        "option_text": "git bundle create <file.bundle> --all",
+        "text": "git bundle create <file.bundle> --all",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0082-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000082",
+        "option_text": "git tar HEAD",
+        "text": "git tar HEAD",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0082-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000082",
+        "option_text": "git archive-all",
+        "text": "git archive-all",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000083",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 83,
+    "difficulty": "hard",
+    "question_text": "Which git commit flag signs a commit cryptographically using your configured GPG/SSH key?",
+    "text": "Which git commit flag signs a commit cryptographically using your configured GPG/SSH key?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "signatures",
+    "explanation": "git commit -S (capital S) creates a cryptographically signed commit verified by git log --show-signature.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0083-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000083",
+        "option_text": "git commit -s",
+        "text": "git commit -s",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0083-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000083",
+        "option_text": "git commit -S",
+        "text": "git commit -S",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0083-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000083",
+        "option_text": "git commit --gpg",
+        "text": "git commit --gpg",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0083-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000083",
+        "option_text": "git commit --signoff",
+        "text": "git commit --signoff",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000084",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 84,
+    "difficulty": "hard",
+    "question_text": "What merge strategy is automatically invoked by Git when merging more than two head references at once?",
+    "text": "What merge strategy is automatically invoked by Git when merging more than two head references at once?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "merge-strategies",
+    "explanation": "The octopus merge strategy handles merges of 3 or more branches with no complex conflicts.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0084-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000084",
+        "option_text": "recursive strategy",
+        "text": "recursive strategy",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0084-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000084",
+        "option_text": "octopus strategy",
+        "text": "octopus strategy",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0084-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000084",
+        "option_text": "resolve strategy",
+        "text": "resolve strategy",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0084-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000084",
+        "option_text": "ort strategy",
+        "text": "ort strategy",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000085",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 85,
+    "difficulty": "hard",
+    "question_text": "What is the crucial difference between git merge -s ours vs git merge -X ours?",
+    "text": "What is the crucial difference between git merge -s ours vs git merge -X ours?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "merge-strategies",
+    "explanation": "-s ours records merge but discards all other branch changes; -X ours auto-resolves conflicts favoring our side.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0085-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000085",
+        "option_text": "-s ours is deprecated; -X ours is preferred",
+        "text": "-s ours is deprecated; -X ours is preferred",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0085-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000085",
+        "option_text": "-s ours discards all incoming tree changes; -X ours uses three-way merge auto-resolving conflicts favoring current branch",
+        "text": "-s ours discards all incoming tree changes; -X ours uses three-way merge auto-resolving conflicts favoring current branch",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0085-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000085",
+        "option_text": "-X ours operates only on remote branches",
+        "text": "-X ours operates only on remote branches",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0085-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000085",
+        "option_text": "Both commands have identical behavior",
+        "text": "Both commands have identical behavior",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000086",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 86,
+    "difficulty": "hard",
+    "question_text": "What command debugs why a specific file path is being ignored and outputs the matching .gitignore line?",
+    "text": "What command debugs why a specific file path is being ignored and outputs the matching .gitignore line?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "ignore",
+    "explanation": "git check-ignore -v <path> prints the specific .gitignore file and line pattern responsible.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0086-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000086",
+        "option_text": "git why-ignored <path>",
+        "text": "git why-ignored <path>",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0086-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000086",
+        "option_text": "git check-ignore -v <path>",
+        "text": "git check-ignore -v <path>",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0086-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000086",
+        "option_text": "git debug-ignore <path>",
+        "text": "git debug-ignore <path>",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0086-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000086",
+        "option_text": "git inspect-gitignore <path>",
+        "text": "git inspect-gitignore <path>",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000087",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 87,
+    "difficulty": "hard",
+    "question_text": "Which plumbing command updates a branch reference to point directly to a new commit hash safely?",
+    "text": "Which plumbing command updates a branch reference to point directly to a new commit hash safely?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "plumbing",
+    "explanation": "git update-ref refs/heads/<branch> <new-hash> safely updates reference files.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0087-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000087",
+        "option_text": "git set-branch",
+        "text": "git set-branch",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0087-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000087",
+        "option_text": "git update-ref refs/heads/<branch> <hash>",
+        "text": "git update-ref refs/heads/<branch> <hash>",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0087-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000087",
+        "option_text": "git edit-head",
+        "text": "git edit-head",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0087-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000087",
+        "option_text": "git link-branch",
+        "text": "git link-branch",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000088",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 88,
+    "difficulty": "hard",
+    "question_text": "What role does the packfile index (.idx file) serve in .git/objects/pack/?",
+    "text": "What role does the packfile index (.idx file) serve in .git/objects/pack/?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "internals",
+    "explanation": "Contains binary fan-out and hash lookup tables providing O(1) object offset searches in packfiles.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0088-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000088",
+        "option_text": "Stores plain-text commit messages",
+        "text": "Stores plain-text commit messages",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0088-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000088",
+        "option_text": "Provides fan-out binary search index mapping object SHA hashes to exact byte offsets in .pack file",
+        "text": "Provides fan-out binary search index mapping object SHA hashes to exact byte offsets in .pack file",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0088-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000088",
+        "option_text": "Holds remote credentials securely",
+        "text": "Holds remote credentials securely",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0088-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000088",
+        "option_text": "Tracks working tree modifications",
+        "text": "Tracks working tree modifications",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000089",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 89,
+    "difficulty": "hard",
+    "question_text": "In Git repository index (.git/index), what data is tracked for each staged file?",
+    "text": "In Git repository index (.git/index), what data is tracked for each staged file?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "internals",
+    "explanation": "Tracks file path, SHA-1 blob hash, permissions mode, and stat cache (ctime, mtime, size, inode).",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0089-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000089",
+        "option_text": "Only file name and author email",
+        "text": "Only file name and author email",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0089-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000089",
+        "option_text": "File path, blob SHA hash, file mode, and cached filesystem stat metadata (mtime, ctime, size)",
+        "text": "File path, blob SHA hash, file mode, and cached filesystem stat metadata (mtime, ctime, size)",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0089-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000089",
+        "option_text": "Historical commit ancestry tree",
+        "text": "Historical commit ancestry tree",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0089-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000089",
+        "option_text": "Continuous integration results",
+        "text": "Continuous integration results",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000090",
+    "event_id": "00000000-0000-0000-0000-000000000001",
+    "question_number": 90,
+    "difficulty": "hard",
+    "question_text": "What command verifies the cryptographic integrity and packing of Git packfiles on disk?",
+    "text": "What command verifies the cryptographic integrity and packing of Git packfiles on disk?",
+    "correct_answer_index": 0,
+    "is_active": true,
+    "topic": "git-internals",
+    "explanation": "git verify-pack -v verifies packfile structure and prints per-object compression statistics.",
+    "points_base": 1000,
+    "options": [
+      {
+        "id": "20000000-0000-0000-0090-000000000001",
+        "question_id": "10000000-0000-0000-0000-000000000090",
+        "option_text": "git test-pack",
+        "text": "git test-pack",
+        "option_index": 0,
+        "label": "A",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0090-000000000002",
+        "question_id": "10000000-0000-0000-0000-000000000090",
+        "option_text": "git verify-pack -v <packfile.idx>",
+        "text": "git verify-pack -v <packfile.idx>",
+        "option_index": 1,
+        "label": "B",
+        "is_correct": true
+      },
+      {
+        "id": "20000000-0000-0000-0090-000000000003",
+        "question_id": "10000000-0000-0000-0000-000000000090",
+        "option_text": "git check-objects",
+        "text": "git check-objects",
+        "option_index": 2,
+        "label": "C",
+        "is_correct": false
+      },
+      {
+        "id": "20000000-0000-0000-0090-000000000004",
+        "question_id": "10000000-0000-0000-0000-000000000090",
+        "option_text": "git inspect-pack",
+        "text": "git inspect-pack",
+        "option_index": 3,
+        "label": "D",
+        "is_correct": false
+      }
+    ]
+  }
+]

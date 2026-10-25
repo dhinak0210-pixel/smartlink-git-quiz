@@ -1,0 +1,33 @@
+id: bad_wrong_key
+topic: undo-and-recovery
+difficulty: medium
+type: variant
+
+parameters:
+  - name: N
+    values: [2]
+    type: int
+
+setup:
+  - "git init"
+  - "for i in $(seq 1 4); do echo \"c$i\" > f$i.txt && git add f$i.txt && git commit -m \"c$i\"; done"
+
+stem: "Undo the last {N} commits but keep all changes staged."
+
+# PLANT: Using --hard instead of --soft, so staged files count will be 0 instead of 2!
+correct: "git reset --hard HEAD~{N}"
+
+distractors:
+  - text: "git reset --mixed HEAD~{N}"
+    reason: leaves_unstaged
+  - text: "git checkout HEAD~{N}"
+    reason: wrong_operation
+  - text: "git revert HEAD"
+    reason: wrong_operation
+
+goal: "staged_files_count=={N}"
+
+explanation: "This fixture has a wrong answer key planted intentionally."
+
+variant_count: 1
+is_reserve: false

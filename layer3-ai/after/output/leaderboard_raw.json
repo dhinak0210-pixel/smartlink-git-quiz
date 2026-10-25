@@ -1,0 +1,182 @@
+[
+  {
+    "rank": 1,
+    "student_id": "stu_004",
+    "name": "Student Diana",
+    "college_id": "ENG2026004",
+    "total_points": 7426,
+    "correct_answers": 13,
+    "avg_response_ms": 8774
+  },
+  {
+    "rank": 2,
+    "student_id": "stu_003",
+    "name": "Student Charlie",
+    "college_id": "ENG2026003",
+    "total_points": 7050,
+    "correct_answers": 13,
+    "avg_response_ms": 9340
+  },
+  {
+    "rank": 3,
+    "student_id": "stu_005",
+    "name": "Student Ethan",
+    "college_id": "ENG2026005",
+    "total_points": 6045,
+    "correct_answers": 14,
+    "avg_response_ms": 12033
+  },
+  {
+    "rank": 4,
+    "student_id": "stu_002",
+    "name": "Student Bob",
+    "college_id": "ENG2026002",
+    "total_points": 5735,
+    "correct_answers": 13,
+    "avg_response_ms": 11128
+  },
+  {
+    "rank": 5,
+    "student_id": "stu_001",
+    "name": "Student Alice",
+    "college_id": "ENG2026001",
+    "total_points": 5424,
+    "correct_answers": 13,
+    "avg_response_ms": 11911
+  },
+  {
+    "rank": 6,
+    "student_id": "stu_009",
+    "name": "Student Ian",
+    "college_id": "ENG2026009",
+    "total_points": 4948,
+    "correct_answers": 8,
+    "avg_response_ms": 10074
+  },
+  {
+    "rank": 7,
+    "student_id": "stu_013",
+    "name": "Student Mukul",
+    "college_id": "ENG2026013",
+    "total_points": 4660,
+    "correct_answers": 9,
+    "avg_response_ms": 11360
+  },
+  {
+    "rank": 8,
+    "student_id": "stu_008",
+    "name": "Student Hannah",
+    "college_id": "ENG2026008",
+    "total_points": 4578,
+    "correct_answers": 11,
+    "avg_response_ms": 11676
+  },
+  {
+    "rank": 9,
+    "student_id": "stu_006",
+    "name": "Student Fiona",
+    "college_id": "ENG2026006",
+    "total_points": 4543,
+    "correct_answers": 10,
+    "avg_response_ms": 12284
+  },
+  {
+    "rank": 10,
+    "student_id": "stu_017",
+    "name": "Student Quinn",
+    "college_id": "ENG2026017",
+    "total_points": 4043,
+    "correct_answers": 7,
+    "avg_response_ms": 9461
+  },
+  {
+    "rank": 11,
+    "student_id": "stu_012",
+    "name": "Student Laura",
+    "college_id": "ENG2026012",
+    "total_points": 3744,
+    "correct_answers": 8,
+    "avg_response_ms": 10142
+  },
+  {
+    "rank": 12,
+    "student_id": "stu_007",
+    "name": "Student George",
+    "college_id": "ENG2026007",
+    "total_points": 3694,
+    "correct_answers": 9,
+    "avg_response_ms": 10458
+  },
+  {
+    "rank": 13,
+    "student_id": "stu_010",
+    "name": "Student Julia",
+    "college_id": "ENG2026010",
+    "total_points": 3576,
+    "correct_answers": 7,
+    "avg_response_ms": 10070
+  },
+  {
+    "rank": 14,
+    "student_id": "stu_019",
+    "name": "Student Sara",
+    "college_id": "ENG2026019",
+    "total_points": 3202,
+    "correct_answers": 7,
+    "avg_response_ms": 11414
+  },
+  {
+    "rank": 15,
+    "student_id": "stu_016",
+    "name": "Student Priya",
+    "college_id": "ENG2026016",
+    "total_points": 3106,
+    "correct_answers": 6,
+    "avg_response_ms": 9048
+  },
+  {
+    "rank": 16,
+    "student_id": "stu_014",
+    "name": "Student Nina",
+    "college_id": "ENG2026014",
+    "total_points": 2938,
+    "correct_answers": 7,
+    "avg_response_ms": 12980
+  },
+  {
+    "rank": 17,
+    "student_id": "stu_011",
+    "name": "Student Kevin",
+    "college_id": "ENG2026011",
+    "total_points": 2546,
+    "correct_answers": 6,
+    "avg_response_ms": 8998
+  },
+  {
+    "rank": 18,
+    "student_id": "stu_015",
+    "name": "Student Oscar",
+    "college_id": "ENG2026015",
+    "total_points": 2500,
+    "correct_answers": 6,
+    "avg_response_ms": 11806
+  },
+  {
+    "rank": 19,
+    "student_id": "stu_020",
+    "name": "Student Tom",
+    "college_id": "ENG2026020",
+    "total_points": 2127,
+    "correct_answers": 4,
+    "avg_response_ms": 10751
+  },
+  {
+    "rank": 20,
+    "student_id": "stu_018",
+    "name": "Student Rahul",
+    "college_id": "ENG2026018",
+    "total_points": 692,
+    "correct_answers": 3,
+    "avg_response_ms": 10705
+  }
+]

@@ -1,0 +1,32 @@
+id: q08_revert_count
+topic: undo-and-recovery
+difficulty: medium
+type: variant
+
+parameters:
+  - name: N
+    values: [1, 2, 3]
+    type: int
+
+setup:
+  - "git init"
+  - "for i in $(seq 1 5); do echo \"c$i\" > f$i.txt && git add f$i.txt && git commit -m \"commit $i\"; done"
+
+stem: "You noticed an issue on public `main` and want to safely invert commit HEAD~{N} with a new commit. Which command should you run?"
+
+correct: "git revert HEAD~{N}"
+
+distractors:
+  - text: "git reset --hard HEAD~{N}"
+    reason: destroys_changes
+  - text: "git checkout HEAD~{N}"
+    reason: wrong_operation
+  - text: "git revert HEAD~{N_plus_1}"
+    reason: wrong_count
+
+goal: "reverted_commit(HEAD~{N})==true AND worktree_clean==true"
+
+explanation: "`git revert HEAD~K` creates a new commit that records the exact inverse of HEAD~K, safely undoing changes on shared branches without rewriting history."
+
+variant_count: 3
+is_reserve: false

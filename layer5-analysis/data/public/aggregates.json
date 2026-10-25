@@ -1,0 +1,1030 @@
+{
+  "participation": {
+    "registered": 200,
+    "answered_at_least_one": 200,
+    "completed_all_15": 200
+  },
+  "score_distribution": {
+    "mean": 5957.1,
+    "median": 5651.0,
+    "std": 2395.5,
+    "min": 0,
+    "max": 11624,
+    "p25": 4195.5,
+    "p75": 7753.2
+  },
+  "question_stats": [
+    {
+      "question_id": "10000000-0000-0000-0000-000000000001",
+      "attempts": 37,
+      "correct": 19,
+      "avg_response_ms": 9216.216216216217,
+      "fraction_correct": 0.514,
+      "difficulty": "easy",
+      "topic": "basics"
+    },
+    {
+      "question_id": "10000000-0000-0000-0000-000000000002",
+      "attempts": 27,
+      "correct": 17,
+      "avg_response_ms": 7555.555555555556,
+      "fraction_correct": 0.63,
+      "difficulty": "easy",
+      "topic": "basics"
+    },
+    {
+      "question_id": "10000000-0000-0000-0000-000000000003",
+      "attempts": 31,
+      "correct": 19,
+      "avg_response_ms": 9500.0,
+      "fraction_correct": 0.613,
+      "difficulty": "easy",
+      "topic": "staging"
+    },
+    {
+      "question_id": "10000000-0000-0000-0000-000000000004",
+      "attempts": 27,
+      "correct": 18,
+      "avg_response_ms": 7277.777777777777,
+      "fraction_correct": 0.667,
+      "difficulty": "easy",
+      "topic": "commits"
+    },
+    {
+      "question_id": "10000000-0000-0000-0000-000000000005",
+      "attempts": 35,
+      "correct": 23,
+      "avg_response_ms": 8285.714285714286,
+      "fraction_correct": 0.657,
+      "difficulty": "easy",
+      "topic": "cloning"
+    },
+    {
+      "question_id": "10000000-0000-0000-0000-000000000006",
+      "attempts": 36,
+      "correct": 28,
+      "avg_response_ms": 9430.555555555555,
+      "fraction_correct": 0.778,
+      "difficulty": "easy",
+      "topic": "branching"
+    },
+    {
+      "question_id": "10000000-0000-0000-0000-000000000007",
+      "attempts": 32,
+      "correct": 25,
+      "avg_response_ms": 7875.0,
+      "fraction_correct": 0.781,
+      "difficulty": "easy",
+      "topic": "branching"
+    },
+    {
+      "question_id": "10000000-0000-0000-0000-000000000008",
+      "attempts": 31,
+      "correct": 23,
+      "avg_response_ms": 9064.516129032258,
+      "fraction_correct": 0.742,
+      "difficulty": "easy",
+      "topic": "stashing"
+    },
+    {
+      "question_id": "10000000-0000-0000-0000-000000000009",
+      "attempts": 27,
+      "correct": 20,
+      "avg_response_ms": 8388.888888888889,
+      "fraction_correct": 0.741,
+      "difficulty": "easy",
+      "topic": "stashing"
+    },
+    {
+      "question_id": "10000000-0000-0000-0000-000000000010",
+      "attempts": 34,
+      "correct": 22,
+      "avg_response_ms": 8764.70588235294,
+      "fraction_correct": 0.647,
+      "difficulty": "easy",
+      "topic": "stashing"
+    },
+    {
+      "question_id": "10000000-0000-0000-0000-000000000011",
+      "attempts": 34,
+      "correct": 24,
+      "avg_response_ms": 8323.529411764706,
+      "fraction_correct": 0.706,
+      "difficulty": "easy",
+      "topic": "status"
+    },
+    {
+      "question_id": "10000000-0000-0000-0000-000000000012",
+      "attempts": 36,
+      "correct": 24,
+      "avg_response_ms": 8319.444444444445,
+      "fraction_correct": 0.667,
+      "difficulty": "easy",
+      "topic": "diff"
+    },
+    {
+      "question_id": "10000000-0000-0000-0000-000000000013",
+      "attempts": 38,
+      "correct": 23,
+      "avg_response_ms": 8578.947368421053,
+      "fraction_correct": 0.605,
+      "difficulty": "easy",
+      "topic": "diff"
+    },
+    {
+      "question_id": "10000000-0000-0000-0000-000000000014",
+      "attempts": 41,
+      "correct": 31,
+      "avg_response_ms": 8317.073170731708,
+      "fraction_correct": 0.756,
+      "difficulty": "easy",
+      "topic": "remotes"
+    },
+    {
+      "question_id": "10000000-0000-0000-0000-000000000015",
+      "attempts": 43,
+      "correct": 32,
+      "avg_response_ms": 7674.418604651163,
+      "fraction_correct": 0.744,
+      "difficulty": "easy",
+      "topic": "remotes"
+    },
+    {
+      "question_id": "10000000-0000-0000-0000-000000000016",
+      "attempts": 37,
+      "correct": 27,
+      "avg_response_ms": 7324.324324324324,
+      "fraction_correct": 0.73,
+      "difficulty": "easy",
+      "topic": "remotes"
+    },
+    {
+      "question_id": "10000000-0000-0000-0000-000000000017",
+      "attempts": 35,
+      "correct": 30,
+      "avg_response_ms": 9014.285714285714,
+      "fraction_correct": 0.857,
+      "difficulty": "easy",
+      "topic": "remotes"
+    },
+    {
+      "question_id": "10000000-0000-0000-0000-000000000018",
+      "attempts": 31,
+      "correct": 20,
+      "avg_response_ms": 8838.709677419354,
+      "fraction_correct": 0.645,
+      "difficulty": "easy",
+      "topic": "ignore"
+    },
+    {
+      "question_id": "10000000-0000-0000-0000-000000000019",
+      "attempts": 36,
+      "correct": 26,
+      "avg_response_ms": 7569.444444444444,
+      "fraction_correct": 0.722,
+      "difficulty": "easy",
+      "topic": "config"
+    },
+    {
+      "question_id": "10000000-0000-0000-0000-000000000020",
+      "attempts": 26,
+      "correct": 16,
+      "avg_response_ms": 6923.076923076923,
+      "fraction_correct": 0.615,
+      "difficulty": "easy",
+      "topic": "config"
+    },
+    {
+      "question_id": "10000000-0000-0000-0000-000000000021",
+      "attempts": 38,
+      "correct": 28,
+      "avg_response_ms": 8065.789473684211,
+      "fraction_correct": 0.737,
+      "difficulty": "easy",
+      "topic": "commits"
+    },
+    {
+      "question_id": "10000000-0000-0000-0000-000000000022",
+      "attempts": 24,
+      "correct": 12,
+      "avg_response_ms": 9354.166666666666,
+      "fraction_correct": 0.5,
+      "difficulty": "easy",
+      "topic": "tags"
+    },
+    {
+      "question_id": "10000000-0000-0000-0000-000000000023",
+      "attempts": 40,
+      "correct": 30,
+      "avg_response_ms": 8275.0,
+      "fraction_correct": 0.75,
+      "difficulty": "easy",
+      "topic": "inspect"
+    },
+    {
+      "question_id": "10000000-0000-0000-0000-000000000024",
+      "attempts": 32,
+      "correct": 21,
+      "avg_response_ms": 8250.0,
+      "fraction_correct": 0.656,
+      "difficulty": "easy",
+      "topic": "internals"
+    },
+    {
+      "question_id": "10000000-0000-0000-0000-000000000025",
+      "attempts": 33,
+      "correct": 23,
+      "avg_response_ms": 7909.090909090909,
+      "fraction_correct": 0.697,
+      "difficulty": "easy",
+      "topic": "removal"
+    },
+    {
+      "question_id": "10000000-0000-0000-0000-000000000026",
+      "attempts": 26,
+      "correct": 19,
+      "avg_response_ms": 7173.076923076923,
+      "fraction_correct": 0.731,
+      "difficulty": "easy",
+      "topic": "merge"
+    },
+    {
+      "question_id": "10000000-0000-0000-0000-000000000027",
+      "attempts": 41,
+      "correct": 24,
+      "avg_response_ms": 9219.512195121952,
+      "fraction_correct": 0.585,
+      "difficulty": "easy",
+      "topic": "log"
+    },
+    {
+      "question_id": "10000000-0000-0000-0000-000000000028",
+      "attempts": 28,
+      "correct": 25,
+      "avg_response_ms": 8875.0,
+      "fraction_correct": 0.893,
+      "difficulty": "easy",
+      "topic": "checkout"
+    },
+    {
+      "question_id": "10000000-0000-0000-0000-000000000029",
+      "attempts": 33,
+      "correct": 23,
+      "avg_response_ms": 8469.69696969697,
+      "fraction_correct": 0.697,
+      "difficulty": "easy",
+      "topic": "restore"
+    },
+    {
+      "question_id": "10000000-0000-0000-0000-000000000030",
+      "attempts": 31,
+      "correct": 25,
+      "avg_response_ms": 8129.032258064516,
+      "fraction_correct": 0.806,
+      "difficulty": "easy",
+      "topic": "basics"
+    },
+    {
+      "question_id": "20000000-0000-0000-0000-000000000001",
+      "attempts": 26,
+      "correct": 18,
+      "avg_response_ms": 7461.538461538462,
+      "fraction_correct": 0.692,
+      "difficulty": "medium",
+      "topic": "rebase"
+    },
+    {
+      "question_id": "20000000-0000-0000-0000-000000000002",
+      "attempts": 26,
+      "correct": 10,
+      "avg_response_ms": 7846.153846153846,
+      "fraction_correct": 0.385,
+      "difficulty": "medium",
+      "topic": "reset"
+    },
+    {
+      "question_id": "20000000-0000-0000-0000-000000000003",
+      "attempts": 34,
+      "correct": 26,
+      "avg_response_ms": 8529.411764705883,
+      "fraction_correct": 0.765,
+      "difficulty": "medium",
+      "topic": "reset"
+    },
+    {
+      "question_id": "20000000-0000-0000-0000-000000000004",
+      "attempts": 35,
+      "correct": 18,
+      "avg_response_ms": 8157.142857142857,
+      "fraction_correct": 0.514,
+      "difficulty": "medium",
+      "topic": "reset"
+    },
+    {
+      "question_id": "20000000-0000-0000-0000-000000000005",
+      "attempts": 31,
+      "correct": 17,
+      "avg_response_ms": 8548.387096774193,
+      "fraction_correct": 0.548,
+      "difficulty": "medium",
+      "topic": "cherry-pick"
+    },
+    {
+      "question_id": "20000000-0000-0000-0000-000000000006",
+      "attempts": 33,
+      "correct": 18,
+      "avg_response_ms": 9227.272727272728,
+      "fraction_correct": 0.545,
+      "difficulty": "medium",
+      "topic": "reflog"
+    },
+    {
+      "question_id": "20000000-0000-0000-0000-000000000007",
+      "attempts": 30,
+      "correct": 19,
+      "avg_response_ms": 8966.666666666666,
+      "fraction_correct": 0.633,
+      "difficulty": "medium",
+      "topic": "clean"
+    },
+    {
+      "question_id": "20000000-0000-0000-0000-000000000008",
+      "attempts": 36,
+      "correct": 17,
+      "avg_response_ms": 8902.777777777777,
+      "fraction_correct": 0.472,
+      "difficulty": "medium",
+      "topic": "revert"
+    },
+    {
+      "question_id": "20000000-0000-0000-0000-000000000009",
+      "attempts": 39,
+      "correct": 20,
+      "avg_response_ms": 8076.923076923077,
+      "fraction_correct": 0.513,
+      "difficulty": "medium",
+      "topic": "rebase-interactive"
+    },
+    {
+      "question_id": "20000000-0000-0000-0000-000000000010",
+      "attempts": 31,
+      "correct": 18,
+      "avg_response_ms": 8193.548387096775,
+      "fraction_correct": 0.581,
+      "difficulty": "medium",
+      "topic": "rebase-interactive"
+    },
+    {
+      "question_id": "20000000-0000-0000-0000-000000000011",
+      "attempts": 31,
+      "correct": 15,
+      "avg_response_ms": 8112.903225806452,
+      "fraction_correct": 0.484,
+      "difficulty": "medium",
+      "topic": "rebase-interactive"
+    },
+    {
+      "question_id": "20000000-0000-0000-0000-000000000012",
+      "attempts": 33,
+      "correct": 19,
+      "avg_response_ms": 7863.636363636364,
+      "fraction_correct": 0.576,
+      "difficulty": "medium",
+      "topic": "branching"
+    },
+    {
+      "question_id": "20000000-0000-0000-0000-000000000013",
+      "attempts": 28,
+      "correct": 16,
+      "avg_response_ms": 8196.42857142857,
+      "fraction_correct": 0.571,
+      "difficulty": "medium",
+      "topic": "remotes"
+    },
+    {
+      "question_id": "20000000-0000-0000-0000-000000000014",
+      "attempts": 37,
+      "correct": 18,
+      "avg_response_ms": 9094.594594594595,
+      "fraction_correct": 0.486,
+      "difficulty": "medium",
+      "topic": "blame"
+    },
+    {
+      "question_id": "20000000-0000-0000-0000-000000000015",
+      "attempts": 35,
+      "correct": 18,
+      "avg_response_ms": 7914.285714285715,
+      "fraction_correct": 0.514,
+      "difficulty": "medium",
+      "topic": "merge"
+    },
+    {
+      "question_id": "20000000-0000-0000-0000-000000000016",
+      "attempts": 31,
+      "correct": 18,
+      "avg_response_ms": 8596.774193548386,
+      "fraction_correct": 0.581,
+      "difficulty": "medium",
+      "topic": "rebase"
+    },
+    {
+      "question_id": "20000000-0000-0000-0000-000000000017",
+      "attempts": 32,
+      "correct": 19,
+      "avg_response_ms": 8515.625,
+      "fraction_correct": 0.594,
+      "difficulty": "medium",
+      "topic": "worktree"
+    },
+    {
+      "question_id": "20000000-0000-0000-0000-000000000018",
+      "attempts": 27,
+      "correct": 13,
+      "avg_response_ms": 8259.25925925926,
+      "fraction_correct": 0.481,
+      "difficulty": "medium",
+      "topic": "submodules"
+    },
+    {
+      "question_id": "20000000-0000-0000-0000-000000000019",
+      "attempts": 40,
+      "correct": 17,
+      "avg_response_ms": 7137.5,
+      "fraction_correct": 0.425,
+      "difficulty": "medium",
+      "topic": "stashing"
+    },
+    {
+      "question_id": "20000000-0000-0000-0000-000000000020",
+      "attempts": 40,
+      "correct": 17,
+      "avg_response_ms": 9100.0,
+      "fraction_correct": 0.425,
+      "difficulty": "medium",
+      "topic": "internals"
+    },
+    {
+      "question_id": "20000000-0000-0000-0000-000000000021",
+      "attempts": 39,
+      "correct": 17,
+      "avg_response_ms": 8615.384615384615,
+      "fraction_correct": 0.436,
+      "difficulty": "medium",
+      "topic": "merge"
+    },
+    {
+      "question_id": "20000000-0000-0000-0000-000000000022",
+      "attempts": 28,
+      "correct": 13,
+      "avg_response_ms": 8607.142857142857,
+      "fraction_correct": 0.464,
+      "difficulty": "medium",
+      "topic": "merge"
+    },
+    {
+      "question_id": "20000000-0000-0000-0000-000000000023",
+      "attempts": 29,
+      "correct": 14,
+      "avg_response_ms": 7706.896551724138,
+      "fraction_correct": 0.483,
+      "difficulty": "medium",
+      "topic": "tags"
+    },
+    {
+      "question_id": "20000000-0000-0000-0000-000000000024",
+      "attempts": 41,
+      "correct": 22,
+      "avg_response_ms": 9036.585365853658,
+      "fraction_correct": 0.537,
+      "difficulty": "medium",
+      "topic": "tags"
+    },
+    {
+      "question_id": "20000000-0000-0000-0000-000000000025",
+      "attempts": 36,
+      "correct": 21,
+      "avg_response_ms": 8166.666666666667,
+      "fraction_correct": 0.583,
+      "difficulty": "medium",
+      "topic": "log"
+    },
+    {
+      "question_id": "20000000-0000-0000-0000-000000000026",
+      "attempts": 28,
+      "correct": 18,
+      "avg_response_ms": 8446.42857142857,
+      "fraction_correct": 0.643,
+      "difficulty": "medium",
+      "topic": "log"
+    },
+    {
+      "question_id": "20000000-0000-0000-0000-000000000027",
+      "attempts": 41,
+      "correct": 16,
+      "avg_response_ms": 9170.731707317073,
+      "fraction_correct": 0.39,
+      "difficulty": "medium",
+      "topic": "remotes"
+    },
+    {
+      "question_id": "20000000-0000-0000-0000-000000000028",
+      "attempts": 35,
+      "correct": 13,
+      "avg_response_ms": 8057.142857142857,
+      "fraction_correct": 0.371,
+      "difficulty": "medium",
+      "topic": "config"
+    },
+    {
+      "question_id": "20000000-0000-0000-0000-000000000029",
+      "attempts": 25,
+      "correct": 12,
+      "avg_response_ms": 8400.0,
+      "fraction_correct": 0.48,
+      "difficulty": "medium",
+      "topic": "diff"
+    },
+    {
+      "question_id": "20000000-0000-0000-0000-000000000030",
+      "attempts": 43,
+      "correct": 24,
+      "avg_response_ms": 8453.488372093023,
+      "fraction_correct": 0.558,
+      "difficulty": "medium",
+      "topic": "rebase-interactive"
+    },
+    {
+      "question_id": "30000000-0000-0000-0000-000000000001",
+      "attempts": 43,
+      "correct": 15,
+      "avg_response_ms": 9046.511627906977,
+      "fraction_correct": 0.349,
+      "difficulty": "hard",
+      "topic": "debugging"
+    },
+    {
+      "question_id": "30000000-0000-0000-0000-000000000002",
+      "attempts": 36,
+      "correct": 14,
+      "avg_response_ms": 7513.888888888889,
+      "fraction_correct": 0.389,
+      "difficulty": "hard",
+      "topic": "debugging"
+    },
+    {
+      "question_id": "30000000-0000-0000-0000-000000000003",
+      "attempts": 36,
+      "correct": 13,
+      "avg_response_ms": 7902.777777777777,
+      "fraction_correct": 0.361,
+      "difficulty": "hard",
+      "topic": "git-internals"
+    },
+    {
+      "question_id": "30000000-0000-0000-0000-000000000004",
+      "attempts": 33,
+      "correct": 8,
+      "avg_response_ms": 8196.969696969696,
+      "fraction_correct": 0.242,
+      "difficulty": "hard",
+      "topic": "git-internals"
+    },
+    {
+      "question_id": "30000000-0000-0000-0000-000000000005",
+      "attempts": 36,
+      "correct": 7,
+      "avg_response_ms": 8972.222222222223,
+      "fraction_correct": 0.194,
+      "difficulty": "hard",
+      "topic": "git-internals"
+    },
+    {
+      "question_id": "30000000-0000-0000-0000-000000000006",
+      "attempts": 31,
+      "correct": 9,
+      "avg_response_ms": 8629.032258064517,
+      "fraction_correct": 0.29,
+      "difficulty": "hard",
+      "topic": "git-internals"
+    },
+    {
+      "question_id": "30000000-0000-0000-0000-000000000007",
+      "attempts": 36,
+      "correct": 7,
+      "avg_response_ms": 8819.444444444445,
+      "fraction_correct": 0.194,
+      "difficulty": "hard",
+      "topic": "git-internals"
+    },
+    {
+      "question_id": "30000000-0000-0000-0000-000000000008",
+      "attempts": 31,
+      "correct": 5,
+      "avg_response_ms": 7967.741935483871,
+      "fraction_correct": 0.161,
+      "difficulty": "hard",
+      "topic": "git-internals"
+    },
+    {
+      "question_id": "30000000-0000-0000-0000-000000000009",
+      "attempts": 21,
+      "correct": 5,
+      "avg_response_ms": 8857.142857142857,
+      "fraction_correct": 0.238,
+      "difficulty": "hard",
+      "topic": "git-internals"
+    },
+    {
+      "question_id": "30000000-0000-0000-0000-000000000010",
+      "attempts": 30,
+      "correct": 7,
+      "avg_response_ms": 8983.333333333334,
+      "fraction_correct": 0.233,
+      "difficulty": "hard",
+      "topic": "git-internals"
+    },
+    {
+      "question_id": "30000000-0000-0000-0000-000000000011",
+      "attempts": 34,
+      "correct": 10,
+      "avg_response_ms": 7705.882352941177,
+      "fraction_correct": 0.294,
+      "difficulty": "hard",
+      "topic": "rerere"
+    },
+    {
+      "question_id": "30000000-0000-0000-0000-000000000012",
+      "attempts": 33,
+      "correct": 11,
+      "avg_response_ms": 8818.181818181818,
+      "fraction_correct": 0.333,
+      "difficulty": "hard",
+      "topic": "hooks"
+    },
+    {
+      "question_id": "30000000-0000-0000-0000-000000000013",
+      "attempts": 37,
+      "correct": 12,
+      "avg_response_ms": 7243.243243243243,
+      "fraction_correct": 0.324,
+      "difficulty": "hard",
+      "topic": "hooks"
+    },
+    {
+      "question_id": "30000000-0000-0000-0000-000000000014",
+      "attempts": 31,
+      "correct": 8,
+      "avg_response_ms": 8209.677419354839,
+      "fraction_correct": 0.258,
+      "difficulty": "hard",
+      "topic": "security"
+    },
+    {
+      "question_id": "30000000-0000-0000-0000-000000000015",
+      "attempts": 26,
+      "correct": 10,
+      "avg_response_ms": 8557.692307692309,
+      "fraction_correct": 0.385,
+      "difficulty": "hard",
+      "topic": "plumbing"
+    },
+    {
+      "question_id": "30000000-0000-0000-0000-000000000016",
+      "attempts": 31,
+      "correct": 8,
+      "avg_response_ms": 7887.096774193548,
+      "fraction_correct": 0.258,
+      "difficulty": "hard",
+      "topic": "plumbing"
+    },
+    {
+      "question_id": "30000000-0000-0000-0000-000000000017",
+      "attempts": 32,
+      "correct": 8,
+      "avg_response_ms": 8109.375,
+      "fraction_correct": 0.25,
+      "difficulty": "hard",
+      "topic": "plumbing"
+    },
+    {
+      "question_id": "30000000-0000-0000-0000-000000000018",
+      "attempts": 28,
+      "correct": 7,
+      "avg_response_ms": 8732.142857142857,
+      "fraction_correct": 0.25,
+      "difficulty": "hard",
+      "topic": "rebase-onto"
+    },
+    {
+      "question_id": "30000000-0000-0000-0000-000000000019",
+      "attempts": 35,
+      "correct": 11,
+      "avg_response_ms": 7428.571428571428,
+      "fraction_correct": 0.314,
+      "difficulty": "hard",
+      "topic": "internals"
+    },
+    {
+      "question_id": "30000000-0000-0000-0000-000000000020",
+      "attempts": 36,
+      "correct": 7,
+      "avg_response_ms": 8416.666666666666,
+      "fraction_correct": 0.194,
+      "difficulty": "hard",
+      "topic": "sparse-checkout"
+    },
+    {
+      "question_id": "30000000-0000-0000-0000-000000000021",
+      "attempts": 28,
+      "correct": 9,
+      "avg_response_ms": 7000.0,
+      "fraction_correct": 0.321,
+      "difficulty": "hard",
+      "topic": "cloning"
+    },
+    {
+      "question_id": "30000000-0000-0000-0000-000000000022",
+      "attempts": 37,
+      "correct": 16,
+      "avg_response_ms": 10081.081081081082,
+      "fraction_correct": 0.432,
+      "difficulty": "hard",
+      "topic": "bundle"
+    },
+    {
+      "question_id": "30000000-0000-0000-0000-000000000023",
+      "attempts": 25,
+      "correct": 7,
+      "avg_response_ms": 8220.0,
+      "fraction_correct": 0.28,
+      "difficulty": "hard",
+      "topic": "signatures"
+    },
+    {
+      "question_id": "30000000-0000-0000-0000-000000000024",
+      "attempts": 52,
+      "correct": 17,
+      "avg_response_ms": 8057.692307692308,
+      "fraction_correct": 0.327,
+      "difficulty": "hard",
+      "topic": "merge-strategies"
+    },
+    {
+      "question_id": "30000000-0000-0000-0000-000000000025",
+      "attempts": 30,
+      "correct": 11,
+      "avg_response_ms": 8283.333333333334,
+      "fraction_correct": 0.367,
+      "difficulty": "hard",
+      "topic": "merge-strategies"
+    },
+    {
+      "question_id": "30000000-0000-0000-0000-000000000026",
+      "attempts": 44,
+      "correct": 16,
+      "avg_response_ms": 9431.818181818182,
+      "fraction_correct": 0.364,
+      "difficulty": "hard",
+      "topic": "ignore"
+    },
+    {
+      "question_id": "30000000-0000-0000-0000-000000000027",
+      "attempts": 25,
+      "correct": 4,
+      "avg_response_ms": 7720.0,
+      "fraction_correct": 0.16,
+      "difficulty": "hard",
+      "topic": "plumbing"
+    },
+    {
+      "question_id": "30000000-0000-0000-0000-000000000028",
+      "attempts": 38,
+      "correct": 11,
+      "avg_response_ms": 8657.894736842105,
+      "fraction_correct": 0.289,
+      "difficulty": "hard",
+      "topic": "internals"
+    },
+    {
+      "question_id": "30000000-0000-0000-0000-000000000029",
+      "attempts": 29,
+      "correct": 8,
+      "avg_response_ms": 7431.0344827586205,
+      "fraction_correct": 0.276,
+      "difficulty": "hard",
+      "topic": "internals"
+    },
+    {
+      "question_id": "30000000-0000-0000-0000-000000000030",
+      "attempts": 36,
+      "correct": 9,
+      "avg_response_ms": 7722.222222222223,
+      "fraction_correct": 0.25,
+      "difficulty": "hard",
+      "topic": "git-internals"
+    }
+  ],
+  "topic_accuracy": {
+    "basics": {
+      "correct": 61,
+      "total": 95,
+      "fraction_correct": 0.642
+    },
+    "staging": {
+      "correct": 19,
+      "total": 31,
+      "fraction_correct": 0.613
+    },
+    "commits": {
+      "correct": 46,
+      "total": 65,
+      "fraction_correct": 0.708
+    },
+    "cloning": {
+      "correct": 32,
+      "total": 63,
+      "fraction_correct": 0.508
+    },
+    "branching": {
+      "correct": 72,
+      "total": 101,
+      "fraction_correct": 0.713
+    },
+    "stashing": {
+      "correct": 82,
+      "total": 132,
+      "fraction_correct": 0.621
+    },
+    "status": {
+      "correct": 24,
+      "total": 34,
+      "fraction_correct": 0.706
+    },
+    "diff": {
+      "correct": 59,
+      "total": 99,
+      "fraction_correct": 0.596
+    },
+    "remotes": {
+      "correct": 152,
+      "total": 225,
+      "fraction_correct": 0.676
+    },
+    "ignore": {
+      "correct": 36,
+      "total": 75,
+      "fraction_correct": 0.48
+    },
+    "config": {
+      "correct": 55,
+      "total": 97,
+      "fraction_correct": 0.567
+    },
+    "tags": {
+      "correct": 48,
+      "total": 94,
+      "fraction_correct": 0.511
+    },
+    "inspect": {
+      "correct": 30,
+      "total": 40,
+      "fraction_correct": 0.75
+    },
+    "internals": {
+      "correct": 68,
+      "total": 174,
+      "fraction_correct": 0.391
+    },
+    "removal": {
+      "correct": 23,
+      "total": 33,
+      "fraction_correct": 0.697
+    },
+    "merge": {
+      "correct": 67,
+      "total": 128,
+      "fraction_correct": 0.523
+    },
+    "log": {
+      "correct": 63,
+      "total": 105,
+      "fraction_correct": 0.6
+    },
+    "checkout": {
+      "correct": 25,
+      "total": 28,
+      "fraction_correct": 0.893
+    },
+    "restore": {
+      "correct": 23,
+      "total": 33,
+      "fraction_correct": 0.697
+    },
+    "rebase": {
+      "correct": 36,
+      "total": 57,
+      "fraction_correct": 0.632
+    },
+    "reset": {
+      "correct": 54,
+      "total": 95,
+      "fraction_correct": 0.568
+    },
+    "cherry-pick": {
+      "correct": 17,
+      "total": 31,
+      "fraction_correct": 0.548
+    },
+    "reflog": {
+      "correct": 18,
+      "total": 33,
+      "fraction_correct": 0.545
+    },
+    "clean": {
+      "correct": 19,
+      "total": 30,
+      "fraction_correct": 0.633
+    },
+    "revert": {
+      "correct": 17,
+      "total": 36,
+      "fraction_correct": 0.472
+    },
+    "rebase-interactive": {
+      "correct": 77,
+      "total": 144,
+      "fraction_correct": 0.535
+    },
+    "blame": {
+      "correct": 18,
+      "total": 37,
+      "fraction_correct": 0.486
+    },
+    "worktree": {
+      "correct": 19,
+      "total": 32,
+      "fraction_correct": 0.594
+    },
+    "submodules": {
+      "correct": 13,
+      "total": 27,
+      "fraction_correct": 0.481
+    },
+    "debugging": {
+      "correct": 29,
+      "total": 79,
+      "fraction_correct": 0.367
+    },
+    "git-internals": {
+      "correct": 70,
+      "total": 290,
+      "fraction_correct": 0.241
+    },
+    "rerere": {
+      "correct": 10,
+      "total": 34,
+      "fraction_correct": 0.294
+    },
+    "hooks": {
+      "correct": 23,
+      "total": 70,
+      "fraction_correct": 0.329
+    },
+    "security": {
+      "correct": 8,
+      "total": 31,
+      "fraction_correct": 0.258
+    },
+    "plumbing": {
+      "correct": 30,
+      "total": 114,
+      "fraction_correct": 0.263
+    },
+    "rebase-onto": {
+      "correct": 7,
+      "total": 28,
+      "fraction_correct": 0.25
+    },
+    "sparse-checkout": {
+      "correct": 7,
+      "total": 36,
+      "fraction_correct": 0.194
+    },
+    "bundle": {
+      "correct": 16,
+      "total": 37,
+      "fraction_correct": 0.432
+    },
+    "signatures": {
+      "correct": 7,
+      "total": 25,
+      "fraction_correct": 0.28
+    },
+    "merge-strategies": {
+      "correct": 28,
+      "total": 82,
+      "fraction_correct": 0.341
+    }
+  }
+}

@@ -1,0 +1,33 @@
+id: bad_two_correct
+topic: branching
+difficulty: easy
+type: variant
+
+parameters:
+  - name: branch_name
+    values: [feature-login]
+    type: branch_name
+
+setup:
+  - "git init"
+  - "echo 'init' > init.txt && git add init.txt && git commit -m 'init'"
+
+stem: "Create and switch to a new branch `{branch_name}`."
+
+correct: "git checkout -b {branch_name}"
+
+# PLANT: git switch -c also creates and switches to the branch, reaching the goal!
+distractors:
+  - text: "git switch -c {branch_name}"
+    reason: wrong_operation
+  - text: "git branch {branch_name}"
+    reason: incomplete
+  - text: "git checkout {branch_name}"
+    reason: wrong_operation
+
+goal: "current_branch=={branch_name}"
+
+explanation: "This fixture has two valid answers reaching the goal predicate."
+
+variant_count: 1
+is_reserve: false

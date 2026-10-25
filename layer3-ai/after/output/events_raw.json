@@ -1,0 +1,202 @@
+[
+  {
+    "id": "e544a6ae-072e-4c09-84b6-928dc1cb6268",
+    "student_id": "stu_003",
+    "question_id": "cand_bra_med_017",
+    "event_type": "window_blur",
+    "timestamp": "2026-10-22T10:31:08.414714",
+    "payload": {
+      "details": "Simulated monitor event"
+    }
+  },
+  {
+    "id": "2ebb0cce-5228-4add-8024-02cd4245e1bb",
+    "student_id": "stu_003",
+    "question_id": "cand_und_med_046",
+    "event_type": "window_blur",
+    "timestamp": "2026-10-22T10:31:08.414753",
+    "payload": {
+      "details": "Simulated monitor event"
+    }
+  },
+  {
+    "id": "621ac0ec-07d8-414d-9059-30857074a490",
+    "student_id": "stu_004",
+    "question_id": "cand_rem_har_036",
+    "event_type": "tab_switch",
+    "timestamp": "2026-10-22T10:31:08.414784",
+    "payload": {
+      "details": "Simulated monitor event"
+    }
+  },
+  {
+    "id": "b5398d94-0f70-4265-ab99-1ef241d549f4",
+    "student_id": "stu_004",
+    "question_id": "cand_und_med_046",
+    "event_type": "tab_switch",
+    "timestamp": "2026-10-22T10:31:08.414803",
+    "payload": {
+      "details": "Simulated monitor event"
+    }
+  },
+  {
+    "id": "bc85570b-9dd8-4e2d-9a45-a6e63e62a203",
+    "student_id": "stu_004",
+    "question_id": "cand_adv_har_056",
+    "event_type": "tab_switch",
+    "timestamp": "2026-10-22T10:31:08.414815",
+    "payload": {
+      "details": "Simulated monitor event"
+    }
+  },
+  {
+    "id": "b245b58c-e447-4c5f-b9cd-707a65cf0d45",
+    "student_id": "stu_005",
+    "question_id": "cand_bra_eas_011",
+    "event_type": "window_blur",
+    "timestamp": "2026-10-22T10:31:08.414845",
+    "payload": {
+      "details": "Simulated monitor event"
+    }
+  },
+  {
+    "id": "fbad58b5-217c-42dd-9e5b-c3f3338cecec",
+    "student_id": "stu_005",
+    "question_id": "cand_rem_har_036",
+    "event_type": "paste_attempt",
+    "timestamp": "2026-10-22T10:31:08.414871",
+    "payload": {
+      "details": "Simulated monitor event"
+    }
+  },
+  {
+    "id": "8f04db3a-0dc0-47b1-8f61-71139b624c15",
+    "student_id": "stu_007",
+    "question_id": "cand_bra_med_017",
+    "event_type": "tab_switch",
+    "timestamp": "2026-10-22T10:31:08.414920",
+    "payload": {
+      "details": "Simulated monitor event"
+    }
+  },
+  {
+    "id": "d83673ea-32b3-4554-bdc6-2f0e5c1f7d47",
+    "student_id": "stu_008",
+    "question_id": "cand_adv_har_056",
+    "event_type": "tab_switch",
+    "timestamp": "2026-10-22T10:31:08.414956",
+    "payload": {
+      "details": "Simulated monitor event"
+    }
+  },
+  {
+    "id": "38195f59-1970-4bdd-910a-b1575443efc7",
+    "student_id": "stu_009",
+    "question_id": "cand_bra_har_021",
+    "event_type": "tab_switch",
+    "timestamp": "2026-10-22T10:31:08.414979",
+    "payload": {
+      "details": "Simulated monitor event"
+    }
+  },
+  {
+    "id": "c456ac25-be05-4473-aec7-51274c81d6af",
+    "student_id": "stu_010",
+    "question_id": "cand_und_med_046",
+    "event_type": "tab_switch",
+    "timestamp": "2026-10-22T10:31:08.415013",
+    "payload": {
+      "details": "Simulated monitor event"
+    }
+  },
+  {
+    "id": "84c37d46-1322-4320-83dd-7ed1bd4c9526",
+    "student_id": "stu_012",
+    "question_id": "cand_bra_med_017",
+    "event_type": "tab_switch",
+    "timestamp": "2026-10-22T10:31:08.415058",
+    "payload": {
+      "details": "Simulated monitor event"
+    }
+  },
+  {
+    "id": "601d031a-5e12-406a-b2a2-d72dd4c3c0a1",
+    "student_id": "stu_013",
+    "question_id": "cand_und_har_052",
+    "event_type": "tab_switch",
+    "timestamp": "2026-10-22T10:31:08.415102",
+    "payload": {
+      "details": "Simulated monitor event"
+    }
+  },
+  {
+    "id": "e4b97e8a-daef-416c-8f8b-9858fbdf7975",
+    "student_id": "stu_014",
+    "question_id": "cand_bas_eas_002",
+    "event_type": "window_blur",
+    "timestamp": "2026-10-22T10:31:08.415114",
+    "payload": {
+      "details": "Simulated monitor event"
+    }
+  },
+  {
+    "id": "a53ec960-89d2-42e7-9e61-929b62be2cd7",
+    "student_id": "stu_014",
+    "question_id": "cand_und_har_051",
+    "event_type": "window_blur",
+    "timestamp": "2026-10-22T10:31:08.415142",
+    "payload": {
+      "details": "Simulated monitor event"
+    }
+  },
+  {
+    "id": "3ec80b57-6689-4b33-bcde-3e3c2db5c734",
+    "student_id": "stu_016",
+    "question_id": "cand_bas_eas_001",
+    "event_type": "paste_attempt",
+    "timestamp": "2026-10-22T10:31:08.415186",
+    "payload": {
+      "details": "Simulated monitor event"
+    }
+  },
+  {
+    "id": "eb69494b-e3bd-4ba9-9df6-01b7e7b1bcb8",
+    "student_id": "stu_016",
+    "question_id": "cand_bra_har_021",
+    "event_type": "paste_attempt",
+    "timestamp": "2026-10-22T10:31:08.415203",
+    "payload": {
+      "details": "Simulated monitor event"
+    }
+  },
+  {
+    "id": "76c9df4a-92e1-4421-8dba-3ea47559bb36",
+    "student_id": "stu_016",
+    "question_id": "cand_rem_eas_026",
+    "event_type": "tab_switch",
+    "timestamp": "2026-10-22T10:31:08.415209",
+    "payload": {
+      "details": "Simulated monitor event"
+    }
+  },
+  {
+    "id": "4cfd70af-7a82-4b00-90c9-eeec1ddd5b7f",
+    "student_id": "stu_016",
+    "question_id": "cand_und_eas_041",
+    "event_type": "window_blur",
+    "timestamp": "2026-10-22T10:31:08.415219",
+    "payload": {
+      "details": "Simulated monitor event"
+    }
+  },
+  {
+    "id": "1ce38d31-b251-4535-8ce3-05a55f469f8a",
+    "student_id": "stu_017",
+    "question_id": "cand_adv_har_056",
+    "event_type": "paste_attempt",
+    "timestamp": "2026-10-22T10:31:08.415263",
+    "payload": {
+      "details": "Simulated monitor event"
+    }
+  }
+]

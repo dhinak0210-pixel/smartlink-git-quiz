@@ -1,0 +1,142 @@
+[
+  {
+    "rank": 1,
+    "student_id": "STU-C8150FD8",
+    "total_points": 7426,
+    "correct_answers": 13,
+    "avg_response_ms": 8774
+  },
+  {
+    "rank": 2,
+    "student_id": "STU-0032DB3F",
+    "total_points": 7050,
+    "correct_answers": 13,
+    "avg_response_ms": 9340
+  },
+  {
+    "rank": 3,
+    "student_id": "STU-098BB444",
+    "total_points": 6045,
+    "correct_answers": 14,
+    "avg_response_ms": 12033
+  },
+  {
+    "rank": 4,
+    "student_id": "STU-313D073C",
+    "total_points": 5735,
+    "correct_answers": 13,
+    "avg_response_ms": 11128
+  },
+  {
+    "rank": 5,
+    "student_id": "STU-879D16FC",
+    "total_points": 5424,
+    "correct_answers": 13,
+    "avg_response_ms": 11911
+  },
+  {
+    "rank": 6,
+    "student_id": "STU-90877206",
+    "total_points": 4948,
+    "correct_answers": 8,
+    "avg_response_ms": 10074
+  },
+  {
+    "rank": 7,
+    "student_id": "STU-D1B0208A",
+    "total_points": 4660,
+    "correct_answers": 9,
+    "avg_response_ms": 11360
+  },
+  {
+    "rank": 8,
+    "student_id": "STU-B1F5883E",
+    "total_points": 4578,
+    "correct_answers": 11,
+    "avg_response_ms": 11676
+  },
+  {
+    "rank": 9,
+    "student_id": "STU-0D722DCE",
+    "total_points": 4543,
+    "correct_answers": 10,
+    "avg_response_ms": 12284
+  },
+  {
+    "rank": 10,
+    "student_id": "STU-B2523CC4",
+    "total_points": 4043,
+    "correct_answers": 7,
+    "avg_response_ms": 9461
+  },
+  {
+    "rank": 11,
+    "student_id": "STU-BBAA66A1",
+    "total_points": 3744,
+    "correct_answers": 8,
+    "avg_response_ms": 10142
+  },
+  {
+    "rank": 12,
+    "student_id": "STU-11FCC2A4",
+    "total_points": 3694,
+    "correct_answers": 9,
+    "avg_response_ms": 10458
+  },
+  {
+    "rank": 13,
+    "student_id": "STU-5305F19D",
+    "total_points": 3576,
+    "correct_answers": 7,
+    "avg_response_ms": 10070
+  },
+  {
+    "rank": 14,
+    "student_id": "STU-1F11DD48",
+    "total_points": 3202,
+    "correct_answers": 7,
+    "avg_response_ms": 11414
+  },
+  {
+    "rank": 15,
+    "student_id": "STU-866E76D8",
+    "total_points": 3106,
+    "correct_answers": 6,
+    "avg_response_ms": 9048
+  },
+  {
+    "rank": 16,
+    "student_id": "STU-33A47CAC",
+    "total_points": 2938,
+    "correct_answers": 7,
+    "avg_response_ms": 12980
+  },
+  {
+    "rank": 17,
+    "student_id": "STU-24FF8810",
+    "total_points": 2546,
+    "correct_answers": 6,
+    "avg_response_ms": 8998
+  },
+  {
+    "rank": 18,
+    "student_id": "STU-2592EA6A",
+    "total_points": 2500,
+    "correct_answers": 6,
+    "avg_response_ms": 11806
+  },
+  {
+    "rank": 19,
+    "student_id": "STU-F67A63D8",
+    "total_points": 2127,
+    "correct_answers": 4,
+    "avg_response_ms": 10751
+  },
+  {
+    "rank": 20,
+    "student_id": "STU-A908AEA8",
+    "total_points": 692,
+    "correct_answers": 3,
+    "avg_response_ms": 10705
+  }
+]

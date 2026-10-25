@@ -1,0 +1,33 @@
+{
+  "topics": [
+    {
+      "name": "basics",
+      "description": "init, add, commit, status, clone, log",
+      "distribution": { "easy": 2, "medium": 1, "hard": 0 }
+    },
+    {
+      "name": "branching",
+      "description": "branch, checkout, switch, merge, merge conflicts",
+      "distribution": { "easy": 1, "medium": 2, "hard": 1 }
+    },
+    {
+      "name": "remote",
+      "description": "push, pull, fetch, remote, PR workflow",
+      "distribution": { "easy": 1, "medium": 1, "hard": 1 }
+    },
+    {
+      "name": "undoing",
+      "description": "restore, reset, revert, stash, reflog",
+      "distribution": { "easy": 1, "medium": 1, "hard": 2 }
+    },
+    {
+      "name": "advanced",
+      "description": "rebase, cherry-pick, bisect, hooks, internals",
+      "distribution": { "easy": 0, "medium": 0, "hard": 1 }
+    }
+  ],
+  "total_per_difficulty": { "easy": 5, "medium": 5, "hard": 5 },
+  "total": 15,
+  "reserve": 5,
+  "candidates_to_generate": 40
+}

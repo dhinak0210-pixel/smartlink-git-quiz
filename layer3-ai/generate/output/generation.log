@@ -1,0 +1,219 @@
+2026-10-22 08:03:57,515 [INFO] 🚀 Starting question generation...
+2026-10-22 08:03:57,515 [INFO]    Provider: mock
+2026-10-22 08:03:57,515 [INFO]    Model: llama-3.3-70b-versatile
+2026-10-22 08:03:57,516 [INFO]    Generation plan: 12 tasks
+2026-10-22 08:03:57,516 [INFO]    - basics/easy: 5 candidates
+2026-10-22 08:03:57,516 [INFO]    - basics/medium: 5 candidates
+2026-10-22 08:03:57,516 [INFO]    - branching/easy: 5 candidates
+2026-10-22 08:03:57,516 [INFO]    - branching/medium: 5 candidates
+2026-10-22 08:03:57,516 [INFO]    - branching/hard: 5 candidates
+2026-10-22 08:03:57,516 [INFO]    - remote/easy: 5 candidates
+2026-10-22 08:03:57,516 [INFO]    - remote/medium: 5 candidates
+2026-10-22 08:03:57,516 [INFO]    - remote/hard: 5 candidates
+2026-10-22 08:03:57,516 [INFO]    - undoing/easy: 5 candidates
+2026-10-22 08:03:57,516 [INFO]    - undoing/medium: 5 candidates
+2026-10-22 08:03:57,516 [INFO]    - undoing/hard: 5 candidates
+2026-10-22 08:03:57,516 [INFO]    - advanced/hard: 8 candidates
+2026-10-22 08:03:57,516 [INFO] 
+📝 Task 1/12: basics/easy
+2026-10-22 08:03:57,716 [INFO] ✅ [Mock Mode] Generated 5 questions (basics/easy)
+2026-10-22 08:03:57,717 [INFO] 
+📝 Task 2/12: basics/medium
+2026-10-22 08:03:57,917 [INFO] ✅ [Mock Mode] Generated 5 questions (basics/medium)
+2026-10-22 08:03:57,917 [INFO] 
+📝 Task 3/12: branching/easy
+2026-10-22 08:03:58,117 [INFO] ✅ [Mock Mode] Generated 5 questions (branching/easy)
+2026-10-22 08:03:58,118 [INFO] 
+📝 Task 4/12: branching/medium
+2026-10-22 08:03:58,318 [INFO] ✅ [Mock Mode] Generated 5 questions (branching/medium)
+2026-10-22 08:03:58,318 [INFO] 
+📝 Task 5/12: branching/hard
+2026-10-22 08:03:58,518 [INFO] ✅ [Mock Mode] Generated 5 questions (branching/hard)
+2026-10-22 08:03:58,519 [INFO] 
+📝 Task 6/12: remote/easy
+2026-10-22 08:03:58,719 [INFO] ✅ [Mock Mode] Generated 5 questions (remote/easy)
+2026-10-22 08:03:58,719 [INFO] 
+📝 Task 7/12: remote/medium
+2026-10-22 08:03:58,919 [INFO] ✅ [Mock Mode] Generated 5 questions (remote/medium)
+2026-10-22 08:03:58,919 [INFO] 
+📝 Task 8/12: remote/hard
+2026-10-22 08:03:59,120 [INFO] ✅ [Mock Mode] Generated 5 questions (remote/hard)
+2026-10-22 08:03:59,120 [INFO] 
+📝 Task 9/12: undoing/easy
+2026-10-22 08:03:59,320 [INFO] ✅ [Mock Mode] Generated 5 questions (undoing/easy)
+2026-10-22 08:03:59,320 [INFO] 
+📝 Task 10/12: undoing/medium
+2026-10-22 08:03:59,520 [INFO] ✅ [Mock Mode] Generated 5 questions (undoing/medium)
+2026-10-22 08:03:59,521 [INFO] 
+📝 Task 11/12: undoing/hard
+2026-10-22 08:03:59,721 [INFO] ✅ [Mock Mode] Generated 5 questions (undoing/hard)
+2026-10-22 08:03:59,721 [INFO] 
+📝 Task 12/12: advanced/hard
+2026-10-22 08:03:59,921 [INFO] ✅ [Mock Mode] Generated 8 questions (advanced/hard)
+2026-10-22 08:03:59,922 [INFO] 
+🎉 Generation complete!
+2026-10-22 08:03:59,923 [INFO]    Total questions: 63
+2026-10-22 08:03:59,923 [INFO]    Total API calls: 0
+2026-10-22 08:03:59,923 [INFO]    Total tokens: 0
+2026-10-22 08:03:59,923 [INFO]    Errors: 0
+2026-10-22 08:03:59,923 [INFO]    Saved to: /home/dhina/smart links/layer3-ai/generate/output/candidates_raw.json
+2026-10-22 08:04:04,515 [INFO] 🚀 Starting batch runner...
+2026-10-22 08:04:04,516 [INFO] ℹ️  No existing checkpoint found. Starting fresh.
+2026-10-22 08:04:04,516 [INFO] 📋 Generation plan contains 12 tasks
+2026-10-22 08:04:04,516 [INFO] ▶️  Running task 1/12: basics::easy (Count: 5)
+2026-10-22 08:04:04,716 [INFO] ✅ [Mock Mode] Generated 5 questions (basics/easy)
+2026-10-22 08:04:04,717 [INFO] 💾 Checkpoint saved for basics::easy. Total so far: 5
+2026-10-22 08:04:04,717 [INFO] ▶️  Running task 2/12: basics::medium (Count: 5)
+2026-10-22 08:04:04,917 [INFO] ✅ [Mock Mode] Generated 5 questions (basics/medium)
+2026-10-22 08:04:04,918 [INFO] 💾 Checkpoint saved for basics::medium. Total so far: 10
+2026-10-22 08:04:04,918 [INFO] ▶️  Running task 3/12: branching::easy (Count: 5)
+2026-10-22 08:04:05,119 [INFO] ✅ [Mock Mode] Generated 5 questions (branching/easy)
+2026-10-22 08:04:05,120 [INFO] 💾 Checkpoint saved for branching::easy. Total so far: 15
+2026-10-22 08:04:05,120 [INFO] ▶️  Running task 4/12: branching::medium (Count: 5)
+2026-10-22 08:04:05,320 [INFO] ✅ [Mock Mode] Generated 5 questions (branching/medium)
+2026-10-22 08:04:05,321 [INFO] 💾 Checkpoint saved for branching::medium. Total so far: 20
+2026-10-22 08:04:05,321 [INFO] ▶️  Running task 5/12: branching::hard (Count: 5)
+2026-10-22 08:04:05,522 [INFO] ✅ [Mock Mode] Generated 5 questions (branching/hard)
+2026-10-22 08:04:05,523 [INFO] 💾 Checkpoint saved for branching::hard. Total so far: 25
+2026-10-22 08:04:05,523 [INFO] ▶️  Running task 6/12: remote::easy (Count: 5)
+2026-10-22 08:04:05,723 [INFO] ✅ [Mock Mode] Generated 5 questions (remote/easy)
+2026-10-22 08:04:05,724 [INFO] 💾 Checkpoint saved for remote::easy. Total so far: 30
+2026-10-22 08:04:05,725 [INFO] ▶️  Running task 7/12: remote::medium (Count: 5)
+2026-10-22 08:04:05,925 [INFO] ✅ [Mock Mode] Generated 5 questions (remote/medium)
+2026-10-22 08:04:05,926 [INFO] 💾 Checkpoint saved for remote::medium. Total so far: 35
+2026-10-22 08:04:05,927 [INFO] ▶️  Running task 8/12: remote::hard (Count: 5)
+2026-10-22 08:04:06,127 [INFO] ✅ [Mock Mode] Generated 5 questions (remote/hard)
+2026-10-22 08:04:06,128 [INFO] 💾 Checkpoint saved for remote::hard. Total so far: 40
+2026-10-22 08:04:06,129 [INFO] ▶️  Running task 9/12: undoing::easy (Count: 5)
+2026-10-22 08:04:06,329 [INFO] ✅ [Mock Mode] Generated 5 questions (undoing/easy)
+2026-10-22 08:04:06,331 [INFO] 💾 Checkpoint saved for undoing::easy. Total so far: 45
+2026-10-22 08:04:06,331 [INFO] ▶️  Running task 10/12: undoing::medium (Count: 5)
+2026-10-22 08:04:06,531 [INFO] ✅ [Mock Mode] Generated 5 questions (undoing/medium)
+2026-10-22 08:04:06,533 [INFO] 💾 Checkpoint saved for undoing::medium. Total so far: 50
+2026-10-22 08:04:06,533 [INFO] ▶️  Running task 11/12: undoing::hard (Count: 5)
+2026-10-22 08:04:06,734 [INFO] ✅ [Mock Mode] Generated 5 questions (undoing/hard)
+2026-10-22 08:04:06,736 [INFO] 💾 Checkpoint saved for undoing::hard. Total so far: 55
+2026-10-22 08:04:06,736 [INFO] ▶️  Running task 12/12: advanced::hard (Count: 8)
+2026-10-22 08:04:06,936 [INFO] ✅ [Mock Mode] Generated 8 questions (advanced/hard)
+2026-10-22 08:04:06,938 [INFO] 💾 Checkpoint saved for advanced::hard. Total so far: 63
+2026-10-22 08:04:06,938 [INFO] 
+🎉 All tasks complete! Final candidates count: 63
+2026-10-22 08:04:06,938 [INFO]    Saved to: /home/dhina/smart links/layer3-ai/generate/output/candidates_raw.json
+2026-10-22 08:04:27,654 [INFO] 🚀 Starting question generation...
+2026-10-22 08:04:27,654 [INFO]    Provider: mock
+2026-10-22 08:04:27,654 [INFO]    Model: llama-3.3-70b-versatile
+2026-10-22 08:04:27,655 [INFO]    Generation plan: 12 tasks
+2026-10-22 08:04:27,655 [INFO]    - basics/easy: 5 candidates
+2026-10-22 08:04:27,655 [INFO]    - basics/medium: 5 candidates
+2026-10-22 08:04:27,655 [INFO]    - branching/easy: 5 candidates
+2026-10-22 08:04:27,655 [INFO]    - branching/medium: 5 candidates
+2026-10-22 08:04:27,655 [INFO]    - branching/hard: 5 candidates
+2026-10-22 08:04:27,655 [INFO]    - remote/easy: 5 candidates
+2026-10-22 08:04:27,655 [INFO]    - remote/medium: 5 candidates
+2026-10-22 08:04:27,655 [INFO]    - remote/hard: 5 candidates
+2026-10-22 08:04:27,655 [INFO]    - undoing/easy: 5 candidates
+2026-10-22 08:04:27,655 [INFO]    - undoing/medium: 5 candidates
+2026-10-22 08:04:27,655 [INFO]    - undoing/hard: 5 candidates
+2026-10-22 08:04:27,655 [INFO]    - advanced/hard: 8 candidates
+2026-10-22 08:04:27,655 [INFO] 
+📝 Task 1/12: basics/easy
+2026-10-22 08:04:27,855 [INFO] ✅ [Mock Mode] Generated 5 questions (basics/easy)
+2026-10-22 08:04:27,856 [INFO] 
+📝 Task 2/12: basics/medium
+2026-10-22 08:04:28,056 [INFO] ✅ [Mock Mode] Generated 5 questions (basics/medium)
+2026-10-22 08:04:28,056 [INFO] 
+📝 Task 3/12: branching/easy
+2026-10-22 08:04:28,256 [INFO] ✅ [Mock Mode] Generated 5 questions (branching/easy)
+2026-10-22 08:04:28,257 [INFO] 
+📝 Task 4/12: branching/medium
+2026-10-22 08:04:28,457 [INFO] ✅ [Mock Mode] Generated 5 questions (branching/medium)
+2026-10-22 08:04:28,457 [INFO] 
+📝 Task 5/12: branching/hard
+2026-10-22 08:04:28,657 [INFO] ✅ [Mock Mode] Generated 5 questions (branching/hard)
+2026-10-22 08:04:28,658 [INFO] 
+📝 Task 6/12: remote/easy
+2026-10-22 08:04:28,858 [INFO] ✅ [Mock Mode] Generated 5 questions (remote/easy)
+2026-10-22 08:04:28,858 [INFO] 
+📝 Task 7/12: remote/medium
+2026-10-22 08:04:29,058 [INFO] ✅ [Mock Mode] Generated 5 questions (remote/medium)
+2026-10-22 08:04:29,058 [INFO] 
+📝 Task 8/12: remote/hard
+2026-10-22 08:04:29,259 [INFO] ✅ [Mock Mode] Generated 5 questions (remote/hard)
+2026-10-22 08:04:29,259 [INFO] 
+📝 Task 9/12: undoing/easy
+2026-10-22 08:04:29,459 [INFO] ✅ [Mock Mode] Generated 5 questions (undoing/easy)
+2026-10-22 08:04:29,459 [INFO] 
+📝 Task 10/12: undoing/medium
+2026-10-22 08:04:29,660 [INFO] ✅ [Mock Mode] Generated 5 questions (undoing/medium)
+2026-10-22 08:04:29,660 [INFO] 
+📝 Task 11/12: undoing/hard
+2026-10-22 08:04:29,860 [INFO] ✅ [Mock Mode] Generated 5 questions (undoing/hard)
+2026-10-22 08:04:29,860 [INFO] 
+📝 Task 12/12: advanced/hard
+2026-10-22 08:04:30,060 [INFO] ✅ [Mock Mode] Generated 8 questions (advanced/hard)
+2026-10-22 08:04:30,062 [INFO] 
+🎉 Generation complete!
+2026-10-22 08:04:30,062 [INFO]    Total questions: 63
+2026-10-22 08:04:30,062 [INFO]    Total API calls: 0
+2026-10-22 08:04:30,062 [INFO]    Total tokens: 0
+2026-10-22 08:04:30,062 [INFO]    Errors: 0
+2026-10-22 08:04:30,062 [INFO]    Saved to: /home/dhina/smart links/layer3-ai/generate/output/candidates_raw.json
+2026-10-22 10:30:38,118 [INFO] 🚀 Starting question generation...
+2026-10-22 10:30:38,118 [INFO]    Provider: mock
+2026-10-22 10:30:38,118 [INFO]    Model: llama-3.3-70b-versatile
+2026-10-22 10:30:38,118 [INFO]    Generation plan: 12 tasks
+2026-10-22 10:30:38,119 [INFO]    - basics/easy: 5 candidates
+2026-10-22 10:30:38,119 [INFO]    - basics/medium: 5 candidates
+2026-10-22 10:30:38,119 [INFO]    - branching/easy: 5 candidates
+2026-10-22 10:30:38,119 [INFO]    - branching/medium: 5 candidates
+2026-10-22 10:30:38,119 [INFO]    - branching/hard: 5 candidates
+2026-10-22 10:30:38,119 [INFO]    - remote/easy: 5 candidates
+2026-10-22 10:30:38,119 [INFO]    - remote/medium: 5 candidates
+2026-10-22 10:30:38,119 [INFO]    - remote/hard: 5 candidates
+2026-10-22 10:30:38,119 [INFO]    - undoing/easy: 5 candidates
+2026-10-22 10:30:38,119 [INFO]    - undoing/medium: 5 candidates
+2026-10-22 10:30:38,119 [INFO]    - undoing/hard: 5 candidates
+2026-10-22 10:30:38,119 [INFO]    - advanced/hard: 8 candidates
+2026-10-22 10:30:38,119 [INFO] 
+📝 Task 1/12: basics/easy
+2026-10-22 10:30:38,320 [INFO] ✅ [Mock Mode] Generated 5 questions (basics/easy)
+2026-10-22 10:30:38,320 [INFO] 
+📝 Task 2/12: basics/medium
+2026-10-22 10:30:38,521 [INFO] ✅ [Mock Mode] Generated 5 questions (basics/medium)
+2026-10-22 10:30:38,521 [INFO] 
+📝 Task 3/12: branching/easy
+2026-10-22 10:30:38,721 [INFO] ✅ [Mock Mode] Generated 5 questions (branching/easy)
+2026-10-22 10:30:38,721 [INFO] 
+📝 Task 4/12: branching/medium
+2026-10-22 10:30:38,921 [INFO] ✅ [Mock Mode] Generated 5 questions (branching/medium)
+2026-10-22 10:30:38,922 [INFO] 
+📝 Task 5/12: branching/hard
+2026-10-22 10:30:39,122 [INFO] ✅ [Mock Mode] Generated 5 questions (branching/hard)
+2026-10-22 10:30:39,122 [INFO] 
+📝 Task 6/12: remote/easy
+2026-10-22 10:30:39,322 [INFO] ✅ [Mock Mode] Generated 5 questions (remote/easy)
+2026-10-22 10:30:39,323 [INFO] 
+📝 Task 7/12: remote/medium
+2026-10-22 10:30:39,523 [INFO] ✅ [Mock Mode] Generated 5 questions (remote/medium)
+2026-10-22 10:30:39,523 [INFO] 
+📝 Task 8/12: remote/hard
+2026-10-22 10:30:39,723 [INFO] ✅ [Mock Mode] Generated 5 questions (remote/hard)
+2026-10-22 10:30:39,723 [INFO] 
+📝 Task 9/12: undoing/easy
+2026-10-22 10:30:39,924 [INFO] ✅ [Mock Mode] Generated 5 questions (undoing/easy)
+2026-10-22 10:30:39,924 [INFO] 
+📝 Task 10/12: undoing/medium
+2026-10-22 10:30:40,124 [INFO] ✅ [Mock Mode] Generated 5 questions (undoing/medium)
+2026-10-22 10:30:40,124 [INFO] 
+📝 Task 11/12: undoing/hard
+2026-10-22 10:30:40,325 [INFO] ✅ [Mock Mode] Generated 5 questions (undoing/hard)
+2026-10-22 10:30:40,325 [INFO] 
+📝 Task 12/12: advanced/hard
+2026-10-22 10:30:40,525 [INFO] ✅ [Mock Mode] Generated 8 questions (advanced/hard)
+2026-10-22 10:30:40,526 [INFO] 
+🎉 Generation complete!
+2026-10-22 10:30:40,526 [INFO]    Total questions: 63
+2026-10-22 10:30:40,526 [INFO]    Total API calls: 0
+2026-10-22 10:30:40,526 [INFO]    Total tokens: 0
+2026-10-22 10:30:40,527 [INFO]    Errors: 0
+2026-10-22 10:30:40,527 [INFO]    Saved to: /home/dhina/smart links/layer3-ai/generate/output/candidates_raw.json

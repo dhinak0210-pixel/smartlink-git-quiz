@@ -1,0 +1,1419 @@
+{
+  "templates": [
+    {
+      "id": "q01_reset_soft",
+      "topic": "undo-and-recovery",
+      "difficulty": "medium",
+      "type": "variant",
+      "stem_template": "You made the last {N} commits by mistake on `main`. Undo them but keep all changes staged.",
+      "setup_commands": "[\"git init\", \"for i in $(seq 1 {total_commits}); do echo \\\"content $i\\\" > file$i.txt && git add file$i.txt && git commit -m \\\"commit $i\\\"; done\"]",
+      "goal_predicate": "head_offset(main)=={N} AND worktree_clean==true AND staged_files_count=={N}",
+      "explanation_template": "`git reset --soft HEAD~{N}` moves HEAD back {N} commits without touching the index or working tree, so all changes from those commits remain staged. `--hard` would destroy the changes, and `--mixed` would unstage them."
+    },
+    {
+      "id": "q02_branch_rename",
+      "topic": "branching",
+      "difficulty": "easy",
+      "type": "variant",
+      "stem_template": "You want to rename the local branch `{old_name}` to `{new_name}` without switching to it. Which command does this?",
+      "setup_commands": "[\"git init\", \"echo 'initial' > README.md && git add README.md && git commit -m 'initial commit'\", \"git branch {old_name}\", \"echo 'feature' > feature.txt && git add feature.txt && git commit -m 'add feature'\"]",
+      "goal_predicate": "branch_exists({new_name})==true AND branch_not_exists({old_name})==true AND current_branch==main",
+      "explanation_template": "`git branch -m <old> <new>` renames a branch without checking it out. Swapping the arguments renames in the wrong direction. `rename-branch` and `--rename` are not valid Git commands."
+    },
+    {
+      "id": "q03_rebase_count",
+      "topic": "rebasing",
+      "difficulty": "hard",
+      "type": "variant",
+      "stem_template": "After rebasing `feature` onto `main`, how many total commits are reachable from `feature`? (Count the initial base commit.)",
+      "setup_commands": "[\"git init\", \"echo 'base' > base.txt && git add base.txt && git commit -m 'base'\", \"git checkout -b feature\", \"for i in $(seq 1 {feature_commits}); do echo \\\"feat $i\\\" > feat$i.txt && git add feat$i.txt && git commit -m \\\"feature $i\\\"; done\", \"git checkout main\", \"for i in $(seq 1 {main_commits}); do echo \\\"main $i\\\" > main$i.txt && git add main$i.txt && git commit -m \\\"main $i\\\"; done\", \"git checkout feature\", \"git rebase main\"]",
+      "goal_predicate": "commit_count(feature)=={total_after_rebase}",
+      "explanation_template": "After rebase, `feature` has 1 (base) + {main_commits} (main) + {feature_commits} (replayed) = {total_after_rebase} commits."
+    },
+    {
+      "id": "q04_stash_apply",
+      "topic": "stashing",
+      "difficulty": "easy",
+      "type": "variant",
+      "stem_template": "You have multiple stashes saved. You want to apply the stash at index {stash_idx} without dropping it from the list. Which command do you run?",
+      "setup_commands": "[\"git init\", \"echo 'base' > app.js && git add app.js && git commit -m 'initial'\", \"echo 'stash2' > f2.txt && git add f2.txt && git stash push -m 'stash2'\", \"echo 'stash1' > f1.txt && git add f1.txt && git stash push -m 'stash1'\", \"echo 'stash0' > f0.txt && git add f0.txt && git stash push -m 'stash0'\"]",
+      "goal_predicate": "stash_count==3 AND file_exists(f{stash_idx}.txt)==true",
+      "explanation_template": "`git stash apply <index>` reapplies the changes recorded at stash index without removing the stash entry from the stash stack."
+    },
+    {
+      "id": "q05_cherry_pick",
+      "topic": "advanced-git",
+      "difficulty": "medium",
+      "type": "variant",
+      "stem_template": "You need to copy only the commit on `{feat_branch}` onto `main`. Which command applies this single commit?",
+      "setup_commands": "[\"git init\", \"echo 'v1' > main.py && git add main.py && git commit -m 'initial'\", \"git checkout -b {feat_branch}\", \"echo 'wip' > wip.py && git add wip.py && git commit -m 'wip feature'\", \"echo 'fix' > hotfix.py && git add hotfix.py && git commit -m 'patch'\", \"git checkout main\"]",
+      "goal_predicate": "commit_count(main)==2 AND file_exists(hotfix.py)==true AND current_branch==main",
+      "explanation_template": "`git cherry-pick <branch>` applies changes from a specific branch's commit directly onto the current HEAD without merging branch histories."
+    },
+    {
+      "id": "q06_merge_conflict",
+      "topic": "merging",
+      "difficulty": "medium",
+      "type": "variant",
+      "stem_template": "During a merge conflict on `{target_file}`, you decide to resolve it by keeping the incoming version from the branch being merged. Which command selects the incoming version for `{target_file}`?",
+      "setup_commands": "[\"git init\", \"echo 'base' > README.md && git add README.md && git commit -m 'initial'\", \"git checkout -b feature\", \"echo 'incoming' > {target_file} && git add {target_file} && git commit -m 'feature commit'\", \"git checkout main\", \"echo 'current' > {target_file} && git add {target_file} && git commit -m 'main commit'\", \"git merge feature || true\"]",
+      "goal_predicate": "file_content({target_file})==incoming",
+      "explanation_template": "`git checkout --theirs <file>` checks out the incoming version of a conflicting file during a merge conflict."
+    },
+    {
+      "id": "q07_restore_staged",
+      "topic": "undo-and-recovery",
+      "difficulty": "easy",
+      "type": "variant",
+      "stem_template": "You accidentally staged `{target_file}` with `git add`. You want to unstage it while keeping your working copy intact. Which command accomplishes this?",
+      "setup_commands": "[\"git init\", \"echo 'initial' > README.md && git add README.md && git commit -m 'initial'\", \"echo 'secret data' > {target_file} && git add {target_file}\"]",
+      "goal_predicate": "staged_files_count==0 AND file_exists({target_file})==true",
+      "explanation_template": "`git restore --staged <file>` removes the specified file from the staging index without modifying the copy in the working directory."
+    },
+    {
+      "id": "q08_revert_count",
+      "topic": "undo-and-recovery",
+      "difficulty": "medium",
+      "type": "variant",
+      "stem_template": "You noticed an issue on public `main` and want to safely invert commit HEAD~{N} with a new commit. Which command should you run?",
+      "setup_commands": "[\"git init\", \"for i in $(seq 1 5); do echo \\\"c$i\\\" > f$i.txt && git add f$i.txt && git commit -m \\\"commit $i\\\"; done\"]",
+      "goal_predicate": "reverted_commit(HEAD~{N})==true AND worktree_clean==true",
+      "explanation_template": "`git revert HEAD~K` creates a new commit that records the exact inverse of HEAD~K, safely undoing changes on shared branches without rewriting history."
+    },
+    {
+      "id": "q09_tag_annotate",
+      "topic": "tagging",
+      "difficulty": "easy",
+      "type": "variant",
+      "stem_template": "You want to create an annotated tag named `{tag_name}` with the message \"{release_note}\". Which command creates an annotated tag?",
+      "setup_commands": "[\"git init\", \"echo 'code' > app.py && git add app.py && git commit -m 'release build'\"]",
+      "goal_predicate": "annotated_tag_exists({tag_name})==true",
+      "explanation_template": "`git tag -a <tag> -m <msg>` creates an annotated Git tag containing full author metadata, date, and message."
+    },
+    {
+      "id": "q10_log_format",
+      "topic": "inspection",
+      "difficulty": "easy",
+      "type": "variant",
+      "stem_template": "You want to inspect the commit history compactly on one line per commit, limited to the last {max_count} commits. Which command does this?",
+      "setup_commands": "[\"git init\", \"for i in $(seq 1 10); do echo \\\"c$i\\\" > f$i.txt && git add f$i.txt && git commit -m \\\"commit $i\\\"; done\"]",
+      "goal_predicate": "last_command_stdout_lines=={max_count}",
+      "explanation_template": "`git log --oneline -n {max_count}` formats the commit log into one condensed line per commit and limits output to {max_count} entries."
+    }
+  ],
+  "variants": [
+    {
+      "id": "3c5cf740-cc42-556a-800a-4188964312c1",
+      "template_id": "q01_reset_soft",
+      "variant_index": 1,
+      "stem": "You made the last 3 commits by mistake on `main`. Undo them but keep all changes staged.",
+      "params": {
+        "N": 3,
+        "total_commits": 6
+      },
+      "explanation": "`git reset --soft HEAD~3` moves HEAD back 3 commits without touching the index or working tree, so all changes from those commits remain staged. `--hard` would destroy the changes, and `--mixed` would unstage them.",
+      "status": "verified"
+    },
+    {
+      "id": "8e368bb8-16b3-5bc8-be96-79530fc8fe0a",
+      "template_id": "q01_reset_soft",
+      "variant_index": 2,
+      "stem": "You made the last 2 commits by mistake on `main`. Undo them but keep all changes staged.",
+      "params": {
+        "N": 2,
+        "total_commits": 6
+      },
+      "explanation": "`git reset --soft HEAD~2` moves HEAD back 2 commits without touching the index or working tree, so all changes from those commits remain staged. `--hard` would destroy the changes, and `--mixed` would unstage them.",
+      "status": "verified"
+    },
+    {
+      "id": "7a9fb7fd-c9ef-5d09-a81b-9b0c49c66b71",
+      "template_id": "q01_reset_soft",
+      "variant_index": 3,
+      "stem": "You made the last 4 commits by mistake on `main`. Undo them but keep all changes staged.",
+      "params": {
+        "N": 4,
+        "total_commits": 6
+      },
+      "explanation": "`git reset --soft HEAD~4` moves HEAD back 4 commits without touching the index or working tree, so all changes from those commits remain staged. `--hard` would destroy the changes, and `--mixed` would unstage them.",
+      "status": "verified"
+    },
+    {
+      "id": "40d259aa-6c83-51c7-9858-aa7f4de3918b",
+      "template_id": "q02_branch_rename",
+      "variant_index": 1,
+      "stem": "You want to rename the local branch `search` to `search-v2` without switching to it. Which command does this?",
+      "params": {
+        "old_name": "search",
+        "new_name": "search-v2"
+      },
+      "explanation": "`git branch -m <old> <new>` renames a branch without checking it out. Swapping the arguments renames in the wrong direction. `rename-branch` and `--rename` are not valid Git commands.",
+      "status": "verified"
+    },
+    {
+      "id": "0c99da2f-c383-5d5d-89b3-e8aa06017967",
+      "template_id": "q02_branch_rename",
+      "variant_index": 2,
+      "stem": "You want to rename the local branch `auth01` to `auth01-v2` without switching to it. Which command does this?",
+      "params": {
+        "old_name": "auth01",
+        "new_name": "auth01-v2"
+      },
+      "explanation": "`git branch -m <old> <new>` renames a branch without checking it out. Swapping the arguments renames in the wrong direction. `rename-branch` and `--rename` are not valid Git commands.",
+      "status": "verified"
+    },
+    {
+      "id": "15f4ff85-367b-5536-a927-f771d298ea0a",
+      "template_id": "q02_branch_rename",
+      "variant_index": 3,
+      "stem": "You want to rename the local branch `navbar` to `navbar-v2` without switching to it. Which command does this?",
+      "params": {
+        "old_name": "navbar",
+        "new_name": "navbar-v2"
+      },
+      "explanation": "`git branch -m <old> <new>` renames a branch without checking it out. Swapping the arguments renames in the wrong direction. `rename-branch` and `--rename` are not valid Git commands.",
+      "status": "verified"
+    },
+    {
+      "id": "7c4fb97d-fbaf-5bc8-bd99-d94ba43ec542",
+      "template_id": "q03_rebase_count",
+      "variant_index": 1,
+      "stem": "After rebasing `feature` onto `main`, how many total commits are reachable from `feature`? (Count the initial base commit.)",
+      "params": {
+        "main_commits": 7,
+        "feature_commits": 6
+      },
+      "explanation": "After rebase, `feature` has 1 (base) + 7 (main) + 6 (replayed) = 14 commits.",
+      "status": "verified"
+    },
+    {
+      "id": "90236a6a-989a-5797-b0e6-c82911f06ffd",
+      "template_id": "q03_rebase_count",
+      "variant_index": 2,
+      "stem": "After rebasing `feature` onto `main`, how many total commits are reachable from `feature`? (Count the initial base commit.)",
+      "params": {
+        "main_commits": 5,
+        "feature_commits": 4
+      },
+      "explanation": "After rebase, `feature` has 1 (base) + 5 (main) + 4 (replayed) = 10 commits.",
+      "status": "verified"
+    },
+    {
+      "id": "66b43504-def8-5bd6-b052-f9880f3e871b",
+      "template_id": "q03_rebase_count",
+      "variant_index": 3,
+      "stem": "After rebasing `feature` onto `main`, how many total commits are reachable from `feature`? (Count the initial base commit.)",
+      "params": {
+        "main_commits": 6,
+        "feature_commits": 5
+      },
+      "explanation": "After rebase, `feature` has 1 (base) + 6 (main) + 5 (replayed) = 12 commits.",
+      "status": "verified"
+    },
+    {
+      "id": "81d36566-4691-5339-b9b2-7ce1471e8685",
+      "template_id": "q04_stash_apply",
+      "variant_index": 1,
+      "stem": "You have multiple stashes saved. You want to apply the stash at index 0 without dropping it from the list. Which command do you run?",
+      "params": {
+        "stash_idx": 0
+      },
+      "explanation": "`git stash apply <index>` reapplies the changes recorded at stash index without removing the stash entry from the stash stack.",
+      "status": "verified"
+    },
+    {
+      "id": "fe65a73e-187d-55bb-888a-f123c39c7f40",
+      "template_id": "q04_stash_apply",
+      "variant_index": 2,
+      "stem": "You have multiple stashes saved. You want to apply the stash at index 1 without dropping it from the list. Which command do you run?",
+      "params": {
+        "stash_idx": 1
+      },
+      "explanation": "`git stash apply <index>` reapplies the changes recorded at stash index without removing the stash entry from the stash stack.",
+      "status": "verified"
+    },
+    {
+      "id": "b7b61f1a-784a-5337-8821-4d10b64f8486",
+      "template_id": "q04_stash_apply",
+      "variant_index": 3,
+      "stem": "You have multiple stashes saved. You want to apply the stash at index 2 without dropping it from the list. Which command do you run?",
+      "params": {
+        "stash_idx": 2
+      },
+      "explanation": "`git stash apply <index>` reapplies the changes recorded at stash index without removing the stash entry from the stash stack.",
+      "status": "verified"
+    },
+    {
+      "id": "bd12d309-07b5-5572-a526-c94257482d19",
+      "template_id": "q05_cherry_pick",
+      "variant_index": 1,
+      "stem": "You need to copy only the commit on `feat-nav` onto `main`. Which command applies this single commit?",
+      "params": {
+        "feat_branch": "feat-nav",
+        "fix_file": "nav_patch.py"
+      },
+      "explanation": "`git cherry-pick <branch>` applies changes from a specific branch's commit directly onto the current HEAD without merging branch histories.",
+      "status": "verified"
+    },
+    {
+      "id": "5eebca84-c36c-56d3-8cd4-0d14842cf5af",
+      "template_id": "q05_cherry_pick",
+      "variant_index": 2,
+      "stem": "You need to copy only the commit on `feat-cart` onto `main`. Which command applies this single commit?",
+      "params": {
+        "feat_branch": "feat-cart",
+        "fix_file": "cart_patch.py"
+      },
+      "explanation": "`git cherry-pick <branch>` applies changes from a specific branch's commit directly onto the current HEAD without merging branch histories.",
+      "status": "verified"
+    },
+    {
+      "id": "d94d813e-4aab-5896-ab2b-d8c1fe5a5d8b",
+      "template_id": "q05_cherry_pick",
+      "variant_index": 3,
+      "stem": "You need to copy only the commit on `feat-auth` onto `main`. Which command applies this single commit?",
+      "params": {
+        "feat_branch": "feat-auth",
+        "fix_file": "auth_patch.py"
+      },
+      "explanation": "`git cherry-pick <branch>` applies changes from a specific branch's commit directly onto the current HEAD without merging branch histories.",
+      "status": "verified"
+    },
+    {
+      "id": "cfa20ddf-57d4-5588-8b79-cfb079c2f6cd",
+      "template_id": "q06_merge_conflict",
+      "variant_index": 1,
+      "stem": "During a merge conflict on `router.json`, you decide to resolve it by keeping the incoming version from the branch being merged. Which command selects the incoming version for `router.json`?",
+      "params": {
+        "target_file": "router.json"
+      },
+      "explanation": "`git checkout --theirs <file>` checks out the incoming version of a conflicting file during a merge conflict.",
+      "status": "verified"
+    },
+    {
+      "id": "364f42f0-3187-56b9-a230-651cd61950da",
+      "template_id": "q06_merge_conflict",
+      "variant_index": 2,
+      "stem": "During a merge conflict on `client.json`, you decide to resolve it by keeping the incoming version from the branch being merged. Which command selects the incoming version for `client.json`?",
+      "params": {
+        "target_file": "client.json"
+      },
+      "explanation": "`git checkout --theirs <file>` checks out the incoming version of a conflicting file during a merge conflict.",
+      "status": "verified"
+    },
+    {
+      "id": "cbcc4c5d-3f21-5be8-a222-3f98d50ec811",
+      "template_id": "q06_merge_conflict",
+      "variant_index": 3,
+      "stem": "During a merge conflict on `config.json`, you decide to resolve it by keeping the incoming version from the branch being merged. Which command selects the incoming version for `config.json`?",
+      "params": {
+        "target_file": "config.json"
+      },
+      "explanation": "`git checkout --theirs <file>` checks out the incoming version of a conflicting file during a merge conflict.",
+      "status": "verified"
+    },
+    {
+      "id": "815a8ff0-d6f4-5958-bf15-357e91e54532",
+      "template_id": "q07_restore_staged",
+      "variant_index": 1,
+      "stem": "You accidentally staged `server.json` with `git add`. You want to unstage it while keeping your working copy intact. Which command accomplishes this?",
+      "params": {
+        "target_file": "server.json"
+      },
+      "explanation": "`git restore --staged <file>` removes the specified file from the staging index without modifying the copy in the working directory.",
+      "status": "verified"
+    },
+    {
+      "id": "539622e8-5819-5e29-97f1-85f519dcc777",
+      "template_id": "q07_restore_staged",
+      "variant_index": 2,
+      "stem": "You accidentally staged `schema.json` with `git add`. You want to unstage it while keeping your working copy intact. Which command accomplishes this?",
+      "params": {
+        "target_file": "schema.json"
+      },
+      "explanation": "`git restore --staged <file>` removes the specified file from the staging index without modifying the copy in the working directory.",
+      "status": "verified"
+    },
+    {
+      "id": "bc33710d-2ba9-510e-98bb-a4a10940423c",
+      "template_id": "q07_restore_staged",
+      "variant_index": 3,
+      "stem": "You accidentally staged `config.json` with `git add`. You want to unstage it while keeping your working copy intact. Which command accomplishes this?",
+      "params": {
+        "target_file": "config.json"
+      },
+      "explanation": "`git restore --staged <file>` removes the specified file from the staging index without modifying the copy in the working directory.",
+      "status": "verified"
+    },
+    {
+      "id": "ca4635cd-0a3b-51dc-9fa4-79cd6a1cd40a",
+      "template_id": "q08_revert_count",
+      "variant_index": 1,
+      "stem": "You noticed an issue on public `main` and want to safely invert commit HEAD~1 with a new commit. Which command should you run?",
+      "params": {
+        "N": 1
+      },
+      "explanation": "`git revert HEAD~K` creates a new commit that records the exact inverse of HEAD~K, safely undoing changes on shared branches without rewriting history.",
+      "status": "verified"
+    },
+    {
+      "id": "a42c168f-ee21-59ff-9f22-dce792dc81da",
+      "template_id": "q08_revert_count",
+      "variant_index": 2,
+      "stem": "You noticed an issue on public `main` and want to safely invert commit HEAD~3 with a new commit. Which command should you run?",
+      "params": {
+        "N": 3
+      },
+      "explanation": "`git revert HEAD~K` creates a new commit that records the exact inverse of HEAD~K, safely undoing changes on shared branches without rewriting history.",
+      "status": "verified"
+    },
+    {
+      "id": "f89fdc62-fa4c-588f-8a56-188d513465b9",
+      "template_id": "q08_revert_count",
+      "variant_index": 3,
+      "stem": "You noticed an issue on public `main` and want to safely invert commit HEAD~2 with a new commit. Which command should you run?",
+      "params": {
+        "N": 2
+      },
+      "explanation": "`git revert HEAD~K` creates a new commit that records the exact inverse of HEAD~K, safely undoing changes on shared branches without rewriting history.",
+      "status": "verified"
+    },
+    {
+      "id": "204d14c9-124d-5d07-bef0-83fefd81e50d",
+      "template_id": "q09_tag_annotate",
+      "variant_index": 1,
+      "stem": "You want to create an annotated tag named `v2.1.0` with the message \"stable-candidate\". Which command creates an annotated tag?",
+      "params": {
+        "tag_name": "v2.1.0",
+        "release_note": "stable-candidate"
+      },
+      "explanation": "`git tag -a <tag> -m <msg>` creates an annotated Git tag containing full author metadata, date, and message.",
+      "status": "verified"
+    },
+    {
+      "id": "c6917fe5-f435-5102-9209-e46bd6cc6eb2",
+      "template_id": "q09_tag_annotate",
+      "variant_index": 2,
+      "stem": "You want to create an annotated tag named `v1.1.0` with the message \"sprint-deliverable\". Which command creates an annotated tag?",
+      "params": {
+        "tag_name": "v1.1.0",
+        "release_note": "sprint-deliverable"
+      },
+      "explanation": "`git tag -a <tag> -m <msg>` creates an annotated Git tag containing full author metadata, date, and message.",
+      "status": "verified"
+    },
+    {
+      "id": "da4c5b0c-7c87-5ce9-8588-d6c0f1e82975",
+      "template_id": "q09_tag_annotate",
+      "variant_index": 3,
+      "stem": "You want to create an annotated tag named `v3.0.0` with the message \"beta-release\". Which command creates an annotated tag?",
+      "params": {
+        "tag_name": "v3.0.0",
+        "release_note": "beta-release"
+      },
+      "explanation": "`git tag -a <tag> -m <msg>` creates an annotated Git tag containing full author metadata, date, and message.",
+      "status": "verified"
+    },
+    {
+      "id": "bfdce26f-c5ef-55ca-9a99-a7d61871c039",
+      "template_id": "q10_log_format",
+      "variant_index": 1,
+      "stem": "You want to inspect the commit history compactly on one line per commit, limited to the last 3 commits. Which command does this?",
+      "params": {
+        "max_count": 3
+      },
+      "explanation": "`git log --oneline -n 3` formats the commit log into one condensed line per commit and limits output to 3 entries.",
+      "status": "verified"
+    },
+    {
+      "id": "38f1f26d-d2cd-5dd3-969f-13ce602ac877",
+      "template_id": "q10_log_format",
+      "variant_index": 2,
+      "stem": "You want to inspect the commit history compactly on one line per commit, limited to the last 5 commits. Which command does this?",
+      "params": {
+        "max_count": 5
+      },
+      "explanation": "`git log --oneline -n 5` formats the commit log into one condensed line per commit and limits output to 5 entries.",
+      "status": "verified"
+    },
+    {
+      "id": "c40603e0-9c3d-561a-9317-87dbfddda54d",
+      "template_id": "q10_log_format",
+      "variant_index": 3,
+      "stem": "You want to inspect the commit history compactly on one line per commit, limited to the last 8 commits. Which command does this?",
+      "params": {
+        "max_count": 8
+      },
+      "explanation": "`git log --oneline -n 8` formats the commit log into one condensed line per commit and limits output to 8 entries.",
+      "status": "verified"
+    }
+  ],
+  "options": [
+    {
+      "id": "225be6a4-4812-59fa-960a-81352bd5bc71",
+      "variant_id": "3c5cf740-cc42-556a-800a-4188964312c1",
+      "text": "git reset --soft HEAD~3",
+      "is_correct": true,
+      "label": "A",
+      "distractor_reason": null
+    },
+    {
+      "id": "abe61c8a-87f9-5278-8e7a-621340bdd031",
+      "variant_id": "3c5cf740-cc42-556a-800a-4188964312c1",
+      "text": "git reset --hard HEAD~3",
+      "is_correct": false,
+      "label": "B",
+      "distractor_reason": "destroys_changes"
+    },
+    {
+      "id": "af453615-977b-5b31-803f-cee8be524937",
+      "variant_id": "3c5cf740-cc42-556a-800a-4188964312c1",
+      "text": "git reset --mixed HEAD~3",
+      "is_correct": false,
+      "label": "C",
+      "distractor_reason": "leaves_unstaged"
+    },
+    {
+      "id": "8f6e66ea-adab-5040-b49a-dc644e08f439",
+      "variant_id": "3c5cf740-cc42-556a-800a-4188964312c1",
+      "text": "git reset --soft HEAD~2",
+      "is_correct": false,
+      "label": "D",
+      "distractor_reason": "wrong_count"
+    },
+    {
+      "id": "68f45217-5702-511f-8961-75f7c92960cf",
+      "variant_id": "8e368bb8-16b3-5bc8-be96-79530fc8fe0a",
+      "text": "git reset --soft HEAD~2",
+      "is_correct": true,
+      "label": "A",
+      "distractor_reason": null
+    },
+    {
+      "id": "2b942429-2f71-599d-abb0-0b26989c0b1f",
+      "variant_id": "8e368bb8-16b3-5bc8-be96-79530fc8fe0a",
+      "text": "git reset --hard HEAD~2",
+      "is_correct": false,
+      "label": "B",
+      "distractor_reason": "destroys_changes"
+    },
+    {
+      "id": "f4ba7e06-3111-568b-abd1-e96aec4f2e77",
+      "variant_id": "8e368bb8-16b3-5bc8-be96-79530fc8fe0a",
+      "text": "git reset --mixed HEAD~2",
+      "is_correct": false,
+      "label": "C",
+      "distractor_reason": "leaves_unstaged"
+    },
+    {
+      "id": "609e6d04-b20a-5731-be6a-047d2897ac9d",
+      "variant_id": "8e368bb8-16b3-5bc8-be96-79530fc8fe0a",
+      "text": "git reset --soft HEAD~1",
+      "is_correct": false,
+      "label": "D",
+      "distractor_reason": "wrong_count"
+    },
+    {
+      "id": "920f002a-9576-5607-b003-a20172a869f1",
+      "variant_id": "7a9fb7fd-c9ef-5d09-a81b-9b0c49c66b71",
+      "text": "git reset --soft HEAD~4",
+      "is_correct": true,
+      "label": "A",
+      "distractor_reason": null
+    },
+    {
+      "id": "ae197a15-c0cb-56d0-980b-f6aee662cba3",
+      "variant_id": "7a9fb7fd-c9ef-5d09-a81b-9b0c49c66b71",
+      "text": "git reset --hard HEAD~4",
+      "is_correct": false,
+      "label": "B",
+      "distractor_reason": "destroys_changes"
+    },
+    {
+      "id": "8c8ca5aa-04f2-583a-bbe8-a20705e5daf5",
+      "variant_id": "7a9fb7fd-c9ef-5d09-a81b-9b0c49c66b71",
+      "text": "git reset --mixed HEAD~4",
+      "is_correct": false,
+      "label": "C",
+      "distractor_reason": "leaves_unstaged"
+    },
+    {
+      "id": "5e1fa7da-9553-52fb-9e18-fb3581a51831",
+      "variant_id": "7a9fb7fd-c9ef-5d09-a81b-9b0c49c66b71",
+      "text": "git reset --soft HEAD~3",
+      "is_correct": false,
+      "label": "D",
+      "distractor_reason": "wrong_count"
+    },
+    {
+      "id": "b008d080-f69f-58de-8aef-8f3fdc761d7b",
+      "variant_id": "40d259aa-6c83-51c7-9858-aa7f4de3918b",
+      "text": "git branch -m search search-v2",
+      "is_correct": true,
+      "label": "A",
+      "distractor_reason": null
+    },
+    {
+      "id": "0cc4d828-8ed2-54da-aee1-9cf6a89f844e",
+      "variant_id": "40d259aa-6c83-51c7-9858-aa7f4de3918b",
+      "text": "git branch -m search-v2 search",
+      "is_correct": false,
+      "label": "B",
+      "distractor_reason": "wrong_direction"
+    },
+    {
+      "id": "740d6c50-f941-5f0e-830e-5299c98147b5",
+      "variant_id": "40d259aa-6c83-51c7-9858-aa7f4de3918b",
+      "text": "git rename-branch search search-v2",
+      "is_correct": false,
+      "label": "C",
+      "distractor_reason": "wrong_operation"
+    },
+    {
+      "id": "caa1b4cd-dea7-538e-9453-dc2dd2effc50",
+      "variant_id": "40d259aa-6c83-51c7-9858-aa7f4de3918b",
+      "text": "git branch --rename search search-v2",
+      "is_correct": false,
+      "label": "D",
+      "distractor_reason": "wrong_flag"
+    },
+    {
+      "id": "9d3d949a-d140-5e4b-b2c4-fddf4c3eaf19",
+      "variant_id": "0c99da2f-c383-5d5d-89b3-e8aa06017967",
+      "text": "git branch -m auth01 auth01-v2",
+      "is_correct": true,
+      "label": "A",
+      "distractor_reason": null
+    },
+    {
+      "id": "5cefb5f2-c0eb-563e-9563-74647de1366f",
+      "variant_id": "0c99da2f-c383-5d5d-89b3-e8aa06017967",
+      "text": "git branch -m auth01-v2 auth01",
+      "is_correct": false,
+      "label": "B",
+      "distractor_reason": "wrong_direction"
+    },
+    {
+      "id": "7d97b9fb-08c4-53b6-a9c6-e56253994b2b",
+      "variant_id": "0c99da2f-c383-5d5d-89b3-e8aa06017967",
+      "text": "git rename-branch auth01 auth01-v2",
+      "is_correct": false,
+      "label": "C",
+      "distractor_reason": "wrong_operation"
+    },
+    {
+      "id": "7316ae77-eeab-5af3-8acf-46f798e40fb9",
+      "variant_id": "0c99da2f-c383-5d5d-89b3-e8aa06017967",
+      "text": "git branch --rename auth01 auth01-v2",
+      "is_correct": false,
+      "label": "D",
+      "distractor_reason": "wrong_flag"
+    },
+    {
+      "id": "e775cc2c-5be0-57a6-b5cc-d8a0b74c21d9",
+      "variant_id": "15f4ff85-367b-5536-a927-f771d298ea0a",
+      "text": "git branch -m navbar navbar-v2",
+      "is_correct": true,
+      "label": "A",
+      "distractor_reason": null
+    },
+    {
+      "id": "e3095410-87ea-5d3b-b8db-d12e77f4b731",
+      "variant_id": "15f4ff85-367b-5536-a927-f771d298ea0a",
+      "text": "git branch -m navbar-v2 navbar",
+      "is_correct": false,
+      "label": "B",
+      "distractor_reason": "wrong_direction"
+    },
+    {
+      "id": "f5df2b37-ff06-58d0-99ba-764c50f96701",
+      "variant_id": "15f4ff85-367b-5536-a927-f771d298ea0a",
+      "text": "git rename-branch navbar navbar-v2",
+      "is_correct": false,
+      "label": "C",
+      "distractor_reason": "wrong_operation"
+    },
+    {
+      "id": "2e2c60dc-172c-55ec-b1bb-5e3aab216dbe",
+      "variant_id": "15f4ff85-367b-5536-a927-f771d298ea0a",
+      "text": "git branch --rename navbar navbar-v2",
+      "is_correct": false,
+      "label": "D",
+      "distractor_reason": "wrong_flag"
+    },
+    {
+      "id": "c5730f46-d0ef-52cf-8f23-4e8ac27f5802",
+      "variant_id": "7c4fb97d-fbaf-5bc8-bd99-d94ba43ec542",
+      "text": "14",
+      "is_correct": true,
+      "label": "A",
+      "distractor_reason": null
+    },
+    {
+      "id": "70df16df-c932-577c-85a7-d08e87a67c96",
+      "variant_id": "7c4fb97d-fbaf-5bc8-bd99-d94ba43ec542",
+      "text": "13",
+      "is_correct": false,
+      "label": "B",
+      "distractor_reason": "wrong_count"
+    },
+    {
+      "id": "a7ee6a94-8a37-5b11-a90b-62b46128f011",
+      "variant_id": "7c4fb97d-fbaf-5bc8-bd99-d94ba43ec542",
+      "text": "15",
+      "is_correct": false,
+      "label": "C",
+      "distractor_reason": "wrong_count"
+    },
+    {
+      "id": "01ed07f1-1850-5087-bbe2-46b5a9b0fff5",
+      "variant_id": "7c4fb97d-fbaf-5bc8-bd99-d94ba43ec542",
+      "text": "16",
+      "is_correct": false,
+      "label": "D",
+      "distractor_reason": "wrong_count"
+    },
+    {
+      "id": "29146dfd-031d-50c1-97d4-964f8817bed1",
+      "variant_id": "90236a6a-989a-5797-b0e6-c82911f06ffd",
+      "text": "10",
+      "is_correct": true,
+      "label": "A",
+      "distractor_reason": null
+    },
+    {
+      "id": "b9ec1825-1b51-56b9-bc0c-da57da8b1744",
+      "variant_id": "90236a6a-989a-5797-b0e6-c82911f06ffd",
+      "text": "9",
+      "is_correct": false,
+      "label": "B",
+      "distractor_reason": "wrong_count"
+    },
+    {
+      "id": "32f25fb5-c7fc-579c-a4ee-baf0f245d2d0",
+      "variant_id": "90236a6a-989a-5797-b0e6-c82911f06ffd",
+      "text": "11",
+      "is_correct": false,
+      "label": "C",
+      "distractor_reason": "wrong_count"
+    },
+    {
+      "id": "69c3cb72-f490-59f0-8605-065a397ad40b",
+      "variant_id": "90236a6a-989a-5797-b0e6-c82911f06ffd",
+      "text": "12",
+      "is_correct": false,
+      "label": "D",
+      "distractor_reason": "wrong_count"
+    },
+    {
+      "id": "89b73409-af38-56e0-94f4-e6ef40415d4c",
+      "variant_id": "66b43504-def8-5bd6-b052-f9880f3e871b",
+      "text": "12",
+      "is_correct": true,
+      "label": "A",
+      "distractor_reason": null
+    },
+    {
+      "id": "d97b7fcb-5fd2-587f-b1af-f214d199436d",
+      "variant_id": "66b43504-def8-5bd6-b052-f9880f3e871b",
+      "text": "11",
+      "is_correct": false,
+      "label": "B",
+      "distractor_reason": "wrong_count"
+    },
+    {
+      "id": "c4c2ba3d-91d8-5dcc-8718-cffb33a31b95",
+      "variant_id": "66b43504-def8-5bd6-b052-f9880f3e871b",
+      "text": "13",
+      "is_correct": false,
+      "label": "C",
+      "distractor_reason": "wrong_count"
+    },
+    {
+      "id": "21d559ba-abf9-5246-a978-73196dabba02",
+      "variant_id": "66b43504-def8-5bd6-b052-f9880f3e871b",
+      "text": "14",
+      "is_correct": false,
+      "label": "D",
+      "distractor_reason": "wrong_count"
+    },
+    {
+      "id": "45f1a7ca-63f0-52f3-b4a1-5e84824b90dc",
+      "variant_id": "81d36566-4691-5339-b9b2-7ce1471e8685",
+      "text": "git stash apply 0",
+      "is_correct": true,
+      "label": "A",
+      "distractor_reason": null
+    },
+    {
+      "id": "a7ebb4d9-b8a2-5e99-af7d-d06a2fc772fe",
+      "variant_id": "81d36566-4691-5339-b9b2-7ce1471e8685",
+      "text": "git stash pop 0",
+      "is_correct": false,
+      "label": "B",
+      "distractor_reason": "wrong_operation"
+    },
+    {
+      "id": "77595b8b-e606-5052-a352-127e92968487",
+      "variant_id": "81d36566-4691-5339-b9b2-7ce1471e8685",
+      "text": "git stash apply 1",
+      "is_correct": false,
+      "label": "C",
+      "distractor_reason": "wrong_count"
+    },
+    {
+      "id": "4f326d1f-ca23-59fb-a7a6-6e4a532991b3",
+      "variant_id": "81d36566-4691-5339-b9b2-7ce1471e8685",
+      "text": "git stash drop 0",
+      "is_correct": false,
+      "label": "D",
+      "distractor_reason": "destroys_changes"
+    },
+    {
+      "id": "13d03eca-ab3b-5c68-9b11-e8c1b08399e0",
+      "variant_id": "fe65a73e-187d-55bb-888a-f123c39c7f40",
+      "text": "git stash apply 1",
+      "is_correct": true,
+      "label": "A",
+      "distractor_reason": null
+    },
+    {
+      "id": "3a93293e-064c-5018-b4b8-932828681b01",
+      "variant_id": "fe65a73e-187d-55bb-888a-f123c39c7f40",
+      "text": "git stash pop 1",
+      "is_correct": false,
+      "label": "B",
+      "distractor_reason": "wrong_operation"
+    },
+    {
+      "id": "5a7da063-04d4-5f87-a5cf-b80f856ab00e",
+      "variant_id": "fe65a73e-187d-55bb-888a-f123c39c7f40",
+      "text": "git stash apply 2",
+      "is_correct": false,
+      "label": "C",
+      "distractor_reason": "wrong_count"
+    },
+    {
+      "id": "7b370f1a-9c8e-5abe-9ea6-633939caad2f",
+      "variant_id": "fe65a73e-187d-55bb-888a-f123c39c7f40",
+      "text": "git stash drop 1",
+      "is_correct": false,
+      "label": "D",
+      "distractor_reason": "destroys_changes"
+    },
+    {
+      "id": "7fbc12b7-d534-5c20-a419-1b1065a49443",
+      "variant_id": "b7b61f1a-784a-5337-8821-4d10b64f8486",
+      "text": "git stash apply 2",
+      "is_correct": true,
+      "label": "A",
+      "distractor_reason": null
+    },
+    {
+      "id": "eb68ab49-9414-5f61-9fc0-c6961fd8816a",
+      "variant_id": "b7b61f1a-784a-5337-8821-4d10b64f8486",
+      "text": "git stash pop 2",
+      "is_correct": false,
+      "label": "B",
+      "distractor_reason": "wrong_operation"
+    },
+    {
+      "id": "fbf1692c-a661-514e-9193-2faae938f06c",
+      "variant_id": "b7b61f1a-784a-5337-8821-4d10b64f8486",
+      "text": "git stash apply 3",
+      "is_correct": false,
+      "label": "C",
+      "distractor_reason": "wrong_count"
+    },
+    {
+      "id": "1fd1d51c-0bf3-509f-9108-418c07782e87",
+      "variant_id": "b7b61f1a-784a-5337-8821-4d10b64f8486",
+      "text": "git stash drop 2",
+      "is_correct": false,
+      "label": "D",
+      "distractor_reason": "destroys_changes"
+    },
+    {
+      "id": "05ee0095-262c-5ea8-94c3-45201117d333",
+      "variant_id": "bd12d309-07b5-5572-a526-c94257482d19",
+      "text": "git cherry-pick feat-nav",
+      "is_correct": true,
+      "label": "A",
+      "distractor_reason": null
+    },
+    {
+      "id": "ca369690-7367-5011-8e4b-a2779b56ed14",
+      "variant_id": "bd12d309-07b5-5572-a526-c94257482d19",
+      "text": "git merge feat-nav",
+      "is_correct": false,
+      "label": "B",
+      "distractor_reason": "wrong_operation"
+    },
+    {
+      "id": "2d81ad81-a0d8-5f55-ad2f-f351a474223a",
+      "variant_id": "bd12d309-07b5-5572-a526-c94257482d19",
+      "text": "git rebase feat-nav",
+      "is_correct": false,
+      "label": "C",
+      "distractor_reason": "wrong_operation"
+    },
+    {
+      "id": "1c3b0786-4863-5463-9d3a-951f93f7311f",
+      "variant_id": "bd12d309-07b5-5572-a526-c94257482d19",
+      "text": "git pull feat-nav",
+      "is_correct": false,
+      "label": "D",
+      "distractor_reason": "wrong_operation"
+    },
+    {
+      "id": "a5abfede-42c1-5022-92fc-7addb40f275f",
+      "variant_id": "5eebca84-c36c-56d3-8cd4-0d14842cf5af",
+      "text": "git cherry-pick feat-cart",
+      "is_correct": true,
+      "label": "A",
+      "distractor_reason": null
+    },
+    {
+      "id": "8a9d28b1-08c9-5b1f-8f41-45125f2bec51",
+      "variant_id": "5eebca84-c36c-56d3-8cd4-0d14842cf5af",
+      "text": "git merge feat-cart",
+      "is_correct": false,
+      "label": "B",
+      "distractor_reason": "wrong_operation"
+    },
+    {
+      "id": "3001ab5e-dc8a-576b-927a-bc26f4b222de",
+      "variant_id": "5eebca84-c36c-56d3-8cd4-0d14842cf5af",
+      "text": "git rebase feat-cart",
+      "is_correct": false,
+      "label": "C",
+      "distractor_reason": "wrong_operation"
+    },
+    {
+      "id": "6a5d9625-9039-5c5c-807f-b5c8d6fa2758",
+      "variant_id": "5eebca84-c36c-56d3-8cd4-0d14842cf5af",
+      "text": "git pull feat-cart",
+      "is_correct": false,
+      "label": "D",
+      "distractor_reason": "wrong_operation"
+    },
+    {
+      "id": "1ea9a898-cc25-5f78-831e-64adf52036cf",
+      "variant_id": "d94d813e-4aab-5896-ab2b-d8c1fe5a5d8b",
+      "text": "git cherry-pick feat-auth",
+      "is_correct": true,
+      "label": "A",
+      "distractor_reason": null
+    },
+    {
+      "id": "f4f0a871-9429-585e-955e-842eb6f1de38",
+      "variant_id": "d94d813e-4aab-5896-ab2b-d8c1fe5a5d8b",
+      "text": "git merge feat-auth",
+      "is_correct": false,
+      "label": "B",
+      "distractor_reason": "wrong_operation"
+    },
+    {
+      "id": "44d236f3-8140-520b-8297-a9237900fc8a",
+      "variant_id": "d94d813e-4aab-5896-ab2b-d8c1fe5a5d8b",
+      "text": "git rebase feat-auth",
+      "is_correct": false,
+      "label": "C",
+      "distractor_reason": "wrong_operation"
+    },
+    {
+      "id": "cda47af1-43e2-5568-bd09-652f1db0f8f3",
+      "variant_id": "d94d813e-4aab-5896-ab2b-d8c1fe5a5d8b",
+      "text": "git pull feat-auth",
+      "is_correct": false,
+      "label": "D",
+      "distractor_reason": "wrong_operation"
+    },
+    {
+      "id": "f449554f-e02c-5f03-9823-7fd03531421a",
+      "variant_id": "cfa20ddf-57d4-5588-8b79-cfb079c2f6cd",
+      "text": "git checkout --theirs router.json",
+      "is_correct": true,
+      "label": "A",
+      "distractor_reason": null
+    },
+    {
+      "id": "afa24042-2f1f-5de8-8786-970f33ddf075",
+      "variant_id": "cfa20ddf-57d4-5588-8b79-cfb079c2f6cd",
+      "text": "git checkout --ours router.json",
+      "is_correct": false,
+      "label": "B",
+      "distractor_reason": "wrong_direction"
+    },
+    {
+      "id": "92368110-591f-5c98-92f1-cfff8fc0f2a9",
+      "variant_id": "cfa20ddf-57d4-5588-8b79-cfb079c2f6cd",
+      "text": "git restore --theirs router.json",
+      "is_correct": false,
+      "label": "C",
+      "distractor_reason": "wrong_operation"
+    },
+    {
+      "id": "88936750-b40b-5fde-825a-63417b4f27bd",
+      "variant_id": "cfa20ddf-57d4-5588-8b79-cfb079c2f6cd",
+      "text": "git merge --theirs router.json",
+      "is_correct": false,
+      "label": "D",
+      "distractor_reason": "wrong_flag"
+    },
+    {
+      "id": "026f18d9-de05-5264-af8e-9e3bd0ffef8f",
+      "variant_id": "364f42f0-3187-56b9-a230-651cd61950da",
+      "text": "git checkout --theirs client.json",
+      "is_correct": true,
+      "label": "A",
+      "distractor_reason": null
+    },
+    {
+      "id": "6d1a9f13-be6b-55b3-95ab-5825e7a1fc38",
+      "variant_id": "364f42f0-3187-56b9-a230-651cd61950da",
+      "text": "git checkout --ours client.json",
+      "is_correct": false,
+      "label": "B",
+      "distractor_reason": "wrong_direction"
+    },
+    {
+      "id": "916073a6-18f6-597c-ae95-663152190bf5",
+      "variant_id": "364f42f0-3187-56b9-a230-651cd61950da",
+      "text": "git restore --theirs client.json",
+      "is_correct": false,
+      "label": "C",
+      "distractor_reason": "wrong_operation"
+    },
+    {
+      "id": "6b3e6917-4db9-5229-a2e0-f80742233a54",
+      "variant_id": "364f42f0-3187-56b9-a230-651cd61950da",
+      "text": "git merge --theirs client.json",
+      "is_correct": false,
+      "label": "D",
+      "distractor_reason": "wrong_flag"
+    },
+    {
+      "id": "2afd46fb-7649-5195-a359-36928c59aeb3",
+      "variant_id": "cbcc4c5d-3f21-5be8-a222-3f98d50ec811",
+      "text": "git checkout --theirs config.json",
+      "is_correct": true,
+      "label": "A",
+      "distractor_reason": null
+    },
+    {
+      "id": "8f3288b3-336a-58b6-b1ff-cb619a83c8f7",
+      "variant_id": "cbcc4c5d-3f21-5be8-a222-3f98d50ec811",
+      "text": "git checkout --ours config.json",
+      "is_correct": false,
+      "label": "B",
+      "distractor_reason": "wrong_direction"
+    },
+    {
+      "id": "32c6d18e-f2fe-571e-b333-8d131de3914c",
+      "variant_id": "cbcc4c5d-3f21-5be8-a222-3f98d50ec811",
+      "text": "git restore --theirs config.json",
+      "is_correct": false,
+      "label": "C",
+      "distractor_reason": "wrong_operation"
+    },
+    {
+      "id": "d4eca77d-d1e2-5f17-b9b6-de1fa8776286",
+      "variant_id": "cbcc4c5d-3f21-5be8-a222-3f98d50ec811",
+      "text": "git merge --theirs config.json",
+      "is_correct": false,
+      "label": "D",
+      "distractor_reason": "wrong_flag"
+    },
+    {
+      "id": "f23e72a8-a59f-5e19-a5c0-1a396f8fc047",
+      "variant_id": "815a8ff0-d6f4-5958-bf15-357e91e54532",
+      "text": "git restore --staged server.json",
+      "is_correct": true,
+      "label": "A",
+      "distractor_reason": null
+    },
+    {
+      "id": "ef154e63-cb86-5d13-a4ea-5310e32d460f",
+      "variant_id": "815a8ff0-d6f4-5958-bf15-357e91e54532",
+      "text": "git restore server.json",
+      "is_correct": false,
+      "label": "B",
+      "distractor_reason": "destroys_changes"
+    },
+    {
+      "id": "ff9c30d7-53ea-5cd5-affc-2bfdc008a0cd",
+      "variant_id": "815a8ff0-d6f4-5958-bf15-357e91e54532",
+      "text": "git rm --cached server.json",
+      "is_correct": false,
+      "label": "C",
+      "distractor_reason": "wrong_operation"
+    },
+    {
+      "id": "a8b5134b-64aa-54a0-8734-bb20e0c86752",
+      "variant_id": "815a8ff0-d6f4-5958-bf15-357e91e54532",
+      "text": "git reset --hard server.json",
+      "is_correct": false,
+      "label": "D",
+      "distractor_reason": "destroys_changes"
+    },
+    {
+      "id": "68e7b6da-10a0-522d-82f9-7f25806c8229",
+      "variant_id": "539622e8-5819-5e29-97f1-85f519dcc777",
+      "text": "git restore --staged schema.json",
+      "is_correct": true,
+      "label": "A",
+      "distractor_reason": null
+    },
+    {
+      "id": "177eb877-531d-5543-824d-e62dca63e980",
+      "variant_id": "539622e8-5819-5e29-97f1-85f519dcc777",
+      "text": "git restore schema.json",
+      "is_correct": false,
+      "label": "B",
+      "distractor_reason": "destroys_changes"
+    },
+    {
+      "id": "7869e0d2-5c0d-5d36-8817-a57f5f78ed20",
+      "variant_id": "539622e8-5819-5e29-97f1-85f519dcc777",
+      "text": "git rm --cached schema.json",
+      "is_correct": false,
+      "label": "C",
+      "distractor_reason": "wrong_operation"
+    },
+    {
+      "id": "3614a7ba-c3cf-593d-9361-9418ed354a4a",
+      "variant_id": "539622e8-5819-5e29-97f1-85f519dcc777",
+      "text": "git reset --hard schema.json",
+      "is_correct": false,
+      "label": "D",
+      "distractor_reason": "destroys_changes"
+    },
+    {
+      "id": "1b653064-4127-522c-b5d4-8bd379c51f0b",
+      "variant_id": "bc33710d-2ba9-510e-98bb-a4a10940423c",
+      "text": "git restore --staged config.json",
+      "is_correct": true,
+      "label": "A",
+      "distractor_reason": null
+    },
+    {
+      "id": "ebe65014-7f9f-520e-8838-a1d4550df99d",
+      "variant_id": "bc33710d-2ba9-510e-98bb-a4a10940423c",
+      "text": "git restore config.json",
+      "is_correct": false,
+      "label": "B",
+      "distractor_reason": "destroys_changes"
+    },
+    {
+      "id": "be6672e4-e952-54e4-b392-6a6ef76be72e",
+      "variant_id": "bc33710d-2ba9-510e-98bb-a4a10940423c",
+      "text": "git rm --cached config.json",
+      "is_correct": false,
+      "label": "C",
+      "distractor_reason": "wrong_operation"
+    },
+    {
+      "id": "7a96a8a0-4667-53d2-994a-7b9140939e70",
+      "variant_id": "bc33710d-2ba9-510e-98bb-a4a10940423c",
+      "text": "git reset --hard config.json",
+      "is_correct": false,
+      "label": "D",
+      "distractor_reason": "destroys_changes"
+    },
+    {
+      "id": "4c74a5b0-2ba4-5f6d-91a4-3683883084eb",
+      "variant_id": "ca4635cd-0a3b-51dc-9fa4-79cd6a1cd40a",
+      "text": "git revert HEAD~1",
+      "is_correct": true,
+      "label": "A",
+      "distractor_reason": null
+    },
+    {
+      "id": "e5be6072-79cc-5ba5-bda5-35f4f850202e",
+      "variant_id": "ca4635cd-0a3b-51dc-9fa4-79cd6a1cd40a",
+      "text": "git reset --hard HEAD~1",
+      "is_correct": false,
+      "label": "B",
+      "distractor_reason": "destroys_changes"
+    },
+    {
+      "id": "9932fe60-2193-5a69-82e8-4647a3a9fb7d",
+      "variant_id": "ca4635cd-0a3b-51dc-9fa4-79cd6a1cd40a",
+      "text": "git checkout HEAD~1",
+      "is_correct": false,
+      "label": "C",
+      "distractor_reason": "wrong_operation"
+    },
+    {
+      "id": "bd7bdc4d-0ddc-5e8d-a241-a4d0c695c5c7",
+      "variant_id": "ca4635cd-0a3b-51dc-9fa4-79cd6a1cd40a",
+      "text": "git revert HEAD~2",
+      "is_correct": false,
+      "label": "D",
+      "distractor_reason": "wrong_count"
+    },
+    {
+      "id": "401b405f-54d3-5afd-a434-4e1e8d4e28ba",
+      "variant_id": "a42c168f-ee21-59ff-9f22-dce792dc81da",
+      "text": "git revert HEAD~3",
+      "is_correct": true,
+      "label": "A",
+      "distractor_reason": null
+    },
+    {
+      "id": "7b7bedb5-3824-5c15-8538-81f86aec4be6",
+      "variant_id": "a42c168f-ee21-59ff-9f22-dce792dc81da",
+      "text": "git reset --hard HEAD~3",
+      "is_correct": false,
+      "label": "B",
+      "distractor_reason": "destroys_changes"
+    },
+    {
+      "id": "c2878e8c-410d-5606-ad1f-6f43171a2983",
+      "variant_id": "a42c168f-ee21-59ff-9f22-dce792dc81da",
+      "text": "git checkout HEAD~3",
+      "is_correct": false,
+      "label": "C",
+      "distractor_reason": "wrong_operation"
+    },
+    {
+      "id": "1a8cc68f-f57e-503d-ba0c-f6216cd9aad2",
+      "variant_id": "a42c168f-ee21-59ff-9f22-dce792dc81da",
+      "text": "git revert HEAD~4",
+      "is_correct": false,
+      "label": "D",
+      "distractor_reason": "wrong_count"
+    },
+    {
+      "id": "46de4bef-94bd-5cf6-9568-8e1af96c9bf4",
+      "variant_id": "f89fdc62-fa4c-588f-8a56-188d513465b9",
+      "text": "git revert HEAD~2",
+      "is_correct": true,
+      "label": "A",
+      "distractor_reason": null
+    },
+    {
+      "id": "66721391-caa3-5ba0-a0d8-fed4b9fb64f8",
+      "variant_id": "f89fdc62-fa4c-588f-8a56-188d513465b9",
+      "text": "git reset --hard HEAD~2",
+      "is_correct": false,
+      "label": "B",
+      "distractor_reason": "destroys_changes"
+    },
+    {
+      "id": "9014cf49-4044-552d-b8b9-7765b11111e3",
+      "variant_id": "f89fdc62-fa4c-588f-8a56-188d513465b9",
+      "text": "git checkout HEAD~2",
+      "is_correct": false,
+      "label": "C",
+      "distractor_reason": "wrong_operation"
+    },
+    {
+      "id": "53af35e5-641a-55b6-8065-a4a994408804",
+      "variant_id": "f89fdc62-fa4c-588f-8a56-188d513465b9",
+      "text": "git revert HEAD~3",
+      "is_correct": false,
+      "label": "D",
+      "distractor_reason": "wrong_count"
+    },
+    {
+      "id": "47630f90-eff9-52e7-b29b-c7a6ff874b4b",
+      "variant_id": "204d14c9-124d-5d07-bef0-83fefd81e50d",
+      "text": "git tag -a v2.1.0 -m \"stable-candidate\"",
+      "is_correct": true,
+      "label": "A",
+      "distractor_reason": null
+    },
+    {
+      "id": "78568ceb-2bfb-50ee-8db7-523c0448183f",
+      "variant_id": "204d14c9-124d-5d07-bef0-83fefd81e50d",
+      "text": "git tag v2.1.0",
+      "is_correct": false,
+      "label": "B",
+      "distractor_reason": "incomplete"
+    },
+    {
+      "id": "1f871ad2-e45c-502b-9ebe-7a37d15b1a81",
+      "variant_id": "204d14c9-124d-5d07-bef0-83fefd81e50d",
+      "text": "git tag -m \"stable-candidate\" v2.1.0",
+      "is_correct": false,
+      "label": "C",
+      "distractor_reason": "wrong_flag"
+    },
+    {
+      "id": "a2f867a9-4e5d-5544-9820-45a7d9e72331",
+      "variant_id": "204d14c9-124d-5d07-bef0-83fefd81e50d",
+      "text": "git create-tag v2.1.0 -m \"stable-candidate\"",
+      "is_correct": false,
+      "label": "D",
+      "distractor_reason": "wrong_operation"
+    },
+    {
+      "id": "8f2a625e-0b5e-5892-87b2-cda5e466573c",
+      "variant_id": "c6917fe5-f435-5102-9209-e46bd6cc6eb2",
+      "text": "git tag -a v1.1.0 -m \"sprint-deliverable\"",
+      "is_correct": true,
+      "label": "A",
+      "distractor_reason": null
+    },
+    {
+      "id": "b73c34e9-26b1-5722-b174-40dba8084fd0",
+      "variant_id": "c6917fe5-f435-5102-9209-e46bd6cc6eb2",
+      "text": "git tag v1.1.0",
+      "is_correct": false,
+      "label": "B",
+      "distractor_reason": "incomplete"
+    },
+    {
+      "id": "2c786b86-1bf6-54d2-b80e-dd2263ddb519",
+      "variant_id": "c6917fe5-f435-5102-9209-e46bd6cc6eb2",
+      "text": "git tag -m \"sprint-deliverable\" v1.1.0",
+      "is_correct": false,
+      "label": "C",
+      "distractor_reason": "wrong_flag"
+    },
+    {
+      "id": "5c085693-e48a-54d4-afae-a5709fc9dfc3",
+      "variant_id": "c6917fe5-f435-5102-9209-e46bd6cc6eb2",
+      "text": "git create-tag v1.1.0 -m \"sprint-deliverable\"",
+      "is_correct": false,
+      "label": "D",
+      "distractor_reason": "wrong_operation"
+    },
+    {
+      "id": "b22ed728-13ec-5318-bf56-ee9162e9e31e",
+      "variant_id": "da4c5b0c-7c87-5ce9-8588-d6c0f1e82975",
+      "text": "git tag -a v3.0.0 -m \"beta-release\"",
+      "is_correct": true,
+      "label": "A",
+      "distractor_reason": null
+    },
+    {
+      "id": "cfe4b35b-ad45-5c1e-b9f4-49cf0533074e",
+      "variant_id": "da4c5b0c-7c87-5ce9-8588-d6c0f1e82975",
+      "text": "git tag v3.0.0",
+      "is_correct": false,
+      "label": "B",
+      "distractor_reason": "incomplete"
+    },
+    {
+      "id": "e21ce369-db7d-5fae-ad65-33f54f05981f",
+      "variant_id": "da4c5b0c-7c87-5ce9-8588-d6c0f1e82975",
+      "text": "git tag -m \"beta-release\" v3.0.0",
+      "is_correct": false,
+      "label": "C",
+      "distractor_reason": "wrong_flag"
+    },
+    {
+      "id": "bcfc20eb-761f-5cb5-acbb-79f43add9d3c",
+      "variant_id": "da4c5b0c-7c87-5ce9-8588-d6c0f1e82975",
+      "text": "git create-tag v3.0.0 -m \"beta-release\"",
+      "is_correct": false,
+      "label": "D",
+      "distractor_reason": "wrong_operation"
+    },
+    {
+      "id": "20bd5efd-e481-5543-a661-8e831241f9bb",
+      "variant_id": "bfdce26f-c5ef-55ca-9a99-a7d61871c039",
+      "text": "git log --oneline -n 3",
+      "is_correct": true,
+      "label": "A",
+      "distractor_reason": null
+    },
+    {
+      "id": "b25c3d1c-50cb-5a68-bca5-fef49395e565",
+      "variant_id": "bfdce26f-c5ef-55ca-9a99-a7d61871c039",
+      "text": "git status --short -n 3",
+      "is_correct": false,
+      "label": "B",
+      "distractor_reason": "wrong_operation"
+    },
+    {
+      "id": "fa09881a-8e6a-57eb-b7bb-96938c0c7dc1",
+      "variant_id": "bfdce26f-c5ef-55ca-9a99-a7d61871c039",
+      "text": "git log --summary -n 3",
+      "is_correct": false,
+      "label": "C",
+      "distractor_reason": "wrong_flag"
+    },
+    {
+      "id": "f7cb6efe-c19f-54c5-af1b-4e275fa3498d",
+      "variant_id": "bfdce26f-c5ef-55ca-9a99-a7d61871c039",
+      "text": "git history --compact -n 3",
+      "is_correct": false,
+      "label": "D",
+      "distractor_reason": "wrong_operation"
+    },
+    {
+      "id": "4d7c55da-3a98-50fc-b47a-aa9f2457ce29",
+      "variant_id": "38f1f26d-d2cd-5dd3-969f-13ce602ac877",
+      "text": "git log --oneline -n 5",
+      "is_correct": true,
+      "label": "A",
+      "distractor_reason": null
+    },
+    {
+      "id": "25515dd1-4152-5ffd-baba-95885a232537",
+      "variant_id": "38f1f26d-d2cd-5dd3-969f-13ce602ac877",
+      "text": "git status --short -n 5",
+      "is_correct": false,
+      "label": "B",
+      "distractor_reason": "wrong_operation"
+    },
+    {
+      "id": "ab4058cd-18cd-5fc1-8703-3ee075b478ea",
+      "variant_id": "38f1f26d-d2cd-5dd3-969f-13ce602ac877",
+      "text": "git log --summary -n 5",
+      "is_correct": false,
+      "label": "C",
+      "distractor_reason": "wrong_flag"
+    },
+    {
+      "id": "6234cb1b-aaef-5e1d-b615-41b05b7c3a65",
+      "variant_id": "38f1f26d-d2cd-5dd3-969f-13ce602ac877",
+      "text": "git history --compact -n 5",
+      "is_correct": false,
+      "label": "D",
+      "distractor_reason": "wrong_operation"
+    },
+    {
+      "id": "47aa6d4f-71e5-5b57-aa38-0ee9b73e0c66",
+      "variant_id": "c40603e0-9c3d-561a-9317-87dbfddda54d",
+      "text": "git log --oneline -n 8",
+      "is_correct": true,
+      "label": "A",
+      "distractor_reason": null
+    },
+    {
+      "id": "5044d3cf-e565-541a-ac96-a99837304411",
+      "variant_id": "c40603e0-9c3d-561a-9317-87dbfddda54d",
+      "text": "git status --short -n 8",
+      "is_correct": false,
+      "label": "B",
+      "distractor_reason": "wrong_operation"
+    },
+    {
+      "id": "a51b8517-cc18-52c6-bf6d-7e4deb7bca1e",
+      "variant_id": "c40603e0-9c3d-561a-9317-87dbfddda54d",
+      "text": "git log --summary -n 8",
+      "is_correct": false,
+      "label": "C",
+      "distractor_reason": "wrong_flag"
+    },
+    {
+      "id": "7e8eceb9-057e-5345-a55f-08218cb92997",
+      "variant_id": "c40603e0-9c3d-561a-9317-87dbfddda54d",
+      "text": "git history --compact -n 8",
+      "is_correct": false,
+      "label": "D",
+      "distractor_reason": "wrong_operation"
+    }
+  ],
+  "bank_freeze": {
+    "bank_hash": "73a7e1cf880079adb340829d452dd370d823a1885d1009592ae5d6b390a8681b",
+    "git_version": "git version 2.43.0 (pure-python-sandbox)",
+    "total_templates": 10,
+    "total_variants": 30
+  }
+}

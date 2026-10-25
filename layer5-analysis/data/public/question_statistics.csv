@@ -1,0 +1,91 @@
+question_id,attempts,correct,p_value,discrimination,p_value_disc,n,flaw_reason,is_flawed,text,difficulty,topic
+10000000-0000-0000-0000-000000000002,27,17,0.6296,-0.2632,0.1846,27,NEGATIVE discrimination (-0.263),True,Which command shows the chronological commit history of the current repository?,easy,basics
+10000000-0000-0000-0000-000000000028,28,25,0.8929,-0.1697,0.388,28,NEGATIVE discrimination (-0.170),True,"In modern Git (2.23+), what command is recommended for switching branches instead of git checkout?",easy,checkout
+10000000-0000-0000-0000-000000000003,31,19,0.6129,-0.0574,0.7592,31,NEGATIVE discrimination (-0.057),True,Which command stages all modified and newly created files in the repository?,easy,staging
+30000000-0000-0000-0000-000000000030,36,9,0.25,-0.0541,0.7541,36,NEGATIVE discrimination (-0.054),True,What command verifies the cryptographic integrity and packing of Git packfiles on disk?,hard,git-internals
+20000000-0000-0000-0000-000000000001,26,18,0.6923,-0.0122,0.9528,26,NEGATIVE discrimination (-0.012),True,What is the fundamental difference between git merge and git rebase?,medium,rebase
+30000000-0000-0000-0000-000000000010,30,7,0.2333,-0.0104,0.9563,30,NEGATIVE discrimination (-0.010); Distractor 'C' attracts more high scorers (5) than correct answer (4),True,What does git gc (garbage collection) perform within a repository?,hard,git-internals
+30000000-0000-0000-0000-000000000006,31,9,0.2903,0.0416,0.8242,31,Low discrimination (0.042),True,What does the Git reference notation HEAD^2 refer to?,hard,git-internals
+10000000-0000-0000-0000-000000000013,38,23,0.6053,0.0555,0.7407,38,Low discrimination (0.056),True,Which command shows differences between staged modifications and the last commit?,easy,diff
+20000000-0000-0000-0000-000000000016,31,18,0.5806,0.0558,0.7654,31,Low discrimination (0.056),True,"After manually resolving conflicts during a rebase, what command should you execute?",medium,rebase
+10000000-0000-0000-0000-000000000010,34,22,0.6471,0.06,0.7361,34,Low discrimination (0.060),True,Which command lists all currently stashed change sets in your repository?,easy,stashing
+10000000-0000-0000-0000-000000000018,31,20,0.6452,0.0704,0.7067,31,Low discrimination (0.070),True,What is the purpose of the .gitignore file in a project repository?,easy,ignore
+20000000-0000-0000-0000-000000000009,39,20,0.5128,0.0824,0.6182,39,Low discrimination (0.082),True,What does git rebase -i HEAD~3 open in your editor?,medium,rebase-interactive
+10000000-0000-0000-0000-000000000024,32,21,0.6562,0.0899,0.6248,32,Low discrimination (0.090),True,"In Git architecture, what does the special pointer HEAD refer to?",easy,internals
+20000000-0000-0000-0000-000000000025,36,21,0.5833,0.099,0.5656,36,Low discrimination (0.099),True,Which git log command displays the commit topology as an ASCII text graph?,medium,log
+30000000-0000-0000-0000-000000000018,28,7,0.25,0.1009,0.6095,28,Low discrimination (0.101),True,What does git rebase --onto newbase upstream branch accomplish?,hard,rebase-onto
+30000000-0000-0000-0000-000000000009,21,5,0.2381,0.1132,0.6252,21,Low discrimination (0.113); Distractor 'D' attracts more high scorers (3) than correct answer (2),True,Which command checks repository database connectivity and identifies dangling/unreachable objects?,hard,git-internals
+10000000-0000-0000-0000-000000000014,41,31,0.7561,0.1241,0.4394,41,Low discrimination (0.124),True,What command shows all configured remote repository names along with their fetch/push URLs?,easy,remotes
+10000000-0000-0000-0000-000000000021,38,28,0.7368,0.1366,0.4134,38,Low discrimination (0.137),True,What command modifies the most recent commit by combining it with current staged changes?,easy,commits
+30000000-0000-0000-0000-000000000016,31,8,0.2581,0.1376,0.4606,31,Low discrimination (0.138); Distractor 'D' attracts more high scorers (4) than correct answer (3),True,Which plumbing command creates a new Commit object directly given a tree hash and parent commit hash?,hard,plumbing
+20000000-0000-0000-0000-000000000011,31,15,0.4839,0.1472,0.4293,31,Low discrimination (0.147),True,"In an interactive rebase todo list, how does fixup differ from squash?",medium,rebase-interactive
+30000000-0000-0000-0000-000000000017,32,8,0.25,0.1536,0.4012,32,,False,Which plumbing command calculates the SHA hash of a file and optionally writes it into .git/objects (-w)?,hard,plumbing
+30000000-0000-0000-0000-000000000012,33,11,0.3333,0.1546,0.3902,33,,False,What exit code must a Git hook script return to abort the current Git command (e.g. pre-commit)?,hard,hooks
+20000000-0000-0000-0000-000000000013,28,16,0.5714,0.1696,0.3884,28,,False,Which command deletes a remote branch named feature-auth on origin?,medium,remotes
+30000000-0000-0000-0000-000000000013,37,12,0.3243,0.1831,0.2781,37,,False,Where are client-side Git hooks stored locally in a newly cloned or initialized repository?,hard,hooks
+20000000-0000-0000-0000-000000000002,26,10,0.3846,0.1853,0.3648,26,,False,What happens when you run git reset --soft HEAD~1?,medium,reset
+10000000-0000-0000-0000-000000000009,27,20,0.7407,0.1932,0.3344,27,,False,What command restores the most recently stashed changes and removes them from the stash list?,easy,stashing
+20000000-0000-0000-0000-000000000010,31,18,0.5806,0.2105,0.2557,31,,False,"In an interactive rebase todo list, what does the squash command do?",medium,rebase-interactive
+20000000-0000-0000-0000-000000000004,35,18,0.5143,0.2125,0.2203,35,,False,What happens when you run git reset --hard HEAD~1?,medium,reset
+30000000-0000-0000-0000-000000000026,44,16,0.3636,0.2186,0.1539,44,,False,What command debugs why a specific file path is being ignored and outputs the matching .gitignore line?,hard,ignore
+20000000-0000-0000-0000-000000000008,36,17,0.4722,0.2215,0.1941,36,,False,How does git revert <commit> differ from git reset <commit> regarding public branch safety?,medium,revert
+10000000-0000-0000-0000-000000000007,32,25,0.7812,0.2304,0.2046,32,,False,Which command lists all existing local branches in your repository?,easy,branching
+10000000-0000-0000-0000-000000000005,35,23,0.6571,0.234,0.176,35,,False,What command copies an existing remote repository onto your local machine?,easy,cloning
+20000000-0000-0000-0000-000000000027,41,16,0.3902,0.2348,0.1394,41,,False,Which command updates your local branch tracking refs and deletes stale references removed on origin?,medium,remotes
+20000000-0000-0000-0000-000000000021,39,17,0.4359,0.2412,0.1391,39,,False,"In Git merge conflict markers, what content is enclosed between <<<<<<< HEAD and =======?",medium,merge
+10000000-0000-0000-0000-000000000030,31,25,0.8065,0.2506,0.1739,31,,False,"What hidden folder created by git init houses all repository databases, references, and configs?",easy,basics
+30000000-0000-0000-0000-000000000003,36,13,0.3611,0.2539,0.1352,36,,False,"In Git object database (.git/objects), what are the four fundamental immutable object types?",hard,git-internals
+30000000-0000-0000-0000-000000000023,25,7,0.28,0.2573,0.2144,25,,False,Which git commit flag signs a commit cryptographically using your configured GPG/SSH key?,hard,signatures
+20000000-0000-0000-0000-000000000007,30,19,0.6333,0.26,0.1652,30,,False,What does git clean -fd do in your repository?,medium,clean
+20000000-0000-0000-0000-000000000023,29,14,0.4828,0.2621,0.1696,29,,False,How does an annotated tag (git tag -a) differ fundamentally from a lightweight tag?,medium,tags
+30000000-0000-0000-0000-000000000011,34,10,0.2941,0.2661,0.1282,34,,False,What is Git rerere (reuse recorded resolution) used for?,hard,rerere
+10000000-0000-0000-0000-000000000001,37,19,0.5135,0.2685,0.1081,37,,False,What command initializes a new Git repository in the current working directory?,easy,basics
+30000000-0000-0000-0000-000000000022,37,16,0.4324,0.2707,0.1052,37,,False,What command packages repository commits and refs into a single transferable offline binary archive?,hard,bundle
+30000000-0000-0000-0000-000000000008,31,5,0.1613,0.2725,0.138,31,,False,What plumbing command prints the full 40-character SHA-1 object ID pointed to by HEAD?,hard,git-internals
+30000000-0000-0000-0000-000000000021,28,9,0.3214,0.2857,0.1405,28,,False,What is a shallow clone created via git clone --depth 1?,hard,cloning
+30000000-0000-0000-0000-000000000029,29,8,0.2759,0.2902,0.1267,29,,False,"In Git repository index (.git/index), what data is tracked for each staged file?",hard,internals
+10000000-0000-0000-0000-000000000025,33,23,0.697,0.2915,0.0998,33,,False,Which command removes a file from both the Git staging index and your local filesystem?,easy,removal
+20000000-0000-0000-0000-000000000012,33,19,0.5758,0.2926,0.0985,33,,False,"Why does git branch -d feature fail if feature contains unmerged commits, and how do you force delete it?",medium,branching
+10000000-0000-0000-0000-000000000029,33,23,0.697,0.2933,0.0976,33,,False,"In modern Git (2.23+), what command discards uncommitted changes in your working tree?",easy,restore
+10000000-0000-0000-0000-000000000015,43,32,0.7442,0.2968,0.0533,43,,False,What is the command to link a remote repository URL named origin to your local repo?,easy,remotes
+10000000-0000-0000-0000-000000000008,31,23,0.7419,0.3056,0.0946,31,,False,You have uncommitted modifications that you want to set aside without committing. What command do you run?,easy,stashing
+20000000-0000-0000-0000-000000000019,40,17,0.425,0.3086,0.0527,40,,False,What command creates a new branch named debug-fix directly from stash@{0} and drops the stash entry?,medium,stashing
+10000000-0000-0000-0000-000000000023,40,30,0.75,0.3108,0.051,40,,False,Which command shows metadata and content changes for a specific Git object or commit?,easy,inspect
+20000000-0000-0000-0000-000000000003,34,26,0.7647,0.3168,0.068,34,,False,What happens when you run git reset --mixed HEAD~1 (the default reset mode)?,medium,reset
+30000000-0000-0000-0000-000000000024,52,17,0.3269,0.317,0.022,52,,False,What merge strategy is automatically invoked by Git when merging more than two head references at once?,hard,merge-strategies
+10000000-0000-0000-0000-000000000026,26,19,0.7308,0.318,0.1133,26,,False,What characterizes a fast-forward merge in Git?,easy,merge
+10000000-0000-0000-0000-000000000017,35,30,0.8571,0.3182,0.0625,35,,False,What does the -u flag do in git push -u origin main?,easy,remotes
+30000000-0000-0000-0000-000000000002,36,14,0.3889,0.3302,0.0492,36,,False,How can you automate git bisect to test each commit non-interactively using an automated test script?,hard,debugging
+10000000-0000-0000-0000-000000000022,24,12,0.5,0.3323,0.1126,24,,False,Which command creates a lightweight tag named v1.0 pointing to the current commit?,easy,tags
+30000000-0000-0000-0000-000000000019,35,11,0.3143,0.3408,0.0451,35,,False,"By default, what is the retention period before git gc prunes unreachable reflog entries?",hard,internals
+10000000-0000-0000-0000-000000000016,37,27,0.7297,0.349,0.0342,37,,False,What is the primary difference between git fetch and git pull?,easy,remotes
+10000000-0000-0000-0000-000000000012,36,24,0.6667,0.3527,0.0349,36,,False,Which command shows differences between your working directory modifications and staged files?,easy,diff
+10000000-0000-0000-0000-000000000011,34,24,0.7059,0.3706,0.031,34,,False,Which command displays the state of the working directory and the staging area?,easy,status
+20000000-0000-0000-0000-000000000015,35,18,0.5143,0.3713,0.0281,35,,False,"If you encounter unexpected merge conflicts, what command cleanly cancels the merge and restores pre-merge state?",medium,merge
+30000000-0000-0000-0000-000000000007,36,7,0.1944,0.3744,0.0245,36,,False,How does HEAD~3 differ from HEAD^^^ in commit revision navigation?,hard,git-internals
+20000000-0000-0000-0000-000000000030,43,24,0.5581,0.3759,0.013,43,,False,What does the reword command in an interactive rebase todo list accomplish?,medium,rebase-interactive
+20000000-0000-0000-0000-000000000028,35,13,0.3714,0.3978,0.018,35,,False,"In Git config hierarchy, which configuration level takes highest precedence if a key is defined at all levels?",medium,config
+30000000-0000-0000-0000-000000000001,43,15,0.3488,0.4048,0.0071,43,,False,What binary search debugging command isolates the exact commit that introduced a regression?,hard,debugging
+30000000-0000-0000-0000-000000000025,30,11,0.3667,0.41,0.0245,30,,False,What is the crucial difference between git merge -s ours vs git merge -X ours?,hard,merge-strategies
+20000000-0000-0000-0000-000000000024,41,22,0.5366,0.4161,0.0068,41,,False,"Why do created tags not appear on origin after git push origin main, and how do you push them?",medium,tags
+20000000-0000-0000-0000-000000000026,28,18,0.6429,0.4175,0.0271,28,,False,Which command lists commit count summary per author in sorted descending order?,medium,log
+10000000-0000-0000-0000-000000000006,36,28,0.7778,0.4319,0.0085,36,,False,What command creates a new branch named feature-login and immediately switches to it?,easy,branching
+10000000-0000-0000-0000-000000000027,41,24,0.5854,0.4325,0.0047,41,,False,Which git log option condenses each commit to a single line showing short hash and subject?,easy,log
+30000000-0000-0000-0000-000000000004,33,8,0.2424,0.433,0.0118,33,,False,"In Git object database, what fundamental entity do Blob objects store?",hard,git-internals
+20000000-0000-0000-0000-000000000029,25,12,0.48,0.4374,0.0288,25,,False,What does git diff branchA..branchB output?,medium,diff
+30000000-0000-0000-0000-000000000028,38,11,0.2895,0.4415,0.0055,38,,False,What role does the packfile index (.idx file) serve in .git/objects/pack/?,hard,internals
+20000000-0000-0000-0000-000000000006,33,18,0.5455,0.4415,0.0101,33,,False,"Which command records every movement of HEAD and branch tips locally, allowing recovery of deleted commits?",medium,reflog
+10000000-0000-0000-0000-000000000020,26,16,0.6154,0.449,0.0214,26,,False,How can you view all resolved Git configuration settings in your terminal?,easy,config
+10000000-0000-0000-0000-000000000004,27,18,0.6667,0.4569,0.0166,27,,False,Which command records staged snapshots with an inline descriptive message?,easy,commits
+30000000-0000-0000-0000-000000000005,36,7,0.1944,0.4681,0.004,36,,False,What plumbing command inspects the type and human-readable content of any raw Git object hash?,hard,git-internals
+30000000-0000-0000-0000-000000000020,36,7,0.1944,0.4811,0.003,36,,False,"In monorepos, what Git feature allows checking out only a specific subset of directories or files?",hard,sparse-checkout
+30000000-0000-0000-0000-000000000015,26,10,0.3846,0.4843,0.0122,26,,False,Which plumbing command writes current staging index state into a new Tree object in object database?,hard,plumbing
+20000000-0000-0000-0000-000000000017,32,19,0.5938,0.4922,0.0042,32,,False,What Git feature allows you to checkout multiple branches simultaneously in separate linked directories?,medium,worktree
+20000000-0000-0000-0000-000000000014,37,18,0.4865,0.4929,0.0019,37,,False,What information does git blame provide for a file?,medium,blame
+20000000-0000-0000-0000-000000000022,28,13,0.4643,0.4973,0.0071,28,,False,What is a three-way merge in Git?,medium,merge
+20000000-0000-0000-0000-000000000018,27,13,0.4815,0.5056,0.0071,27,,False,Which command initializes and fetches nested submodules after cloning a repository containing submodules?,medium,submodules
+20000000-0000-0000-0000-000000000020,40,17,0.425,0.545,0.0003,40,,False,What condition causes a detached HEAD state in Git?,medium,internals
+30000000-0000-0000-0000-000000000014,31,8,0.2581,0.5523,0.0013,31,,False,You accidentally pushed private credentials to a public branch. What is the safest and most permanent remediation?,hard,security
+20000000-0000-0000-0000-000000000005,31,17,0.5484,0.5615,0.001,31,,False,Which command applies a single specific commit from another branch onto your active branch as a new commit?,medium,cherry-pick
+10000000-0000-0000-0000-000000000019,36,26,0.7222,0.591,0.0001,36,,False,Which command sets your global commit author name across all Git repositories on your computer?,easy,config
+30000000-0000-0000-0000-000000000027,25,4,0.16,0.668,0.0003,25,,False,Which plumbing command updates a branch reference to point directly to a new commit hash safely?,hard,plumbing

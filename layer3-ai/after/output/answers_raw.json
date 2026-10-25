@@ -1,0 +1,5102 @@
+[
+  {
+    "student_id": "stu_001",
+    "question_id": "cand_bas_eas_001",
+    "position": 1,
+    "response_ms": 17645,
+    "is_correct": true,
+    "points": 200,
+    "students": {
+      "name": "Student Alice",
+      "college_id": "ENG2026001"
+    },
+    "questions": {
+      "text": "Which command initializes a brand-new Git repository in the current folder?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_001",
+    "question_id": "cand_bas_eas_002",
+    "position": 2,
+    "response_ms": 15798,
+    "is_correct": true,
+    "points": 210,
+    "students": {
+      "name": "Student Alice",
+      "college_id": "ENG2026001"
+    },
+    "questions": {
+      "text": "Which command shows the working tree status, staged files, and untracked files?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_001",
+    "question_id": "cand_bas_med_006",
+    "position": 3,
+    "response_ms": 17590,
+    "is_correct": true,
+    "points": 200,
+    "students": {
+      "name": "Student Alice",
+      "college_id": "ENG2026001"
+    },
+    "questions": {
+      "text": "Which command stages all modified and deleted files in the entire working directory?",
+      "difficulty": "medium",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_001",
+    "question_id": "cand_bra_eas_011",
+    "position": 4,
+    "response_ms": 11013,
+    "is_correct": true,
+    "points": 449,
+    "students": {
+      "name": "Student Alice",
+      "college_id": "ENG2026001"
+    },
+    "questions": {
+      "text": "Which command creates a new branch named 'feature-login' without switching to it?",
+      "difficulty": "easy",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_001",
+    "question_id": "cand_bra_med_016",
+    "position": 5,
+    "response_ms": 12640,
+    "is_correct": true,
+    "points": 368,
+    "students": {
+      "name": "Student Alice",
+      "college_id": "ENG2026001"
+    },
+    "questions": {
+      "text": "Which modern command switches your working directory to an existing branch named 'dev'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_001",
+    "question_id": "cand_bra_med_017",
+    "position": 6,
+    "response_ms": 8442,
+    "is_correct": true,
+    "points": 577,
+    "students": {
+      "name": "Student Alice",
+      "college_id": "ENG2026001"
+    },
+    "questions": {
+      "text": "You are on branch 'main'. Which command incorporates all commits from 'feature' into 'main'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_001",
+    "question_id": "cand_bra_har_021",
+    "position": 7,
+    "response_ms": 16684,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Alice",
+      "college_id": "ENG2026001"
+    },
+    "questions": {
+      "text": "Which command aborts an ongoing merge conflict and restores the working tree to pre-merge state?",
+      "difficulty": "hard",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_001",
+    "question_id": "cand_rem_eas_026",
+    "position": 8,
+    "response_ms": 14340,
+    "is_correct": true,
+    "points": 283,
+    "students": {
+      "name": "Student Alice",
+      "college_id": "ENG2026001"
+    },
+    "questions": {
+      "text": "Which command downloads a copy of an existing remote repository onto your local computer?",
+      "difficulty": "easy",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_001",
+    "question_id": "cand_rem_med_031",
+    "position": 9,
+    "response_ms": 11269,
+    "is_correct": true,
+    "points": 436,
+    "students": {
+      "name": "Student Alice",
+      "college_id": "ENG2026001"
+    },
+    "questions": {
+      "text": "What is the difference between 'git fetch' and 'git pull'?",
+      "difficulty": "medium",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_001",
+    "question_id": "cand_rem_har_036",
+    "position": 10,
+    "response_ms": 15737,
+    "is_correct": true,
+    "points": 213,
+    "students": {
+      "name": "Student Alice",
+      "college_id": "ENG2026001"
+    },
+    "questions": {
+      "text": "Which command uploads a new local branch 'experiment' and configures upstream tracking to origin?",
+      "difficulty": "hard",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_001",
+    "question_id": "cand_und_eas_041",
+    "position": 11,
+    "response_ms": 7317,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Alice",
+      "college_id": "ENG2026001"
+    },
+    "questions": {
+      "text": "Which command unstages a file 'app.js' from the staging area without discarding working edits?",
+      "difficulty": "easy",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_001",
+    "question_id": "cand_und_med_046",
+    "position": 12,
+    "response_ms": 4243,
+    "is_correct": true,
+    "points": 787,
+    "students": {
+      "name": "Student Alice",
+      "college_id": "ENG2026001"
+    },
+    "questions": {
+      "text": "You want to create a new commit that exactly inverts the changes of a faulty commit. Which command should you use?",
+      "difficulty": "medium",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_001",
+    "question_id": "cand_und_har_051",
+    "position": 13,
+    "response_ms": 9300,
+    "is_correct": true,
+    "points": 534,
+    "students": {
+      "name": "Student Alice",
+      "college_id": "ENG2026001"
+    },
+    "questions": {
+      "text": "You need to undo the last commit while keeping all its modified files in the staging area. What is the command?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_001",
+    "question_id": "cand_und_har_052",
+    "position": 14,
+    "response_ms": 12715,
+    "is_correct": true,
+    "points": 364,
+    "students": {
+      "name": "Student Alice",
+      "college_id": "ENG2026001"
+    },
+    "questions": {
+      "text": "You accidentally ran 'git reset --hard' and lost unpushed commits. Where can you find their commit hashes?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_001",
+    "question_id": "cand_adv_har_056",
+    "position": 15,
+    "response_ms": 3939,
+    "is_correct": true,
+    "points": 803,
+    "students": {
+      "name": "Student Alice",
+      "college_id": "ENG2026001"
+    },
+    "questions": {
+      "text": "Which command applies the exact changes introduced by commit 'a1b2c3d' from another branch onto your branch?",
+      "difficulty": "hard",
+      "topic": "advanced"
+    }
+  },
+  {
+    "student_id": "stu_002",
+    "question_id": "cand_bas_eas_001",
+    "position": 1,
+    "response_ms": 11304,
+    "is_correct": true,
+    "points": 434,
+    "students": {
+      "name": "Student Bob",
+      "college_id": "ENG2026002"
+    },
+    "questions": {
+      "text": "Which command initializes a brand-new Git repository in the current folder?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_002",
+    "question_id": "cand_bas_eas_002",
+    "position": 2,
+    "response_ms": 12318,
+    "is_correct": true,
+    "points": 384,
+    "students": {
+      "name": "Student Bob",
+      "college_id": "ENG2026002"
+    },
+    "questions": {
+      "text": "Which command shows the working tree status, staged files, and untracked files?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_002",
+    "question_id": "cand_bas_med_006",
+    "position": 3,
+    "response_ms": 9392,
+    "is_correct": true,
+    "points": 530,
+    "students": {
+      "name": "Student Bob",
+      "college_id": "ENG2026002"
+    },
+    "questions": {
+      "text": "Which command stages all modified and deleted files in the entire working directory?",
+      "difficulty": "medium",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_002",
+    "question_id": "cand_bra_eas_011",
+    "position": 4,
+    "response_ms": 10096,
+    "is_correct": true,
+    "points": 495,
+    "students": {
+      "name": "Student Bob",
+      "college_id": "ENG2026002"
+    },
+    "questions": {
+      "text": "Which command creates a new branch named 'feature-login' without switching to it?",
+      "difficulty": "easy",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_002",
+    "question_id": "cand_bra_med_016",
+    "position": 5,
+    "response_ms": 11716,
+    "is_correct": true,
+    "points": 414,
+    "students": {
+      "name": "Student Bob",
+      "college_id": "ENG2026002"
+    },
+    "questions": {
+      "text": "Which modern command switches your working directory to an existing branch named 'dev'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_002",
+    "question_id": "cand_bra_med_017",
+    "position": 6,
+    "response_ms": 11591,
+    "is_correct": true,
+    "points": 420,
+    "students": {
+      "name": "Student Bob",
+      "college_id": "ENG2026002"
+    },
+    "questions": {
+      "text": "You are on branch 'main'. Which command incorporates all commits from 'feature' into 'main'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_002",
+    "question_id": "cand_bra_har_021",
+    "position": 7,
+    "response_ms": 12453,
+    "is_correct": true,
+    "points": 377,
+    "students": {
+      "name": "Student Bob",
+      "college_id": "ENG2026002"
+    },
+    "questions": {
+      "text": "Which command aborts an ongoing merge conflict and restores the working tree to pre-merge state?",
+      "difficulty": "hard",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_002",
+    "question_id": "cand_rem_eas_026",
+    "position": 8,
+    "response_ms": 6574,
+    "is_correct": true,
+    "points": 671,
+    "students": {
+      "name": "Student Bob",
+      "college_id": "ENG2026002"
+    },
+    "questions": {
+      "text": "Which command downloads a copy of an existing remote repository onto your local computer?",
+      "difficulty": "easy",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_002",
+    "question_id": "cand_rem_med_031",
+    "position": 9,
+    "response_ms": 7840,
+    "is_correct": true,
+    "points": 608,
+    "students": {
+      "name": "Student Bob",
+      "college_id": "ENG2026002"
+    },
+    "questions": {
+      "text": "What is the difference between 'git fetch' and 'git pull'?",
+      "difficulty": "medium",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_002",
+    "question_id": "cand_rem_har_036",
+    "position": 10,
+    "response_ms": 11188,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Bob",
+      "college_id": "ENG2026002"
+    },
+    "questions": {
+      "text": "Which command uploads a new local branch 'experiment' and configures upstream tracking to origin?",
+      "difficulty": "hard",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_002",
+    "question_id": "cand_und_eas_041",
+    "position": 11,
+    "response_ms": 13493,
+    "is_correct": true,
+    "points": 325,
+    "students": {
+      "name": "Student Bob",
+      "college_id": "ENG2026002"
+    },
+    "questions": {
+      "text": "Which command unstages a file 'app.js' from the staging area without discarding working edits?",
+      "difficulty": "easy",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_002",
+    "question_id": "cand_und_med_046",
+    "position": 12,
+    "response_ms": 14587,
+    "is_correct": true,
+    "points": 270,
+    "students": {
+      "name": "Student Bob",
+      "college_id": "ENG2026002"
+    },
+    "questions": {
+      "text": "You want to create a new commit that exactly inverts the changes of a faulty commit. Which command should you use?",
+      "difficulty": "medium",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_002",
+    "question_id": "cand_und_har_051",
+    "position": 13,
+    "response_ms": 13916,
+    "is_correct": true,
+    "points": 304,
+    "students": {
+      "name": "Student Bob",
+      "college_id": "ENG2026002"
+    },
+    "questions": {
+      "text": "You need to undo the last commit while keeping all its modified files in the staging area. What is the command?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_002",
+    "question_id": "cand_und_har_052",
+    "position": 14,
+    "response_ms": 10527,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Bob",
+      "college_id": "ENG2026002"
+    },
+    "questions": {
+      "text": "You accidentally ran 'git reset --hard' and lost unpushed commits. Where can you find their commit hashes?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_002",
+    "question_id": "cand_adv_har_056",
+    "position": 15,
+    "response_ms": 9925,
+    "is_correct": true,
+    "points": 503,
+    "students": {
+      "name": "Student Bob",
+      "college_id": "ENG2026002"
+    },
+    "questions": {
+      "text": "Which command applies the exact changes introduced by commit 'a1b2c3d' from another branch onto your branch?",
+      "difficulty": "hard",
+      "topic": "advanced"
+    }
+  },
+  {
+    "student_id": "stu_003",
+    "question_id": "cand_bas_eas_001",
+    "position": 1,
+    "response_ms": 13729,
+    "is_correct": true,
+    "points": 313,
+    "students": {
+      "name": "Student Charlie",
+      "college_id": "ENG2026003"
+    },
+    "questions": {
+      "text": "Which command initializes a brand-new Git repository in the current folder?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_003",
+    "question_id": "cand_bas_eas_002",
+    "position": 2,
+    "response_ms": 3351,
+    "is_correct": true,
+    "points": 832,
+    "students": {
+      "name": "Student Charlie",
+      "college_id": "ENG2026003"
+    },
+    "questions": {
+      "text": "Which command shows the working tree status, staged files, and untracked files?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_003",
+    "question_id": "cand_bas_med_006",
+    "position": 3,
+    "response_ms": 9320,
+    "is_correct": true,
+    "points": 534,
+    "students": {
+      "name": "Student Charlie",
+      "college_id": "ENG2026003"
+    },
+    "questions": {
+      "text": "Which command stages all modified and deleted files in the entire working directory?",
+      "difficulty": "medium",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_003",
+    "question_id": "cand_bra_eas_011",
+    "position": 4,
+    "response_ms": 4636,
+    "is_correct": true,
+    "points": 768,
+    "students": {
+      "name": "Student Charlie",
+      "college_id": "ENG2026003"
+    },
+    "questions": {
+      "text": "Which command creates a new branch named 'feature-login' without switching to it?",
+      "difficulty": "easy",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_003",
+    "question_id": "cand_bra_med_016",
+    "position": 5,
+    "response_ms": 15074,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Charlie",
+      "college_id": "ENG2026003"
+    },
+    "questions": {
+      "text": "Which modern command switches your working directory to an existing branch named 'dev'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_003",
+    "question_id": "cand_bra_med_017",
+    "position": 6,
+    "response_ms": 4340,
+    "is_correct": true,
+    "points": 783,
+    "students": {
+      "name": "Student Charlie",
+      "college_id": "ENG2026003"
+    },
+    "questions": {
+      "text": "You are on branch 'main'. Which command incorporates all commits from 'feature' into 'main'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_003",
+    "question_id": "cand_bra_har_021",
+    "position": 7,
+    "response_ms": 12795,
+    "is_correct": true,
+    "points": 360,
+    "students": {
+      "name": "Student Charlie",
+      "college_id": "ENG2026003"
+    },
+    "questions": {
+      "text": "Which command aborts an ongoing merge conflict and restores the working tree to pre-merge state?",
+      "difficulty": "hard",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_003",
+    "question_id": "cand_rem_eas_026",
+    "position": 8,
+    "response_ms": 14945,
+    "is_correct": true,
+    "points": 252,
+    "students": {
+      "name": "Student Charlie",
+      "college_id": "ENG2026003"
+    },
+    "questions": {
+      "text": "Which command downloads a copy of an existing remote repository onto your local computer?",
+      "difficulty": "easy",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_003",
+    "question_id": "cand_rem_med_031",
+    "position": 9,
+    "response_ms": 15509,
+    "is_correct": true,
+    "points": 224,
+    "students": {
+      "name": "Student Charlie",
+      "college_id": "ENG2026003"
+    },
+    "questions": {
+      "text": "What is the difference between 'git fetch' and 'git pull'?",
+      "difficulty": "medium",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_003",
+    "question_id": "cand_rem_har_036",
+    "position": 10,
+    "response_ms": 3750,
+    "is_correct": true,
+    "points": 812,
+    "students": {
+      "name": "Student Charlie",
+      "college_id": "ENG2026003"
+    },
+    "questions": {
+      "text": "Which command uploads a new local branch 'experiment' and configures upstream tracking to origin?",
+      "difficulty": "hard",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_003",
+    "question_id": "cand_und_eas_041",
+    "position": 11,
+    "response_ms": 3810,
+    "is_correct": true,
+    "points": 809,
+    "students": {
+      "name": "Student Charlie",
+      "college_id": "ENG2026003"
+    },
+    "questions": {
+      "text": "Which command unstages a file 'app.js' from the staging area without discarding working edits?",
+      "difficulty": "easy",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_003",
+    "question_id": "cand_und_med_046",
+    "position": 12,
+    "response_ms": 3118,
+    "is_correct": true,
+    "points": 844,
+    "students": {
+      "name": "Student Charlie",
+      "college_id": "ENG2026003"
+    },
+    "questions": {
+      "text": "You want to create a new commit that exactly inverts the changes of a faulty commit. Which command should you use?",
+      "difficulty": "medium",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_003",
+    "question_id": "cand_und_har_051",
+    "position": 13,
+    "response_ms": 5068,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Charlie",
+      "college_id": "ENG2026003"
+    },
+    "questions": {
+      "text": "You need to undo the last commit while keeping all its modified files in the staging area. What is the command?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_003",
+    "question_id": "cand_und_har_052",
+    "position": 14,
+    "response_ms": 17049,
+    "is_correct": true,
+    "points": 200,
+    "students": {
+      "name": "Student Charlie",
+      "college_id": "ENG2026003"
+    },
+    "questions": {
+      "text": "You accidentally ran 'git reset --hard' and lost unpushed commits. Where can you find their commit hashes?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_003",
+    "question_id": "cand_adv_har_056",
+    "position": 15,
+    "response_ms": 13612,
+    "is_correct": true,
+    "points": 319,
+    "students": {
+      "name": "Student Charlie",
+      "college_id": "ENG2026003"
+    },
+    "questions": {
+      "text": "Which command applies the exact changes introduced by commit 'a1b2c3d' from another branch onto your branch?",
+      "difficulty": "hard",
+      "topic": "advanced"
+    }
+  },
+  {
+    "student_id": "stu_004",
+    "question_id": "cand_bas_eas_001",
+    "position": 1,
+    "response_ms": 12186,
+    "is_correct": true,
+    "points": 390,
+    "students": {
+      "name": "Student Diana",
+      "college_id": "ENG2026004"
+    },
+    "questions": {
+      "text": "Which command initializes a brand-new Git repository in the current folder?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_004",
+    "question_id": "cand_bas_eas_002",
+    "position": 2,
+    "response_ms": 5660,
+    "is_correct": true,
+    "points": 717,
+    "students": {
+      "name": "Student Diana",
+      "college_id": "ENG2026004"
+    },
+    "questions": {
+      "text": "Which command shows the working tree status, staged files, and untracked files?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_004",
+    "question_id": "cand_bas_med_006",
+    "position": 3,
+    "response_ms": 16254,
+    "is_correct": true,
+    "points": 200,
+    "students": {
+      "name": "Student Diana",
+      "college_id": "ENG2026004"
+    },
+    "questions": {
+      "text": "Which command stages all modified and deleted files in the entire working directory?",
+      "difficulty": "medium",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_004",
+    "question_id": "cand_bra_eas_011",
+    "position": 4,
+    "response_ms": 7925,
+    "is_correct": true,
+    "points": 603,
+    "students": {
+      "name": "Student Diana",
+      "college_id": "ENG2026004"
+    },
+    "questions": {
+      "text": "Which command creates a new branch named 'feature-login' without switching to it?",
+      "difficulty": "easy",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_004",
+    "question_id": "cand_bra_med_016",
+    "position": 5,
+    "response_ms": 3868,
+    "is_correct": true,
+    "points": 806,
+    "students": {
+      "name": "Student Diana",
+      "college_id": "ENG2026004"
+    },
+    "questions": {
+      "text": "Which modern command switches your working directory to an existing branch named 'dev'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_004",
+    "question_id": "cand_bra_med_017",
+    "position": 6,
+    "response_ms": 5218,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Diana",
+      "college_id": "ENG2026004"
+    },
+    "questions": {
+      "text": "You are on branch 'main'. Which command incorporates all commits from 'feature' into 'main'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_004",
+    "question_id": "cand_bra_har_021",
+    "position": 7,
+    "response_ms": 4947,
+    "is_correct": true,
+    "points": 752,
+    "students": {
+      "name": "Student Diana",
+      "college_id": "ENG2026004"
+    },
+    "questions": {
+      "text": "Which command aborts an ongoing merge conflict and restores the working tree to pre-merge state?",
+      "difficulty": "hard",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_004",
+    "question_id": "cand_rem_eas_026",
+    "position": 8,
+    "response_ms": 9739,
+    "is_correct": true,
+    "points": 513,
+    "students": {
+      "name": "Student Diana",
+      "college_id": "ENG2026004"
+    },
+    "questions": {
+      "text": "Which command downloads a copy of an existing remote repository onto your local computer?",
+      "difficulty": "easy",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_004",
+    "question_id": "cand_rem_med_031",
+    "position": 9,
+    "response_ms": 7938,
+    "is_correct": true,
+    "points": 603,
+    "students": {
+      "name": "Student Diana",
+      "college_id": "ENG2026004"
+    },
+    "questions": {
+      "text": "What is the difference between 'git fetch' and 'git pull'?",
+      "difficulty": "medium",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_004",
+    "question_id": "cand_rem_har_036",
+    "position": 10,
+    "response_ms": 5230,
+    "is_correct": true,
+    "points": 738,
+    "students": {
+      "name": "Student Diana",
+      "college_id": "ENG2026004"
+    },
+    "questions": {
+      "text": "Which command uploads a new local branch 'experiment' and configures upstream tracking to origin?",
+      "difficulty": "hard",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_004",
+    "question_id": "cand_und_eas_041",
+    "position": 11,
+    "response_ms": 7936,
+    "is_correct": true,
+    "points": 603,
+    "students": {
+      "name": "Student Diana",
+      "college_id": "ENG2026004"
+    },
+    "questions": {
+      "text": "Which command unstages a file 'app.js' from the staging area without discarding working edits?",
+      "difficulty": "easy",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_004",
+    "question_id": "cand_und_med_046",
+    "position": 12,
+    "response_ms": 5476,
+    "is_correct": true,
+    "points": 726,
+    "students": {
+      "name": "Student Diana",
+      "college_id": "ENG2026004"
+    },
+    "questions": {
+      "text": "You want to create a new commit that exactly inverts the changes of a faulty commit. Which command should you use?",
+      "difficulty": "medium",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_004",
+    "question_id": "cand_und_har_051",
+    "position": 13,
+    "response_ms": 14755,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Diana",
+      "college_id": "ENG2026004"
+    },
+    "questions": {
+      "text": "You need to undo the last commit while keeping all its modified files in the staging area. What is the command?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_004",
+    "question_id": "cand_und_har_052",
+    "position": 14,
+    "response_ms": 12046,
+    "is_correct": true,
+    "points": 397,
+    "students": {
+      "name": "Student Diana",
+      "college_id": "ENG2026004"
+    },
+    "questions": {
+      "text": "You accidentally ran 'git reset --hard' and lost unpushed commits. Where can you find their commit hashes?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_004",
+    "question_id": "cand_adv_har_056",
+    "position": 15,
+    "response_ms": 12434,
+    "is_correct": true,
+    "points": 378,
+    "students": {
+      "name": "Student Diana",
+      "college_id": "ENG2026004"
+    },
+    "questions": {
+      "text": "Which command applies the exact changes introduced by commit 'a1b2c3d' from another branch onto your branch?",
+      "difficulty": "hard",
+      "topic": "advanced"
+    }
+  },
+  {
+    "student_id": "stu_005",
+    "question_id": "cand_bas_eas_001",
+    "position": 1,
+    "response_ms": 5847,
+    "is_correct": true,
+    "points": 707,
+    "students": {
+      "name": "Student Ethan",
+      "college_id": "ENG2026005"
+    },
+    "questions": {
+      "text": "Which command initializes a brand-new Git repository in the current folder?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_005",
+    "question_id": "cand_bas_eas_002",
+    "position": 2,
+    "response_ms": 7487,
+    "is_correct": true,
+    "points": 625,
+    "students": {
+      "name": "Student Ethan",
+      "college_id": "ENG2026005"
+    },
+    "questions": {
+      "text": "Which command shows the working tree status, staged files, and untracked files?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_005",
+    "question_id": "cand_bas_med_006",
+    "position": 3,
+    "response_ms": 17434,
+    "is_correct": true,
+    "points": 200,
+    "students": {
+      "name": "Student Ethan",
+      "college_id": "ENG2026005"
+    },
+    "questions": {
+      "text": "Which command stages all modified and deleted files in the entire working directory?",
+      "difficulty": "medium",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_005",
+    "question_id": "cand_bra_eas_011",
+    "position": 4,
+    "response_ms": 6162,
+    "is_correct": true,
+    "points": 691,
+    "students": {
+      "name": "Student Ethan",
+      "college_id": "ENG2026005"
+    },
+    "questions": {
+      "text": "Which command creates a new branch named 'feature-login' without switching to it?",
+      "difficulty": "easy",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_005",
+    "question_id": "cand_bra_med_016",
+    "position": 5,
+    "response_ms": 16691,
+    "is_correct": true,
+    "points": 200,
+    "students": {
+      "name": "Student Ethan",
+      "college_id": "ENG2026005"
+    },
+    "questions": {
+      "text": "Which modern command switches your working directory to an existing branch named 'dev'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_005",
+    "question_id": "cand_bra_med_017",
+    "position": 6,
+    "response_ms": 13135,
+    "is_correct": true,
+    "points": 343,
+    "students": {
+      "name": "Student Ethan",
+      "college_id": "ENG2026005"
+    },
+    "questions": {
+      "text": "You are on branch 'main'. Which command incorporates all commits from 'feature' into 'main'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_005",
+    "question_id": "cand_bra_har_021",
+    "position": 7,
+    "response_ms": 17634,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Ethan",
+      "college_id": "ENG2026005"
+    },
+    "questions": {
+      "text": "Which command aborts an ongoing merge conflict and restores the working tree to pre-merge state?",
+      "difficulty": "hard",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_005",
+    "question_id": "cand_rem_eas_026",
+    "position": 8,
+    "response_ms": 11510,
+    "is_correct": true,
+    "points": 424,
+    "students": {
+      "name": "Student Ethan",
+      "college_id": "ENG2026005"
+    },
+    "questions": {
+      "text": "Which command downloads a copy of an existing remote repository onto your local computer?",
+      "difficulty": "easy",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_005",
+    "question_id": "cand_rem_med_031",
+    "position": 9,
+    "response_ms": 10133,
+    "is_correct": true,
+    "points": 493,
+    "students": {
+      "name": "Student Ethan",
+      "college_id": "ENG2026005"
+    },
+    "questions": {
+      "text": "What is the difference between 'git fetch' and 'git pull'?",
+      "difficulty": "medium",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_005",
+    "question_id": "cand_rem_har_036",
+    "position": 10,
+    "response_ms": 11778,
+    "is_correct": true,
+    "points": 411,
+    "students": {
+      "name": "Student Ethan",
+      "college_id": "ENG2026005"
+    },
+    "questions": {
+      "text": "Which command uploads a new local branch 'experiment' and configures upstream tracking to origin?",
+      "difficulty": "hard",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_005",
+    "question_id": "cand_und_eas_041",
+    "position": 11,
+    "response_ms": 13520,
+    "is_correct": true,
+    "points": 323,
+    "students": {
+      "name": "Student Ethan",
+      "college_id": "ENG2026005"
+    },
+    "questions": {
+      "text": "Which command unstages a file 'app.js' from the staging area without discarding working edits?",
+      "difficulty": "easy",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_005",
+    "question_id": "cand_und_med_046",
+    "position": 12,
+    "response_ms": 10570,
+    "is_correct": true,
+    "points": 471,
+    "students": {
+      "name": "Student Ethan",
+      "college_id": "ENG2026005"
+    },
+    "questions": {
+      "text": "You want to create a new commit that exactly inverts the changes of a faulty commit. Which command should you use?",
+      "difficulty": "medium",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_005",
+    "question_id": "cand_und_har_051",
+    "position": 13,
+    "response_ms": 17770,
+    "is_correct": true,
+    "points": 200,
+    "students": {
+      "name": "Student Ethan",
+      "college_id": "ENG2026005"
+    },
+    "questions": {
+      "text": "You need to undo the last commit while keeping all its modified files in the staging area. What is the command?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_005",
+    "question_id": "cand_und_har_052",
+    "position": 14,
+    "response_ms": 10860,
+    "is_correct": true,
+    "points": 456,
+    "students": {
+      "name": "Student Ethan",
+      "college_id": "ENG2026005"
+    },
+    "questions": {
+      "text": "You accidentally ran 'git reset --hard' and lost unpushed commits. Where can you find their commit hashes?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_005",
+    "question_id": "cand_adv_har_056",
+    "position": 15,
+    "response_ms": 9971,
+    "is_correct": true,
+    "points": 501,
+    "students": {
+      "name": "Student Ethan",
+      "college_id": "ENG2026005"
+    },
+    "questions": {
+      "text": "Which command applies the exact changes introduced by commit 'a1b2c3d' from another branch onto your branch?",
+      "difficulty": "hard",
+      "topic": "advanced"
+    }
+  },
+  {
+    "student_id": "stu_006",
+    "question_id": "cand_bas_eas_001",
+    "position": 1,
+    "response_ms": 10021,
+    "is_correct": true,
+    "points": 498,
+    "students": {
+      "name": "Student Fiona",
+      "college_id": "ENG2026006"
+    },
+    "questions": {
+      "text": "Which command initializes a brand-new Git repository in the current folder?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_006",
+    "question_id": "cand_bas_eas_002",
+    "position": 2,
+    "response_ms": 11480,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Fiona",
+      "college_id": "ENG2026006"
+    },
+    "questions": {
+      "text": "Which command shows the working tree status, staged files, and untracked files?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_006",
+    "question_id": "cand_bas_med_006",
+    "position": 3,
+    "response_ms": 15312,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Fiona",
+      "college_id": "ENG2026006"
+    },
+    "questions": {
+      "text": "Which command stages all modified and deleted files in the entire working directory?",
+      "difficulty": "medium",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_006",
+    "question_id": "cand_bra_eas_011",
+    "position": 4,
+    "response_ms": 3655,
+    "is_correct": true,
+    "points": 817,
+    "students": {
+      "name": "Student Fiona",
+      "college_id": "ENG2026006"
+    },
+    "questions": {
+      "text": "Which command creates a new branch named 'feature-login' without switching to it?",
+      "difficulty": "easy",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_006",
+    "question_id": "cand_bra_med_016",
+    "position": 5,
+    "response_ms": 13685,
+    "is_correct": true,
+    "points": 315,
+    "students": {
+      "name": "Student Fiona",
+      "college_id": "ENG2026006"
+    },
+    "questions": {
+      "text": "Which modern command switches your working directory to an existing branch named 'dev'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_006",
+    "question_id": "cand_bra_med_017",
+    "position": 6,
+    "response_ms": 12142,
+    "is_correct": true,
+    "points": 392,
+    "students": {
+      "name": "Student Fiona",
+      "college_id": "ENG2026006"
+    },
+    "questions": {
+      "text": "You are on branch 'main'. Which command incorporates all commits from 'feature' into 'main'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_006",
+    "question_id": "cand_bra_har_021",
+    "position": 7,
+    "response_ms": 13530,
+    "is_correct": true,
+    "points": 323,
+    "students": {
+      "name": "Student Fiona",
+      "college_id": "ENG2026006"
+    },
+    "questions": {
+      "text": "Which command aborts an ongoing merge conflict and restores the working tree to pre-merge state?",
+      "difficulty": "hard",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_006",
+    "question_id": "cand_rem_eas_026",
+    "position": 8,
+    "response_ms": 5115,
+    "is_correct": true,
+    "points": 744,
+    "students": {
+      "name": "Student Fiona",
+      "college_id": "ENG2026006"
+    },
+    "questions": {
+      "text": "Which command downloads a copy of an existing remote repository onto your local computer?",
+      "difficulty": "easy",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_006",
+    "question_id": "cand_rem_med_031",
+    "position": 9,
+    "response_ms": 8857,
+    "is_correct": true,
+    "points": 557,
+    "students": {
+      "name": "Student Fiona",
+      "college_id": "ENG2026006"
+    },
+    "questions": {
+      "text": "What is the difference between 'git fetch' and 'git pull'?",
+      "difficulty": "medium",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_006",
+    "question_id": "cand_rem_har_036",
+    "position": 10,
+    "response_ms": 12532,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Fiona",
+      "college_id": "ENG2026006"
+    },
+    "questions": {
+      "text": "Which command uploads a new local branch 'experiment' and configures upstream tracking to origin?",
+      "difficulty": "hard",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_006",
+    "question_id": "cand_und_eas_041",
+    "position": 11,
+    "response_ms": 12687,
+    "is_correct": true,
+    "points": 365,
+    "students": {
+      "name": "Student Fiona",
+      "college_id": "ENG2026006"
+    },
+    "questions": {
+      "text": "Which command unstages a file 'app.js' from the staging area without discarding working edits?",
+      "difficulty": "easy",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_006",
+    "question_id": "cand_und_med_046",
+    "position": 12,
+    "response_ms": 13348,
+    "is_correct": true,
+    "points": 332,
+    "students": {
+      "name": "Student Fiona",
+      "college_id": "ENG2026006"
+    },
+    "questions": {
+      "text": "You want to create a new commit that exactly inverts the changes of a faulty commit. Which command should you use?",
+      "difficulty": "medium",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_006",
+    "question_id": "cand_und_har_051",
+    "position": 13,
+    "response_ms": 16373,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Fiona",
+      "college_id": "ENG2026006"
+    },
+    "questions": {
+      "text": "You need to undo the last commit while keeping all its modified files in the staging area. What is the command?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_006",
+    "question_id": "cand_und_har_052",
+    "position": 14,
+    "response_ms": 17960,
+    "is_correct": true,
+    "points": 200,
+    "students": {
+      "name": "Student Fiona",
+      "college_id": "ENG2026006"
+    },
+    "questions": {
+      "text": "You accidentally ran 'git reset --hard' and lost unpushed commits. Where can you find their commit hashes?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_006",
+    "question_id": "cand_adv_har_056",
+    "position": 15,
+    "response_ms": 17557,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Fiona",
+      "college_id": "ENG2026006"
+    },
+    "questions": {
+      "text": "Which command applies the exact changes introduced by commit 'a1b2c3d' from another branch onto your branch?",
+      "difficulty": "hard",
+      "topic": "advanced"
+    }
+  },
+  {
+    "student_id": "stu_007",
+    "question_id": "cand_bas_eas_001",
+    "position": 1,
+    "response_ms": 5494,
+    "is_correct": true,
+    "points": 725,
+    "students": {
+      "name": "Student George",
+      "college_id": "ENG2026007"
+    },
+    "questions": {
+      "text": "Which command initializes a brand-new Git repository in the current folder?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_007",
+    "question_id": "cand_bas_eas_002",
+    "position": 2,
+    "response_ms": 12004,
+    "is_correct": true,
+    "points": 399,
+    "students": {
+      "name": "Student George",
+      "college_id": "ENG2026007"
+    },
+    "questions": {
+      "text": "Which command shows the working tree status, staged files, and untracked files?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_007",
+    "question_id": "cand_bas_med_006",
+    "position": 3,
+    "response_ms": 10827,
+    "is_correct": true,
+    "points": 458,
+    "students": {
+      "name": "Student George",
+      "college_id": "ENG2026007"
+    },
+    "questions": {
+      "text": "Which command stages all modified and deleted files in the entire working directory?",
+      "difficulty": "medium",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_007",
+    "question_id": "cand_bra_eas_011",
+    "position": 4,
+    "response_ms": 7555,
+    "is_correct": true,
+    "points": 622,
+    "students": {
+      "name": "Student George",
+      "college_id": "ENG2026007"
+    },
+    "questions": {
+      "text": "Which command creates a new branch named 'feature-login' without switching to it?",
+      "difficulty": "easy",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_007",
+    "question_id": "cand_bra_med_016",
+    "position": 5,
+    "response_ms": 16415,
+    "is_correct": true,
+    "points": 200,
+    "students": {
+      "name": "Student George",
+      "college_id": "ENG2026007"
+    },
+    "questions": {
+      "text": "Which modern command switches your working directory to an existing branch named 'dev'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_007",
+    "question_id": "cand_bra_med_017",
+    "position": 6,
+    "response_ms": 5066,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student George",
+      "college_id": "ENG2026007"
+    },
+    "questions": {
+      "text": "You are on branch 'main'. Which command incorporates all commits from 'feature' into 'main'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_007",
+    "question_id": "cand_bra_har_021",
+    "position": 7,
+    "response_ms": 13446,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student George",
+      "college_id": "ENG2026007"
+    },
+    "questions": {
+      "text": "Which command aborts an ongoing merge conflict and restores the working tree to pre-merge state?",
+      "difficulty": "hard",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_007",
+    "question_id": "cand_rem_eas_026",
+    "position": 8,
+    "response_ms": 8136,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student George",
+      "college_id": "ENG2026007"
+    },
+    "questions": {
+      "text": "Which command downloads a copy of an existing remote repository onto your local computer?",
+      "difficulty": "easy",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_007",
+    "question_id": "cand_rem_med_031",
+    "position": 9,
+    "response_ms": 14113,
+    "is_correct": true,
+    "points": 294,
+    "students": {
+      "name": "Student George",
+      "college_id": "ENG2026007"
+    },
+    "questions": {
+      "text": "What is the difference between 'git fetch' and 'git pull'?",
+      "difficulty": "medium",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_007",
+    "question_id": "cand_rem_har_036",
+    "position": 10,
+    "response_ms": 11551,
+    "is_correct": true,
+    "points": 422,
+    "students": {
+      "name": "Student George",
+      "college_id": "ENG2026007"
+    },
+    "questions": {
+      "text": "Which command uploads a new local branch 'experiment' and configures upstream tracking to origin?",
+      "difficulty": "hard",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_007",
+    "question_id": "cand_und_eas_041",
+    "position": 11,
+    "response_ms": 14025,
+    "is_correct": true,
+    "points": 298,
+    "students": {
+      "name": "Student George",
+      "college_id": "ENG2026007"
+    },
+    "questions": {
+      "text": "Which command unstages a file 'app.js' from the staging area without discarding working edits?",
+      "difficulty": "easy",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_007",
+    "question_id": "cand_und_med_046",
+    "position": 12,
+    "response_ms": 5548,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student George",
+      "college_id": "ENG2026007"
+    },
+    "questions": {
+      "text": "You want to create a new commit that exactly inverts the changes of a faulty commit. Which command should you use?",
+      "difficulty": "medium",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_007",
+    "question_id": "cand_und_har_051",
+    "position": 13,
+    "response_ms": 14461,
+    "is_correct": true,
+    "points": 276,
+    "students": {
+      "name": "Student George",
+      "college_id": "ENG2026007"
+    },
+    "questions": {
+      "text": "You need to undo the last commit while keeping all its modified files in the staging area. What is the command?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_007",
+    "question_id": "cand_und_har_052",
+    "position": 14,
+    "response_ms": 9178,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student George",
+      "college_id": "ENG2026007"
+    },
+    "questions": {
+      "text": "You accidentally ran 'git reset --hard' and lost unpushed commits. Where can you find their commit hashes?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_007",
+    "question_id": "cand_adv_har_056",
+    "position": 15,
+    "response_ms": 9047,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student George",
+      "college_id": "ENG2026007"
+    },
+    "questions": {
+      "text": "Which command applies the exact changes introduced by commit 'a1b2c3d' from another branch onto your branch?",
+      "difficulty": "hard",
+      "topic": "advanced"
+    }
+  },
+  {
+    "student_id": "stu_008",
+    "question_id": "cand_bas_eas_001",
+    "position": 1,
+    "response_ms": 9179,
+    "is_correct": true,
+    "points": 541,
+    "students": {
+      "name": "Student Hannah",
+      "college_id": "ENG2026008"
+    },
+    "questions": {
+      "text": "Which command initializes a brand-new Git repository in the current folder?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_008",
+    "question_id": "cand_bas_eas_002",
+    "position": 2,
+    "response_ms": 14689,
+    "is_correct": true,
+    "points": 265,
+    "students": {
+      "name": "Student Hannah",
+      "college_id": "ENG2026008"
+    },
+    "questions": {
+      "text": "Which command shows the working tree status, staged files, and untracked files?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_008",
+    "question_id": "cand_bas_med_006",
+    "position": 3,
+    "response_ms": 14539,
+    "is_correct": true,
+    "points": 273,
+    "students": {
+      "name": "Student Hannah",
+      "college_id": "ENG2026008"
+    },
+    "questions": {
+      "text": "Which command stages all modified and deleted files in the entire working directory?",
+      "difficulty": "medium",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_008",
+    "question_id": "cand_bra_eas_011",
+    "position": 4,
+    "response_ms": 7502,
+    "is_correct": true,
+    "points": 624,
+    "students": {
+      "name": "Student Hannah",
+      "college_id": "ENG2026008"
+    },
+    "questions": {
+      "text": "Which command creates a new branch named 'feature-login' without switching to it?",
+      "difficulty": "easy",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_008",
+    "question_id": "cand_bra_med_016",
+    "position": 5,
+    "response_ms": 7360,
+    "is_correct": true,
+    "points": 632,
+    "students": {
+      "name": "Student Hannah",
+      "college_id": "ENG2026008"
+    },
+    "questions": {
+      "text": "Which modern command switches your working directory to an existing branch named 'dev'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_008",
+    "question_id": "cand_bra_med_017",
+    "position": 6,
+    "response_ms": 11615,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Hannah",
+      "college_id": "ENG2026008"
+    },
+    "questions": {
+      "text": "You are on branch 'main'. Which command incorporates all commits from 'feature' into 'main'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_008",
+    "question_id": "cand_bra_har_021",
+    "position": 7,
+    "response_ms": 5192,
+    "is_correct": true,
+    "points": 740,
+    "students": {
+      "name": "Student Hannah",
+      "college_id": "ENG2026008"
+    },
+    "questions": {
+      "text": "Which command aborts an ongoing merge conflict and restores the working tree to pre-merge state?",
+      "difficulty": "hard",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_008",
+    "question_id": "cand_rem_eas_026",
+    "position": 8,
+    "response_ms": 16378,
+    "is_correct": true,
+    "points": 200,
+    "students": {
+      "name": "Student Hannah",
+      "college_id": "ENG2026008"
+    },
+    "questions": {
+      "text": "Which command downloads a copy of an existing remote repository onto your local computer?",
+      "difficulty": "easy",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_008",
+    "question_id": "cand_rem_med_031",
+    "position": 9,
+    "response_ms": 13504,
+    "is_correct": true,
+    "points": 324,
+    "students": {
+      "name": "Student Hannah",
+      "college_id": "ENG2026008"
+    },
+    "questions": {
+      "text": "What is the difference between 'git fetch' and 'git pull'?",
+      "difficulty": "medium",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_008",
+    "question_id": "cand_rem_har_036",
+    "position": 10,
+    "response_ms": 15953,
+    "is_correct": true,
+    "points": 202,
+    "students": {
+      "name": "Student Hannah",
+      "college_id": "ENG2026008"
+    },
+    "questions": {
+      "text": "Which command uploads a new local branch 'experiment' and configures upstream tracking to origin?",
+      "difficulty": "hard",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_008",
+    "question_id": "cand_und_eas_041",
+    "position": 11,
+    "response_ms": 11330,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Hannah",
+      "college_id": "ENG2026008"
+    },
+    "questions": {
+      "text": "Which command unstages a file 'app.js' from the staging area without discarding working edits?",
+      "difficulty": "easy",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_008",
+    "question_id": "cand_und_med_046",
+    "position": 12,
+    "response_ms": 12803,
+    "is_correct": true,
+    "points": 359,
+    "students": {
+      "name": "Student Hannah",
+      "college_id": "ENG2026008"
+    },
+    "questions": {
+      "text": "You want to create a new commit that exactly inverts the changes of a faulty commit. Which command should you use?",
+      "difficulty": "medium",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_008",
+    "question_id": "cand_und_har_051",
+    "position": 13,
+    "response_ms": 14511,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Hannah",
+      "college_id": "ENG2026008"
+    },
+    "questions": {
+      "text": "You need to undo the last commit while keeping all its modified files in the staging area. What is the command?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_008",
+    "question_id": "cand_und_har_052",
+    "position": 14,
+    "response_ms": 11623,
+    "is_correct": true,
+    "points": 418,
+    "students": {
+      "name": "Student Hannah",
+      "college_id": "ENG2026008"
+    },
+    "questions": {
+      "text": "You accidentally ran 'git reset --hard' and lost unpushed commits. Where can you find their commit hashes?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_008",
+    "question_id": "cand_adv_har_056",
+    "position": 15,
+    "response_ms": 8960,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Hannah",
+      "college_id": "ENG2026008"
+    },
+    "questions": {
+      "text": "Which command applies the exact changes introduced by commit 'a1b2c3d' from another branch onto your branch?",
+      "difficulty": "hard",
+      "topic": "advanced"
+    }
+  },
+  {
+    "student_id": "stu_009",
+    "question_id": "cand_bas_eas_001",
+    "position": 1,
+    "response_ms": 7865,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Ian",
+      "college_id": "ENG2026009"
+    },
+    "questions": {
+      "text": "Which command initializes a brand-new Git repository in the current folder?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_009",
+    "question_id": "cand_bas_eas_002",
+    "position": 2,
+    "response_ms": 7973,
+    "is_correct": true,
+    "points": 601,
+    "students": {
+      "name": "Student Ian",
+      "college_id": "ENG2026009"
+    },
+    "questions": {
+      "text": "Which command shows the working tree status, staged files, and untracked files?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_009",
+    "question_id": "cand_bas_med_006",
+    "position": 3,
+    "response_ms": 5146,
+    "is_correct": true,
+    "points": 742,
+    "students": {
+      "name": "Student Ian",
+      "college_id": "ENG2026009"
+    },
+    "questions": {
+      "text": "Which command stages all modified and deleted files in the entire working directory?",
+      "difficulty": "medium",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_009",
+    "question_id": "cand_bra_eas_011",
+    "position": 4,
+    "response_ms": 16618,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Ian",
+      "college_id": "ENG2026009"
+    },
+    "questions": {
+      "text": "Which command creates a new branch named 'feature-login' without switching to it?",
+      "difficulty": "easy",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_009",
+    "question_id": "cand_bra_med_016",
+    "position": 5,
+    "response_ms": 13948,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Ian",
+      "college_id": "ENG2026009"
+    },
+    "questions": {
+      "text": "Which modern command switches your working directory to an existing branch named 'dev'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_009",
+    "question_id": "cand_bra_med_017",
+    "position": 6,
+    "response_ms": 7664,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Ian",
+      "college_id": "ENG2026009"
+    },
+    "questions": {
+      "text": "You are on branch 'main'. Which command incorporates all commits from 'feature' into 'main'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_009",
+    "question_id": "cand_bra_har_021",
+    "position": 7,
+    "response_ms": 9737,
+    "is_correct": true,
+    "points": 513,
+    "students": {
+      "name": "Student Ian",
+      "college_id": "ENG2026009"
+    },
+    "questions": {
+      "text": "Which command aborts an ongoing merge conflict and restores the working tree to pre-merge state?",
+      "difficulty": "hard",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_009",
+    "question_id": "cand_rem_eas_026",
+    "position": 8,
+    "response_ms": 6051,
+    "is_correct": true,
+    "points": 697,
+    "students": {
+      "name": "Student Ian",
+      "college_id": "ENG2026009"
+    },
+    "questions": {
+      "text": "Which command downloads a copy of an existing remote repository onto your local computer?",
+      "difficulty": "easy",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_009",
+    "question_id": "cand_rem_med_031",
+    "position": 9,
+    "response_ms": 15614,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Ian",
+      "college_id": "ENG2026009"
+    },
+    "questions": {
+      "text": "What is the difference between 'git fetch' and 'git pull'?",
+      "difficulty": "medium",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_009",
+    "question_id": "cand_rem_har_036",
+    "position": 10,
+    "response_ms": 16436,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Ian",
+      "college_id": "ENG2026009"
+    },
+    "questions": {
+      "text": "Which command uploads a new local branch 'experiment' and configures upstream tracking to origin?",
+      "difficulty": "hard",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_009",
+    "question_id": "cand_und_eas_041",
+    "position": 11,
+    "response_ms": 3587,
+    "is_correct": true,
+    "points": 820,
+    "students": {
+      "name": "Student Ian",
+      "college_id": "ENG2026009"
+    },
+    "questions": {
+      "text": "Which command unstages a file 'app.js' from the staging area without discarding working edits?",
+      "difficulty": "easy",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_009",
+    "question_id": "cand_und_med_046",
+    "position": 12,
+    "response_ms": 10523,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Ian",
+      "college_id": "ENG2026009"
+    },
+    "questions": {
+      "text": "You want to create a new commit that exactly inverts the changes of a faulty commit. Which command should you use?",
+      "difficulty": "medium",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_009",
+    "question_id": "cand_und_har_051",
+    "position": 13,
+    "response_ms": 4107,
+    "is_correct": true,
+    "points": 794,
+    "students": {
+      "name": "Student Ian",
+      "college_id": "ENG2026009"
+    },
+    "questions": {
+      "text": "You need to undo the last commit while keeping all its modified files in the staging area. What is the command?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_009",
+    "question_id": "cand_und_har_052",
+    "position": 14,
+    "response_ms": 17469,
+    "is_correct": true,
+    "points": 200,
+    "students": {
+      "name": "Student Ian",
+      "college_id": "ENG2026009"
+    },
+    "questions": {
+      "text": "You accidentally ran 'git reset --hard' and lost unpushed commits. Where can you find their commit hashes?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_009",
+    "question_id": "cand_adv_har_056",
+    "position": 15,
+    "response_ms": 8367,
+    "is_correct": true,
+    "points": 581,
+    "students": {
+      "name": "Student Ian",
+      "college_id": "ENG2026009"
+    },
+    "questions": {
+      "text": "Which command applies the exact changes introduced by commit 'a1b2c3d' from another branch onto your branch?",
+      "difficulty": "hard",
+      "topic": "advanced"
+    }
+  },
+  {
+    "student_id": "stu_010",
+    "question_id": "cand_bas_eas_001",
+    "position": 1,
+    "response_ms": 11878,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Julia",
+      "college_id": "ENG2026010"
+    },
+    "questions": {
+      "text": "Which command initializes a brand-new Git repository in the current folder?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_010",
+    "question_id": "cand_bas_eas_002",
+    "position": 2,
+    "response_ms": 6981,
+    "is_correct": true,
+    "points": 650,
+    "students": {
+      "name": "Student Julia",
+      "college_id": "ENG2026010"
+    },
+    "questions": {
+      "text": "Which command shows the working tree status, staged files, and untracked files?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_010",
+    "question_id": "cand_bas_med_006",
+    "position": 3,
+    "response_ms": 9784,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Julia",
+      "college_id": "ENG2026010"
+    },
+    "questions": {
+      "text": "Which command stages all modified and deleted files in the entire working directory?",
+      "difficulty": "medium",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_010",
+    "question_id": "cand_bra_eas_011",
+    "position": 4,
+    "response_ms": 15344,
+    "is_correct": true,
+    "points": 232,
+    "students": {
+      "name": "Student Julia",
+      "college_id": "ENG2026010"
+    },
+    "questions": {
+      "text": "Which command creates a new branch named 'feature-login' without switching to it?",
+      "difficulty": "easy",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_010",
+    "question_id": "cand_bra_med_016",
+    "position": 5,
+    "response_ms": 7854,
+    "is_correct": true,
+    "points": 607,
+    "students": {
+      "name": "Student Julia",
+      "college_id": "ENG2026010"
+    },
+    "questions": {
+      "text": "Which modern command switches your working directory to an existing branch named 'dev'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_010",
+    "question_id": "cand_bra_med_017",
+    "position": 6,
+    "response_ms": 7398,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Julia",
+      "college_id": "ENG2026010"
+    },
+    "questions": {
+      "text": "You are on branch 'main'. Which command incorporates all commits from 'feature' into 'main'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_010",
+    "question_id": "cand_bra_har_021",
+    "position": 7,
+    "response_ms": 15154,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Julia",
+      "college_id": "ENG2026010"
+    },
+    "questions": {
+      "text": "Which command aborts an ongoing merge conflict and restores the working tree to pre-merge state?",
+      "difficulty": "hard",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_010",
+    "question_id": "cand_rem_eas_026",
+    "position": 8,
+    "response_ms": 7027,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Julia",
+      "college_id": "ENG2026010"
+    },
+    "questions": {
+      "text": "Which command downloads a copy of an existing remote repository onto your local computer?",
+      "difficulty": "easy",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_010",
+    "question_id": "cand_rem_med_031",
+    "position": 9,
+    "response_ms": 4475,
+    "is_correct": true,
+    "points": 776,
+    "students": {
+      "name": "Student Julia",
+      "college_id": "ENG2026010"
+    },
+    "questions": {
+      "text": "What is the difference between 'git fetch' and 'git pull'?",
+      "difficulty": "medium",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_010",
+    "question_id": "cand_rem_har_036",
+    "position": 10,
+    "response_ms": 14972,
+    "is_correct": true,
+    "points": 251,
+    "students": {
+      "name": "Student Julia",
+      "college_id": "ENG2026010"
+    },
+    "questions": {
+      "text": "Which command uploads a new local branch 'experiment' and configures upstream tracking to origin?",
+      "difficulty": "hard",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_010",
+    "question_id": "cand_und_eas_041",
+    "position": 11,
+    "response_ms": 14000,
+    "is_correct": true,
+    "points": 300,
+    "students": {
+      "name": "Student Julia",
+      "college_id": "ENG2026010"
+    },
+    "questions": {
+      "text": "Which command unstages a file 'app.js' from the staging area without discarding working edits?",
+      "difficulty": "easy",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_010",
+    "question_id": "cand_und_med_046",
+    "position": 12,
+    "response_ms": 10329,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Julia",
+      "college_id": "ENG2026010"
+    },
+    "questions": {
+      "text": "You want to create a new commit that exactly inverts the changes of a faulty commit. Which command should you use?",
+      "difficulty": "medium",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_010",
+    "question_id": "cand_und_har_051",
+    "position": 13,
+    "response_ms": 3918,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Julia",
+      "college_id": "ENG2026010"
+    },
+    "questions": {
+      "text": "You need to undo the last commit while keeping all its modified files in the staging area. What is the command?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_010",
+    "question_id": "cand_und_har_052",
+    "position": 14,
+    "response_ms": 17157,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Julia",
+      "college_id": "ENG2026010"
+    },
+    "questions": {
+      "text": "You accidentally ran 'git reset --hard' and lost unpushed commits. Where can you find their commit hashes?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_010",
+    "question_id": "cand_adv_har_056",
+    "position": 15,
+    "response_ms": 4786,
+    "is_correct": true,
+    "points": 760,
+    "students": {
+      "name": "Student Julia",
+      "college_id": "ENG2026010"
+    },
+    "questions": {
+      "text": "Which command applies the exact changes introduced by commit 'a1b2c3d' from another branch onto your branch?",
+      "difficulty": "hard",
+      "topic": "advanced"
+    }
+  },
+  {
+    "student_id": "stu_011",
+    "question_id": "cand_bas_eas_001",
+    "position": 1,
+    "response_ms": 16131,
+    "is_correct": true,
+    "points": 200,
+    "students": {
+      "name": "Student Kevin",
+      "college_id": "ENG2026011"
+    },
+    "questions": {
+      "text": "Which command initializes a brand-new Git repository in the current folder?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_011",
+    "question_id": "cand_bas_eas_002",
+    "position": 2,
+    "response_ms": 8207,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Kevin",
+      "college_id": "ENG2026011"
+    },
+    "questions": {
+      "text": "Which command shows the working tree status, staged files, and untracked files?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_011",
+    "question_id": "cand_bas_med_006",
+    "position": 3,
+    "response_ms": 3717,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Kevin",
+      "college_id": "ENG2026011"
+    },
+    "questions": {
+      "text": "Which command stages all modified and deleted files in the entire working directory?",
+      "difficulty": "medium",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_011",
+    "question_id": "cand_bra_eas_011",
+    "position": 4,
+    "response_ms": 6884,
+    "is_correct": true,
+    "points": 655,
+    "students": {
+      "name": "Student Kevin",
+      "college_id": "ENG2026011"
+    },
+    "questions": {
+      "text": "Which command creates a new branch named 'feature-login' without switching to it?",
+      "difficulty": "easy",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_011",
+    "question_id": "cand_bra_med_016",
+    "position": 5,
+    "response_ms": 5652,
+    "is_correct": true,
+    "points": 717,
+    "students": {
+      "name": "Student Kevin",
+      "college_id": "ENG2026011"
+    },
+    "questions": {
+      "text": "Which modern command switches your working directory to an existing branch named 'dev'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_011",
+    "question_id": "cand_bra_med_017",
+    "position": 6,
+    "response_ms": 3083,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Kevin",
+      "college_id": "ENG2026011"
+    },
+    "questions": {
+      "text": "You are on branch 'main'. Which command incorporates all commits from 'feature' into 'main'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_011",
+    "question_id": "cand_bra_har_021",
+    "position": 7,
+    "response_ms": 11275,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Kevin",
+      "college_id": "ENG2026011"
+    },
+    "questions": {
+      "text": "Which command aborts an ongoing merge conflict and restores the working tree to pre-merge state?",
+      "difficulty": "hard",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_011",
+    "question_id": "cand_rem_eas_026",
+    "position": 8,
+    "response_ms": 8444,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Kevin",
+      "college_id": "ENG2026011"
+    },
+    "questions": {
+      "text": "Which command downloads a copy of an existing remote repository onto your local computer?",
+      "difficulty": "easy",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_011",
+    "question_id": "cand_rem_med_031",
+    "position": 9,
+    "response_ms": 5569,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Kevin",
+      "college_id": "ENG2026011"
+    },
+    "questions": {
+      "text": "What is the difference between 'git fetch' and 'git pull'?",
+      "difficulty": "medium",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_011",
+    "question_id": "cand_rem_har_036",
+    "position": 10,
+    "response_ms": 15743,
+    "is_correct": true,
+    "points": 212,
+    "students": {
+      "name": "Student Kevin",
+      "college_id": "ENG2026011"
+    },
+    "questions": {
+      "text": "Which command uploads a new local branch 'experiment' and configures upstream tracking to origin?",
+      "difficulty": "hard",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_011",
+    "question_id": "cand_und_eas_041",
+    "position": 11,
+    "response_ms": 17695,
+    "is_correct": true,
+    "points": 200,
+    "students": {
+      "name": "Student Kevin",
+      "college_id": "ENG2026011"
+    },
+    "questions": {
+      "text": "Which command unstages a file 'app.js' from the staging area without discarding working edits?",
+      "difficulty": "easy",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_011",
+    "question_id": "cand_und_med_046",
+    "position": 12,
+    "response_ms": 3308,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Kevin",
+      "college_id": "ENG2026011"
+    },
+    "questions": {
+      "text": "You want to create a new commit that exactly inverts the changes of a faulty commit. Which command should you use?",
+      "difficulty": "medium",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_011",
+    "question_id": "cand_und_har_051",
+    "position": 13,
+    "response_ms": 14690,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Kevin",
+      "college_id": "ENG2026011"
+    },
+    "questions": {
+      "text": "You need to undo the last commit while keeping all its modified files in the staging area. What is the command?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_011",
+    "question_id": "cand_und_har_052",
+    "position": 14,
+    "response_ms": 5821,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Kevin",
+      "college_id": "ENG2026011"
+    },
+    "questions": {
+      "text": "You accidentally ran 'git reset --hard' and lost unpushed commits. Where can you find their commit hashes?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_011",
+    "question_id": "cand_adv_har_056",
+    "position": 15,
+    "response_ms": 8746,
+    "is_correct": true,
+    "points": 562,
+    "students": {
+      "name": "Student Kevin",
+      "college_id": "ENG2026011"
+    },
+    "questions": {
+      "text": "Which command applies the exact changes introduced by commit 'a1b2c3d' from another branch onto your branch?",
+      "difficulty": "hard",
+      "topic": "advanced"
+    }
+  },
+  {
+    "student_id": "stu_012",
+    "question_id": "cand_bas_eas_001",
+    "position": 1,
+    "response_ms": 6760,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Laura",
+      "college_id": "ENG2026012"
+    },
+    "questions": {
+      "text": "Which command initializes a brand-new Git repository in the current folder?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_012",
+    "question_id": "cand_bas_eas_002",
+    "position": 2,
+    "response_ms": 5033,
+    "is_correct": true,
+    "points": 748,
+    "students": {
+      "name": "Student Laura",
+      "college_id": "ENG2026012"
+    },
+    "questions": {
+      "text": "Which command shows the working tree status, staged files, and untracked files?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_012",
+    "question_id": "cand_bas_med_006",
+    "position": 3,
+    "response_ms": 17882,
+    "is_correct": true,
+    "points": 200,
+    "students": {
+      "name": "Student Laura",
+      "college_id": "ENG2026012"
+    },
+    "questions": {
+      "text": "Which command stages all modified and deleted files in the entire working directory?",
+      "difficulty": "medium",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_012",
+    "question_id": "cand_bra_eas_011",
+    "position": 4,
+    "response_ms": 4223,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Laura",
+      "college_id": "ENG2026012"
+    },
+    "questions": {
+      "text": "Which command creates a new branch named 'feature-login' without switching to it?",
+      "difficulty": "easy",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_012",
+    "question_id": "cand_bra_med_016",
+    "position": 5,
+    "response_ms": 5617,
+    "is_correct": true,
+    "points": 719,
+    "students": {
+      "name": "Student Laura",
+      "college_id": "ENG2026012"
+    },
+    "questions": {
+      "text": "Which modern command switches your working directory to an existing branch named 'dev'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_012",
+    "question_id": "cand_bra_med_017",
+    "position": 6,
+    "response_ms": 9818,
+    "is_correct": true,
+    "points": 509,
+    "students": {
+      "name": "Student Laura",
+      "college_id": "ENG2026012"
+    },
+    "questions": {
+      "text": "You are on branch 'main'. Which command incorporates all commits from 'feature' into 'main'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_012",
+    "question_id": "cand_bra_har_021",
+    "position": 7,
+    "response_ms": 17677,
+    "is_correct": true,
+    "points": 200,
+    "students": {
+      "name": "Student Laura",
+      "college_id": "ENG2026012"
+    },
+    "questions": {
+      "text": "Which command aborts an ongoing merge conflict and restores the working tree to pre-merge state?",
+      "difficulty": "hard",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_012",
+    "question_id": "cand_rem_eas_026",
+    "position": 8,
+    "response_ms": 5081,
+    "is_correct": true,
+    "points": 745,
+    "students": {
+      "name": "Student Laura",
+      "college_id": "ENG2026012"
+    },
+    "questions": {
+      "text": "Which command downloads a copy of an existing remote repository onto your local computer?",
+      "difficulty": "easy",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_012",
+    "question_id": "cand_rem_med_031",
+    "position": 9,
+    "response_ms": 5530,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Laura",
+      "college_id": "ENG2026012"
+    },
+    "questions": {
+      "text": "What is the difference between 'git fetch' and 'git pull'?",
+      "difficulty": "medium",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_012",
+    "question_id": "cand_rem_har_036",
+    "position": 10,
+    "response_ms": 14716,
+    "is_correct": true,
+    "points": 264,
+    "students": {
+      "name": "Student Laura",
+      "college_id": "ENG2026012"
+    },
+    "questions": {
+      "text": "Which command uploads a new local branch 'experiment' and configures upstream tracking to origin?",
+      "difficulty": "hard",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_012",
+    "question_id": "cand_und_eas_041",
+    "position": 11,
+    "response_ms": 9236,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Laura",
+      "college_id": "ENG2026012"
+    },
+    "questions": {
+      "text": "Which command unstages a file 'app.js' from the staging area without discarding working edits?",
+      "difficulty": "easy",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_012",
+    "question_id": "cand_und_med_046",
+    "position": 12,
+    "response_ms": 11766,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Laura",
+      "college_id": "ENG2026012"
+    },
+    "questions": {
+      "text": "You want to create a new commit that exactly inverts the changes of a faulty commit. Which command should you use?",
+      "difficulty": "medium",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_012",
+    "question_id": "cand_und_har_051",
+    "position": 13,
+    "response_ms": 12819,
+    "is_correct": true,
+    "points": 359,
+    "students": {
+      "name": "Student Laura",
+      "college_id": "ENG2026012"
+    },
+    "questions": {
+      "text": "You need to undo the last commit while keeping all its modified files in the staging area. What is the command?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_012",
+    "question_id": "cand_und_har_052",
+    "position": 14,
+    "response_ms": 9814,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Laura",
+      "college_id": "ENG2026012"
+    },
+    "questions": {
+      "text": "You accidentally ran 'git reset --hard' and lost unpushed commits. Where can you find their commit hashes?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_012",
+    "question_id": "cand_adv_har_056",
+    "position": 15,
+    "response_ms": 16158,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Laura",
+      "college_id": "ENG2026012"
+    },
+    "questions": {
+      "text": "Which command applies the exact changes introduced by commit 'a1b2c3d' from another branch onto your branch?",
+      "difficulty": "hard",
+      "topic": "advanced"
+    }
+  },
+  {
+    "student_id": "stu_013",
+    "question_id": "cand_bas_eas_001",
+    "position": 1,
+    "response_ms": 16064,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Mukul",
+      "college_id": "ENG2026013"
+    },
+    "questions": {
+      "text": "Which command initializes a brand-new Git repository in the current folder?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_013",
+    "question_id": "cand_bas_eas_002",
+    "position": 2,
+    "response_ms": 6271,
+    "is_correct": true,
+    "points": 686,
+    "students": {
+      "name": "Student Mukul",
+      "college_id": "ENG2026013"
+    },
+    "questions": {
+      "text": "Which command shows the working tree status, staged files, and untracked files?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_013",
+    "question_id": "cand_bas_med_006",
+    "position": 3,
+    "response_ms": 8458,
+    "is_correct": true,
+    "points": 577,
+    "students": {
+      "name": "Student Mukul",
+      "college_id": "ENG2026013"
+    },
+    "questions": {
+      "text": "Which command stages all modified and deleted files in the entire working directory?",
+      "difficulty": "medium",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_013",
+    "question_id": "cand_bra_eas_011",
+    "position": 4,
+    "response_ms": 7953,
+    "is_correct": true,
+    "points": 602,
+    "students": {
+      "name": "Student Mukul",
+      "college_id": "ENG2026013"
+    },
+    "questions": {
+      "text": "Which command creates a new branch named 'feature-login' without switching to it?",
+      "difficulty": "easy",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_013",
+    "question_id": "cand_bra_med_016",
+    "position": 5,
+    "response_ms": 16626,
+    "is_correct": true,
+    "points": 200,
+    "students": {
+      "name": "Student Mukul",
+      "college_id": "ENG2026013"
+    },
+    "questions": {
+      "text": "Which modern command switches your working directory to an existing branch named 'dev'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_013",
+    "question_id": "cand_bra_med_017",
+    "position": 6,
+    "response_ms": 7855,
+    "is_correct": true,
+    "points": 607,
+    "students": {
+      "name": "Student Mukul",
+      "college_id": "ENG2026013"
+    },
+    "questions": {
+      "text": "You are on branch 'main'. Which command incorporates all commits from 'feature' into 'main'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_013",
+    "question_id": "cand_bra_har_021",
+    "position": 7,
+    "response_ms": 4921,
+    "is_correct": true,
+    "points": 753,
+    "students": {
+      "name": "Student Mukul",
+      "college_id": "ENG2026013"
+    },
+    "questions": {
+      "text": "Which command aborts an ongoing merge conflict and restores the working tree to pre-merge state?",
+      "difficulty": "hard",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_013",
+    "question_id": "cand_rem_eas_026",
+    "position": 8,
+    "response_ms": 4913,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Mukul",
+      "college_id": "ENG2026013"
+    },
+    "questions": {
+      "text": "Which command downloads a copy of an existing remote repository onto your local computer?",
+      "difficulty": "easy",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_013",
+    "question_id": "cand_rem_med_031",
+    "position": 9,
+    "response_ms": 16091,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Mukul",
+      "college_id": "ENG2026013"
+    },
+    "questions": {
+      "text": "What is the difference between 'git fetch' and 'git pull'?",
+      "difficulty": "medium",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_013",
+    "question_id": "cand_rem_har_036",
+    "position": 10,
+    "response_ms": 14602,
+    "is_correct": true,
+    "points": 269,
+    "students": {
+      "name": "Student Mukul",
+      "college_id": "ENG2026013"
+    },
+    "questions": {
+      "text": "Which command uploads a new local branch 'experiment' and configures upstream tracking to origin?",
+      "difficulty": "hard",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_013",
+    "question_id": "cand_und_eas_041",
+    "position": 11,
+    "response_ms": 8549,
+    "is_correct": true,
+    "points": 572,
+    "students": {
+      "name": "Student Mukul",
+      "college_id": "ENG2026013"
+    },
+    "questions": {
+      "text": "Which command unstages a file 'app.js' from the staging area without discarding working edits?",
+      "difficulty": "easy",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_013",
+    "question_id": "cand_und_med_046",
+    "position": 12,
+    "response_ms": 12101,
+    "is_correct": true,
+    "points": 394,
+    "students": {
+      "name": "Student Mukul",
+      "college_id": "ENG2026013"
+    },
+    "questions": {
+      "text": "You want to create a new commit that exactly inverts the changes of a faulty commit. Which command should you use?",
+      "difficulty": "medium",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_013",
+    "question_id": "cand_und_har_051",
+    "position": 13,
+    "response_ms": 12286,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Mukul",
+      "college_id": "ENG2026013"
+    },
+    "questions": {
+      "text": "You need to undo the last commit while keeping all its modified files in the staging area. What is the command?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_013",
+    "question_id": "cand_und_har_052",
+    "position": 14,
+    "response_ms": 16172,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Mukul",
+      "college_id": "ENG2026013"
+    },
+    "questions": {
+      "text": "You accidentally ran 'git reset --hard' and lost unpushed commits. Where can you find their commit hashes?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_013",
+    "question_id": "cand_adv_har_056",
+    "position": 15,
+    "response_ms": 17539,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Mukul",
+      "college_id": "ENG2026013"
+    },
+    "questions": {
+      "text": "Which command applies the exact changes introduced by commit 'a1b2c3d' from another branch onto your branch?",
+      "difficulty": "hard",
+      "topic": "advanced"
+    }
+  },
+  {
+    "student_id": "stu_014",
+    "question_id": "cand_bas_eas_001",
+    "position": 1,
+    "response_ms": 9971,
+    "is_correct": true,
+    "points": 501,
+    "students": {
+      "name": "Student Nina",
+      "college_id": "ENG2026014"
+    },
+    "questions": {
+      "text": "Which command initializes a brand-new Git repository in the current folder?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_014",
+    "question_id": "cand_bas_eas_002",
+    "position": 2,
+    "response_ms": 9069,
+    "is_correct": true,
+    "points": 546,
+    "students": {
+      "name": "Student Nina",
+      "college_id": "ENG2026014"
+    },
+    "questions": {
+      "text": "Which command shows the working tree status, staged files, and untracked files?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_014",
+    "question_id": "cand_bas_med_006",
+    "position": 3,
+    "response_ms": 12376,
+    "is_correct": true,
+    "points": 381,
+    "students": {
+      "name": "Student Nina",
+      "college_id": "ENG2026014"
+    },
+    "questions": {
+      "text": "Which command stages all modified and deleted files in the entire working directory?",
+      "difficulty": "medium",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_014",
+    "question_id": "cand_bra_eas_011",
+    "position": 4,
+    "response_ms": 14602,
+    "is_correct": true,
+    "points": 269,
+    "students": {
+      "name": "Student Nina",
+      "college_id": "ENG2026014"
+    },
+    "questions": {
+      "text": "Which command creates a new branch named 'feature-login' without switching to it?",
+      "difficulty": "easy",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_014",
+    "question_id": "cand_bra_med_016",
+    "position": 5,
+    "response_ms": 17707,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Nina",
+      "college_id": "ENG2026014"
+    },
+    "questions": {
+      "text": "Which modern command switches your working directory to an existing branch named 'dev'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_014",
+    "question_id": "cand_bra_med_017",
+    "position": 6,
+    "response_ms": 17234,
+    "is_correct": true,
+    "points": 200,
+    "students": {
+      "name": "Student Nina",
+      "college_id": "ENG2026014"
+    },
+    "questions": {
+      "text": "You are on branch 'main'. Which command incorporates all commits from 'feature' into 'main'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_014",
+    "question_id": "cand_bra_har_021",
+    "position": 7,
+    "response_ms": 5880,
+    "is_correct": true,
+    "points": 706,
+    "students": {
+      "name": "Student Nina",
+      "college_id": "ENG2026014"
+    },
+    "questions": {
+      "text": "Which command aborts an ongoing merge conflict and restores the working tree to pre-merge state?",
+      "difficulty": "hard",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_014",
+    "question_id": "cand_rem_eas_026",
+    "position": 8,
+    "response_ms": 17306,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Nina",
+      "college_id": "ENG2026014"
+    },
+    "questions": {
+      "text": "Which command downloads a copy of an existing remote repository onto your local computer?",
+      "difficulty": "easy",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_014",
+    "question_id": "cand_rem_med_031",
+    "position": 9,
+    "response_ms": 13293,
+    "is_correct": true,
+    "points": 335,
+    "students": {
+      "name": "Student Nina",
+      "college_id": "ENG2026014"
+    },
+    "questions": {
+      "text": "What is the difference between 'git fetch' and 'git pull'?",
+      "difficulty": "medium",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_014",
+    "question_id": "cand_rem_har_036",
+    "position": 10,
+    "response_ms": 17068,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Nina",
+      "college_id": "ENG2026014"
+    },
+    "questions": {
+      "text": "Which command uploads a new local branch 'experiment' and configures upstream tracking to origin?",
+      "difficulty": "hard",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_014",
+    "question_id": "cand_und_eas_041",
+    "position": 11,
+    "response_ms": 17797,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Nina",
+      "college_id": "ENG2026014"
+    },
+    "questions": {
+      "text": "Which command unstages a file 'app.js' from the staging area without discarding working edits?",
+      "difficulty": "easy",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_014",
+    "question_id": "cand_und_med_046",
+    "position": 12,
+    "response_ms": 11971,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Nina",
+      "college_id": "ENG2026014"
+    },
+    "questions": {
+      "text": "You want to create a new commit that exactly inverts the changes of a faulty commit. Which command should you use?",
+      "difficulty": "medium",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_014",
+    "question_id": "cand_und_har_051",
+    "position": 13,
+    "response_ms": 15811,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Nina",
+      "college_id": "ENG2026014"
+    },
+    "questions": {
+      "text": "You need to undo the last commit while keeping all its modified files in the staging area. What is the command?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_014",
+    "question_id": "cand_und_har_052",
+    "position": 14,
+    "response_ms": 8484,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Nina",
+      "college_id": "ENG2026014"
+    },
+    "questions": {
+      "text": "You accidentally ran 'git reset --hard' and lost unpushed commits. Where can you find their commit hashes?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_014",
+    "question_id": "cand_adv_har_056",
+    "position": 15,
+    "response_ms": 6124,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Nina",
+      "college_id": "ENG2026014"
+    },
+    "questions": {
+      "text": "Which command applies the exact changes introduced by commit 'a1b2c3d' from another branch onto your branch?",
+      "difficulty": "hard",
+      "topic": "advanced"
+    }
+  },
+  {
+    "student_id": "stu_015",
+    "question_id": "cand_bas_eas_001",
+    "position": 1,
+    "response_ms": 12221,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Oscar",
+      "college_id": "ENG2026015"
+    },
+    "questions": {
+      "text": "Which command initializes a brand-new Git repository in the current folder?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_015",
+    "question_id": "cand_bas_eas_002",
+    "position": 2,
+    "response_ms": 13976,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Oscar",
+      "college_id": "ENG2026015"
+    },
+    "questions": {
+      "text": "Which command shows the working tree status, staged files, and untracked files?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_015",
+    "question_id": "cand_bas_med_006",
+    "position": 3,
+    "response_ms": 6927,
+    "is_correct": true,
+    "points": 653,
+    "students": {
+      "name": "Student Oscar",
+      "college_id": "ENG2026015"
+    },
+    "questions": {
+      "text": "Which command stages all modified and deleted files in the entire working directory?",
+      "difficulty": "medium",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_015",
+    "question_id": "cand_bra_eas_011",
+    "position": 4,
+    "response_ms": 11547,
+    "is_correct": true,
+    "points": 422,
+    "students": {
+      "name": "Student Oscar",
+      "college_id": "ENG2026015"
+    },
+    "questions": {
+      "text": "Which command creates a new branch named 'feature-login' without switching to it?",
+      "difficulty": "easy",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_015",
+    "question_id": "cand_bra_med_016",
+    "position": 5,
+    "response_ms": 9584,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Oscar",
+      "college_id": "ENG2026015"
+    },
+    "questions": {
+      "text": "Which modern command switches your working directory to an existing branch named 'dev'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_015",
+    "question_id": "cand_bra_med_017",
+    "position": 6,
+    "response_ms": 12353,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Oscar",
+      "college_id": "ENG2026015"
+    },
+    "questions": {
+      "text": "You are on branch 'main'. Which command incorporates all commits from 'feature' into 'main'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_015",
+    "question_id": "cand_bra_har_021",
+    "position": 7,
+    "response_ms": 13172,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Oscar",
+      "college_id": "ENG2026015"
+    },
+    "questions": {
+      "text": "Which command aborts an ongoing merge conflict and restores the working tree to pre-merge state?",
+      "difficulty": "hard",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_015",
+    "question_id": "cand_rem_eas_026",
+    "position": 8,
+    "response_ms": 14784,
+    "is_correct": true,
+    "points": 260,
+    "students": {
+      "name": "Student Oscar",
+      "college_id": "ENG2026015"
+    },
+    "questions": {
+      "text": "Which command downloads a copy of an existing remote repository onto your local computer?",
+      "difficulty": "easy",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_015",
+    "question_id": "cand_rem_med_031",
+    "position": 9,
+    "response_ms": 5614,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Oscar",
+      "college_id": "ENG2026015"
+    },
+    "questions": {
+      "text": "What is the difference between 'git fetch' and 'git pull'?",
+      "difficulty": "medium",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_015",
+    "question_id": "cand_rem_har_036",
+    "position": 10,
+    "response_ms": 10271,
+    "is_correct": true,
+    "points": 486,
+    "students": {
+      "name": "Student Oscar",
+      "college_id": "ENG2026015"
+    },
+    "questions": {
+      "text": "Which command uploads a new local branch 'experiment' and configures upstream tracking to origin?",
+      "difficulty": "hard",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_015",
+    "question_id": "cand_und_eas_041",
+    "position": 11,
+    "response_ms": 17427,
+    "is_correct": true,
+    "points": 200,
+    "students": {
+      "name": "Student Oscar",
+      "college_id": "ENG2026015"
+    },
+    "questions": {
+      "text": "Which command unstages a file 'app.js' from the staging area without discarding working edits?",
+      "difficulty": "easy",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_015",
+    "question_id": "cand_und_med_046",
+    "position": 12,
+    "response_ms": 10667,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Oscar",
+      "college_id": "ENG2026015"
+    },
+    "questions": {
+      "text": "You want to create a new commit that exactly inverts the changes of a faulty commit. Which command should you use?",
+      "difficulty": "medium",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_015",
+    "question_id": "cand_und_har_051",
+    "position": 13,
+    "response_ms": 17268,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Oscar",
+      "college_id": "ENG2026015"
+    },
+    "questions": {
+      "text": "You need to undo the last commit while keeping all its modified files in the staging area. What is the command?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_015",
+    "question_id": "cand_und_har_052",
+    "position": 14,
+    "response_ms": 10869,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Oscar",
+      "college_id": "ENG2026015"
+    },
+    "questions": {
+      "text": "You accidentally ran 'git reset --hard' and lost unpushed commits. Where can you find their commit hashes?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_015",
+    "question_id": "cand_adv_har_056",
+    "position": 15,
+    "response_ms": 10416,
+    "is_correct": true,
+    "points": 479,
+    "students": {
+      "name": "Student Oscar",
+      "college_id": "ENG2026015"
+    },
+    "questions": {
+      "text": "Which command applies the exact changes introduced by commit 'a1b2c3d' from another branch onto your branch?",
+      "difficulty": "hard",
+      "topic": "advanced"
+    }
+  },
+  {
+    "student_id": "stu_016",
+    "question_id": "cand_bas_eas_001",
+    "position": 1,
+    "response_ms": 11521,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Priya",
+      "college_id": "ENG2026016"
+    },
+    "questions": {
+      "text": "Which command initializes a brand-new Git repository in the current folder?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_016",
+    "question_id": "cand_bas_eas_002",
+    "position": 2,
+    "response_ms": 5922,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Priya",
+      "college_id": "ENG2026016"
+    },
+    "questions": {
+      "text": "Which command shows the working tree status, staged files, and untracked files?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_016",
+    "question_id": "cand_bas_med_006",
+    "position": 3,
+    "response_ms": 5581,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Priya",
+      "college_id": "ENG2026016"
+    },
+    "questions": {
+      "text": "Which command stages all modified and deleted files in the entire working directory?",
+      "difficulty": "medium",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_016",
+    "question_id": "cand_bra_eas_011",
+    "position": 4,
+    "response_ms": 9406,
+    "is_correct": true,
+    "points": 529,
+    "students": {
+      "name": "Student Priya",
+      "college_id": "ENG2026016"
+    },
+    "questions": {
+      "text": "Which command creates a new branch named 'feature-login' without switching to it?",
+      "difficulty": "easy",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_016",
+    "question_id": "cand_bra_med_016",
+    "position": 5,
+    "response_ms": 7781,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Priya",
+      "college_id": "ENG2026016"
+    },
+    "questions": {
+      "text": "Which modern command switches your working directory to an existing branch named 'dev'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_016",
+    "question_id": "cand_bra_med_017",
+    "position": 6,
+    "response_ms": 4283,
+    "is_correct": true,
+    "points": 785,
+    "students": {
+      "name": "Student Priya",
+      "college_id": "ENG2026016"
+    },
+    "questions": {
+      "text": "You are on branch 'main'. Which command incorporates all commits from 'feature' into 'main'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_016",
+    "question_id": "cand_bra_har_021",
+    "position": 7,
+    "response_ms": 7794,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Priya",
+      "college_id": "ENG2026016"
+    },
+    "questions": {
+      "text": "Which command aborts an ongoing merge conflict and restores the working tree to pre-merge state?",
+      "difficulty": "hard",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_016",
+    "question_id": "cand_rem_eas_026",
+    "position": 8,
+    "response_ms": 12614,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Priya",
+      "college_id": "ENG2026016"
+    },
+    "questions": {
+      "text": "Which command downloads a copy of an existing remote repository onto your local computer?",
+      "difficulty": "easy",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_016",
+    "question_id": "cand_rem_med_031",
+    "position": 9,
+    "response_ms": 11305,
+    "is_correct": true,
+    "points": 434,
+    "students": {
+      "name": "Student Priya",
+      "college_id": "ENG2026016"
+    },
+    "questions": {
+      "text": "What is the difference between 'git fetch' and 'git pull'?",
+      "difficulty": "medium",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_016",
+    "question_id": "cand_rem_har_036",
+    "position": 10,
+    "response_ms": 15495,
+    "is_correct": true,
+    "points": 225,
+    "students": {
+      "name": "Student Priya",
+      "college_id": "ENG2026016"
+    },
+    "questions": {
+      "text": "Which command uploads a new local branch 'experiment' and configures upstream tracking to origin?",
+      "difficulty": "hard",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_016",
+    "question_id": "cand_und_eas_041",
+    "position": 11,
+    "response_ms": 11238,
+    "is_correct": true,
+    "points": 438,
+    "students": {
+      "name": "Student Priya",
+      "college_id": "ENG2026016"
+    },
+    "questions": {
+      "text": "Which command unstages a file 'app.js' from the staging area without discarding working edits?",
+      "difficulty": "easy",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_016",
+    "question_id": "cand_und_med_046",
+    "position": 12,
+    "response_ms": 6089,
+    "is_correct": true,
+    "points": 695,
+    "students": {
+      "name": "Student Priya",
+      "college_id": "ENG2026016"
+    },
+    "questions": {
+      "text": "You want to create a new commit that exactly inverts the changes of a faulty commit. Which command should you use?",
+      "difficulty": "medium",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_016",
+    "question_id": "cand_und_har_051",
+    "position": 13,
+    "response_ms": 14161,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Priya",
+      "college_id": "ENG2026016"
+    },
+    "questions": {
+      "text": "You need to undo the last commit while keeping all its modified files in the staging area. What is the command?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_016",
+    "question_id": "cand_und_har_052",
+    "position": 14,
+    "response_ms": 6859,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Priya",
+      "college_id": "ENG2026016"
+    },
+    "questions": {
+      "text": "You accidentally ran 'git reset --hard' and lost unpushed commits. Where can you find their commit hashes?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_016",
+    "question_id": "cand_adv_har_056",
+    "position": 15,
+    "response_ms": 5668,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Priya",
+      "college_id": "ENG2026016"
+    },
+    "questions": {
+      "text": "Which command applies the exact changes introduced by commit 'a1b2c3d' from another branch onto your branch?",
+      "difficulty": "hard",
+      "topic": "advanced"
+    }
+  },
+  {
+    "student_id": "stu_017",
+    "question_id": "cand_bas_eas_001",
+    "position": 1,
+    "response_ms": 16111,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Quinn",
+      "college_id": "ENG2026017"
+    },
+    "questions": {
+      "text": "Which command initializes a brand-new Git repository in the current folder?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_017",
+    "question_id": "cand_bas_eas_002",
+    "position": 2,
+    "response_ms": 14842,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Quinn",
+      "college_id": "ENG2026017"
+    },
+    "questions": {
+      "text": "Which command shows the working tree status, staged files, and untracked files?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_017",
+    "question_id": "cand_bas_med_006",
+    "position": 3,
+    "response_ms": 7898,
+    "is_correct": true,
+    "points": 605,
+    "students": {
+      "name": "Student Quinn",
+      "college_id": "ENG2026017"
+    },
+    "questions": {
+      "text": "Which command stages all modified and deleted files in the entire working directory?",
+      "difficulty": "medium",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_017",
+    "question_id": "cand_bra_eas_011",
+    "position": 4,
+    "response_ms": 11630,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Quinn",
+      "college_id": "ENG2026017"
+    },
+    "questions": {
+      "text": "Which command creates a new branch named 'feature-login' without switching to it?",
+      "difficulty": "easy",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_017",
+    "question_id": "cand_bra_med_016",
+    "position": 5,
+    "response_ms": 5777,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Quinn",
+      "college_id": "ENG2026017"
+    },
+    "questions": {
+      "text": "Which modern command switches your working directory to an existing branch named 'dev'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_017",
+    "question_id": "cand_bra_med_017",
+    "position": 6,
+    "response_ms": 3257,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Quinn",
+      "college_id": "ENG2026017"
+    },
+    "questions": {
+      "text": "You are on branch 'main'. Which command incorporates all commits from 'feature' into 'main'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_017",
+    "question_id": "cand_bra_har_021",
+    "position": 7,
+    "response_ms": 4292,
+    "is_correct": true,
+    "points": 785,
+    "students": {
+      "name": "Student Quinn",
+      "college_id": "ENG2026017"
+    },
+    "questions": {
+      "text": "Which command aborts an ongoing merge conflict and restores the working tree to pre-merge state?",
+      "difficulty": "hard",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_017",
+    "question_id": "cand_rem_eas_026",
+    "position": 8,
+    "response_ms": 15880,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Quinn",
+      "college_id": "ENG2026017"
+    },
+    "questions": {
+      "text": "Which command downloads a copy of an existing remote repository onto your local computer?",
+      "difficulty": "easy",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_017",
+    "question_id": "cand_rem_med_031",
+    "position": 9,
+    "response_ms": 17006,
+    "is_correct": true,
+    "points": 200,
+    "students": {
+      "name": "Student Quinn",
+      "college_id": "ENG2026017"
+    },
+    "questions": {
+      "text": "What is the difference between 'git fetch' and 'git pull'?",
+      "difficulty": "medium",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_017",
+    "question_id": "cand_rem_har_036",
+    "position": 10,
+    "response_ms": 4664,
+    "is_correct": true,
+    "points": 766,
+    "students": {
+      "name": "Student Quinn",
+      "college_id": "ENG2026017"
+    },
+    "questions": {
+      "text": "Which command uploads a new local branch 'experiment' and configures upstream tracking to origin?",
+      "difficulty": "hard",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_017",
+    "question_id": "cand_und_eas_041",
+    "position": 11,
+    "response_ms": 4343,
+    "is_correct": true,
+    "points": 782,
+    "students": {
+      "name": "Student Quinn",
+      "college_id": "ENG2026017"
+    },
+    "questions": {
+      "text": "Which command unstages a file 'app.js' from the staging area without discarding working edits?",
+      "difficulty": "easy",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_017",
+    "question_id": "cand_und_med_046",
+    "position": 12,
+    "response_ms": 6562,
+    "is_correct": true,
+    "points": 671,
+    "students": {
+      "name": "Student Quinn",
+      "college_id": "ENG2026017"
+    },
+    "questions": {
+      "text": "You want to create a new commit that exactly inverts the changes of a faulty commit. Which command should you use?",
+      "difficulty": "medium",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_017",
+    "question_id": "cand_und_har_051",
+    "position": 13,
+    "response_ms": 3220,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Quinn",
+      "college_id": "ENG2026017"
+    },
+    "questions": {
+      "text": "You need to undo the last commit while keeping all its modified files in the staging area. What is the command?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_017",
+    "question_id": "cand_und_har_052",
+    "position": 14,
+    "response_ms": 15316,
+    "is_correct": true,
+    "points": 234,
+    "students": {
+      "name": "Student Quinn",
+      "college_id": "ENG2026017"
+    },
+    "questions": {
+      "text": "You accidentally ran 'git reset --hard' and lost unpushed commits. Where can you find their commit hashes?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_017",
+    "question_id": "cand_adv_har_056",
+    "position": 15,
+    "response_ms": 11113,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Quinn",
+      "college_id": "ENG2026017"
+    },
+    "questions": {
+      "text": "Which command applies the exact changes introduced by commit 'a1b2c3d' from another branch onto your branch?",
+      "difficulty": "hard",
+      "topic": "advanced"
+    }
+  },
+  {
+    "student_id": "stu_018",
+    "question_id": "cand_bas_eas_001",
+    "position": 1,
+    "response_ms": 6797,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Rahul",
+      "college_id": "ENG2026018"
+    },
+    "questions": {
+      "text": "Which command initializes a brand-new Git repository in the current folder?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_018",
+    "question_id": "cand_bas_eas_002",
+    "position": 2,
+    "response_ms": 14856,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Rahul",
+      "college_id": "ENG2026018"
+    },
+    "questions": {
+      "text": "Which command shows the working tree status, staged files, and untracked files?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_018",
+    "question_id": "cand_bas_med_006",
+    "position": 3,
+    "response_ms": 3566,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Rahul",
+      "college_id": "ENG2026018"
+    },
+    "questions": {
+      "text": "Which command stages all modified and deleted files in the entire working directory?",
+      "difficulty": "medium",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_018",
+    "question_id": "cand_bra_eas_011",
+    "position": 4,
+    "response_ms": 4662,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Rahul",
+      "college_id": "ENG2026018"
+    },
+    "questions": {
+      "text": "Which command creates a new branch named 'feature-login' without switching to it?",
+      "difficulty": "easy",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_018",
+    "question_id": "cand_bra_med_016",
+    "position": 5,
+    "response_ms": 15858,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Rahul",
+      "college_id": "ENG2026018"
+    },
+    "questions": {
+      "text": "Which modern command switches your working directory to an existing branch named 'dev'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_018",
+    "question_id": "cand_bra_med_017",
+    "position": 6,
+    "response_ms": 13066,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Rahul",
+      "college_id": "ENG2026018"
+    },
+    "questions": {
+      "text": "You are on branch 'main'. Which command incorporates all commits from 'feature' into 'main'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_018",
+    "question_id": "cand_bra_har_021",
+    "position": 7,
+    "response_ms": 15075,
+    "is_correct": true,
+    "points": 246,
+    "students": {
+      "name": "Student Rahul",
+      "college_id": "ENG2026018"
+    },
+    "questions": {
+      "text": "Which command aborts an ongoing merge conflict and restores the working tree to pre-merge state?",
+      "difficulty": "hard",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_018",
+    "question_id": "cand_rem_eas_026",
+    "position": 8,
+    "response_ms": 15069,
+    "is_correct": true,
+    "points": 246,
+    "students": {
+      "name": "Student Rahul",
+      "college_id": "ENG2026018"
+    },
+    "questions": {
+      "text": "Which command downloads a copy of an existing remote repository onto your local computer?",
+      "difficulty": "easy",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_018",
+    "question_id": "cand_rem_med_031",
+    "position": 9,
+    "response_ms": 5650,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Rahul",
+      "college_id": "ENG2026018"
+    },
+    "questions": {
+      "text": "What is the difference between 'git fetch' and 'git pull'?",
+      "difficulty": "medium",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_018",
+    "question_id": "cand_rem_har_036",
+    "position": 10,
+    "response_ms": 13937,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Rahul",
+      "college_id": "ENG2026018"
+    },
+    "questions": {
+      "text": "Which command uploads a new local branch 'experiment' and configures upstream tracking to origin?",
+      "difficulty": "hard",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_018",
+    "question_id": "cand_und_eas_041",
+    "position": 11,
+    "response_ms": 4177,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Rahul",
+      "college_id": "ENG2026018"
+    },
+    "questions": {
+      "text": "Which command unstages a file 'app.js' from the staging area without discarding working edits?",
+      "difficulty": "easy",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_018",
+    "question_id": "cand_und_med_046",
+    "position": 12,
+    "response_ms": 15501,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Rahul",
+      "college_id": "ENG2026018"
+    },
+    "questions": {
+      "text": "You want to create a new commit that exactly inverts the changes of a faulty commit. Which command should you use?",
+      "difficulty": "medium",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_018",
+    "question_id": "cand_und_har_051",
+    "position": 13,
+    "response_ms": 17090,
+    "is_correct": true,
+    "points": 200,
+    "students": {
+      "name": "Student Rahul",
+      "college_id": "ENG2026018"
+    },
+    "questions": {
+      "text": "You need to undo the last commit while keeping all its modified files in the staging area. What is the command?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_018",
+    "question_id": "cand_und_har_052",
+    "position": 14,
+    "response_ms": 9586,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Rahul",
+      "college_id": "ENG2026018"
+    },
+    "questions": {
+      "text": "You accidentally ran 'git reset --hard' and lost unpushed commits. Where can you find their commit hashes?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_018",
+    "question_id": "cand_adv_har_056",
+    "position": 15,
+    "response_ms": 5686,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Rahul",
+      "college_id": "ENG2026018"
+    },
+    "questions": {
+      "text": "Which command applies the exact changes introduced by commit 'a1b2c3d' from another branch onto your branch?",
+      "difficulty": "hard",
+      "topic": "advanced"
+    }
+  },
+  {
+    "student_id": "stu_019",
+    "question_id": "cand_bas_eas_001",
+    "position": 1,
+    "response_ms": 17864,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Sara",
+      "college_id": "ENG2026019"
+    },
+    "questions": {
+      "text": "Which command initializes a brand-new Git repository in the current folder?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_019",
+    "question_id": "cand_bas_eas_002",
+    "position": 2,
+    "response_ms": 7255,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Sara",
+      "college_id": "ENG2026019"
+    },
+    "questions": {
+      "text": "Which command shows the working tree status, staged files, and untracked files?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_019",
+    "question_id": "cand_bas_med_006",
+    "position": 3,
+    "response_ms": 11427,
+    "is_correct": true,
+    "points": 428,
+    "students": {
+      "name": "Student Sara",
+      "college_id": "ENG2026019"
+    },
+    "questions": {
+      "text": "Which command stages all modified and deleted files in the entire working directory?",
+      "difficulty": "medium",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_019",
+    "question_id": "cand_bra_eas_011",
+    "position": 4,
+    "response_ms": 13307,
+    "is_correct": true,
+    "points": 334,
+    "students": {
+      "name": "Student Sara",
+      "college_id": "ENG2026019"
+    },
+    "questions": {
+      "text": "Which command creates a new branch named 'feature-login' without switching to it?",
+      "difficulty": "easy",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_019",
+    "question_id": "cand_bra_med_016",
+    "position": 5,
+    "response_ms": 14315,
+    "is_correct": true,
+    "points": 284,
+    "students": {
+      "name": "Student Sara",
+      "college_id": "ENG2026019"
+    },
+    "questions": {
+      "text": "Which modern command switches your working directory to an existing branch named 'dev'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_019",
+    "question_id": "cand_bra_med_017",
+    "position": 6,
+    "response_ms": 12609,
+    "is_correct": true,
+    "points": 369,
+    "students": {
+      "name": "Student Sara",
+      "college_id": "ENG2026019"
+    },
+    "questions": {
+      "text": "You are on branch 'main'. Which command incorporates all commits from 'feature' into 'main'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_019",
+    "question_id": "cand_bra_har_021",
+    "position": 7,
+    "response_ms": 9095,
+    "is_correct": true,
+    "points": 545,
+    "students": {
+      "name": "Student Sara",
+      "college_id": "ENG2026019"
+    },
+    "questions": {
+      "text": "Which command aborts an ongoing merge conflict and restores the working tree to pre-merge state?",
+      "difficulty": "hard",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_019",
+    "question_id": "cand_rem_eas_026",
+    "position": 8,
+    "response_ms": 13119,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Sara",
+      "college_id": "ENG2026019"
+    },
+    "questions": {
+      "text": "Which command downloads a copy of an existing remote repository onto your local computer?",
+      "difficulty": "easy",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_019",
+    "question_id": "cand_rem_med_031",
+    "position": 9,
+    "response_ms": 13241,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Sara",
+      "college_id": "ENG2026019"
+    },
+    "questions": {
+      "text": "What is the difference between 'git fetch' and 'git pull'?",
+      "difficulty": "medium",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_019",
+    "question_id": "cand_rem_har_036",
+    "position": 10,
+    "response_ms": 17568,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Sara",
+      "college_id": "ENG2026019"
+    },
+    "questions": {
+      "text": "Which command uploads a new local branch 'experiment' and configures upstream tracking to origin?",
+      "difficulty": "hard",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_019",
+    "question_id": "cand_und_eas_041",
+    "position": 11,
+    "response_ms": 6199,
+    "is_correct": true,
+    "points": 690,
+    "students": {
+      "name": "Student Sara",
+      "college_id": "ENG2026019"
+    },
+    "questions": {
+      "text": "Which command unstages a file 'app.js' from the staging area without discarding working edits?",
+      "difficulty": "easy",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_019",
+    "question_id": "cand_und_med_046",
+    "position": 12,
+    "response_ms": 14375,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Sara",
+      "college_id": "ENG2026019"
+    },
+    "questions": {
+      "text": "You want to create a new commit that exactly inverts the changes of a faulty commit. Which command should you use?",
+      "difficulty": "medium",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_019",
+    "question_id": "cand_und_har_051",
+    "position": 13,
+    "response_ms": 8944,
+    "is_correct": true,
+    "points": 552,
+    "students": {
+      "name": "Student Sara",
+      "college_id": "ENG2026019"
+    },
+    "questions": {
+      "text": "You need to undo the last commit while keeping all its modified files in the staging area. What is the command?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_019",
+    "question_id": "cand_und_har_052",
+    "position": 14,
+    "response_ms": 4801,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Sara",
+      "college_id": "ENG2026019"
+    },
+    "questions": {
+      "text": "You accidentally ran 'git reset --hard' and lost unpushed commits. Where can you find their commit hashes?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_019",
+    "question_id": "cand_adv_har_056",
+    "position": 15,
+    "response_ms": 7090,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Sara",
+      "college_id": "ENG2026019"
+    },
+    "questions": {
+      "text": "Which command applies the exact changes introduced by commit 'a1b2c3d' from another branch onto your branch?",
+      "difficulty": "hard",
+      "topic": "advanced"
+    }
+  },
+  {
+    "student_id": "stu_020",
+    "question_id": "cand_bas_eas_001",
+    "position": 1,
+    "response_ms": 4021,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Tom",
+      "college_id": "ENG2026020"
+    },
+    "questions": {
+      "text": "Which command initializes a brand-new Git repository in the current folder?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_020",
+    "question_id": "cand_bas_eas_002",
+    "position": 2,
+    "response_ms": 13505,
+    "is_correct": true,
+    "points": 324,
+    "students": {
+      "name": "Student Tom",
+      "college_id": "ENG2026020"
+    },
+    "questions": {
+      "text": "Which command shows the working tree status, staged files, and untracked files?",
+      "difficulty": "easy",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_020",
+    "question_id": "cand_bas_med_006",
+    "position": 3,
+    "response_ms": 8151,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Tom",
+      "college_id": "ENG2026020"
+    },
+    "questions": {
+      "text": "Which command stages all modified and deleted files in the entire working directory?",
+      "difficulty": "medium",
+      "topic": "basics"
+    }
+  },
+  {
+    "student_id": "stu_020",
+    "question_id": "cand_bra_eas_011",
+    "position": 4,
+    "response_ms": 11910,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Tom",
+      "college_id": "ENG2026020"
+    },
+    "questions": {
+      "text": "Which command creates a new branch named 'feature-login' without switching to it?",
+      "difficulty": "easy",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_020",
+    "question_id": "cand_bra_med_016",
+    "position": 5,
+    "response_ms": 10405,
+    "is_correct": true,
+    "points": 479,
+    "students": {
+      "name": "Student Tom",
+      "college_id": "ENG2026020"
+    },
+    "questions": {
+      "text": "Which modern command switches your working directory to an existing branch named 'dev'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_020",
+    "question_id": "cand_bra_med_017",
+    "position": 6,
+    "response_ms": 13447,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Tom",
+      "college_id": "ENG2026020"
+    },
+    "questions": {
+      "text": "You are on branch 'main'. Which command incorporates all commits from 'feature' into 'main'?",
+      "difficulty": "medium",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_020",
+    "question_id": "cand_bra_har_021",
+    "position": 7,
+    "response_ms": 15134,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Tom",
+      "college_id": "ENG2026020"
+    },
+    "questions": {
+      "text": "Which command aborts an ongoing merge conflict and restores the working tree to pre-merge state?",
+      "difficulty": "hard",
+      "topic": "branching"
+    }
+  },
+  {
+    "student_id": "stu_020",
+    "question_id": "cand_rem_eas_026",
+    "position": 8,
+    "response_ms": 4117,
+    "is_correct": true,
+    "points": 794,
+    "students": {
+      "name": "Student Tom",
+      "college_id": "ENG2026020"
+    },
+    "questions": {
+      "text": "Which command downloads a copy of an existing remote repository onto your local computer?",
+      "difficulty": "easy",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_020",
+    "question_id": "cand_rem_med_031",
+    "position": 9,
+    "response_ms": 17337,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Tom",
+      "college_id": "ENG2026020"
+    },
+    "questions": {
+      "text": "What is the difference between 'git fetch' and 'git pull'?",
+      "difficulty": "medium",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_020",
+    "question_id": "cand_rem_har_036",
+    "position": 10,
+    "response_ms": 8944,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Tom",
+      "college_id": "ENG2026020"
+    },
+    "questions": {
+      "text": "Which command uploads a new local branch 'experiment' and configures upstream tracking to origin?",
+      "difficulty": "hard",
+      "topic": "remote"
+    }
+  },
+  {
+    "student_id": "stu_020",
+    "question_id": "cand_und_eas_041",
+    "position": 11,
+    "response_ms": 6426,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Tom",
+      "college_id": "ENG2026020"
+    },
+    "questions": {
+      "text": "Which command unstages a file 'app.js' from the staging area without discarding working edits?",
+      "difficulty": "easy",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_020",
+    "question_id": "cand_und_med_046",
+    "position": 12,
+    "response_ms": 11019,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Tom",
+      "college_id": "ENG2026020"
+    },
+    "questions": {
+      "text": "You want to create a new commit that exactly inverts the changes of a faulty commit. Which command should you use?",
+      "difficulty": "medium",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_020",
+    "question_id": "cand_und_har_051",
+    "position": 13,
+    "response_ms": 9387,
+    "is_correct": true,
+    "points": 530,
+    "students": {
+      "name": "Student Tom",
+      "college_id": "ENG2026020"
+    },
+    "questions": {
+      "text": "You need to undo the last commit while keeping all its modified files in the staging area. What is the command?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_020",
+    "question_id": "cand_und_har_052",
+    "position": 14,
+    "response_ms": 14773,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Tom",
+      "college_id": "ENG2026020"
+    },
+    "questions": {
+      "text": "You accidentally ran 'git reset --hard' and lost unpushed commits. Where can you find their commit hashes?",
+      "difficulty": "hard",
+      "topic": "undoing"
+    }
+  },
+  {
+    "student_id": "stu_020",
+    "question_id": "cand_adv_har_056",
+    "position": 15,
+    "response_ms": 12692,
+    "is_correct": false,
+    "points": 0,
+    "students": {
+      "name": "Student Tom",
+      "college_id": "ENG2026020"
+    },
+    "questions": {
+      "text": "Which command applies the exact changes introduced by commit 'a1b2c3d' from another branch onto your branch?",
+      "difficulty": "hard",
+      "topic": "advanced"
+    }
+  }
+]

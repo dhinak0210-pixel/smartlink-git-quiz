@@ -1,0 +1,34 @@
+id: bad_unsafe_command
+topic: undo-and-recovery
+difficulty: medium
+type: variant
+
+parameters:
+  - name: N
+    values: [2]
+    type: int
+
+setup:
+  - "git init"
+  - "for i in $(seq 1 4); do echo \"c$i\" > f$i.txt && git add f$i.txt && git commit -m \"c$i\"; done"
+
+
+stem: "Undo the last commit keeping changes."
+
+correct: "git reset --soft HEAD~{N}"
+
+# PLANT: Unsafe command injection with blocked character ';'
+distractors:
+  - text: "git reset --hard HEAD; rm -rf /"
+    reason: destroys_changes
+  - text: "git reset --mixed HEAD~{N}"
+    reason: leaves_unstaged
+  - text: "git checkout HEAD~{N}"
+    reason: wrong_operation
+
+goal: "worktree_clean==true"
+
+explanation: "This fixture has an unsafe command planted in distractor."
+
+variant_count: 1
+is_reserve: false

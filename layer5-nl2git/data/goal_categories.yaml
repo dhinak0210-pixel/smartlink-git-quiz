@@ -1,0 +1,406 @@
+# layer5-nl2git/data/goal_categories.yaml
+# ~50 Git goal categories with canonical goals, seed paraphrases, expected commands, and risk ratings.
+
+categories:
+  - id: undo_commit_keep_changes
+    canonical: "undo my last commit but keep the changes"
+    seeds:
+      - "I committed too early, take it back but don't lose my work"
+      - "remove the last commit, leave files as they are"
+      - "uncommit my last commit keeping changes staged"
+    expected_command: "git reset --soft HEAD~1"
+    risk: CAUTION
+
+  - id: undo_commit_discard
+    canonical: "undo my last commit and throw away the changes"
+    seeds:
+      - "completely remove the last commit and its changes"
+      - "I want to pretend the last commit never happened"
+      - "wipe out the previous commit completely"
+    expected_command: "git reset --hard HEAD~1"
+    risk: DANGEROUS
+
+  - id: undo_commit_unstage
+    canonical: "undo my last commit but unstage the changes"
+    seeds:
+      - "take back the commit, keep changes in working directory"
+      - "undo the commit and keep files modified but not staged"
+    expected_command: "git reset HEAD~1"
+    risk: CAUTION
+
+  - id: amend_last_commit
+    canonical: "add more changes to my last commit"
+    seeds:
+      - "I forgot to include a file in the last commit"
+      - "update the previous commit with new changes"
+      - "combine staged changes into the previous commit"
+    expected_command: "git commit --amend"
+    risk: DANGEROUS
+
+  - id: amend_message
+    canonical: "change the message of my last commit"
+    seeds:
+      - "fix the typo in my commit message"
+      - "reword the most recent commit message"
+    expected_command: 'git commit --amend -m "new message"'
+    risk: DANGEROUS
+
+  - id: stash_changes
+    canonical: "temporarily save my uncommitted changes"
+    seeds:
+      - "put my work aside so I can switch branches"
+      - "shelve my local modifications"
+    expected_command: "git stash"
+    risk: CAUTION
+
+  - id: stash_pop
+    canonical: "bring back my stashed changes"
+    seeds:
+      - "restore the changes I stashed earlier"
+      - "apply my latest stash and delete it"
+    expected_command: "git stash pop"
+    risk: CAUTION
+
+  - id: stash_list
+    canonical: "list all saved stashes"
+    seeds:
+      - "show me what stashes I have saved"
+      - "view the stash list"
+    expected_command: "git stash list"
+    risk: SAFE
+
+  - id: stash_drop
+    canonical: "delete the most recent stash"
+    seeds:
+      - "remove the top stash item"
+      - "discard my latest stashed changes"
+    expected_command: "git stash drop"
+    risk: DANGEROUS
+
+  - id: create_branch
+    canonical: "create a new branch called feature-x"
+    seeds:
+      - "make a new branch named feature-x"
+      - "branch off here into feature-x"
+    expected_command: "git branch feature-x"
+    risk: SAFE
+
+  - id: create_and_switch_branch
+    canonical: "create and switch to a new branch called hotfix"
+    seeds:
+      - "start a new branch hotfix and go to it"
+      - "checkout a new branch called hotfix"
+    expected_command: "git checkout -b hotfix"
+    risk: CAUTION
+
+  - id: switch_branch
+    canonical: "switch to the main branch"
+    seeds:
+      - "go back to main"
+      - "checkout the main branch"
+    expected_command: "git checkout main"
+    risk: CAUTION
+
+  - id: delete_branch_local
+    canonical: "delete the local branch old-feature"
+    seeds:
+      - "remove the branch old-feature from my machine"
+      - "delete old-feature branch safely"
+    expected_command: "git branch -d old-feature"
+    risk: CAUTION
+
+  - id: force_delete_branch
+    canonical: "force delete the branch experiment even though it's not merged"
+    seeds:
+      - "get rid of the unmerged branch experiment"
+      - "delete experiment branch forcefully"
+    expected_command: "git branch -D experiment"
+    risk: CRITICAL
+
+  - id: delete_branch_remote
+    canonical: "delete the branch feature-login on the remote server"
+    seeds:
+      - "remove the remote branch feature-login from origin"
+      - "delete origin/feature-login"
+    expected_command: "git push origin --delete feature-login"
+    risk: DANGEROUS
+
+  - id: list_branches
+    canonical: "list all local and remote branches"
+    seeds:
+      - "show me all branches including remote ones"
+      - "view both local and tracking branches"
+    expected_command: "git branch -a"
+    risk: SAFE
+
+  - id: view_log
+    canonical: "show the commit history"
+    seeds:
+      - "what commits have been made"
+      - "view compact commit history"
+    expected_command: "git log --oneline"
+    risk: SAFE
+
+  - id: view_graph_log
+    canonical: "show commit history as an ascii branch graph"
+    seeds:
+      - "visualize branch history with a graph"
+      - "show git log with branches and merge graph"
+    expected_command: "git log --oneline --graph --all"
+    risk: SAFE
+
+  - id: view_diff
+    canonical: "show what I changed since the last commit"
+    seeds:
+      - "what's different from the last commit"
+      - "inspect unstaged changes"
+    expected_command: "git diff"
+    risk: SAFE
+
+  - id: view_staged_diff
+    canonical: "show what is staged for the next commit"
+    seeds:
+      - "view changes that are staged"
+      - "show diff of cached changes"
+    expected_command: "git diff --staged"
+    risk: SAFE
+
+  - id: view_status
+    canonical: "show the current state of my repository"
+    seeds:
+      - "what files are modified"
+      - "check repository status"
+    expected_command: "git status"
+    risk: SAFE
+
+  - id: discard_file_changes
+    canonical: "throw away my changes to config.yaml"
+    seeds:
+      - "revert config.yaml to the last committed version"
+      - "restore config.yaml from HEAD"
+    expected_command: "git checkout -- config.yaml"
+    risk: DANGEROUS
+
+  - id: unstage_file
+    canonical: "unstage README.md from the next commit"
+    seeds:
+      - "I accidentally staged README.md, take it out"
+      - "remove README.md from the staging area"
+    expected_command: "git reset HEAD README.md"
+    risk: CAUTION
+
+  - id: squash_last_n
+    canonical: "combine my last 3 commits into one"
+    seeds:
+      - "squash the last three commits"
+      - "interactively squash last 3 commits"
+    expected_command: "git rebase -i HEAD~3"
+    risk: DANGEROUS
+
+  - id: cherry_pick
+    canonical: "copy commit abc1234 onto my current branch"
+    seeds:
+      - "apply just that one commit here"
+      - "cherry-pick commit abc1234"
+    expected_command: "git cherry-pick abc1234"
+    risk: CAUTION
+
+  - id: cherry_pick_abort
+    canonical: "cancel the cherry pick conflict"
+    seeds:
+      - "abort ongoing cherry-pick"
+      - "undo the stuck cherry-pick"
+    expected_command: "git cherry-pick --abort"
+    risk: CAUTION
+
+  - id: force_push
+    canonical: "force push my rebased branch to origin"
+    seeds:
+      - "overwrite the remote branch with my local changes"
+      - "force update origin main"
+    expected_command: "git push --force origin main"
+    risk: DANGEROUS
+
+  - id: force_push_lease
+    canonical: "safely force push without overwriting someone else's work"
+    seeds:
+      - "force push with lease to origin main"
+      - "safe force push"
+    expected_command: "git push --force-with-lease origin main"
+    risk: DANGEROUS
+
+  - id: clean_untracked
+    canonical: "delete all untracked files and folders"
+    seeds:
+      - "remove all untracked files forcefully"
+      - "clean directory of files not in git"
+    expected_command: "git clean -fd"
+    risk: CRITICAL
+
+  - id: clean_dry_run
+    canonical: "preview what untracked files would be deleted"
+    seeds:
+      - "dry run git clean"
+      - "test what clean would remove"
+    expected_command: "git clean -nd"
+    risk: SAFE
+
+  - id: clone_repo
+    canonical: "clone a repository from GitHub"
+    seeds:
+      - "download the repo from url"
+      - "clone git repository locally"
+    expected_command: "git clone https://github.com/user/repo.git"
+    risk: SAFE
+
+  - id: stage_all
+    canonical: "stage all changes in the entire repository"
+    seeds:
+      - "add all modified and new files"
+      - "stage everything for commit"
+    expected_command: "git add -A"
+    risk: CAUTION
+
+  - id: stage_interactive
+    canonical: "interactively choose parts of files to stage"
+    seeds:
+      - "stage specific hunks of code"
+      - "interactive staging mode"
+    expected_command: "git add -p"
+    risk: CAUTION
+
+  - id: commit_with_message
+    canonical: "commit staged changes with a message"
+    seeds:
+      - "create a commit with message update readme"
+      - "save commit with note"
+    expected_command: 'git commit -m "update readme"'
+    risk: CAUTION
+
+  - id: revert_commit
+    canonical: "safely undo a commit by making a new opposite commit"
+    seeds:
+      - "revert commit abc1234 without rewriting history"
+      - "create an inverse commit of abc1234"
+    expected_command: "git revert abc1234"
+    risk: CAUTION
+
+  - id: view_blame
+    canonical: "show who changed each line of main.py"
+    seeds:
+      - "who wrote this code in main.py"
+      - "line by line author info for main.py"
+    expected_command: "git blame main.py"
+    risk: SAFE
+
+  - id: view_reflog
+    canonical: "show the log of all HEAD movements to recover lost commits"
+    seeds:
+      - "view reflog to find deleted commit"
+      - "where was HEAD before the reset"
+    expected_command: "git reflog"
+    risk: SAFE
+
+  - id: create_tag
+    canonical: "create a release tag called v1.0.0"
+    seeds:
+      - "tag current commit as v1.0.0"
+      - "add tag v1.0.0"
+    expected_command: "git tag v1.0.0"
+    risk: SAFE
+
+  - id: push_tags
+    canonical: "push all tags to the remote repository"
+    seeds:
+      - "upload tags to origin"
+      - "send tags to remote"
+    expected_command: "git push origin --tags"
+    risk: SAFE
+
+  - id: fetch_all
+    canonical: "download all updates from remote without merging"
+    seeds:
+      - "fetch branches from all remotes"
+      - "check remote commits without changing local code"
+    expected_command: "git fetch --all"
+    risk: SAFE
+
+  - id: pull_rebase
+    canonical: "pull latest changes and rebase my commits on top"
+    seeds:
+      - "pull with rebase instead of merge"
+      - "fetch and rebase current branch"
+    expected_command: "git pull --rebase origin main"
+    risk: CAUTION
+
+  - id: rebase_abort
+    canonical: "cancel an in-progress rebase and return to original state"
+    seeds:
+      - "abort the current rebase"
+      - "stop rebase and restore pre-rebase branch"
+    expected_command: "git rebase --abort"
+    risk: CAUTION
+
+  - id: rebase_continue
+    canonical: "continue the rebase after resolving conflicts"
+    seeds:
+      - "proceed with rebase after fixing merge conflict"
+      - "next step in rebase"
+    expected_command: "git rebase --continue"
+    risk: CAUTION
+
+  - id: merge_abort
+    canonical: "abort the merge that has conflicts"
+    seeds:
+      - "cancel merge conflicts and go back"
+      - "stop current merge attempt"
+    expected_command: "git merge --abort"
+    risk: CAUTION
+
+  - id: bisect_start
+    canonical: "start binary search to find which commit caused a bug"
+    seeds:
+      - "start git bisect session"
+      - "hunt down bad commit automatically"
+    expected_command: "git bisect start"
+    risk: CAUTION
+
+  - id: bisect_reset
+    canonical: "end the bisect session and return to normal"
+    seeds:
+      - "finish bisect and go back to original branch"
+      - "stop bisecting"
+    expected_command: "git bisect reset"
+    risk: CAUTION
+
+  - id: remove_cached
+    canonical: "stop tracking secret.env without deleting the file from disk"
+    seeds:
+      - "remove secret.env from git index only"
+      - "untrack secret.env but keep local copy"
+    expected_command: "git rm --cached secret.env"
+    risk: CAUTION
+
+  - id: rename_branch
+    canonical: "rename the current branch to feature-auth"
+    seeds:
+      - "change branch name to feature-auth"
+      - "rename active branch to feature-auth"
+    expected_command: "git branch -m feature-auth"
+    risk: CAUTION
+
+  - id: view_remote_url
+    canonical: "view the remote repository url"
+    seeds:
+      - "where is this repo pushing to"
+      - "show remote URLs"
+    expected_command: "git remote -v"
+    risk: SAFE
+
+  - id: show_commit_summary
+    canonical: "show the changes in the latest commit with file stats"
+    seeds:
+      - "view summary of HEAD commit"
+      - "inspect files changed in last commit"
+    expected_command: "git show --stat HEAD"
+    risk: SAFE

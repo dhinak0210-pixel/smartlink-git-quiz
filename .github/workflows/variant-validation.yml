@@ -1,0 +1,53 @@
+name: Question Variant Validation & Quality Gates
+
+on:
+  pull_request:
+    paths:
+      - 'variant-pipeline/**'
+      - '.github/workflows/variant-validation.yml'
+  workflow_dispatch:
+
+jobs:
+  validate-variants:
+    name: Validate Question Bank & Sandbox Execution
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r variant-pipeline/requirements.txt pytest
+
+      - name: Verify Git Installation
+        run: |
+          git --version
+
+      - name: Run Unit Tests & Planted Bad Variant Rejection
+        run: |
+          python -m pytest variant-pipeline/tests/ -v
+
+      - name: Run Full Variant Generation & Execution Validation Pipeline
+        run: |
+          python variant-pipeline/run_pipeline.py
+
+      - name: Upload Validation Reports & Artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: variant-validation-reports
+          path: |
+            variant-pipeline/reports/validation_report.md
+            variant-pipeline/reports/summary.json
+            variant-pipeline/reports/variants_export.sql
+            variant-pipeline/reports/variants_export.json
+          retention-days: 14

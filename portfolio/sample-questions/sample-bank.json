@@ -1,0 +1,80 @@
+[
+  {
+    "id": "sample-01",
+    "text": "Which Git command is used to record changes to the local repository with an inline descriptive message?",
+    "difficulty": "easy",
+    "topic": "commits",
+    "options": [
+      { "label": "A", "text": "git commit -m 'message'" },
+      { "label": "B", "text": "git stage --save 'message'" },
+      { "label": "C", "text": "git push -m 'message'" },
+      { "label": "D", "text": "git record 'message'" }
+    ],
+    "explanation": "git commit captures a snapshot of the staged changes; the -m flag specifies the commit message inline."
+  },
+  {
+    "id": "sample-02",
+    "text": "What is the primary difference between 'git switch' and 'git checkout' introduced in Git 2.23?",
+    "difficulty": "medium",
+    "topic": "branching",
+    "options": [
+      { "label": "A", "text": "git switch only switches branches, separating branch navigation from file restoration" },
+      { "label": "B", "text": "git switch can only operate on remote tracking branches" },
+      { "label": "C", "text": "git switch immediately creates a merge commit" },
+      { "label": "D", "text": "git switch cannot be used when there are unstaged changes" }
+    ],
+    "explanation": "Git 2.23 split the overloaded git checkout into git switch (branch switching) and git restore (file modification recovery)."
+  },
+  {
+    "id": "sample-03",
+    "text": "When performing an interactive rebase (git rebase -i), which instruction preserves the commit's diffs while discarding its commit message into the previous commit?",
+    "difficulty": "medium",
+    "topic": "rebasing",
+    "options": [
+      { "label": "A", "text": "fixup (or f)" },
+      { "label": "B", "text": "squash (or s)" },
+      { "label": "C", "text": "reword (or r)" },
+      { "label": "D", "text": "drop (or d)" }
+    ],
+    "explanation": "The fixup instruction combines the commit diff into the previous commit while discarding the current commit's message log."
+  },
+  {
+    "id": "sample-04",
+    "text": "Which plumbing command directly generates a SHA-1 object ID for content and conditionally writes it into .git/objects?",
+    "difficulty": "hard",
+    "topic": "plumbing",
+    "options": [
+      { "label": "A", "text": "git hash-object" },
+      { "label": "B", "text": "git mktree" },
+      { "label": "C", "text": "git cat-file" },
+      { "label": "D", "text": "git write-tree" }
+    ],
+    "explanation": "git hash-object calculates the object ID from standard input or a file, writing the blob into the database when -w is specified."
+  },
+  {
+    "id": "sample-05",
+    "text": "How can an orphaned commit lost due to a hard reset or branch deletion be located in a local repository?",
+    "difficulty": "hard",
+    "topic": "recovery",
+    "options": [
+      { "label": "A", "text": "Inspect the local git reflog for recent HEAD reference movements" },
+      { "label": "B", "text": "Query git remote show origin" },
+      { "label": "C", "text": "Run git bisect reset" },
+      { "label": "D", "text": "Check git stash list" }
+    ],
+    "explanation": "git reflog maintains local historical records of where references and HEAD have pointed, enabling commit recovery."
+  },
+  {
+    "id": "sample-06",
+    "text": "What does the Git command 'git rerere' stand for and what function does it automate?",
+    "difficulty": "hard",
+    "topic": "rerere",
+    "options": [
+      { "label": "A", "text": "Reuse Recorded Resolution: records and re-applies manual conflict resolutions" },
+      { "label": "B", "text": "Rebase Recursive Repeat: repeats an aborted rebase from its reflog state" },
+      { "label": "C", "text": "Remote Reference Refresh: synchronizes pruned tracking branches" },
+      { "label": "D", "text": "Repository Revision Redo: rolls back unwanted clean operations" }
+    ],
+    "explanation": "git rerere remembers how conflict hunks were manually resolved and automatically applies the identical solution to recurring conflicts."
+  }
+]

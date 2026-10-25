@@ -1,0 +1,44 @@
+id: q05_cherry_pick
+topic: advanced-git
+difficulty: medium
+type: variant
+
+parameters:
+  - name: feat_branch
+    values: [feat-auth, feat-cart, feat-nav, feat-pay, feat-user]
+    type: branch_name
+  - name: fix_file
+    values: [auth_patch.py, cart_patch.py, nav_patch.py, pay_patch.py, user_patch.py]
+    type: file_name
+
+constraints:
+  - "paired(feat_branch, fix_file)"
+
+setup:
+  - "git init"
+  - "echo 'v1' > main.py && git add main.py && git commit -m 'initial'"
+  - "git checkout -b {feat_branch}"
+  - "echo 'wip' > wip.py && git add wip.py && git commit -m 'wip feature'"
+  - "echo 'fix' > hotfix.py && git add hotfix.py && git commit -m 'patch'"
+  - "git checkout main"
+
+
+stem: "You need to copy only the commit on `{feat_branch}` onto `main`. Which command applies this single commit?"
+
+correct: "git cherry-pick {feat_branch}"
+
+distractors:
+  - text: "git merge {feat_branch}"
+    reason: wrong_operation
+  - text: "git rebase {feat_branch}"
+    reason: wrong_operation
+  - text: "git pull {feat_branch}"
+    reason: wrong_operation
+
+goal: "commit_count(main)==2 AND file_exists(hotfix.py)==true AND current_branch==main"
+
+
+explanation: "`git cherry-pick <branch>` applies changes from a specific branch's commit directly onto the current HEAD without merging branch histories."
+
+variant_count: 3
+is_reserve: false

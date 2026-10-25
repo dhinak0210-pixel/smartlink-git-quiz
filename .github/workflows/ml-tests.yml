@@ -1,0 +1,76 @@
+name: ML & Judge Evaluation CI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'layer5-analysis/**'
+      - 'apps/**'
+      - '.github/workflows/ml-tests.yml'
+  pull_request:
+    paths:
+      - 'layer5-analysis/**'
+      - 'apps/**'
+      - '.github/workflows/ml-tests.yml'
+
+jobs:
+  ml-evaluation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install -r layer5-analysis/requirements.txt
+          pip install -r apps/judge-agent/requirements.txt
+
+      - name: Run Anonymization Pipeline & Verify Privacy
+        run: |
+          python layer5-analysis/scripts/anonymize.py --verify
+
+      - name: Verify No PII In Public Outputs
+        run: |
+          python -c "
+          import json, sys
+          from pathlib import Path
+          pub = Path('layer5-analysis/data/public')
+          for f in pub.glob('*.json'):
+              with open(f) as fh:
+                  content = fh.read()
+                  for banned in ['college_id', 'join_code', 'email', '@']:
+                      if banned in content.lower():
+                          print(f'❌ Security failure: {banned} found in {f.name}')
+                          sys.exit(1)
+          print('✅ Public artifacts free of PII')
+          "
+
+      - name: Run Classical Item Statistics Analysis
+        run: |
+          python layer5-analysis/scripts/question_stats.py
+
+      - name: Run IRT Calibration
+        run: |
+          python layer5-analysis/scripts/irt_calibration.py
+
+      - name: Run Skill Prediction
+        run: |
+          python layer5-analysis/scripts/skill_prediction.py
+
+      - name: Run Cheat Detection Agreement Analysis
+        run: |
+          python layer5-analysis/scripts/cheat_detection_ml.py
+
+      - name: Run Topic Weakness Clustering
+        run: |
+          python layer5-analysis/scripts/topic_clustering.py
+
+      - name: Run Git Judge Agent Tests
+        run: |
+          cd apps/judge-agent/src && python -m unittest test_judge.py

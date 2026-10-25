@@ -1,0 +1,41 @@
+id: q02_branch_rename
+topic: branching
+difficulty: easy
+type: variant
+
+parameters:
+  - name: old_name
+    values: [login1, navbar, search, auth01, profil]
+    type: branch_name
+  - name: new_name
+    values: [login1-v2, navbar-v2, search-v2, auth01-v2, profil-v2]
+    type: branch_name
+
+constraints:
+  - "old_name != new_name"
+  - "paired(old_name, new_name)"
+
+setup:
+  - "git init"
+  - "echo 'initial' > README.md && git add README.md && git commit -m 'initial commit'"
+  - "git branch {old_name}"
+  - "echo 'feature' > feature.txt && git add feature.txt && git commit -m 'add feature'"
+
+stem: "You want to rename the local branch `{old_name}` to `{new_name}` without switching to it. Which command does this?"
+
+correct: "git branch -m {old_name} {new_name}"
+
+distractors:
+  - text: "git branch -m {new_name} {old_name}"
+    reason: wrong_direction
+  - text: "git rename-branch {old_name} {new_name}"
+    reason: wrong_operation
+  - text: "git branch --rename {old_name} {new_name}"
+    reason: wrong_flag
+
+goal: "branch_exists({new_name})==true AND branch_not_exists({old_name})==true AND current_branch==main"
+
+explanation: "`git branch -m <old> <new>` renames a branch without checking it out. Swapping the arguments renames in the wrong direction. `rename-branch` and `--rename` are not valid Git commands."
+
+variant_count: 3
+is_reserve: false

@@ -1,0 +1,39 @@
+id: q09_tag_annotate
+topic: tagging
+difficulty: easy
+type: variant
+
+parameters:
+  - name: tag_name
+    values: [v1.0.0, v1.1.0, v2.0.0, v2.1.0, v3.0.0]
+    type: string
+  - name: release_note
+    values: [production-release, sprint-deliverable, hotfix-milestone, stable-candidate, beta-release]
+    type: string
+
+constraints:
+  - "paired(tag_name, release_note)"
+
+setup:
+  - "git init"
+  - "echo 'code' > app.py && git add app.py && git commit -m 'release build'"
+
+stem: "You want to create an annotated tag named `{tag_name}` with the message \"{release_note}\". Which command creates an annotated tag?"
+
+correct: "git tag -a {tag_name} -m \"{release_note}\""
+
+distractors:
+  - text: "git tag {tag_name}"
+    reason: incomplete
+  - text: "git tag -m \"{release_note}\" {tag_name}"
+    reason: wrong_flag
+  - text: "git create-tag {tag_name} -m \"{release_note}\""
+    reason: wrong_operation
+
+goal: "annotated_tag_exists({tag_name})==true"
+
+
+explanation: "`git tag -a <tag> -m <msg>` creates an annotated Git tag containing full author metadata, date, and message."
+
+variant_count: 3
+is_reserve: false
